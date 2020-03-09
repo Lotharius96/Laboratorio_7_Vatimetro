@@ -78,15 +78,15 @@ void Read_Values(int Address_Measure){
         switch(Address_Measure){
           case 0x02:
             Voltaje=Datos;
-            Voltaje*=0.004; //obtener la medicion Voltios
+         //   Voltaje*=0.004; //obtener la medicion Voltios
             break;
           case 0x03:
             Corriente=Datos;
-            Corriente*=factor_lsb_Corriente; //Obtener la medicion en amperes
+          //  Corriente*=factor_lsb_Corriente; //Obtener la medicion en amperes
             break;
           case 0x04:
             Potencia=Datos;
-            Potencia*=20*factor_lsb_Corriente; //Obtener la medicion en Watts
+           // Potencia*=20*factor_lsb_Corriente; //Obtener la medicion en Watts
             break;
           default:
             break;
@@ -122,7 +122,25 @@ int main(void)
         
         }
      /// ENVIAR DATOS POR MODULO UART
+        ///1-ESTABLECER COMUNICACION
         
+        ///2-DETECTAR LA SEÑAL PARA ENVIAR LOS DATOS
+        
+        
+        ///3-A ENVIAR LA PRIMERA TRAMA CON LOS BITS MAS SIGNIFICATIVOS DE BUS_VOLTAGE
+        
+        ///3-B ENVIAR LA SEGUNDA TRAMA CON LOS BITS MENOS SIGNIFICATIVOS DE BUS_VOLTAGE
+        
+        ///4-A ENVIAR LA PRIMERA TRAMA CON LOS BITS MAS SIGINIFICATIVOS DE CORRIENTE
+        
+        ///4-B ENVIAR LA SEGUNDA TRAMA CON LOS BITS MENOS SIGNIFICATIVOS DE CORRIENTE
+        
+        ///5-A ENVIAR LA PRIMERA TRAMA CON LOS BITS MAS SIGNIFICATIVOS DE POTENCIA
+        
+        
+        ///5-B ENVIAR LA SEGUNDA TRAMA CON LOS BITS MENOS SIGNIFICATIVOS DE VOLTAJE
+        
+        ///HACER UN RETARDO DE 996 MS
      ///Establecer la   
      
         
