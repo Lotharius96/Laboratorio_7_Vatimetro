@@ -256,6 +256,7 @@
       <Data key="22863ebe-a37b-476f-b252-6e49a8c00b12" value="SDA_1" />
       <Data key="1425177d-0d0e-4468-8bcc-e638e5509a9b" value="Rx_1" />
       <Data key="c9eda559-d800-40b6-9607-9c4fb08a328a/ed092b9b-d398-4703-be89-cebf998501f6" value="LCD_LCDPort" />
+      <Data key="d2c25043-2ed7-4dad-a72f-480dc422b518" value="RST_2" />
       <Data key="ed092b9b-d398-4703-be89-cebf998501f6" value="Tx_1" />
     </Group>
   </Group>
@@ -3353,27 +3354,42 @@
         <Data key="Port Format" value="0,1" />
       </Group>
     </Group>
+    <Group key="1425177d-0d0e-4468-8bcc-e638e5509a9b">
+      <Group key="0">
+        <Data key="Port Format" value="12,6" />
+      </Group>
+    </Group>
     <Group key="c9eda559-d800-40b6-9607-9c4fb08a328a/ed092b9b-d398-4703-be89-cebf998501f6">
       <Group key="0">
-        <Data key="Port Format" value="12,0" />
+        <Data key="Port Format" value="2,1" />
       </Group>
       <Group key="1">
-        <Data key="Port Format" value="12,1" />
+        <Data key="Port Format" value="2,2" />
       </Group>
       <Group key="2">
-        <Data key="Port Format" value="12,2" />
+        <Data key="Port Format" value="2,3" />
       </Group>
       <Group key="3">
-        <Data key="Port Format" value="12,3" />
+        <Data key="Port Format" value="2,4" />
       </Group>
       <Group key="4">
-        <Data key="Port Format" value="12,4" />
+        <Data key="Port Format" value="2,5" />
       </Group>
       <Group key="5">
-        <Data key="Port Format" value="12,5" />
+        <Data key="Port Format" value="2,6" />
       </Group>
       <Group key="6">
-        <Data key="Port Format" value="12,6" />
+        <Data key="Port Format" value="2,7" />
+      </Group>
+    </Group>
+    <Group key="d2c25043-2ed7-4dad-a72f-480dc422b518">
+      <Group key="0">
+        <Data key="Port Format" value="0,2" />
+      </Group>
+    </Group>
+    <Group key="ed092b9b-d398-4703-be89-cebf998501f6">
+      <Group key="0">
+        <Data key="Port Format" value="12,7" />
       </Group>
     </Group>
   </Group>

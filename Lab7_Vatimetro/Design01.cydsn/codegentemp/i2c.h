@@ -34,7 +34,7 @@
 #define i2c_MODE               (2u)
 #define i2c_ENABLE_WAKEUP      (0u)
 #define i2c_ADDR_DECODE        (1u)
-#define i2c_UDB_INTRN_CLOCK    (0u)
+#define i2c_UDB_INTRN_CLOCK    (1u)
 
 
 /* I2C implementation enum */
