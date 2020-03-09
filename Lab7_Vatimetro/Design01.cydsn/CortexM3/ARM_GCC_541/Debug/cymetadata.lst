@@ -1,0 +1,2674 @@
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cymetadata.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	cy_metadata
+  20              		.global	cy_meta_flashprotect
+  21              		.global	cy_meta_wonvl
+  22              		.global	cy_meta_custnvl
+  23              		.global	cy_meta_configecc
+  24              		.section	.cyconfigecc,"a",%progbits
+  25              		.align	2
+  26              		.type	cy_meta_configecc, %object
+  27              		.size	cy_meta_configecc, 2060
+  28              	cy_meta_configecc:
+  29 0000 03       		.byte	3
+  30 0001 52       		.byte	82
+  31 0002 00       		.byte	0
+  32 0003 40       		.byte	64
+  33 0004 04       		.byte	4
+  34 0005 64       		.byte	100
+  35 0006 00       		.byte	0
+  36 0007 40       		.byte	64
+  37 0008 02       		.byte	2
+  38 0009 65       		.byte	101
+  39 000a 00       		.byte	0
+  40 000b 40       		.byte	64
+  41 000c 53       		.byte	83
+  42 000d 00       		.byte	0
+  43 000e 01       		.byte	1
+  44 000f 40       		.byte	64
+  45 0010 33       		.byte	51
+  46 0011 01       		.byte	1
+  47 0012 01       		.byte	1
+  48 0013 40       		.byte	64
+  49 0014 65       		.byte	101
+  50 0015 02       		.byte	2
+  51 0016 01       		.byte	1
+  52 0017 40       		.byte	64
+  53 0018 4A       		.byte	74
+  54 0019 03       		.byte	3
+  55 001a 01       		.byte	1
+  56 001b 40       		.byte	64
+  57 001c 4F       		.byte	79
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 2
+
+
+  58 001d 04       		.byte	4
+  59 001e 01       		.byte	1
+  60 001f 40       		.byte	64
+  61 0020 45       		.byte	69
+  62 0021 05       		.byte	5
+  63 0022 01       		.byte	1
+  64 0023 40       		.byte	64
+  65 0024 52       		.byte	82
+  66 0025 06       		.byte	6
+  67 0026 01       		.byte	1
+  68 0027 40       		.byte	64
+  69 0028 47       		.byte	71
+  70 0029 07       		.byte	7
+  71 002a 01       		.byte	1
+  72 002b 40       		.byte	64
+  73 002c 55       		.byte	85
+  74 002d 14       		.byte	20
+  75 002e 01       		.byte	1
+  76 002f 40       		.byte	64
+  77 0030 4A       		.byte	74
+  78 0031 15       		.byte	21
+  79 0032 01       		.byte	1
+  80 0033 40       		.byte	64
+  81 0034 59       		.byte	89
+  82 0035 16       		.byte	22
+  83 0036 01       		.byte	1
+  84 0037 40       		.byte	64
+  85 0038 48       		.byte	72
+  86 0039 17       		.byte	23
+  87 003a 01       		.byte	1
+  88 003b 40       		.byte	64
+  89 003c 02       		.byte	2
+  90 003d 40       		.byte	64
+  91 003e 01       		.byte	1
+  92 003f 40       		.byte	64
+  93 0040 0F       		.byte	15
+  94 0041 41       		.byte	65
+  95 0042 01       		.byte	1
+  96 0043 40       		.byte	64
+  97 0044 07       		.byte	7
+  98 0045 42       		.byte	66
+  99 0046 01       		.byte	1
+ 100 0047 40       		.byte	64
+ 101 0048 05       		.byte	5
+ 102 0049 43       		.byte	67
+ 103 004a 01       		.byte	1
+ 104 004b 40       		.byte	64
+ 105 004c 05       		.byte	5
+ 106 004d 50       		.byte	80
+ 107 004e 01       		.byte	1
+ 108 004f 40       		.byte	64
+ 109 0050 01       		.byte	1
+ 110 0051 51       		.byte	81
+ 111 0052 01       		.byte	1
+ 112 0053 40       		.byte	64
+ 113 0054 00       		.byte	0
+ 114 0055 03       		.byte	3
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 3
+
+
+ 115 0056 01       		.byte	1
+ 116 0057 11       		.byte	17
+ 117 0058 04       		.byte	4
+ 118 0059 0F       		.byte	15
+ 119 005a 27       		.byte	39
+ 120 005b 04       		.byte	4
+ 121 005c 81       		.byte	-127
+ 122 005d 72       		.byte	114
+ 123 005e 83       		.byte	-125
+ 124 005f 0F       		.byte	15
+ 125 0060 85       		.byte	-123
+ 126 0061 38       		.byte	56
+ 127 0062 26       		.byte	38
+ 128 0063 0F       		.byte	15
+ 129 0064 36       		.byte	54
+ 130 0065 08       		.byte	8
+ 131 0066 05       		.byte	5
+ 132 0067 10       		.byte	16
+ 133 0068 07       		.byte	7
+ 134 0069 0C       		.byte	12
+ 135 006a 08       		.byte	8
+ 136 006b 01       		.byte	1
+ 137 006c 0B       		.byte	11
+ 138 006d 03       		.byte	3
+ 139 006e 0D       		.byte	13
+ 140 006f 1C       		.byte	28
+ 141 0070 0F       		.byte	15
+ 142 0071 02       		.byte	2
+ 143 0072 15       		.byte	21
+ 144 0073 14       		.byte	20
+ 145 0074 19       		.byte	25
+ 146 0075 09       		.byte	9
+ 147 0076 1B       		.byte	27
+ 148 0077 10       		.byte	16
+ 149 0078 25       		.byte	37
+ 150 0079 10       		.byte	16
+ 151 007a 29       		.byte	41
+ 152 007b 0C       		.byte	12
+ 153 007c 2B       		.byte	43
+ 154 007d 11       		.byte	17
+ 155 007e 30       		.byte	48
+ 156 007f 01       		.byte	1
+ 157 0080 33       		.byte	51
+ 158 0081 1F       		.byte	31
+ 159 0082 3E       		.byte	62
+ 160 0083 01       		.byte	1
+ 161 0084 40       		.byte	64
+ 162 0085 02       		.byte	2
+ 163 0086 45       		.byte	69
+ 164 0087 04       		.byte	4
+ 165 0088 49       		.byte	73
+ 166 0089 FF       		.byte	-1
+ 167 008a 4A       		.byte	74
+ 168 008b 07       		.byte	7
+ 169 008c 4B       		.byte	75
+ 170 008d FF       		.byte	-1
+ 171 008e 4C       		.byte	76
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 4
+
+
+ 172 008f 40       		.byte	64
+ 173 0090 4D       		.byte	77
+ 174 0091 20       		.byte	32
+ 175 0092 4E       		.byte	78
+ 176 0093 F0       		.byte	-16
+ 177 0094 4F       		.byte	79
+ 178 0095 05       		.byte	5
+ 179 0096 50       		.byte	80
+ 180 0097 08       		.byte	8
+ 181 0098 58       		.byte	88
+ 182 0099 04       		.byte	4
+ 183 009a 59       		.byte	89
+ 184 009b 04       		.byte	4
+ 185 009c 5A       		.byte	90
+ 186 009d 04       		.byte	4
+ 187 009e 5C       		.byte	92
+ 188 009f 10       		.byte	16
+ 189 00a0 5D       		.byte	93
+ 190 00a1 01       		.byte	1
+ 191 00a2 5F       		.byte	95
+ 192 00a3 01       		.byte	1
+ 193 00a4 60       		.byte	96
+ 194 00a5 40       		.byte	64
+ 195 00a6 61       		.byte	97
+ 196 00a7 A8       		.byte	-88
+ 197 00a8 62       		.byte	98
+ 198 00a9 40       		.byte	64
+ 199 00aa 63       		.byte	99
+ 200 00ab 20       		.byte	32
+ 201 00ac 80       		.byte	-128
+ 202 00ad 01       		.byte	1
+ 203 00ae 81       		.byte	-127
+ 204 00af 10       		.byte	16
+ 205 00b0 84       		.byte	-124
+ 206 00b1 7F       		.byte	127
+ 207 00b2 85       		.byte	-123
+ 208 00b3 40       		.byte	64
+ 209 00b4 88       		.byte	-120
+ 210 00b5 04       		.byte	4
+ 211 00b6 89       		.byte	-119
+ 212 00b7 1C       		.byte	28
+ 213 00b8 8B       		.byte	-117
+ 214 00b9 E1       		.byte	-31
+ 215 00ba 8F       		.byte	-113
+ 216 00bb 63       		.byte	99
+ 217 00bc 91       		.byte	-111
+ 218 00bd 1C       		.byte	28
+ 219 00be 92       		.byte	-110
+ 220 00bf 63       		.byte	99
+ 221 00c0 93       		.byte	-109
+ 222 00c1 E2       		.byte	-30
+ 223 00c2 94       		.byte	-108
+ 224 00c3 1F       		.byte	31
+ 225 00c4 95       		.byte	-107
+ 226 00c5 08       		.byte	8
+ 227 00c6 96       		.byte	-106
+ 228 00c7 60       		.byte	96
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 5
+
+
+ 229 00c8 98       		.byte	-104
+ 230 00c9 03       		.byte	3
+ 231 00ca 99       		.byte	-103
+ 232 00cb 18       		.byte	24
+ 233 00cc 9C       		.byte	-100
+ 234 00cd 5C       		.byte	92
+ 235 00ce 9D       		.byte	-99
+ 236 00cf 24       		.byte	36
+ 237 00d0 9E       		.byte	-98
+ 238 00d1 23       		.byte	35
+ 239 00d2 A0       		.byte	-96
+ 240 00d3 73       		.byte	115
+ 241 00d4 A1       		.byte	-95
+ 242 00d5 FF       		.byte	-1
+ 243 00d6 A2       		.byte	-94
+ 244 00d7 0C       		.byte	12
+ 245 00d8 A4       		.byte	-92
+ 246 00d9 02       		.byte	2
+ 247 00da A5       		.byte	-91
+ 248 00db 60       		.byte	96
+ 249 00dc A8       		.byte	-88
+ 250 00dd 0C       		.byte	12
+ 251 00de AB       		.byte	-85
+ 252 00df 04       		.byte	4
+ 253 00e0 AC       		.byte	-84
+ 254 00e1 08       		.byte	8
+ 255 00e2 AD       		.byte	-83
+ 256 00e3 E7       		.byte	-25
+ 257 00e4 AF       		.byte	-81
+ 258 00e5 18       		.byte	24
+ 259 00e6 B0       		.byte	-80
+ 260 00e7 10       		.byte	16
+ 261 00e8 B1       		.byte	-79
+ 262 00e9 1F       		.byte	31
+ 263 00ea B2       		.byte	-78
+ 264 00eb 2C       		.byte	44
+ 265 00ec B3       		.byte	-77
+ 266 00ed 60       		.byte	96
+ 267 00ee B4       		.byte	-76
+ 268 00ef 0F       		.byte	15
+ 269 00f0 B6       		.byte	-74
+ 270 00f1 4C       		.byte	76
+ 271 00f2 B7       		.byte	-73
+ 272 00f3 80       		.byte	-128
+ 273 00f4 B9       		.byte	-71
+ 274 00f5 80       		.byte	-128
+ 275 00f6 BA       		.byte	-70
+ 276 00f7 28       		.byte	40
+ 277 00f8 BB       		.byte	-69
+ 278 00f9 22       		.byte	34
+ 279 00fa BE       		.byte	-66
+ 280 00fb 01       		.byte	1
+ 281 00fc D6       		.byte	-42
+ 282 00fd 02       		.byte	2
+ 283 00fe D7       		.byte	-41
+ 284 00ff 10       		.byte	16
+ 285 0100 D8       		.byte	-40
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 6
+
+
+ 286 0101 04       		.byte	4
+ 287 0102 D9       		.byte	-39
+ 288 0103 04       		.byte	4
+ 289 0104 DB       		.byte	-37
+ 290 0105 04       		.byte	4
+ 291 0106 DC       		.byte	-36
+ 292 0107 11       		.byte	17
+ 293 0108 DD       		.byte	-35
+ 294 0109 10       		.byte	16
+ 295 010a DF       		.byte	-33
+ 296 010b 01       		.byte	1
+ 297 010c 00       		.byte	0
+ 298 010d 10       		.byte	16
+ 299 010e 04       		.byte	4
+ 300 010f 08       		.byte	8
+ 301 0110 06       		.byte	6
+ 302 0111 04       		.byte	4
+ 303 0112 07       		.byte	7
+ 304 0113 80       		.byte	-128
+ 305 0114 0E       		.byte	14
+ 306 0115 26       		.byte	38
+ 307 0116 0F       		.byte	15
+ 308 0117 40       		.byte	64
+ 309 0118 15       		.byte	21
+ 310 0119 06       		.byte	6
+ 311 011a 16       		.byte	22
+ 312 011b 82       		.byte	-126
+ 313 011c 17       		.byte	23
+ 314 011d 20       		.byte	32
+ 315 011e 1A       		.byte	26
+ 316 011f 80       		.byte	-128
+ 317 0120 1C       		.byte	28
+ 318 0121 08       		.byte	8
+ 319 0122 1E       		.byte	30
+ 320 0123 71       		.byte	113
+ 321 0124 20       		.byte	32
+ 322 0125 10       		.byte	16
+ 323 0126 24       		.byte	36
+ 324 0127 08       		.byte	8
+ 325 0128 25       		.byte	37
+ 326 0129 20       		.byte	32
+ 327 012a 26       		.byte	38
+ 328 012b 09       		.byte	9
+ 329 012c 27       		.byte	39
+ 330 012d 01       		.byte	1
+ 331 012e 29       		.byte	41
+ 332 012f 04       		.byte	4
+ 333 0130 2A       		.byte	42
+ 334 0131 20       		.byte	32
+ 335 0132 2C       		.byte	44
+ 336 0133 80       		.byte	-128
+ 337 0134 2E       		.byte	46
+ 338 0135 84       		.byte	-124
+ 339 0136 2F       		.byte	47
+ 340 0137 04       		.byte	4
+ 341 0138 30       		.byte	48
+ 342 0139 08       		.byte	8
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 7
+
+
+ 343 013a 32       		.byte	50
+ 344 013b 10       		.byte	16
+ 345 013c 36       		.byte	54
+ 346 013d 01       		.byte	1
+ 347 013e 37       		.byte	55
+ 348 013f A8       		.byte	-88
+ 349 0140 38       		.byte	56
+ 350 0141 10       		.byte	16
+ 351 0142 39       		.byte	57
+ 352 0143 88       		.byte	-120
+ 353 0144 3D       		.byte	61
+ 354 0145 04       		.byte	4
+ 355 0146 3E       		.byte	62
+ 356 0147 12       		.byte	18
+ 357 0148 3F       		.byte	63
+ 358 0149 40       		.byte	64
+ 359 014a 40       		.byte	64
+ 360 014b 04       		.byte	4
+ 361 014c 49       		.byte	73
+ 362 014d 04       		.byte	4
+ 363 014e 50       		.byte	80
+ 364 014f 10       		.byte	16
+ 365 0150 5E       		.byte	94
+ 366 0151 40       		.byte	64
+ 367 0152 6D       		.byte	109
+ 368 0153 40       		.byte	64
+ 369 0154 6F       		.byte	111
+ 370 0155 14       		.byte	20
+ 371 0156 76       		.byte	118
+ 372 0157 06       		.byte	6
+ 373 0158 77       		.byte	119
+ 374 0159 28       		.byte	40
+ 375 015a 80       		.byte	-128
+ 376 015b 80       		.byte	-128
+ 377 015c 81       		.byte	-127
+ 378 015d 20       		.byte	32
+ 379 015e 85       		.byte	-123
+ 380 015f 01       		.byte	1
+ 381 0160 86       		.byte	-122
+ 382 0161 08       		.byte	8
+ 383 0162 C0       		.byte	-64
+ 384 0163 72       		.byte	114
+ 385 0164 C2       		.byte	-62
+ 386 0165 F0       		.byte	-16
+ 387 0166 C4       		.byte	-60
+ 388 0167 F0       		.byte	-16
+ 389 0168 CA       		.byte	-54
+ 390 0169 F6       		.byte	-10
+ 391 016a CC       		.byte	-52
+ 392 016b F6       		.byte	-10
+ 393 016c CE       		.byte	-50
+ 394 016d FE       		.byte	-2
+ 395 016e D0       		.byte	-48
+ 396 016f 04       		.byte	4
+ 397 0170 D6       		.byte	-42
+ 398 0171 10       		.byte	16
+ 399 0172 00       		.byte	0
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 8
+
+
+ 400 0173 22       		.byte	34
+ 401 0174 02       		.byte	2
+ 402 0175 51       		.byte	81
+ 403 0176 0F       		.byte	15
+ 404 0177 01       		.byte	1
+ 405 0178 13       		.byte	19
+ 406 0179 01       		.byte	1
+ 407 017a 14       		.byte	20
+ 408 017b 44       		.byte	68
+ 409 017c 16       		.byte	22
+ 410 017d 31       		.byte	49
+ 411 017e 18       		.byte	24
+ 412 017f 01       		.byte	1
+ 413 0180 1A       		.byte	26
+ 414 0181 0E       		.byte	14
+ 415 0182 1D       		.byte	29
+ 416 0183 02       		.byte	2
+ 417 0184 1F       		.byte	31
+ 418 0185 04       		.byte	4
+ 419 0186 24       		.byte	36
+ 420 0187 E7       		.byte	-25
+ 421 0188 28       		.byte	40
+ 422 0189 E7       		.byte	-25
+ 423 018a 2C       		.byte	44
+ 424 018b 80       		.byte	-128
+ 425 018c 2D       		.byte	45
+ 426 018d 02       		.byte	2
+ 427 018e 2F       		.byte	47
+ 428 018f 0C       		.byte	12
+ 429 0190 30       		.byte	48
+ 430 0191 80       		.byte	-128
+ 431 0192 31       		.byte	49
+ 432 0193 06       		.byte	6
+ 433 0194 32       		.byte	50
+ 434 0195 60       		.byte	96
+ 435 0196 33       		.byte	51
+ 436 0197 08       		.byte	8
+ 437 0198 34       		.byte	52
+ 438 0199 07       		.byte	7
+ 439 019a 35       		.byte	53
+ 440 019b 01       		.byte	1
+ 441 019c 36       		.byte	54
+ 442 019d 18       		.byte	24
+ 443 019e 3E       		.byte	62
+ 444 019f 40       		.byte	64
+ 445 01a0 3F       		.byte	63
+ 446 01a1 10       		.byte	16
+ 447 01a2 40       		.byte	64
+ 448 01a3 65       		.byte	101
+ 449 01a4 41       		.byte	65
+ 450 01a5 02       		.byte	2
+ 451 01a6 42       		.byte	66
+ 452 01a7 04       		.byte	4
+ 453 01a8 44       		.byte	68
+ 454 01a9 01       		.byte	1
+ 455 01aa 45       		.byte	69
+ 456 01ab 0C       		.byte	12
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 9
+
+
+ 457 01ac 46       		.byte	70
+ 458 01ad 0E       		.byte	14
+ 459 01ae 48       		.byte	72
+ 460 01af 05       		.byte	5
+ 461 01b0 49       		.byte	73
+ 462 01b1 FF       		.byte	-1
+ 463 01b2 4A       		.byte	74
+ 464 01b3 FF       		.byte	-1
+ 465 01b4 4B       		.byte	75
+ 466 01b5 FF       		.byte	-1
+ 467 01b6 4C       		.byte	76
+ 468 01b7 62       		.byte	98
+ 469 01b8 4D       		.byte	77
+ 470 01b9 A0       		.byte	-96
+ 471 01ba 4E       		.byte	78
+ 472 01bb F0       		.byte	-16
+ 473 01bc 4F       		.byte	79
+ 474 01bd 41       		.byte	65
+ 475 01be 50       		.byte	80
+ 476 01bf 0C       		.byte	12
+ 477 01c0 58       		.byte	88
+ 478 01c1 04       		.byte	4
+ 479 01c2 59       		.byte	89
+ 480 01c3 04       		.byte	4
+ 481 01c4 5A       		.byte	90
+ 482 01c5 04       		.byte	4
+ 483 01c6 5C       		.byte	92
+ 484 01c7 01       		.byte	1
+ 485 01c8 5D       		.byte	93
+ 486 01c9 01       		.byte	1
+ 487 01ca 5F       		.byte	95
+ 488 01cb 01       		.byte	1
+ 489 01cc 66       		.byte	102
+ 490 01cd 40       		.byte	64
+ 491 01ce 67       		.byte	103
+ 492 01cf 02       		.byte	2
+ 493 01d0 69       		.byte	105
+ 494 01d1 10       		.byte	16
+ 495 01d2 6A       		.byte	106
+ 496 01d3 30       		.byte	48
+ 497 01d4 6B       		.byte	107
+ 498 01d5 10       		.byte	16
+ 499 01d6 6D       		.byte	109
+ 500 01d7 10       		.byte	16
+ 501 01d8 6E       		.byte	110
+ 502 01d9 10       		.byte	16
+ 503 01da 6F       		.byte	111
+ 504 01db 12       		.byte	18
+ 505 01dc 85       		.byte	-123
+ 506 01dd 73       		.byte	115
+ 507 01de 87       		.byte	-121
+ 508 01df 0C       		.byte	12
+ 509 01e0 8B       		.byte	-117
+ 510 01e1 55       		.byte	85
+ 511 01e2 8D       		.byte	-115
+ 512 01e3 2A       		.byte	42
+ 513 01e4 8E       		.byte	-114
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 10
+
+
+ 514 01e5 01       		.byte	1
+ 515 01e6 8F       		.byte	-113
+ 516 01e7 44       		.byte	68
+ 517 01e8 90       		.byte	-112
+ 518 01e9 04       		.byte	4
+ 519 01ea 95       		.byte	-107
+ 520 01eb 73       		.byte	115
+ 521 01ec 96       		.byte	-106
+ 522 01ed 04       		.byte	4
+ 523 01ee 97       		.byte	-105
+ 524 01ef 04       		.byte	4
+ 525 01f0 9B       		.byte	-101
+ 526 01f1 08       		.byte	8
+ 527 01f2 9C       		.byte	-100
+ 528 01f3 02       		.byte	2
+ 529 01f4 9D       		.byte	-99
+ 530 01f5 03       		.byte	3
+ 531 01f6 9F       		.byte	-97
+ 532 01f7 44       		.byte	68
+ 533 01f8 B0       		.byte	-80
+ 534 01f9 04       		.byte	4
+ 535 01fa B3       		.byte	-77
+ 536 01fb 0F       		.byte	15
+ 537 01fc B4       		.byte	-76
+ 538 01fd 02       		.byte	2
+ 539 01fe B5       		.byte	-75
+ 540 01ff 30       		.byte	48
+ 541 0200 B6       		.byte	-74
+ 542 0201 01       		.byte	1
+ 543 0202 B7       		.byte	-73
+ 544 0203 40       		.byte	64
+ 545 0204 B8       		.byte	-72
+ 546 0205 02       		.byte	2
+ 547 0206 B9       		.byte	-71
+ 548 0207 20       		.byte	32
+ 549 0208 BB       		.byte	-69
+ 550 0209 08       		.byte	8
+ 551 020a BE       		.byte	-66
+ 552 020b 10       		.byte	16
+ 553 020c BF       		.byte	-65
+ 554 020d 50       		.byte	80
+ 555 020e C0       		.byte	-64
+ 556 020f 62       		.byte	98
+ 557 0210 C1       		.byte	-63
+ 558 0211 03       		.byte	3
+ 559 0212 C5       		.byte	-59
+ 560 0213 E0       		.byte	-32
+ 561 0214 C6       		.byte	-58
+ 562 0215 0C       		.byte	12
+ 563 0216 C7       		.byte	-57
+ 564 0217 0B       		.byte	11
+ 565 0218 C8       		.byte	-56
+ 566 0219 16       		.byte	22
+ 567 021a C9       		.byte	-55
+ 568 021b FF       		.byte	-1
+ 569 021c CA       		.byte	-54
+ 570 021d FF       		.byte	-1
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 11
+
+
+ 571 021e CB       		.byte	-53
+ 572 021f FF       		.byte	-1
+ 573 0220 CE       		.byte	-50
+ 574 0221 F0       		.byte	-16
+ 575 0222 CF       		.byte	-49
+ 576 0223 44       		.byte	68
+ 577 0224 D0       		.byte	-48
+ 578 0225 0C       		.byte	12
+ 579 0226 D4       		.byte	-44
+ 580 0227 01       		.byte	1
+ 581 0228 D8       		.byte	-40
+ 582 0229 04       		.byte	4
+ 583 022a D9       		.byte	-39
+ 584 022b 04       		.byte	4
+ 585 022c DA       		.byte	-38
+ 586 022d 04       		.byte	4
+ 587 022e DB       		.byte	-37
+ 588 022f 04       		.byte	4
+ 589 0230 DC       		.byte	-36
+ 590 0231 10       		.byte	16
+ 591 0232 DD       		.byte	-35
+ 592 0233 11       		.byte	17
+ 593 0234 DF       		.byte	-33
+ 594 0235 01       		.byte	1
+ 595 0236 E6       		.byte	-26
+ 596 0237 C0       		.byte	-64
+ 597 0238 EA       		.byte	-22
+ 598 0239 40       		.byte	64
+ 599 023a EB       		.byte	-21
+ 600 023b 02       		.byte	2
+ 601 023c 02       		.byte	2
+ 602 023d 02       		.byte	2
+ 603 023e 07       		.byte	7
+ 604 023f 80       		.byte	-128
+ 605 0240 0A       		.byte	10
+ 606 0241 50       		.byte	80
+ 607 0242 0B       		.byte	11
+ 608 0243 01       		.byte	1
+ 609 0244 0E       		.byte	14
+ 610 0245 24       		.byte	36
+ 611 0246 15       		.byte	21
+ 612 0247 40       		.byte	64
+ 613 0248 17       		.byte	23
+ 614 0249 14       		.byte	20
+ 615 024a 18       		.byte	24
+ 616 024b 80       		.byte	-128
+ 617 024c 19       		.byte	25
+ 618 024d 80       		.byte	-128
+ 619 024e 1A       		.byte	26
+ 620 024f 08       		.byte	8
+ 621 0250 1C       		.byte	28
+ 622 0251 40       		.byte	64
+ 623 0252 1D       		.byte	29
+ 624 0253 80       		.byte	-128
+ 625 0254 1E       		.byte	30
+ 626 0255 24       		.byte	36
+ 627 0256 20       		.byte	32
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 12
+
+
+ 628 0257 04       		.byte	4
+ 629 0258 21       		.byte	33
+ 630 0259 04       		.byte	4
+ 631 025a 22       		.byte	34
+ 632 025b 48       		.byte	72
+ 633 025c 24       		.byte	36
+ 634 025d 08       		.byte	8
+ 635 025e 25       		.byte	37
+ 636 025f 04       		.byte	4
+ 637 0260 26       		.byte	38
+ 638 0261 01       		.byte	1
+ 639 0262 2F       		.byte	47
+ 640 0263 01       		.byte	1
+ 641 0264 30       		.byte	48
+ 642 0265 80       		.byte	-128
+ 643 0266 31       		.byte	49
+ 644 0267 48       		.byte	72
+ 645 0268 32       		.byte	50
+ 646 0269 10       		.byte	16
+ 647 026a 36       		.byte	54
+ 648 026b 80       		.byte	-128
+ 649 026c 37       		.byte	55
+ 650 026d 01       		.byte	1
+ 651 026e 38       		.byte	56
+ 652 026f 20       		.byte	32
+ 653 0270 39       		.byte	57
+ 654 0271 A8       		.byte	-88
+ 655 0272 3D       		.byte	61
+ 656 0273 02       		.byte	2
+ 657 0274 3E       		.byte	62
+ 658 0275 01       		.byte	1
+ 659 0276 3F       		.byte	63
+ 660 0277 80       		.byte	-128
+ 661 0278 41       		.byte	65
+ 662 0279 18       		.byte	24
+ 663 027a 42       		.byte	66
+ 664 027b 20       		.byte	32
+ 665 027c 45       		.byte	69
+ 666 027d A1       		.byte	-95
+ 667 027e 49       		.byte	73
+ 668 027f 01       		.byte	1
+ 669 0280 4A       		.byte	74
+ 670 0281 08       		.byte	8
+ 671 0282 4B       		.byte	75
+ 672 0283 01       		.byte	1
+ 673 0284 4D       		.byte	77
+ 674 0285 20       		.byte	32
+ 675 0286 4F       		.byte	79
+ 676 0287 48       		.byte	72
+ 677 0288 50       		.byte	80
+ 678 0289 88       		.byte	-120
+ 679 028a 57       		.byte	87
+ 680 028b 40       		.byte	64
+ 681 028c 58       		.byte	88
+ 682 028d 20       		.byte	32
+ 683 028e 59       		.byte	89
+ 684 028f 01       		.byte	1
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 13
+
+
+ 685 0290 5A       		.byte	90
+ 686 0291 88       		.byte	-120
+ 687 0292 5C       		.byte	92
+ 688 0293 40       		.byte	64
+ 689 0294 5F       		.byte	95
+ 690 0295 40       		.byte	64
+ 691 0296 79       		.byte	121
+ 692 0297 04       		.byte	4
+ 693 0298 7A       		.byte	122
+ 694 0299 10       		.byte	16
+ 695 029a 8A       		.byte	-118
+ 696 029b 80       		.byte	-128
+ 697 029c 90       		.byte	-112
+ 698 029d 20       		.byte	32
+ 699 029e 91       		.byte	-111
+ 700 029f 41       		.byte	65
+ 701 02a0 92       		.byte	-110
+ 702 02a1 01       		.byte	1
+ 703 02a2 94       		.byte	-108
+ 704 02a3 04       		.byte	4
+ 705 02a4 95       		.byte	-107
+ 706 02a5 8C       		.byte	-116
+ 707 02a6 96       		.byte	-106
+ 708 02a7 24       		.byte	36
+ 709 02a8 97       		.byte	-105
+ 710 02a9 48       		.byte	72
+ 711 02aa 99       		.byte	-103
+ 712 02ab 24       		.byte	36
+ 713 02ac 9B       		.byte	-101
+ 714 02ad 15       		.byte	21
+ 715 02ae 9E       		.byte	-98
+ 716 02af 20       		.byte	32
+ 717 02b0 9F       		.byte	-97
+ 718 02b1 80       		.byte	-128
+ 719 02b2 A1       		.byte	-95
+ 720 02b3 20       		.byte	32
+ 721 02b4 A4       		.byte	-92
+ 722 02b5 08       		.byte	8
+ 723 02b6 AA       		.byte	-86
+ 724 02b7 40       		.byte	64
+ 725 02b8 AC       		.byte	-84
+ 726 02b9 04       		.byte	4
+ 727 02ba AD       		.byte	-83
+ 728 02bb 21       		.byte	33
+ 729 02bc C0       		.byte	-64
+ 730 02bd 11       		.byte	17
+ 731 02be C2       		.byte	-62
+ 732 02bf 6D       		.byte	109
+ 733 02c0 C4       		.byte	-60
+ 734 02c1 E0       		.byte	-32
+ 735 02c2 CA       		.byte	-54
+ 736 02c3 10       		.byte	16
+ 737 02c4 CC       		.byte	-52
+ 738 02c5 9E       		.byte	-98
+ 739 02c6 CE       		.byte	-50
+ 740 02c7 1E       		.byte	30
+ 741 02c8 D0       		.byte	-48
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 14
+
+
+ 742 02c9 B6       		.byte	-74
+ 743 02ca D2       		.byte	-46
+ 744 02cb 34       		.byte	52
+ 745 02cc D6       		.byte	-42
+ 746 02cd 0F       		.byte	15
+ 747 02ce E2       		.byte	-30
+ 748 02cf 80       		.byte	-128
+ 749 02d0 00       		.byte	0
+ 750 02d1 01       		.byte	1
+ 751 02d2 02       		.byte	2
+ 752 02d3 0E       		.byte	14
+ 753 02d4 04       		.byte	4
+ 754 02d5 02       		.byte	2
+ 755 02d6 05       		.byte	5
+ 756 02d7 05       		.byte	5
+ 757 02d8 06       		.byte	6
+ 758 02d9 65       		.byte	101
+ 759 02da 07       		.byte	7
+ 760 02db 58       		.byte	88
+ 761 02dc 09       		.byte	9
+ 762 02dd 02       		.byte	2
+ 763 02de 0B       		.byte	11
+ 764 02df 0C       		.byte	12
+ 765 02e0 0D       		.byte	13
+ 766 02e1 70       		.byte	112
+ 767 02e2 0E       		.byte	14
+ 768 02e3 10       		.byte	16
+ 769 02e4 0F       		.byte	15
+ 770 02e5 0D       		.byte	13
+ 771 02e6 10       		.byte	16
+ 772 02e7 21       		.byte	33
+ 773 02e8 12       		.byte	18
+ 774 02e9 88       		.byte	-120
+ 775 02ea 14       		.byte	20
+ 776 02eb 63       		.byte	99
+ 777 02ec 15       		.byte	21
+ 778 02ed 05       		.byte	5
+ 779 02ee 16       		.byte	22
+ 780 02ef 04       		.byte	4
+ 781 02f0 17       		.byte	23
+ 782 02f1 38       		.byte	56
+ 783 02f2 18       		.byte	24
+ 784 02f3 20       		.byte	32
+ 785 02f4 1A       		.byte	26
+ 786 02f5 C0       		.byte	-64
+ 787 02f6 1B       		.byte	27
+ 788 02f7 70       		.byte	112
+ 789 02f8 1C       		.byte	28
+ 790 02f9 07       		.byte	7
+ 791 02fa 1E       		.byte	30
+ 792 02fb 60       		.byte	96
+ 793 02fc 22       		.byte	34
+ 794 02fd 60       		.byte	96
+ 795 02fe 24       		.byte	36
+ 796 02ff 66       		.byte	102
+ 797 0300 26       		.byte	38
+ 798 0301 01       		.byte	1
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 15
+
+
+ 799 0302 27       		.byte	39
+ 800 0303 20       		.byte	32
+ 801 0304 28       		.byte	40
+ 802 0305 07       		.byte	7
+ 803 0306 2A       		.byte	42
+ 804 0307 60       		.byte	96
+ 805 0308 2C       		.byte	44
+ 806 0309 40       		.byte	64
+ 807 030a 2E       		.byte	46
+ 808 030b 20       		.byte	32
+ 809 030c 30       		.byte	48
+ 810 030d 0F       		.byte	15
+ 811 030e 33       		.byte	51
+ 812 030f 68       		.byte	104
+ 813 0310 34       		.byte	52
+ 814 0311 E0       		.byte	-32
+ 815 0312 35       		.byte	53
+ 816 0313 03       		.byte	3
+ 817 0314 36       		.byte	54
+ 818 0315 10       		.byte	16
+ 819 0316 37       		.byte	55
+ 820 0317 3C       		.byte	60
+ 821 0318 39       		.byte	57
+ 822 0319 20       		.byte	32
+ 823 031a 3A       		.byte	58
+ 824 031b 22       		.byte	34
+ 825 031c 3B       		.byte	59
+ 826 031d 88       		.byte	-120
+ 827 031e 54       		.byte	84
+ 828 031f 20       		.byte	32
+ 829 0320 56       		.byte	86
+ 830 0321 04       		.byte	4
+ 831 0322 58       		.byte	88
+ 832 0323 04       		.byte	4
+ 833 0324 59       		.byte	89
+ 834 0325 04       		.byte	4
+ 835 0326 5B       		.byte	91
+ 836 0327 04       		.byte	4
+ 837 0328 5C       		.byte	92
+ 838 0329 10       		.byte	16
+ 839 032a 5F       		.byte	95
+ 840 032b 01       		.byte	1
+ 841 032c 81       		.byte	-127
+ 842 032d 0F       		.byte	15
+ 843 032e 87       		.byte	-121
+ 844 032f 10       		.byte	16
+ 845 0330 89       		.byte	-119
+ 846 0331 26       		.byte	38
+ 847 0332 8D       		.byte	-115
+ 848 0333 01       		.byte	1
+ 849 0334 8F       		.byte	-113
+ 850 0335 22       		.byte	34
+ 851 0336 91       		.byte	-111
+ 852 0337 40       		.byte	64
+ 853 0338 95       		.byte	-107
+ 854 0339 25       		.byte	37
+ 855 033a 97       		.byte	-105
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 16
+
+
+ 856 033b 0A       		.byte	10
+ 857 033c 99       		.byte	-103
+ 858 033d 21       		.byte	33
+ 859 033e 9A       		.byte	-102
+ 860 033f 01       		.byte	1
+ 861 0340 9B       		.byte	-101
+ 862 0341 02       		.byte	2
+ 863 0342 9E       		.byte	-98
+ 864 0343 01       		.byte	1
+ 865 0344 A1       		.byte	-95
+ 866 0345 08       		.byte	8
+ 867 0346 A3       		.byte	-93
+ 868 0347 05       		.byte	5
+ 869 0348 A5       		.byte	-91
+ 870 0349 20       		.byte	32
+ 871 034a A7       		.byte	-89
+ 872 034b 02       		.byte	2
+ 873 034c A9       		.byte	-87
+ 874 034d 21       		.byte	33
+ 875 034e AB       		.byte	-85
+ 876 034f 04       		.byte	4
+ 877 0350 AE       		.byte	-82
+ 878 0351 02       		.byte	2
+ 879 0352 B0       		.byte	-80
+ 880 0353 01       		.byte	1
+ 881 0354 B2       		.byte	-78
+ 882 0355 02       		.byte	2
+ 883 0356 B3       		.byte	-77
+ 884 0357 1F       		.byte	31
+ 885 0358 B5       		.byte	-75
+ 886 0359 60       		.byte	96
+ 887 035a B9       		.byte	-71
+ 888 035b 20       		.byte	32
+ 889 035c BE       		.byte	-66
+ 890 035d 01       		.byte	1
+ 891 035e BF       		.byte	-65
+ 892 035f 10       		.byte	16
+ 893 0360 D4       		.byte	-44
+ 894 0361 18       		.byte	24
+ 895 0362 D8       		.byte	-40
+ 896 0363 04       		.byte	4
+ 897 0364 D9       		.byte	-39
+ 898 0365 04       		.byte	4
+ 899 0366 DB       		.byte	-37
+ 900 0367 04       		.byte	4
+ 901 0368 DC       		.byte	-36
+ 902 0369 01       		.byte	1
+ 903 036a DD       		.byte	-35
+ 904 036b 10       		.byte	16
+ 905 036c DF       		.byte	-33
+ 906 036d 01       		.byte	1
+ 907 036e 01       		.byte	1
+ 908 036f 8A       		.byte	-118
+ 909 0370 04       		.byte	4
+ 910 0371 08       		.byte	8
+ 911 0372 06       		.byte	6
+ 912 0373 10       		.byte	16
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 17
+
+
+ 913 0374 08       		.byte	8
+ 914 0375 80       		.byte	-128
+ 915 0376 09       		.byte	9
+ 916 0377 01       		.byte	1
+ 917 0378 0A       		.byte	10
+ 918 0379 04       		.byte	4
+ 919 037a 0B       		.byte	11
+ 920 037b 60       		.byte	96
+ 921 037c 0E       		.byte	14
+ 922 037d 01       		.byte	1
+ 923 037e 0F       		.byte	15
+ 924 037f 08       		.byte	8
+ 925 0380 10       		.byte	16
+ 926 0381 54       		.byte	84
+ 927 0382 12       		.byte	18
+ 928 0383 02       		.byte	2
+ 929 0384 17       		.byte	23
+ 930 0385 80       		.byte	-128
+ 931 0386 19       		.byte	25
+ 932 0387 52       		.byte	82
+ 933 0388 1A       		.byte	26
+ 934 0389 04       		.byte	4
+ 935 038a 1F       		.byte	31
+ 936 038b 05       		.byte	5
+ 937 038c 21       		.byte	33
+ 938 038d 48       		.byte	72
+ 939 038e 22       		.byte	34
+ 940 038f 10       		.byte	16
+ 941 0390 26       		.byte	38
+ 942 0391 08       		.byte	8
+ 943 0392 27       		.byte	39
+ 944 0393 04       		.byte	4
+ 945 0394 29       		.byte	41
+ 946 0395 04       		.byte	4
+ 947 0396 2C       		.byte	44
+ 948 0397 44       		.byte	68
+ 949 0398 2D       		.byte	45
+ 950 0399 20       		.byte	32
+ 951 039a 2F       		.byte	47
+ 952 039b 10       		.byte	16
+ 953 039c 31       		.byte	49
+ 954 039d 08       		.byte	8
+ 955 039e 32       		.byte	50
+ 956 039f 10       		.byte	16
+ 957 03a0 34       		.byte	52
+ 958 03a1 10       		.byte	16
+ 959 03a2 35       		.byte	53
+ 960 03a3 08       		.byte	8
+ 961 03a4 36       		.byte	54
+ 962 03a5 09       		.byte	9
+ 963 03a6 37       		.byte	55
+ 964 03a7 18       		.byte	24
+ 965 03a8 38       		.byte	56
+ 966 03a9 20       		.byte	32
+ 967 03aa 39       		.byte	57
+ 968 03ab 88       		.byte	-120
+ 969 03ac 3C       		.byte	60
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 18
+
+
+ 970 03ad 80       		.byte	-128
+ 971 03ae 3D       		.byte	61
+ 972 03af 02       		.byte	2
+ 973 03b0 3F       		.byte	63
+ 974 03b1 24       		.byte	36
+ 975 03b2 58       		.byte	88
+ 976 03b3 09       		.byte	9
+ 977 03b4 59       		.byte	89
+ 978 03b5 10       		.byte	16
+ 979 03b6 5B       		.byte	91
+ 980 03b7 40       		.byte	64
+ 981 03b8 5D       		.byte	93
+ 982 03b9 01       		.byte	1
+ 983 03ba 60       		.byte	96
+ 984 03bb 04       		.byte	4
+ 985 03bc 61       		.byte	97
+ 986 03bd 80       		.byte	-128
+ 987 03be 63       		.byte	99
+ 988 03bf 80       		.byte	-128
+ 989 03c0 66       		.byte	102
+ 990 03c1 10       		.byte	16
+ 991 03c2 67       		.byte	103
+ 992 03c3 02       		.byte	2
+ 993 03c4 90       		.byte	-112
+ 994 03c5 A8       		.byte	-88
+ 995 03c6 91       		.byte	-111
+ 996 03c7 09       		.byte	9
+ 997 03c8 92       		.byte	-110
+ 998 03c9 01       		.byte	1
+ 999 03ca 95       		.byte	-107
+ 1000 03cb 80       		.byte	-128
+ 1001 03cc 96       		.byte	-106
+ 1002 03cd 30       		.byte	48
+ 1003 03ce 97       		.byte	-105
+ 1004 03cf 08       		.byte	8
+ 1005 03d0 99       		.byte	-103
+ 1006 03d1 84       		.byte	-124
+ 1007 03d2 9B       		.byte	-101
+ 1008 03d3 80       		.byte	-128
+ 1009 03d4 A1       		.byte	-95
+ 1010 03d5 04       		.byte	4
+ 1011 03d6 A2       		.byte	-94
+ 1012 03d7 03       		.byte	3
+ 1013 03d8 A3       		.byte	-93
+ 1014 03d9 04       		.byte	4
+ 1015 03da A5       		.byte	-91
+ 1016 03db 08       		.byte	8
+ 1017 03dc A6       		.byte	-90
+ 1018 03dd 80       		.byte	-128
+ 1019 03de AA       		.byte	-86
+ 1020 03df 42       		.byte	66
+ 1021 03e0 AB       		.byte	-85
+ 1022 03e1 01       		.byte	1
+ 1023 03e2 AF       		.byte	-81
+ 1024 03e3 80       		.byte	-128
+ 1025 03e4 B0       		.byte	-80
+ 1026 03e5 20       		.byte	32
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 19
+
+
+ 1027 03e6 B1       		.byte	-79
+ 1028 03e7 40       		.byte	64
+ 1029 03e8 C0       		.byte	-64
+ 1030 03e9 0D       		.byte	13
+ 1031 03ea C2       		.byte	-62
+ 1032 03eb CF       		.byte	-49
+ 1033 03ec C4       		.byte	-60
+ 1034 03ed 8F       		.byte	-113
+ 1035 03ee CA       		.byte	-54
+ 1036 03ef E2       		.byte	-30
+ 1037 03f0 CC       		.byte	-52
+ 1038 03f1 E6       		.byte	-26
+ 1039 03f2 CE       		.byte	-50
+ 1040 03f3 FE       		.byte	-2
+ 1041 03f4 D6       		.byte	-42
+ 1042 03f5 8F       		.byte	-113
+ 1043 03f6 D8       		.byte	-40
+ 1044 03f7 3D       		.byte	61
+ 1045 03f8 01       		.byte	1
+ 1046 03f9 FF       		.byte	-1
+ 1047 03fa 09       		.byte	9
+ 1048 03fb 90       		.byte	-112
+ 1049 03fc 0B       		.byte	11
+ 1050 03fd 01       		.byte	1
+ 1051 03fe 0D       		.byte	13
+ 1052 03ff C0       		.byte	-64
+ 1053 0400 13       		.byte	19
+ 1054 0401 40       		.byte	64
+ 1055 0402 17       		.byte	23
+ 1056 0403 08       		.byte	8
+ 1057 0404 1B       		.byte	27
+ 1058 0405 98       		.byte	-104
+ 1059 0406 1F       		.byte	31
+ 1060 0407 94       		.byte	-108
+ 1061 0408 21       		.byte	33
+ 1062 0409 04       		.byte	4
+ 1063 040a 23       		.byte	35
+ 1064 040b 08       		.byte	8
+ 1065 040c 25       		.byte	37
+ 1066 040d 0F       		.byte	15
+ 1067 040e 29       		.byte	41
+ 1068 040f 90       		.byte	-112
+ 1069 0410 2B       		.byte	43
+ 1070 0411 02       		.byte	2
+ 1071 0412 2F       		.byte	47
+ 1072 0413 20       		.byte	32
+ 1073 0414 31       		.byte	49
+ 1074 0415 C0       		.byte	-64
+ 1075 0416 37       		.byte	55
+ 1076 0417 3F       		.byte	63
+ 1077 0418 39       		.byte	57
+ 1078 0419 80       		.byte	-128
+ 1079 041a 59       		.byte	89
+ 1080 041b 04       		.byte	4
+ 1081 041c 5F       		.byte	95
+ 1082 041d 01       		.byte	1
+ 1083 041e 80       		.byte	-128
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 20
+
+
+ 1084 041f 3F       		.byte	63
+ 1085 0420 81       		.byte	-127
+ 1086 0421 01       		.byte	1
+ 1087 0422 83       		.byte	-125
+ 1088 0423 06       		.byte	6
+ 1089 0424 84       		.byte	-124
+ 1090 0425 B2       		.byte	-78
+ 1091 0426 86       		.byte	-122
+ 1092 0427 08       		.byte	8
+ 1093 0428 87       		.byte	-121
+ 1094 0429 13       		.byte	19
+ 1095 042a 88       		.byte	-120
+ 1096 042b 9C       		.byte	-100
+ 1097 042c 8A       		.byte	-118
+ 1098 042d 22       		.byte	34
+ 1099 042e 8D       		.byte	-115
+ 1100 042f 01       		.byte	1
+ 1101 0430 8E       		.byte	-114
+ 1102 0431 40       		.byte	64
+ 1103 0432 8F       		.byte	-113
+ 1104 0433 04       		.byte	4
+ 1105 0434 90       		.byte	-112
+ 1106 0435 01       		.byte	1
+ 1107 0436 94       		.byte	-108
+ 1108 0437 AA       		.byte	-86
+ 1109 0438 96       		.byte	-106
+ 1110 0439 10       		.byte	16
+ 1111 043a 97       		.byte	-105
+ 1112 043b 13       		.byte	19
+ 1113 043c 98       		.byte	-104
+ 1114 043d 01       		.byte	1
+ 1115 043e 9A       		.byte	-102
+ 1116 043f 1E       		.byte	30
+ 1117 0440 9C       		.byte	-100
+ 1118 0441 06       		.byte	6
+ 1119 0442 9D       		.byte	-99
+ 1120 0443 12       		.byte	18
+ 1121 0444 9F       		.byte	-97
+ 1122 0445 01       		.byte	1
+ 1123 0446 A0       		.byte	-96
+ 1124 0447 22       		.byte	34
+ 1125 0448 A3       		.byte	-93
+ 1126 0449 1B       		.byte	27
+ 1127 044a A4       		.byte	-92
+ 1128 044b A2       		.byte	-94
+ 1129 044c A6       		.byte	-90
+ 1130 044d 18       		.byte	24
+ 1131 044e A8       		.byte	-88
+ 1132 044f 98       		.byte	-104
+ 1133 0450 AA       		.byte	-86
+ 1134 0451 06       		.byte	6
+ 1135 0452 AC       		.byte	-84
+ 1136 0453 04       		.byte	4
+ 1137 0454 AD       		.byte	-83
+ 1138 0455 01       		.byte	1
+ 1139 0456 AF       		.byte	-81
+ 1140 0457 32       		.byte	50
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 21
+
+
+ 1141 0458 B0       		.byte	-80
+ 1142 0459 1F       		.byte	31
+ 1143 045a B1       		.byte	-79
+ 1144 045b 07       		.byte	7
+ 1145 045c B2       		.byte	-78
+ 1146 045d 80       		.byte	-128
+ 1147 045e B3       		.byte	-77
+ 1148 045f 08       		.byte	8
+ 1149 0460 B4       		.byte	-76
+ 1150 0461 60       		.byte	96
+ 1151 0462 B5       		.byte	-75
+ 1152 0463 10       		.byte	16
+ 1153 0464 B7       		.byte	-73
+ 1154 0465 20       		.byte	32
+ 1155 0466 B8       		.byte	-72
+ 1156 0467 0A       		.byte	10
+ 1157 0468 BB       		.byte	-69
+ 1158 0469 02       		.byte	2
+ 1159 046a BE       		.byte	-66
+ 1160 046b 04       		.byte	4
+ 1161 046c BF       		.byte	-65
+ 1162 046d 10       		.byte	16
+ 1163 046e C0       		.byte	-64
+ 1164 046f 42       		.byte	66
+ 1165 0470 C4       		.byte	-60
+ 1166 0471 05       		.byte	5
+ 1167 0472 C5       		.byte	-59
+ 1168 0473 D0       		.byte	-48
+ 1169 0474 C7       		.byte	-57
+ 1170 0475 B0       		.byte	-80
+ 1171 0476 C8       		.byte	-56
+ 1172 0477 22       		.byte	34
+ 1173 0478 C9       		.byte	-55
+ 1174 0479 FF       		.byte	-1
+ 1175 047a CA       		.byte	-54
+ 1176 047b 7F       		.byte	127
+ 1177 047c CB       		.byte	-53
+ 1178 047d FF       		.byte	-1
+ 1179 047e CC       		.byte	-52
+ 1180 047f 42       		.byte	66
+ 1181 0480 CD       		.byte	-51
+ 1182 0481 A0       		.byte	-96
+ 1183 0482 CE       		.byte	-50
+ 1184 0483 70       		.byte	112
+ 1185 0484 D0       		.byte	-48
+ 1186 0485 0C       		.byte	12
+ 1187 0486 D2       		.byte	-46
+ 1188 0487 F6       		.byte	-10
+ 1189 0488 D8       		.byte	-40
+ 1190 0489 04       		.byte	4
+ 1191 048a D9       		.byte	-39
+ 1192 048b 04       		.byte	4
+ 1193 048c DA       		.byte	-38
+ 1194 048d 04       		.byte	4
+ 1195 048e DB       		.byte	-37
+ 1196 048f 04       		.byte	4
+ 1197 0490 DF       		.byte	-33
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 22
+
+
+ 1198 0491 01       		.byte	1
+ 1199 0492 E1       		.byte	-31
+ 1200 0493 09       		.byte	9
+ 1201 0494 E2       		.byte	-30
+ 1202 0495 40       		.byte	64
+ 1203 0496 E3       		.byte	-29
+ 1204 0497 09       		.byte	9
+ 1205 0498 E4       		.byte	-28
+ 1206 0499 30       		.byte	48
+ 1207 049a E5       		.byte	-27
+ 1208 049b 09       		.byte	9
+ 1209 049c 01       		.byte	1
+ 1210 049d 01       		.byte	1
+ 1211 049e 02       		.byte	2
+ 1212 049f 44       		.byte	68
+ 1213 04a0 03       		.byte	3
+ 1214 04a1 12       		.byte	18
+ 1215 04a2 0A       		.byte	10
+ 1216 04a3 8A       		.byte	-118
+ 1217 04a4 0B       		.byte	11
+ 1218 04a5 20       		.byte	32
+ 1219 04a6 10       		.byte	16
+ 1220 04a7 84       		.byte	-124
+ 1221 04a8 12       		.byte	18
+ 1222 04a9 01       		.byte	1
+ 1223 04aa 13       		.byte	19
+ 1224 04ab 08       		.byte	8
+ 1225 04ac 1A       		.byte	26
+ 1226 04ad 80       		.byte	-128
+ 1227 04ae 1B       		.byte	27
+ 1228 04af 18       		.byte	24
+ 1229 04b0 20       		.byte	32
+ 1230 04b1 04       		.byte	4
+ 1231 04b2 21       		.byte	33
+ 1232 04b3 89       		.byte	-119
+ 1233 04b4 26       		.byte	38
+ 1234 04b5 81       		.byte	-127
+ 1235 04b6 27       		.byte	39
+ 1236 04b7 41       		.byte	65
+ 1237 04b8 29       		.byte	41
+ 1238 04b9 41       		.byte	65
+ 1239 04ba 2A       		.byte	42
+ 1240 04bb 04       		.byte	4
+ 1241 04bc 2B       		.byte	43
+ 1242 04bd 10       		.byte	16
+ 1243 04be 2C       		.byte	44
+ 1244 04bf 40       		.byte	64
+ 1245 04c0 2D       		.byte	45
+ 1246 04c1 20       		.byte	32
+ 1247 04c2 2E       		.byte	46
+ 1248 04c3 08       		.byte	8
+ 1249 04c4 2F       		.byte	47
+ 1250 04c5 01       		.byte	1
+ 1251 04c6 31       		.byte	49
+ 1252 04c7 88       		.byte	-120
+ 1253 04c8 34       		.byte	52
+ 1254 04c9 80       		.byte	-128
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 23
+
+
+ 1255 04ca 36       		.byte	54
+ 1256 04cb 09       		.byte	9
+ 1257 04cc 37       		.byte	55
+ 1258 04cd 10       		.byte	16
+ 1259 04ce 38       		.byte	56
+ 1260 04cf 80       		.byte	-128
+ 1261 04d0 39       		.byte	57
+ 1262 04d1 06       		.byte	6
+ 1263 04d2 3A       		.byte	58
+ 1264 04d3 40       		.byte	64
+ 1265 04d4 3B       		.byte	59
+ 1266 04d5 40       		.byte	64
+ 1267 04d6 3D       		.byte	61
+ 1268 04d7 0D       		.byte	13
+ 1269 04d8 3E       		.byte	62
+ 1270 04d9 40       		.byte	64
+ 1271 04da 3F       		.byte	63
+ 1272 04db 20       		.byte	32
+ 1273 04dc 41       		.byte	65
+ 1274 04dd 20       		.byte	32
+ 1275 04de 42       		.byte	66
+ 1276 04df 40       		.byte	64
+ 1277 04e0 48       		.byte	72
+ 1278 04e1 40       		.byte	64
+ 1279 04e2 49       		.byte	73
+ 1280 04e3 80       		.byte	-128
+ 1281 04e4 4B       		.byte	75
+ 1282 04e5 01       		.byte	1
+ 1283 04e6 52       		.byte	82
+ 1284 04e7 01       		.byte	1
+ 1285 04e8 68       		.byte	104
+ 1286 04e9 20       		.byte	32
+ 1287 04ea 6A       		.byte	106
+ 1288 04eb 10       		.byte	16
+ 1289 04ec 70       		.byte	112
+ 1290 04ed 94       		.byte	-108
+ 1291 04ee 72       		.byte	114
+ 1292 04ef 82       		.byte	-126
+ 1293 04f0 82       		.byte	-126
+ 1294 04f1 40       		.byte	64
+ 1295 04f2 90       		.byte	-112
+ 1296 04f3 80       		.byte	-128
+ 1297 04f4 94       		.byte	-108
+ 1298 04f5 04       		.byte	4
+ 1299 04f6 96       		.byte	-106
+ 1300 04f7 10       		.byte	16
+ 1301 04f8 97       		.byte	-105
+ 1302 04f9 64       		.byte	100
+ 1303 04fa 98       		.byte	-104
+ 1304 04fb 04       		.byte	4
+ 1305 04fc 99       		.byte	-103
+ 1306 04fd C0       		.byte	-64
+ 1307 04fe 9B       		.byte	-101
+ 1308 04ff 0C       		.byte	12
+ 1309 0500 9C       		.byte	-100
+ 1310 0501 41       		.byte	65
+ 1311 0502 9D       		.byte	-99
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 24
+
+
+ 1312 0503 20       		.byte	32
+ 1313 0504 9F       		.byte	-97
+ 1314 0505 50       		.byte	80
+ 1315 0506 A1       		.byte	-95
+ 1316 0507 04       		.byte	4
+ 1317 0508 A2       		.byte	-94
+ 1318 0509 08       		.byte	8
+ 1319 050a A4       		.byte	-92
+ 1320 050b 40       		.byte	64
+ 1321 050c A6       		.byte	-90
+ 1322 050d 80       		.byte	-128
+ 1323 050e A7       		.byte	-89
+ 1324 050f 18       		.byte	24
+ 1325 0510 A8       		.byte	-88
+ 1326 0511 80       		.byte	-128
+ 1327 0512 AB       		.byte	-85
+ 1328 0513 50       		.byte	80
+ 1329 0514 B0       		.byte	-80
+ 1330 0515 08       		.byte	8
+ 1331 0516 B1       		.byte	-79
+ 1332 0517 82       		.byte	-126
+ 1333 0518 B3       		.byte	-77
+ 1334 0519 08       		.byte	8
+ 1335 051a C0       		.byte	-64
+ 1336 051b 0F       		.byte	15
+ 1337 051c C2       		.byte	-62
+ 1338 051d 0F       		.byte	15
+ 1339 051e C4       		.byte	-60
+ 1340 051f 0F       		.byte	15
+ 1341 0520 CA       		.byte	-54
+ 1342 0521 F9       		.byte	-7
+ 1343 0522 CC       		.byte	-52
+ 1344 0523 FA       		.byte	-6
+ 1345 0524 CE       		.byte	-50
+ 1346 0525 BB       		.byte	-69
+ 1347 0526 D0       		.byte	-48
+ 1348 0527 05       		.byte	5
+ 1349 0528 D2       		.byte	-46
+ 1350 0529 08       		.byte	8
+ 1351 052a 00       		.byte	0
+ 1352 052b 90       		.byte	-112
+ 1353 052c 02       		.byte	2
+ 1354 052d 0B       		.byte	11
+ 1355 052e 03       		.byte	3
+ 1356 052f 02       		.byte	2
+ 1357 0530 04       		.byte	4
+ 1358 0531 40       		.byte	64
+ 1359 0532 05       		.byte	5
+ 1360 0533 01       		.byte	1
+ 1361 0534 06       		.byte	6
+ 1362 0535 0B       		.byte	11
+ 1363 0536 08       		.byte	8
+ 1364 0537 42       		.byte	66
+ 1365 0538 09       		.byte	9
+ 1366 0539 40       		.byte	64
+ 1367 053a 0A       		.byte	10
+ 1368 053b 09       		.byte	9
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 25
+
+
+ 1369 053c 0B       		.byte	11
+ 1370 053d 1D       		.byte	29
+ 1371 053e 0C       		.byte	12
+ 1372 053f 1F       		.byte	31
+ 1373 0540 0D       		.byte	13
+ 1374 0541 E2       		.byte	-30
+ 1375 0542 10       		.byte	16
+ 1376 0543 4F       		.byte	79
+ 1377 0544 11       		.byte	17
+ 1378 0545 04       		.byte	4
+ 1379 0546 13       		.byte	19
+ 1380 0547 E0       		.byte	-32
+ 1381 0548 14       		.byte	20
+ 1382 0549 48       		.byte	72
+ 1383 054a 16       		.byte	22
+ 1384 054b 02       		.byte	2
+ 1385 054c 17       		.byte	23
+ 1386 054d 08       		.byte	8
+ 1387 054e 18       		.byte	24
+ 1388 054f 40       		.byte	64
+ 1389 0550 19       		.byte	25
+ 1390 0551 92       		.byte	-110
+ 1391 0552 1A       		.byte	26
+ 1392 0553 14       		.byte	20
+ 1393 0554 1B       		.byte	27
+ 1394 0555 60       		.byte	96
+ 1395 0556 1C       		.byte	28
+ 1396 0557 03       		.byte	3
+ 1397 0558 1E       		.byte	30
+ 1398 0559 20       		.byte	32
+ 1399 055a 1F       		.byte	31
+ 1400 055b FF       		.byte	-1
+ 1401 055c 20       		.byte	32
+ 1402 055d 01       		.byte	1
+ 1403 055e 21       		.byte	33
+ 1404 055f 0D       		.byte	13
+ 1405 0560 25       		.byte	37
+ 1406 0561 3D       		.byte	61
+ 1407 0562 26       		.byte	38
+ 1408 0563 01       		.byte	1
+ 1409 0564 27       		.byte	39
+ 1410 0565 C2       		.byte	-62
+ 1411 0566 28       		.byte	40
+ 1412 0567 01       		.byte	1
+ 1413 0568 29       		.byte	41
+ 1414 0569 5D       		.byte	93
+ 1415 056a 2B       		.byte	43
+ 1416 056b A2       		.byte	-94
+ 1417 056c 2C       		.byte	44
+ 1418 056d 03       		.byte	3
+ 1419 056e 2D       		.byte	45
+ 1420 056f 01       		.byte	1
+ 1421 0570 30       		.byte	48
+ 1422 0571 E0       		.byte	-32
+ 1423 0572 33       		.byte	51
+ 1424 0573 FF       		.byte	-1
+ 1425 0574 34       		.byte	52
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 26
+
+
+ 1426 0575 1F       		.byte	31
+ 1427 0576 38       		.byte	56
+ 1428 0577 02       		.byte	2
+ 1429 0578 3E       		.byte	62
+ 1430 0579 01       		.byte	1
+ 1431 057a 3F       		.byte	63
+ 1432 057b 04       		.byte	4
+ 1433 057c 58       		.byte	88
+ 1434 057d 04       		.byte	4
+ 1435 057e 59       		.byte	89
+ 1436 057f 04       		.byte	4
+ 1437 0580 5F       		.byte	95
+ 1438 0581 01       		.byte	1
+ 1439 0582 80       		.byte	-128
+ 1440 0583 81       		.byte	-127
+ 1441 0584 82       		.byte	-126
+ 1442 0585 28       		.byte	40
+ 1443 0586 83       		.byte	-125
+ 1444 0587 01       		.byte	1
+ 1445 0588 86       		.byte	-122
+ 1446 0589 80       		.byte	-128
+ 1447 058a 88       		.byte	-120
+ 1448 058b 05       		.byte	5
+ 1449 058c 89       		.byte	-119
+ 1450 058d 0E       		.byte	14
+ 1451 058e 8A       		.byte	-118
+ 1452 058f 30       		.byte	48
+ 1453 0590 8B       		.byte	-117
+ 1454 0591 30       		.byte	48
+ 1455 0592 8C       		.byte	-116
+ 1456 0593 81       		.byte	-127
+ 1457 0594 8E       		.byte	-114
+ 1458 0595 02       		.byte	2
+ 1459 0596 90       		.byte	-112
+ 1460 0597 01       		.byte	1
+ 1461 0598 92       		.byte	-110
+ 1462 0599 0E       		.byte	14
+ 1463 059a 94       		.byte	-108
+ 1464 059b 05       		.byte	5
+ 1465 059c 95       		.byte	-107
+ 1466 059d 2A       		.byte	42
+ 1467 059e 96       		.byte	-106
+ 1468 059f 10       		.byte	16
+ 1469 05a0 97       		.byte	-105
+ 1470 05a1 54       		.byte	84
+ 1471 05a2 98       		.byte	-104
+ 1472 05a3 05       		.byte	5
+ 1473 05a4 99       		.byte	-103
+ 1474 05a5 46       		.byte	70
+ 1475 05a6 9A       		.byte	-102
+ 1476 05a7 10       		.byte	16
+ 1477 05a8 9B       		.byte	-101
+ 1478 05a9 A9       		.byte	-87
+ 1479 05aa 9C       		.byte	-100
+ 1480 05ab 04       		.byte	4
+ 1481 05ac 9D       		.byte	-99
+ 1482 05ad 80       		.byte	-128
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 27
+
+
+ 1483 05ae 9E       		.byte	-98
+ 1484 05af 01       		.byte	1
+ 1485 05b0 9F       		.byte	-97
+ 1486 05b1 56       		.byte	86
+ 1487 05b2 A2       		.byte	-94
+ 1488 05b3 10       		.byte	16
+ 1489 05b4 A5       		.byte	-91
+ 1490 05b5 40       		.byte	64
+ 1491 05b6 A6       		.byte	-90
+ 1492 05b7 40       		.byte	64
+ 1493 05b8 A7       		.byte	-89
+ 1494 05b9 13       		.byte	19
+ 1495 05ba A8       		.byte	-88
+ 1496 05bb 04       		.byte	4
+ 1497 05bc A9       		.byte	-87
+ 1498 05bd 33       		.byte	51
+ 1499 05be AA       		.byte	-86
+ 1500 05bf 01       		.byte	1
+ 1501 05c0 AB       		.byte	-85
+ 1502 05c1 0C       		.byte	12
+ 1503 05c2 AD       		.byte	-83
+ 1504 05c3 FF       		.byte	-1
+ 1505 05c4 B0       		.byte	-80
+ 1506 05c5 0F       		.byte	15
+ 1507 05c6 B2       		.byte	-78
+ 1508 05c7 80       		.byte	-128
+ 1509 05c8 B3       		.byte	-77
+ 1510 05c9 FF       		.byte	-1
+ 1511 05ca B4       		.byte	-76
+ 1512 05cb 70       		.byte	112
+ 1513 05cc BA       		.byte	-70
+ 1514 05cd 22       		.byte	34
+ 1515 05ce D8       		.byte	-40
+ 1516 05cf 04       		.byte	4
+ 1517 05d0 D9       		.byte	-39
+ 1518 05d1 04       		.byte	4
+ 1519 05d2 DF       		.byte	-33
+ 1520 05d3 01       		.byte	1
+ 1521 05d4 01       		.byte	1
+ 1522 05d5 40       		.byte	64
+ 1523 05d6 02       		.byte	2
+ 1524 05d7 88       		.byte	-120
+ 1525 05d8 03       		.byte	3
+ 1526 05d9 10       		.byte	16
+ 1527 05da 04       		.byte	4
+ 1528 05db 40       		.byte	64
+ 1529 05dc 05       		.byte	5
+ 1530 05dd 14       		.byte	20
+ 1531 05de 06       		.byte	6
+ 1532 05df 80       		.byte	-128
+ 1533 05e0 08       		.byte	8
+ 1534 05e1 80       		.byte	-128
+ 1535 05e2 09       		.byte	9
+ 1536 05e3 01       		.byte	1
+ 1537 05e4 0A       		.byte	10
+ 1538 05e5 04       		.byte	4
+ 1539 05e6 0B       		.byte	11
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 28
+
+
+ 1540 05e7 21       		.byte	33
+ 1541 05e8 0C       		.byte	12
+ 1542 05e9 81       		.byte	-127
+ 1543 05ea 0D       		.byte	13
+ 1544 05eb 02       		.byte	2
+ 1545 05ec 0E       		.byte	14
+ 1546 05ed 04       		.byte	4
+ 1547 05ee 0F       		.byte	15
+ 1548 05ef 20       		.byte	32
+ 1549 05f0 10       		.byte	16
+ 1550 05f1 22       		.byte	34
+ 1551 05f2 13       		.byte	19
+ 1552 05f3 12       		.byte	18
+ 1553 05f4 14       		.byte	20
+ 1554 05f5 40       		.byte	64
+ 1555 05f6 15       		.byte	21
+ 1556 05f7 08       		.byte	8
+ 1557 05f8 17       		.byte	23
+ 1558 05f9 10       		.byte	16
+ 1559 05fa 18       		.byte	24
+ 1560 05fb 40       		.byte	64
+ 1561 05fc 19       		.byte	25
+ 1562 05fd 20       		.byte	32
+ 1563 05fe 1A       		.byte	26
+ 1564 05ff 44       		.byte	68
+ 1565 0600 1C       		.byte	28
+ 1566 0601 20       		.byte	32
+ 1567 0602 1D       		.byte	29
+ 1568 0603 16       		.byte	22
+ 1569 0604 1F       		.byte	31
+ 1570 0605 10       		.byte	16
+ 1571 0606 21       		.byte	33
+ 1572 0607 04       		.byte	4
+ 1573 0608 27       		.byte	39
+ 1574 0609 10       		.byte	16
+ 1575 060a 28       		.byte	40
+ 1576 060b 80       		.byte	-128
+ 1577 060c 29       		.byte	41
+ 1578 060d A0       		.byte	-96
+ 1579 060e 2B       		.byte	43
+ 1580 060f 10       		.byte	16
+ 1581 0610 2D       		.byte	45
+ 1582 0611 60       		.byte	96
+ 1583 0612 2F       		.byte	47
+ 1584 0613 10       		.byte	16
+ 1585 0614 31       		.byte	49
+ 1586 0615 04       		.byte	4
+ 1587 0616 32       		.byte	50
+ 1588 0617 80       		.byte	-128
+ 1589 0618 33       		.byte	51
+ 1590 0619 12       		.byte	18
+ 1591 061a 36       		.byte	54
+ 1592 061b 88       		.byte	-120
+ 1593 061c 37       		.byte	55
+ 1594 061d 10       		.byte	16
+ 1595 061e 38       		.byte	56
+ 1596 061f 88       		.byte	-120
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 29
+
+
+ 1597 0620 3A       		.byte	58
+ 1598 0621 82       		.byte	-126
+ 1599 0622 3B       		.byte	59
+ 1600 0623 20       		.byte	32
+ 1601 0624 3F       		.byte	63
+ 1602 0625 21       		.byte	33
+ 1603 0626 80       		.byte	-128
+ 1604 0627 14       		.byte	20
+ 1605 0628 81       		.byte	-127
+ 1606 0629 80       		.byte	-128
+ 1607 062a 83       		.byte	-125
+ 1608 062b 02       		.byte	2
+ 1609 062c 84       		.byte	-124
+ 1610 062d 12       		.byte	18
+ 1611 062e 88       		.byte	-120
+ 1612 062f 80       		.byte	-128
+ 1613 0630 8A       		.byte	-118
+ 1614 0631 08       		.byte	8
+ 1615 0632 8B       		.byte	-117
+ 1616 0633 02       		.byte	2
+ 1617 0634 90       		.byte	-112
+ 1618 0635 A8       		.byte	-88
+ 1619 0636 91       		.byte	-111
+ 1620 0637 40       		.byte	64
+ 1621 0638 93       		.byte	-109
+ 1622 0639 11       		.byte	17
+ 1623 063a 96       		.byte	-106
+ 1624 063b 44       		.byte	68
+ 1625 063c 97       		.byte	-105
+ 1626 063d 20       		.byte	32
+ 1627 063e 98       		.byte	-104
+ 1628 063f 40       		.byte	64
+ 1629 0640 9A       		.byte	-102
+ 1630 0641 02       		.byte	2
+ 1631 0642 9C       		.byte	-100
+ 1632 0643 01       		.byte	1
+ 1633 0644 9D       		.byte	-99
+ 1634 0645 20       		.byte	32
+ 1635 0646 9F       		.byte	-97
+ 1636 0647 10       		.byte	16
+ 1637 0648 A0       		.byte	-96
+ 1638 0649 20       		.byte	32
+ 1639 064a A1       		.byte	-95
+ 1640 064b 01       		.byte	1
+ 1641 064c A2       		.byte	-94
+ 1642 064d 88       		.byte	-120
+ 1643 064e A3       		.byte	-93
+ 1644 064f 10       		.byte	16
+ 1645 0650 A4       		.byte	-92
+ 1646 0651 12       		.byte	18
+ 1647 0652 A9       		.byte	-87
+ 1648 0653 01       		.byte	1
+ 1649 0654 AB       		.byte	-85
+ 1650 0655 10       		.byte	16
+ 1651 0656 AC       		.byte	-84
+ 1652 0657 80       		.byte	-128
+ 1653 0658 AD       		.byte	-83
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 30
+
+
+ 1654 0659 01       		.byte	1
+ 1655 065a AF       		.byte	-81
+ 1656 065b 10       		.byte	16
+ 1657 065c C0       		.byte	-64
+ 1658 065d FF       		.byte	-1
+ 1659 065e C2       		.byte	-62
+ 1660 065f FF       		.byte	-1
+ 1661 0660 C4       		.byte	-60
+ 1662 0661 7F       		.byte	127
+ 1663 0662 CA       		.byte	-54
+ 1664 0663 7F       		.byte	127
+ 1665 0664 CC       		.byte	-52
+ 1666 0665 7F       		.byte	127
+ 1667 0666 CE       		.byte	-50
+ 1668 0667 AF       		.byte	-81
+ 1669 0668 01       		.byte	1
+ 1670 0669 80       		.byte	-128
+ 1671 066a 05       		.byte	5
+ 1672 066b 0F       		.byte	15
+ 1673 066c 09       		.byte	9
+ 1674 066d 20       		.byte	32
+ 1675 066e 0B       		.byte	11
+ 1676 066f 41       		.byte	65
+ 1677 0670 0D       		.byte	13
+ 1678 0671 90       		.byte	-112
+ 1679 0672 13       		.byte	19
+ 1680 0673 0F       		.byte	15
+ 1681 0674 17       		.byte	23
+ 1682 0675 08       		.byte	8
+ 1683 0676 1B       		.byte	27
+ 1684 0677 08       		.byte	8
+ 1685 0678 1D       		.byte	29
+ 1686 0679 0F       		.byte	15
+ 1687 067a 21       		.byte	33
+ 1688 067b 90       		.byte	-112
+ 1689 067c 26       		.byte	38
+ 1690 067d 01       		.byte	1
+ 1691 067e 27       		.byte	39
+ 1692 067f 04       		.byte	4
+ 1693 0680 29       		.byte	41
+ 1694 0681 20       		.byte	32
+ 1695 0682 2B       		.byte	43
+ 1696 0683 42       		.byte	66
+ 1697 0684 2F       		.byte	47
+ 1698 0685 0F       		.byte	15
+ 1699 0686 30       		.byte	48
+ 1700 0687 01       		.byte	1
+ 1701 0688 31       		.byte	49
+ 1702 0689 10       		.byte	16
+ 1703 068a 33       		.byte	51
+ 1704 068b 0F       		.byte	15
+ 1705 068c 35       		.byte	53
+ 1706 068d 70       		.byte	112
+ 1707 068e 37       		.byte	55
+ 1708 068f 80       		.byte	-128
+ 1709 0690 39       		.byte	57
+ 1710 0691 A2       		.byte	-94
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 31
+
+
+ 1711 0692 3F       		.byte	63
+ 1712 0693 15       		.byte	21
+ 1713 0694 40       		.byte	64
+ 1714 0695 13       		.byte	19
+ 1715 0696 46       		.byte	70
+ 1716 0697 02       		.byte	2
+ 1717 0698 47       		.byte	71
+ 1718 0699 05       		.byte	5
+ 1719 069a 48       		.byte	72
+ 1720 069b 14       		.byte	20
+ 1721 069c 49       		.byte	73
+ 1722 069d FF       		.byte	-1
+ 1723 069e 4A       		.byte	74
+ 1724 069f FF       		.byte	-1
+ 1725 06a0 4B       		.byte	75
+ 1726 06a1 FF       		.byte	-1
+ 1727 06a2 4C       		.byte	76
+ 1728 06a3 42       		.byte	66
+ 1729 06a4 4D       		.byte	77
+ 1730 06a5 A0       		.byte	-96
+ 1731 06a6 4E       		.byte	78
+ 1732 06a7 70       		.byte	112
+ 1733 06a8 50       		.byte	80
+ 1734 06a9 08       		.byte	8
+ 1735 06aa 51       		.byte	81
+ 1736 06ab 10       		.byte	16
+ 1737 06ac 58       		.byte	88
+ 1738 06ad 04       		.byte	4
+ 1739 06ae 59       		.byte	89
+ 1740 06af 04       		.byte	4
+ 1741 06b0 5A       		.byte	90
+ 1742 06b1 04       		.byte	4
+ 1743 06b2 5F       		.byte	95
+ 1744 06b3 01       		.byte	1
+ 1745 06b4 61       		.byte	97
+ 1746 06b5 48       		.byte	72
+ 1747 06b6 62       		.byte	98
+ 1748 06b7 40       		.byte	64
+ 1749 06b8 63       		.byte	99
+ 1750 06b9 48       		.byte	72
+ 1751 06ba 64       		.byte	100
+ 1752 06bb 80       		.byte	-128
+ 1753 06bc 65       		.byte	101
+ 1754 06bd 48       		.byte	72
+ 1755 06be 66       		.byte	102
+ 1756 06bf 80       		.byte	-128
+ 1757 06c0 67       		.byte	103
+ 1758 06c1 48       		.byte	72
+ 1759 06c2 80       		.byte	-128
+ 1760 06c3 22       		.byte	34
+ 1761 06c4 81       		.byte	-127
+ 1762 06c5 4D       		.byte	77
+ 1763 06c6 82       		.byte	-126
+ 1764 06c7 05       		.byte	5
+ 1765 06c8 83       		.byte	-125
+ 1766 06c9 92       		.byte	-110
+ 1767 06ca 84       		.byte	-124
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 32
+
+
+ 1768 06cb 10       		.byte	16
+ 1769 06cc 86       		.byte	-122
+ 1770 06cd 07       		.byte	7
+ 1771 06ce 87       		.byte	-121
+ 1772 06cf 02       		.byte	2
+ 1773 06d0 88       		.byte	-120
+ 1774 06d1 03       		.byte	3
+ 1775 06d2 89       		.byte	-119
+ 1776 06d3 04       		.byte	4
+ 1777 06d4 8C       		.byte	-116
+ 1778 06d5 03       		.byte	3
+ 1779 06d6 8D       		.byte	-115
+ 1780 06d7 FF       		.byte	-1
+ 1781 06d8 90       		.byte	-112
+ 1782 06d9 05       		.byte	5
+ 1783 06da 91       		.byte	-111
+ 1784 06db 02       		.byte	2
+ 1785 06dc 92       		.byte	-110
+ 1786 06dd 78       		.byte	120
+ 1787 06de 94       		.byte	-108
+ 1788 06df 01       		.byte	1
+ 1789 06e0 95       		.byte	-107
+ 1790 06e1 A5       		.byte	-91
+ 1791 06e2 97       		.byte	-105
+ 1792 06e3 4A       		.byte	74
+ 1793 06e4 98       		.byte	-104
+ 1794 06e5 3A       		.byte	58
+ 1795 06e6 99       		.byte	-103
+ 1796 06e7 CC       		.byte	-52
+ 1797 06e8 9A       		.byte	-102
+ 1798 06e9 04       		.byte	4
+ 1799 06ea 9B       		.byte	-101
+ 1800 06eb 13       		.byte	19
+ 1801 06ec 9C       		.byte	-100
+ 1802 06ed 08       		.byte	8
+ 1803 06ee 9E       		.byte	-98
+ 1804 06ef 07       		.byte	7
+ 1805 06f0 9F       		.byte	-97
+ 1806 06f1 B5       		.byte	-75
+ 1807 06f2 A0       		.byte	-96
+ 1808 06f3 C0       		.byte	-64
+ 1809 06f4 A2       		.byte	-94
+ 1810 06f5 07       		.byte	7
+ 1811 06f6 A3       		.byte	-93
+ 1812 06f7 04       		.byte	4
+ 1813 06f8 A4       		.byte	-92
+ 1814 06f9 01       		.byte	1
+ 1815 06fa A5       		.byte	-91
+ 1816 06fb 1A       		.byte	26
+ 1817 06fc A7       		.byte	-89
+ 1818 06fd 60       		.byte	96
+ 1819 06fe A8       		.byte	-88
+ 1820 06ff 01       		.byte	1
+ 1821 0700 A9       		.byte	-87
+ 1822 0701 A9       		.byte	-87
+ 1823 0702 AB       		.byte	-85
+ 1824 0703 54       		.byte	84
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 33
+
+
+ 1825 0704 AC       		.byte	-84
+ 1826 0705 FF       		.byte	-1
+ 1827 0706 AF       		.byte	-81
+ 1828 0707 01       		.byte	1
+ 1829 0708 B0       		.byte	-80
+ 1830 0709 7F       		.byte	127
+ 1831 070a B4       		.byte	-76
+ 1832 070b 80       		.byte	-128
+ 1833 070c B5       		.byte	-75
+ 1834 070d FF       		.byte	-1
+ 1835 070e B8       		.byte	-72
+ 1836 070f 20       		.byte	32
+ 1837 0710 BE       		.byte	-66
+ 1838 0711 01       		.byte	1
+ 1839 0712 BF       		.byte	-65
+ 1840 0713 10       		.byte	16
+ 1841 0714 D8       		.byte	-40
+ 1842 0715 04       		.byte	4
+ 1843 0716 D9       		.byte	-39
+ 1844 0717 04       		.byte	4
+ 1845 0718 DF       		.byte	-33
+ 1846 0719 01       		.byte	1
+ 1847 071a 00       		.byte	0
+ 1848 071b A0       		.byte	-96
+ 1849 071c 01       		.byte	1
+ 1850 071d 01       		.byte	1
+ 1851 071e 03       		.byte	3
+ 1852 071f 10       		.byte	16
+ 1853 0720 08       		.byte	8
+ 1854 0721 80       		.byte	-128
+ 1855 0722 09       		.byte	9
+ 1856 0723 01       		.byte	1
+ 1857 0724 0A       		.byte	10
+ 1858 0725 04       		.byte	4
+ 1859 0726 0B       		.byte	11
+ 1860 0727 10       		.byte	16
+ 1861 0728 10       		.byte	16
+ 1862 0729 20       		.byte	32
+ 1863 072a 11       		.byte	17
+ 1864 072b 40       		.byte	64
+ 1865 072c 12       		.byte	18
+ 1866 072d 84       		.byte	-124
+ 1867 072e 15       		.byte	21
+ 1868 072f 04       		.byte	4
+ 1869 0730 1A       		.byte	26
+ 1870 0731 08       		.byte	8
+ 1871 0732 1B       		.byte	27
+ 1872 0733 02       		.byte	2
+ 1873 0734 1D       		.byte	29
+ 1874 0735 01       		.byte	1
+ 1875 0736 1F       		.byte	31
+ 1876 0737 01       		.byte	1
+ 1877 0738 23       		.byte	35
+ 1878 0739 04       		.byte	4
+ 1879 073a 25       		.byte	37
+ 1880 073b 20       		.byte	32
+ 1881 073c 26       		.byte	38
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 34
+
+
+ 1882 073d 84       		.byte	-124
+ 1883 073e 27       		.byte	39
+ 1884 073f 40       		.byte	64
+ 1885 0740 29       		.byte	41
+ 1886 0741 20       		.byte	32
+ 1887 0742 2A       		.byte	42
+ 1888 0743 82       		.byte	-126
+ 1889 0744 2B       		.byte	43
+ 1890 0745 10       		.byte	16
+ 1891 0746 2D       		.byte	45
+ 1892 0747 22       		.byte	34
+ 1893 0748 2F       		.byte	47
+ 1894 0749 11       		.byte	17
+ 1895 074a 30       		.byte	48
+ 1896 074b 02       		.byte	2
+ 1897 074c 32       		.byte	50
+ 1898 074d 89       		.byte	-119
+ 1899 074e 33       		.byte	51
+ 1900 074f 10       		.byte	16
+ 1901 0750 34       		.byte	52
+ 1902 0751 40       		.byte	64
+ 1903 0752 36       		.byte	54
+ 1904 0753 88       		.byte	-120
+ 1905 0754 37       		.byte	55
+ 1906 0755 11       		.byte	17
+ 1907 0756 38       		.byte	56
+ 1908 0757 A8       		.byte	-88
+ 1909 0758 39       		.byte	57
+ 1910 0759 42       		.byte	66
+ 1911 075a 3A       		.byte	58
+ 1912 075b 04       		.byte	4
+ 1913 075c 3B       		.byte	59
+ 1914 075d 10       		.byte	16
+ 1915 075e 3D       		.byte	61
+ 1916 075f 08       		.byte	8
+ 1917 0760 3F       		.byte	63
+ 1918 0761 A2       		.byte	-94
+ 1919 0762 47       		.byte	71
+ 1920 0763 44       		.byte	68
+ 1921 0764 56       		.byte	86
+ 1922 0765 08       		.byte	8
+ 1923 0766 57       		.byte	87
+ 1924 0767 40       		.byte	64
+ 1925 0768 79       		.byte	121
+ 1926 0769 40       		.byte	64
+ 1927 076a 7B       		.byte	123
+ 1928 076b 01       		.byte	1
+ 1929 076c 81       		.byte	-127
+ 1930 076d 02       		.byte	2
+ 1931 076e 82       		.byte	-126
+ 1932 076f 04       		.byte	4
+ 1933 0770 85       		.byte	-123
+ 1934 0771 01       		.byte	1
+ 1935 0772 86       		.byte	-122
+ 1936 0773 08       		.byte	8
+ 1937 0774 90       		.byte	-112
+ 1938 0775 A8       		.byte	-88
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 35
+
+
+ 1939 0776 91       		.byte	-111
+ 1940 0777 04       		.byte	4
+ 1941 0778 93       		.byte	-109
+ 1942 0779 01       		.byte	1
+ 1943 077a 96       		.byte	-106
+ 1944 077b 4A       		.byte	74
+ 1945 077c 97       		.byte	-105
+ 1946 077d 24       		.byte	36
+ 1947 077e 9A       		.byte	-102
+ 1948 077f 82       		.byte	-126
+ 1949 0780 9B       		.byte	-101
+ 1950 0781 05       		.byte	5
+ 1951 0782 9C       		.byte	-100
+ 1952 0783 C1       		.byte	-63
+ 1953 0784 9D       		.byte	-99
+ 1954 0785 21       		.byte	33
+ 1955 0786 9E       		.byte	-98
+ 1956 0787 08       		.byte	8
+ 1957 0788 9F       		.byte	-97
+ 1958 0789 10       		.byte	16
+ 1959 078a A0       		.byte	-96
+ 1960 078b 60       		.byte	96
+ 1961 078c A1       		.byte	-95
+ 1962 078d 04       		.byte	4
+ 1963 078e A2       		.byte	-94
+ 1964 078f 08       		.byte	8
+ 1965 0790 A3       		.byte	-93
+ 1966 0791 10       		.byte	16
+ 1967 0792 A5       		.byte	-91
+ 1968 0793 20       		.byte	32
+ 1969 0794 A6       		.byte	-90
+ 1970 0795 04       		.byte	4
+ 1971 0796 A7       		.byte	-89
+ 1972 0797 02       		.byte	2
+ 1973 0798 AA       		.byte	-86
+ 1974 0799 04       		.byte	4
+ 1975 079a AB       		.byte	-85
+ 1976 079b 01       		.byte	1
+ 1977 079c C0       		.byte	-64
+ 1978 079d 0F       		.byte	15
+ 1979 079e C2       		.byte	-62
+ 1980 079f 0F       		.byte	15
+ 1981 07a0 C4       		.byte	-60
+ 1982 07a1 2F       		.byte	47
+ 1983 07a2 CA       		.byte	-54
+ 1984 07a3 FF       		.byte	-1
+ 1985 07a4 CC       		.byte	-52
+ 1986 07a5 FF       		.byte	-1
+ 1987 07a6 CE       		.byte	-50
+ 1988 07a7 FF       		.byte	-1
+ 1989 07a8 D0       		.byte	-48
+ 1990 07a9 50       		.byte	80
+ 1991 07aa 30       		.byte	48
+ 1992 07ab 80       		.byte	-128
+ 1993 07ac CC       		.byte	-52
+ 1994 07ad 10       		.byte	16
+ 1995 07ae 01       		.byte	1
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 36
+
+
+ 1996 07af 08       		.byte	8
+ 1997 07b0 03       		.byte	3
+ 1998 07b1 01       		.byte	1
+ 1999 07b2 07       		.byte	7
+ 2000 07b3 28       		.byte	40
+ 2001 07b4 55       		.byte	85
+ 2002 07b5 80       		.byte	-128
+ 2003 07b6 56       		.byte	86
+ 2004 07b7 02       		.byte	2
+ 2005 07b8 62       		.byte	98
+ 2006 07b9 20       		.byte	32
+ 2007 07ba 8A       		.byte	-118
+ 2008 07bb 02       		.byte	2
+ 2009 07bc A2       		.byte	-94
+ 2010 07bd 20       		.byte	32
+ 2011 07be A4       		.byte	-92
+ 2012 07bf 80       		.byte	-128
+ 2013 07c0 AA       		.byte	-86
+ 2014 07c1 20       		.byte	32
+ 2015 07c2 C0       		.byte	-64
+ 2016 07c3 F0       		.byte	-16
+ 2017 07c4 D4       		.byte	-44
+ 2018 07c5 40       		.byte	64
+ 2019 07c6 D6       		.byte	-42
+ 2020 07c7 20       		.byte	32
+ 2021 07c8 D8       		.byte	-40
+ 2022 07c9 40       		.byte	64
+ 2023 07ca EE       		.byte	-18
+ 2024 07cb 80       		.byte	-128
+ 2025 07cc A4       		.byte	-92
+ 2026 07cd 80       		.byte	-128
+ 2027 07ce A5       		.byte	-91
+ 2028 07cf 80       		.byte	-128
+ 2029 07d0 A9       		.byte	-87
+ 2030 07d1 08       		.byte	8
+ 2031 07d2 AB       		.byte	-85
+ 2032 07d3 28       		.byte	40
+ 2033 07d4 AF       		.byte	-81
+ 2034 07d5 01       		.byte	1
+ 2035 07d6 E8       		.byte	-24
+ 2036 07d7 E0       		.byte	-32
+ 2037 07d8 EC       		.byte	-20
+ 2038 07d9 20       		.byte	32
+ 2039 07da 81       		.byte	-127
+ 2040 07db 80       		.byte	-128
+ 2041 07dc A5       		.byte	-91
+ 2042 07dd 80       		.byte	-128
+ 2043 07de A8       		.byte	-88
+ 2044 07df 80       		.byte	-128
+ 2045 07e0 E6       		.byte	-26
+ 2046 07e1 80       		.byte	-128
+ 2047 07e2 EA       		.byte	-22
+ 2048 07e3 20       		.byte	32
+ 2049 07e4 00       		.byte	0
+ 2050 07e5 03       		.byte	3
+ 2051 07e6 08       		.byte	8
+ 2052 07e7 03       		.byte	3
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 37
+
+
+ 2053 07e8 0A       		.byte	10
+ 2054 07e9 03       		.byte	3
+ 2055 07ea 10       		.byte	16
+ 2056 07eb 01       		.byte	1
+ 2057 07ec 1A       		.byte	26
+ 2058 07ed 01       		.byte	1
+ 2059 07ee 00       		.byte	0
+ 2060 07ef 03       		.byte	3
+ 2061 07f0 13       		.byte	19
+ 2062 07f1 00       		.byte	0
+ 2063 07f2 0C       		.byte	12
+ 2064 07f3 10       		.byte	16
+ 2065 07f4 13       		.byte	19
+ 2066 07f5 00       		.byte	0
+ 2067 07f6 13       		.byte	19
+ 2068 07f7 00       		.byte	0
+ 2069 07f8 00       		.byte	0
+ 2070 07f9 00       		.byte	0
+ 2071 07fa 00       		.byte	0
+ 2072 07fb 00       		.byte	0
+ 2073 07fc 00       		.byte	0
+ 2074 07fd 7F       		.byte	127
+ 2075 07fe 7F       		.byte	127
+ 2076 07ff 00       		.byte	0
+ 2077 0800 00       		.byte	0
+ 2078 0801 00       		.byte	0
+ 2079 0802 00       		.byte	0
+ 2080 0803 00       		.byte	0
+ 2081 0804 00       		.byte	0
+ 2082 0805 0B       		.byte	11
+ 2083 0806 0B       		.byte	11
+ 2084 0807 00       		.byte	0
+ 2085 0808 00       		.byte	0
+ 2086 0809 00       		.byte	0
+ 2087 080a 00       		.byte	0
+ 2088 080b 00       		.byte	0
+ 2089              		.section	.cywolatch,"a",%progbits
+ 2090              		.align	2
+ 2091              		.type	cy_meta_wonvl, %object
+ 2092              		.size	cy_meta_wonvl, 4
+ 2093              	cy_meta_wonvl:
+ 2094 0000 BC       		.byte	-68
+ 2095 0001 90       		.byte	-112
+ 2096 0002 AC       		.byte	-84
+ 2097 0003 AF       		.byte	-81
+ 2098              		.section	.cycustnvl,"a",%progbits
+ 2099              		.align	2
+ 2100              		.type	cy_meta_custnvl, %object
+ 2101              		.size	cy_meta_custnvl, 4
+ 2102              	cy_meta_custnvl:
+ 2103 0000 00       		.byte	0
+ 2104 0001 00       		.byte	0
+ 2105 0002 40       		.byte	64
+ 2106 0003 05       		.byte	5
+ 2107              		.section	.cymeta,"a",%progbits
+ 2108              		.align	2
+ 2109              		.type	cy_metadata, %object
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 38
+
+
+ 2110              		.size	cy_metadata, 12
+ 2111              	cy_metadata:
+ 2112 0000 00       		.byte	0
+ 2113 0001 01       		.byte	1
+ 2114 0002 2E       		.byte	46
+ 2115 0003 16       		.byte	22
+ 2116 0004 10       		.byte	16
+ 2117 0005 69       		.byte	105
+ 2118 0006 00       		.byte	0
+ 2119 0007 01       		.byte	1
+ 2120 0008 00       		.byte	0
+ 2121 0009 00       		.byte	0
+ 2122 000a 00       		.byte	0
+ 2123 000b 00       		.byte	0
+ 2124              		.section	.cyflashprotect,"a",%progbits
+ 2125              		.align	2
+ 2126              		.type	cy_meta_flashprotect, %object
+ 2127              		.size	cy_meta_flashprotect, 256
+ 2128              	cy_meta_flashprotect:
+ 2129 0000 00000000 		.space	256
+ 2129      00000000 
+ 2129      00000000 
+ 2129      00000000 
+ 2129      00000000 
+ 2130              		.text
+ 2131              	.Letext0:
+ 2132              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2133              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2134              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 2135              		.section	.debug_info,"",%progbits
+ 2136              	.Ldebug_info0:
+ 2137 0000 35010000 		.4byte	0x135
+ 2138 0004 0400     		.2byte	0x4
+ 2139 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 2140 000a 04       		.byte	0x4
+ 2141 000b 01       		.uleb128 0x1
+ 2142 000c 2D000000 		.4byte	.LASF17
+ 2143 0010 0C       		.byte	0xc
+ 2144 0011 C2010000 		.4byte	.LASF18
+ 2145 0015 72010000 		.4byte	.LASF19
+ 2146 0019 00000000 		.4byte	.Ldebug_line0
+ 2147 001d 02       		.uleb128 0x2
+ 2148 001e 01       		.byte	0x1
+ 2149 001f 06       		.byte	0x6
+ 2150 0020 B6010000 		.4byte	.LASF0
+ 2151 0024 03       		.uleb128 0x3
+ 2152 0025 00000000 		.4byte	.LASF9
+ 2153 0029 01       		.byte	0x1
+ 2154 002a 1D       		.byte	0x1d
+ 2155 002b 2F000000 		.4byte	0x2f
+ 2156 002f 02       		.uleb128 0x2
+ 2157 0030 01       		.byte	0x1
+ 2158 0031 08       		.byte	0x8
+ 2159 0032 1F000000 		.4byte	.LASF1
+ 2160 0036 02       		.uleb128 0x2
+ 2161 0037 02       		.byte	0x2
+ 2162 0038 05       		.byte	0x5
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 39
+
+
+ 2163 0039 68010000 		.4byte	.LASF2
+ 2164 003d 02       		.uleb128 0x2
+ 2165 003e 02       		.byte	0x2
+ 2166 003f 07       		.byte	0x7
+ 2167 0040 CD000000 		.4byte	.LASF3
+ 2168 0044 02       		.uleb128 0x2
+ 2169 0045 04       		.byte	0x4
+ 2170 0046 05       		.byte	0x5
+ 2171 0047 0A000000 		.4byte	.LASF4
+ 2172 004b 02       		.uleb128 0x2
+ 2173 004c 04       		.byte	0x4
+ 2174 004d 07       		.byte	0x7
+ 2175 004e BB000000 		.4byte	.LASF5
+ 2176 0052 02       		.uleb128 0x2
+ 2177 0053 08       		.byte	0x8
+ 2178 0054 05       		.byte	0x5
+ 2179 0055 5A010000 		.4byte	.LASF6
+ 2180 0059 02       		.uleb128 0x2
+ 2181 005a 08       		.byte	0x8
+ 2182 005b 07       		.byte	0x7
+ 2183 005c 0F010000 		.4byte	.LASF7
+ 2184 0060 04       		.uleb128 0x4
+ 2185 0061 04       		.byte	0x4
+ 2186 0062 05       		.byte	0x5
+ 2187 0063 696E7400 		.ascii	"int\000"
+ 2188 0067 02       		.uleb128 0x2
+ 2189 0068 04       		.byte	0x4
+ 2190 0069 07       		.byte	0x7
+ 2191 006a 02010000 		.4byte	.LASF8
+ 2192 006e 03       		.uleb128 0x3
+ 2193 006f 26010000 		.4byte	.LASF10
+ 2194 0073 02       		.byte	0x2
+ 2195 0074 18       		.byte	0x18
+ 2196 0075 24000000 		.4byte	0x24
+ 2197 0079 05       		.uleb128 0x5
+ 2198 007a 91000000 		.4byte	0x91
+ 2199 007e 8A000000 		.4byte	0x8a
+ 2200 0082 06       		.uleb128 0x6
+ 2201 0083 8A000000 		.4byte	0x8a
+ 2202 0087 0B08     		.2byte	0x80b
+ 2203 0089 00       		.byte	0
+ 2204 008a 02       		.uleb128 0x2
+ 2205 008b 04       		.byte	0x4
+ 2206 008c 07       		.byte	0x7
+ 2207 008d 51010000 		.4byte	.LASF11
+ 2208 0091 07       		.uleb128 0x7
+ 2209 0092 6E000000 		.4byte	0x6e
+ 2210 0096 08       		.uleb128 0x8
+ 2211 0097 F0000000 		.4byte	.LASF12
+ 2212 009b 03       		.byte	0x3
+ 2213 009c 1F       		.byte	0x1f
+ 2214 009d A7000000 		.4byte	0xa7
+ 2215 00a1 05       		.uleb128 0x5
+ 2216 00a2 03       		.byte	0x3
+ 2217 00a3 00000000 		.4byte	cy_meta_configecc
+ 2218 00a7 07       		.uleb128 0x7
+ 2219 00a8 79000000 		.4byte	0x79
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 40
+
+
+ 2220 00ac 05       		.uleb128 0x5
+ 2221 00ad 91000000 		.4byte	0x91
+ 2222 00b1 BC000000 		.4byte	0xbc
+ 2223 00b5 09       		.uleb128 0x9
+ 2224 00b6 8A000000 		.4byte	0x8a
+ 2225 00ba 03       		.byte	0x3
+ 2226 00bb 00       		.byte	0
+ 2227 00bc 0A       		.uleb128 0xa
+ 2228 00bd E0000000 		.4byte	.LASF13
+ 2229 00c1 03       		.byte	0x3
+ 2230 00c2 2E01     		.2byte	0x12e
+ 2231 00c4 CE000000 		.4byte	0xce
+ 2232 00c8 05       		.uleb128 0x5
+ 2233 00c9 03       		.byte	0x3
+ 2234 00ca 00000000 		.4byte	cy_meta_custnvl
+ 2235 00ce 07       		.uleb128 0x7
+ 2236 00cf AC000000 		.4byte	0xac
+ 2237 00d3 0A       		.uleb128 0xa
+ 2238 00d4 43010000 		.4byte	.LASF14
+ 2239 00d8 03       		.byte	0x3
+ 2240 00d9 3C01     		.2byte	0x13c
+ 2241 00db E5000000 		.4byte	0xe5
+ 2242 00df 05       		.uleb128 0x5
+ 2243 00e0 03       		.byte	0x3
+ 2244 00e1 00000000 		.4byte	cy_meta_wonvl
+ 2245 00e5 07       		.uleb128 0x7
+ 2246 00e6 AC000000 		.4byte	0xac
+ 2247 00ea 05       		.uleb128 0x5
+ 2248 00eb 91000000 		.4byte	0x91
+ 2249 00ef FA000000 		.4byte	0xfa
+ 2250 00f3 09       		.uleb128 0x9
+ 2251 00f4 8A000000 		.4byte	0x8a
+ 2252 00f8 FF       		.byte	0xff
+ 2253 00f9 00       		.byte	0
+ 2254 00fa 0A       		.uleb128 0xa
+ 2255 00fb 2E010000 		.4byte	.LASF15
+ 2256 00ff 03       		.byte	0x3
+ 2257 0100 4A01     		.2byte	0x14a
+ 2258 0102 0C010000 		.4byte	0x10c
+ 2259 0106 05       		.uleb128 0x5
+ 2260 0107 03       		.byte	0x3
+ 2261 0108 00000000 		.4byte	cy_meta_flashprotect
+ 2262 010c 07       		.uleb128 0x7
+ 2263 010d EA000000 		.4byte	0xea
+ 2264 0111 05       		.uleb128 0x5
+ 2265 0112 91000000 		.4byte	0x91
+ 2266 0116 21010000 		.4byte	0x121
+ 2267 011a 09       		.uleb128 0x9
+ 2268 011b 8A000000 		.4byte	0x8a
+ 2269 011f 0B       		.byte	0xb
+ 2270 0120 00       		.byte	0
+ 2271 0121 0A       		.uleb128 0xa
+ 2272 0122 13000000 		.4byte	.LASF16
+ 2273 0126 03       		.byte	0x3
+ 2274 0127 7701     		.2byte	0x177
+ 2275 0129 33010000 		.4byte	0x133
+ 2276 012d 05       		.uleb128 0x5
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 41
+
+
+ 2277 012e 03       		.byte	0x3
+ 2278 012f 00000000 		.4byte	cy_metadata
+ 2279 0133 07       		.uleb128 0x7
+ 2280 0134 11010000 		.4byte	0x111
+ 2281 0138 00       		.byte	0
+ 2282              		.section	.debug_abbrev,"",%progbits
+ 2283              	.Ldebug_abbrev0:
+ 2284 0000 01       		.uleb128 0x1
+ 2285 0001 11       		.uleb128 0x11
+ 2286 0002 01       		.byte	0x1
+ 2287 0003 25       		.uleb128 0x25
+ 2288 0004 0E       		.uleb128 0xe
+ 2289 0005 13       		.uleb128 0x13
+ 2290 0006 0B       		.uleb128 0xb
+ 2291 0007 03       		.uleb128 0x3
+ 2292 0008 0E       		.uleb128 0xe
+ 2293 0009 1B       		.uleb128 0x1b
+ 2294 000a 0E       		.uleb128 0xe
+ 2295 000b 10       		.uleb128 0x10
+ 2296 000c 17       		.uleb128 0x17
+ 2297 000d 00       		.byte	0
+ 2298 000e 00       		.byte	0
+ 2299 000f 02       		.uleb128 0x2
+ 2300 0010 24       		.uleb128 0x24
+ 2301 0011 00       		.byte	0
+ 2302 0012 0B       		.uleb128 0xb
+ 2303 0013 0B       		.uleb128 0xb
+ 2304 0014 3E       		.uleb128 0x3e
+ 2305 0015 0B       		.uleb128 0xb
+ 2306 0016 03       		.uleb128 0x3
+ 2307 0017 0E       		.uleb128 0xe
+ 2308 0018 00       		.byte	0
+ 2309 0019 00       		.byte	0
+ 2310 001a 03       		.uleb128 0x3
+ 2311 001b 16       		.uleb128 0x16
+ 2312 001c 00       		.byte	0
+ 2313 001d 03       		.uleb128 0x3
+ 2314 001e 0E       		.uleb128 0xe
+ 2315 001f 3A       		.uleb128 0x3a
+ 2316 0020 0B       		.uleb128 0xb
+ 2317 0021 3B       		.uleb128 0x3b
+ 2318 0022 0B       		.uleb128 0xb
+ 2319 0023 49       		.uleb128 0x49
+ 2320 0024 13       		.uleb128 0x13
+ 2321 0025 00       		.byte	0
+ 2322 0026 00       		.byte	0
+ 2323 0027 04       		.uleb128 0x4
+ 2324 0028 24       		.uleb128 0x24
+ 2325 0029 00       		.byte	0
+ 2326 002a 0B       		.uleb128 0xb
+ 2327 002b 0B       		.uleb128 0xb
+ 2328 002c 3E       		.uleb128 0x3e
+ 2329 002d 0B       		.uleb128 0xb
+ 2330 002e 03       		.uleb128 0x3
+ 2331 002f 08       		.uleb128 0x8
+ 2332 0030 00       		.byte	0
+ 2333 0031 00       		.byte	0
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 42
+
+
+ 2334 0032 05       		.uleb128 0x5
+ 2335 0033 01       		.uleb128 0x1
+ 2336 0034 01       		.byte	0x1
+ 2337 0035 49       		.uleb128 0x49
+ 2338 0036 13       		.uleb128 0x13
+ 2339 0037 01       		.uleb128 0x1
+ 2340 0038 13       		.uleb128 0x13
+ 2341 0039 00       		.byte	0
+ 2342 003a 00       		.byte	0
+ 2343 003b 06       		.uleb128 0x6
+ 2344 003c 21       		.uleb128 0x21
+ 2345 003d 00       		.byte	0
+ 2346 003e 49       		.uleb128 0x49
+ 2347 003f 13       		.uleb128 0x13
+ 2348 0040 2F       		.uleb128 0x2f
+ 2349 0041 05       		.uleb128 0x5
+ 2350 0042 00       		.byte	0
+ 2351 0043 00       		.byte	0
+ 2352 0044 07       		.uleb128 0x7
+ 2353 0045 26       		.uleb128 0x26
+ 2354 0046 00       		.byte	0
+ 2355 0047 49       		.uleb128 0x49
+ 2356 0048 13       		.uleb128 0x13
+ 2357 0049 00       		.byte	0
+ 2358 004a 00       		.byte	0
+ 2359 004b 08       		.uleb128 0x8
+ 2360 004c 34       		.uleb128 0x34
+ 2361 004d 00       		.byte	0
+ 2362 004e 03       		.uleb128 0x3
+ 2363 004f 0E       		.uleb128 0xe
+ 2364 0050 3A       		.uleb128 0x3a
+ 2365 0051 0B       		.uleb128 0xb
+ 2366 0052 3B       		.uleb128 0x3b
+ 2367 0053 0B       		.uleb128 0xb
+ 2368 0054 49       		.uleb128 0x49
+ 2369 0055 13       		.uleb128 0x13
+ 2370 0056 3F       		.uleb128 0x3f
+ 2371 0057 19       		.uleb128 0x19
+ 2372 0058 02       		.uleb128 0x2
+ 2373 0059 18       		.uleb128 0x18
+ 2374 005a 00       		.byte	0
+ 2375 005b 00       		.byte	0
+ 2376 005c 09       		.uleb128 0x9
+ 2377 005d 21       		.uleb128 0x21
+ 2378 005e 00       		.byte	0
+ 2379 005f 49       		.uleb128 0x49
+ 2380 0060 13       		.uleb128 0x13
+ 2381 0061 2F       		.uleb128 0x2f
+ 2382 0062 0B       		.uleb128 0xb
+ 2383 0063 00       		.byte	0
+ 2384 0064 00       		.byte	0
+ 2385 0065 0A       		.uleb128 0xa
+ 2386 0066 34       		.uleb128 0x34
+ 2387 0067 00       		.byte	0
+ 2388 0068 03       		.uleb128 0x3
+ 2389 0069 0E       		.uleb128 0xe
+ 2390 006a 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 43
+
+
+ 2391 006b 0B       		.uleb128 0xb
+ 2392 006c 3B       		.uleb128 0x3b
+ 2393 006d 05       		.uleb128 0x5
+ 2394 006e 49       		.uleb128 0x49
+ 2395 006f 13       		.uleb128 0x13
+ 2396 0070 3F       		.uleb128 0x3f
+ 2397 0071 19       		.uleb128 0x19
+ 2398 0072 02       		.uleb128 0x2
+ 2399 0073 18       		.uleb128 0x18
+ 2400 0074 00       		.byte	0
+ 2401 0075 00       		.byte	0
+ 2402 0076 00       		.byte	0
+ 2403              		.section	.debug_aranges,"",%progbits
+ 2404 0000 14000000 		.4byte	0x14
+ 2405 0004 0200     		.2byte	0x2
+ 2406 0006 00000000 		.4byte	.Ldebug_info0
+ 2407 000a 04       		.byte	0x4
+ 2408 000b 00       		.byte	0
+ 2409 000c 0000     		.2byte	0
+ 2410 000e 0000     		.2byte	0
+ 2411 0010 00000000 		.4byte	0
+ 2412 0014 00000000 		.4byte	0
+ 2413              		.section	.debug_line,"",%progbits
+ 2414              	.Ldebug_line0:
+ 2415 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ 2415      02003701 
+ 2415      00000201 
+ 2415      FB0E0D00 
+ 2415      01010101 
+ 2416              	.LASF9:
+ 2417 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 2417      6E74385F 
+ 2417      7400
+ 2418              	.LASF4:
+ 2419 000a 6C6F6E67 		.ascii	"long int\000"
+ 2419      20696E74 
+ 2419      00
+ 2420              	.LASF16:
+ 2421 0013 63795F6D 		.ascii	"cy_metadata\000"
+ 2421      65746164 
+ 2421      61746100 
+ 2422              	.LASF1:
+ 2423 001f 756E7369 		.ascii	"unsigned char\000"
+ 2423      676E6564 
+ 2423      20636861 
+ 2423      7200
+ 2424              	.LASF17:
+ 2425 002d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2425      43313120 
+ 2425      352E342E 
+ 2425      31203230 
+ 2425      31363036 
+ 2426 0060 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 2426      20726576 
+ 2426      6973696F 
+ 2426      6E203233 
+ 2426      37373135 
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 44
+
+
+ 2427 0093 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2427      66756E63 
+ 2427      74696F6E 
+ 2427      2D736563 
+ 2427      74696F6E 
+ 2428              	.LASF5:
+ 2429 00bb 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2429      20756E73 
+ 2429      69676E65 
+ 2429      6420696E 
+ 2429      7400
+ 2430              	.LASF3:
+ 2431 00cd 73686F72 		.ascii	"short unsigned int\000"
+ 2431      7420756E 
+ 2431      7369676E 
+ 2431      65642069 
+ 2431      6E7400
+ 2432              	.LASF13:
+ 2433 00e0 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 2433      6574615F 
+ 2433      63757374 
+ 2433      6E766C00 
+ 2434              	.LASF12:
+ 2435 00f0 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 2435      6574615F 
+ 2435      636F6E66 
+ 2435      69676563 
+ 2435      6300
+ 2436              	.LASF8:
+ 2437 0102 756E7369 		.ascii	"unsigned int\000"
+ 2437      676E6564 
+ 2437      20696E74 
+ 2437      00
+ 2438              	.LASF7:
+ 2439 010f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2439      206C6F6E 
+ 2439      6720756E 
+ 2439      7369676E 
+ 2439      65642069 
+ 2440              	.LASF10:
+ 2441 0126 75696E74 		.ascii	"uint8_t\000"
+ 2441      385F7400 
+ 2442              	.LASF15:
+ 2443 012e 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 2443      6574615F 
+ 2443      666C6173 
+ 2443      6870726F 
+ 2443      74656374 
+ 2444              	.LASF14:
+ 2445 0143 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 2445      6574615F 
+ 2445      776F6E76 
+ 2445      6C00
+ 2446              	.LASF11:
+ 2447 0151 73697A65 		.ascii	"sizetype\000"
+ 2447      74797065 
+ 2447      00
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cc5JPbaL.s 			page 45
+
+
+ 2448              	.LASF6:
+ 2449 015a 6C6F6E67 		.ascii	"long long int\000"
+ 2449      206C6F6E 
+ 2449      6720696E 
+ 2449      7400
+ 2450              	.LASF2:
+ 2451 0168 73686F72 		.ascii	"short int\000"
+ 2451      7420696E 
+ 2451      7400
+ 2452              	.LASF19:
+ 2453 0172 433A5C55 		.ascii	"C:\\Users\\santa\\Documents\\PSoC Creator\\Lab7_Vat"
+ 2453      73657273 
+ 2453      5C73616E 
+ 2453      74615C44 
+ 2453      6F63756D 
+ 2454 01a0 696D6574 		.ascii	"imetro\\Design01.cydsn\000"
+ 2454      726F5C44 
+ 2454      65736967 
+ 2454      6E30312E 
+ 2454      63796473 
+ 2455              	.LASF0:
+ 2456 01b6 7369676E 		.ascii	"signed char\000"
+ 2456      65642063 
+ 2456      68617200 
+ 2457              	.LASF18:
+ 2458 01c2 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2458      72617465 
+ 2458      645F536F 
+ 2458      75726365 
+ 2458      5C50536F 
+ 2459              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

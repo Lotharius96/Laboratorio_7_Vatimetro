@@ -1,0 +1,6 @@
+C:\Users\santa\Documents\PSoC Creator\Lab7_Vatimetro\Design01.cydsn\Design01.cyprj|5c86a08c-698f-4ab2-a953-5aa339b5c806
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e72356b6-3f66-4c8e-9650-caeea4fc1fdb
+C:\Users\santa\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|d76bf83b-44c0-4ae5-943c-5c9402e7a922
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|ce4e60f1-8641-4eca-868b-aa5f7b5fec19
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7e349600-857b-418b-8bc7-881e050c326b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|865dd2a6-03b6-4c52-8cc1-5514761916c0
