@@ -45,8 +45,6 @@
   <file name="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\codegentemp\LCD.c" value="SOURCE_C;CortexM3;;;;LCD" />
   <file name="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\codegentemp\LCD.h" value="HEADER;;;;;LCD" />
   <file name="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\codegentemp\LCD_PM.c" value="SOURCE_C;CortexM3;;;;LCD" />
-  <file name="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\codegentemp\isr_Tx.c" value="SOURCE_C;CortexM3;;;;isr_Tx" />
-  <file name="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\codegentemp\isr_Tx.h" value="HEADER;;;;;isr_Tx" />
   <file name="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\codegentemp\isr_Rx.c" value="SOURCE_C;CortexM3;;;;isr_Rx" />
   <file name="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\codegentemp\isr_Rx.h" value="HEADER;;;;;isr_Rx" />
   <file name="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\codegentemp\RST_2_aliases.h" value="HEADER;;;;;RST_2" />

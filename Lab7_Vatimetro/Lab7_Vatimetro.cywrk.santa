@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab7_Vatimetro\Design01\Source Files">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Lab7_Vatimetro</v>
 <v>Lab7_Vatimetro\Design01</v>
@@ -61,11 +61,11 @@
 <v>Lab7_Vatimetro\Design01\Generated_Source\PSoC5\i2c</v>
 <v>Lab7_Vatimetro\Design01\Generated_Source\PSoC5\i2c_IntClock</v>
 <v>Lab7_Vatimetro\Design01\Generated_Source\PSoC5\isr_Rx</v>
-<v>Lab7_Vatimetro\Design01\Generated_Source\PSoC5\isr_Tx</v>
 <v>Lab7_Vatimetro\Design01\Generated_Source\PSoC5\LCD</v>
 <v>Lab7_Vatimetro\Design01\Generated_Source\PSoC5\LCD_LCDPort</v>
 <v>Lab7_Vatimetro\Design01\Generated_Source\PSoC5\RST_1</v>
 <v>Lab7_Vatimetro\Design01\Generated_Source\PSoC5\RST_2</v>
+<v>Lab7_Vatimetro\Design01\Generated_Source\PSoC5\SCL_1</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab7_Vatimetro\Design01\TopDesign\TopDesign.cysch">
@@ -110,7 +110,6 @@
 <v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\i2c_PM.lst</v>
 <v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\i2c_SLAVE.lst</v>
 <v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_Rx.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_Tx.lst</v>
 <v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD.lst</v>
 <v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_LCDPort.lst</v>
 <v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_PM.lst</v>
@@ -134,34 +133,6 @@
 <VisibleNodeIds>
 <v>Lab7_Vatimetro</v>
 <v>Lab7_Vatimetro\Design01</v>
-<v>Lab7_Vatimetro\Design01\CortexM3</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\i2c.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\i2c_BOOT.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\i2c_INT.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\i2c_IntClock.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\i2c_MASTER.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\i2c_PM.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\i2c_SLAVE.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_Rx.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_Tx.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_LCDPort.lst</v>
-<v>Lab7_Vatimetro\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -208,9 +179,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Design01.cydsn\main.c" />
 <name v=".\Design01.cydsn\Design01.cydwr" />
+<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -218,7 +189,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="696, 399" SelectedTabbedMdiWindow="4319f043-8dba-48f1-80bd-9e55c616d1c6"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f9acc4e1-99ee-45b4-bf90-731ef6177119" /><DocumentWindow Key="C:\Users\santa\Documents\PSoC Creator\Lab7_Vatimetro\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="4319f043-8dba-48f1-80bd-9e55c616d1c6" /><DocumentWindow Key="C:\Users\santa\Documents\PSoC Creator\Lab7_Vatimetro\Design01.cydsn\main.c" Guid="c99ccfe4-38a0-4a5e-9de1-03f36f3afb5b" /><DocumentWindow Key="C:\Users\santa\Documents\PSoC Creator\Lab7_Vatimetro\Design01.cydsn\Design01.cydwr" Guid="c231ee5c-7e72-45f8-940a-bdb60ad9df14" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="776, 399" SelectedTabbedMdiWindow="536ea818-cf36-47dc-9f12-ef9d1f22911f"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f9acc4e1-99ee-45b4-bf90-731ef6177119" /><DocumentWindow Key="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\main.c" Guid="536ea818-cf36-47dc-9f12-ef9d1f22911f" /><DocumentWindow Key="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\Design01.cydwr" Guid="13bf770e-7b2c-45d9-b63f-87e5affa1cd5" /><DocumentWindow Key="C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\Lab7_Vatimetro\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="b378e199-829a-49a8-b945-2876d965a1bd" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

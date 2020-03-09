@@ -368,7 +368,7 @@ extern uint8 UART_initVar;
                                         | (0 << UART_RX_STS_OVERRUN_SHIFT))
 
 #define UART_INIT_TX_INTERRUPTS_MASK \
-                                  (uint8)((1 << UART_TX_STS_COMPLETE_SHIFT) \
+                                  (uint8)((0 << UART_TX_STS_COMPLETE_SHIFT) \
                                         | (0 << UART_TX_STS_FIFO_EMPTY_SHIFT) \
                                         | (0 << UART_TX_STS_FIFO_FULL_SHIFT) \
                                         | (0 << UART_TX_STS_FIFO_NOT_FULL_SHIFT))

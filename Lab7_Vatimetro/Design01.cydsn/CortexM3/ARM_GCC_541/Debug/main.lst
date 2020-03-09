@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 1
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 1
 
 
    1              		.syntax unified
@@ -19,16 +19,15 @@ ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.global	__aeabi_i2f
-  20              		.section	.text.Calc_Factor_LSB,"ax",%progbits
-  21              		.align	2
-  22              		.global	Calc_Factor_LSB
-  23              		.thumb
-  24              		.thumb_func
-  25              		.type	Calc_Factor_LSB, %function
-  26              	Calc_Factor_LSB:
-  27              	.LFB63:
-  28              		.file 1 "main.c"
+  19              		.section	.text.Rx,"ax",%progbits
+  20              		.align	2
+  21              		.global	Rx
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	Rx, %function
+  25              	Rx:
+  26              	.LFB63:
+  27              		.file 1 "main.c"
    1:main.c        **** /* ========================================
    2:main.c        ****  *
    3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
@@ -48,2023 +47,2409 @@ ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 1
   17:main.c        **** float32 factor_lsb_Corriente=0;
   18:main.c        **** int16 Corriente,Voltaje,Potencia=0;
   19:main.c        **** int flag=0;
-  20:main.c        **** //SE BUSCA UNA RESOLUCION DE 40MV
-  21:main.c        **** void Calc_Factor_LSB(int max_Current_Wait){
-  29              		.loc 1 21 0
-  30              		.cfi_startproc
-  31              		@ args = 0, pretend = 0, frame = 0
-  32              		@ frame_needed = 0, uses_anonymous_args = 0
-  33              	.LVL0:
-  34 0000 08B5     		push	{r3, lr}
-  35              		.cfi_def_cfa_offset 8
-  36              		.cfi_offset 3, -8
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 2
+  20:main.c        **** //INTERRUPCION DE RECEPCION///
+  21:main.c        **** 
+  22:main.c        **** 
+  23:main.c        **** CY_ISR(Rx){
+  28              		.loc 1 23 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 2
 
 
-  37              		.cfi_offset 14, -4
-  22:main.c        **** factor_lsb_Corriente=(max_Current_Wait/32768);
-  38              		.loc 1 22 0
-  39 0002 0028     		cmp	r0, #0
-  40 0004 02DA     		bge	.L2
-  41 0006 00F5FF40 		add	r0, r0, #32640
-  42              	.LVL1:
-  43 000a 7F30     		adds	r0, r0, #127
-  44              	.LVL2:
-  45              	.L2:
-  46 000c C013     		asrs	r0, r0, #15
-  47 000e FFF7FEFF 		bl	__aeabi_i2f
-  48              	.LVL3:
-  49 0012 014B     		ldr	r3, .L4
-  50 0014 1860     		str	r0, [r3]	@ float
-  51 0016 08BD     		pop	{r3, pc}
-  52              	.L5:
-  53              		.align	2
-  54              	.L4:
-  55 0018 00000000 		.word	.LANCHOR0
-  56              		.cfi_endproc
-  57              	.LFE63:
-  58              		.size	Calc_Factor_LSB, .-Calc_Factor_LSB
-  59              		.section	.text.Write_Configuration,"ax",%progbits
+  35              		.cfi_offset 14, -4
+  24:main.c        **** 
+  25:main.c        ****     char Value_Init;
+  26:main.c        ****     Value_Init=UART_GetChar();
+  36              		.loc 1 26 0
+  37 0002 FFF7FEFF 		bl	UART_GetChar
+  38              	.LVL0:
+  27:main.c        ****     if(Value_Init == 'a'){
+  39              		.loc 1 27 0
+  40 0006 6128     		cmp	r0, #97
+  41 0008 02D1     		bne	.L2
+  28:main.c        ****       flag=1;
+  42              		.loc 1 28 0
+  43 000a 0122     		movs	r2, #1
+  44 000c 024B     		ldr	r3, .L4
+  45 000e 1A60     		str	r2, [r3]
+  46              	.L2:
+  29:main.c        ****     
+  30:main.c        ****     }
+  31:main.c        ****      isr_Rx_ClearPending();
+  47              		.loc 1 31 0
+  48 0010 FFF7FEFF 		bl	isr_Rx_ClearPending
+  49              	.LVL1:
+  50 0014 08BD     		pop	{r3, pc}
+  51              	.L5:
+  52 0016 00BF     		.align	2
+  53              	.L4:
+  54 0018 00000000 		.word	.LANCHOR0
+  55              		.cfi_endproc
+  56              	.LFE63:
+  57              		.size	Rx, .-Rx
+  58              		.global	__aeabi_i2f
+  59              		.section	.text.Calc_Factor_LSB,"ax",%progbits
   60              		.align	2
-  61              		.global	Write_Configuration
+  61              		.global	Calc_Factor_LSB
   62              		.thumb
   63              		.thumb_func
-  64              		.type	Write_Configuration, %function
-  65              	Write_Configuration:
+  64              		.type	Calc_Factor_LSB, %function
+  65              	Calc_Factor_LSB:
   66              	.LFB64:
-  23:main.c        **** }
-  24:main.c        **** void Write_Configuration(){
-  67              		.loc 1 24 0
+  32:main.c        **** }
+  33:main.c        **** 
+  34:main.c        **** 
+  35:main.c        **** ////INTERRUPCION DE TRANSMISION SERIAL
+  36:main.c        **** 
+  37:main.c        **** 
+  38:main.c        **** 
+  39:main.c        **** //SE BUSCA UNA RESOLUCION DE 40MV
+  40:main.c        **** void Calc_Factor_LSB(int max_Current_Wait){
+  67              		.loc 1 40 0
   68              		.cfi_startproc
   69              		@ args = 0, pretend = 0, frame = 0
   70              		@ frame_needed = 0, uses_anonymous_args = 0
-  71 0000 08B5     		push	{r3, lr}
-  72              		.cfi_def_cfa_offset 8
-  73              		.cfi_offset 3, -8
-  74              		.cfi_offset 14, -4
-  25:main.c        ****         i2c_MasterSendRestart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);  
-  75              		.loc 1 25 0
-  76 0002 0021     		movs	r1, #0
-  77 0004 4020     		movs	r0, #64
-  78 0006 FFF7FEFF 		bl	i2c_MasterSendRestart
-  79              	.LVL4:
-  26:main.c        ****         i2c_MasterWriteByte(0x00);
-  80              		.loc 1 26 0
-  81 000a 0020     		movs	r0, #0
-  82 000c FFF7FEFF 		bl	i2c_MasterWriteByte
-  83              	.LVL5:
-  27:main.c        ****         i2c_MasterWriteByte(0xA4);
-  84              		.loc 1 27 0
-  85 0010 A420     		movs	r0, #164
-  86 0012 FFF7FEFF 		bl	i2c_MasterWriteByte
-  87              	.LVL6:
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 3
-
-
-  28:main.c        ****         i2c_MasterWriteByte(0x1F);
-  88              		.loc 1 28 0
-  89 0016 1F20     		movs	r0, #31
-  90 0018 FFF7FEFF 		bl	i2c_MasterWriteByte
-  91              	.LVL7:
-  92 001c 08BD     		pop	{r3, pc}
-  93              		.cfi_endproc
-  94              	.LFE64:
-  95              		.size	Write_Configuration, .-Write_Configuration
-  96 001e 00BF     		.section	.text.Write_Calibracion,"ax",%progbits
-  97              		.align	2
-  98              		.global	Write_Calibracion
-  99              		.thumb
- 100              		.thumb_func
- 101              		.type	Write_Calibracion, %function
- 102              	Write_Calibracion:
- 103              	.LFB65:
-  29:main.c        **** }
-  30:main.c        **** void Write_Calibracion(){
- 104              		.loc 1 30 0
- 105              		.cfi_startproc
- 106              		@ args = 0, pretend = 0, frame = 0
- 107              		@ frame_needed = 0, uses_anonymous_args = 0
- 108 0000 08B5     		push	{r3, lr}
- 109              		.cfi_def_cfa_offset 8
- 110              		.cfi_offset 3, -8
- 111              		.cfi_offset 14, -4
-  31:main.c        ****         i2c_MasterSendRestart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);
- 112              		.loc 1 31 0
- 113 0002 0021     		movs	r1, #0
- 114 0004 4020     		movs	r0, #64
- 115 0006 FFF7FEFF 		bl	i2c_MasterSendRestart
- 116              	.LVL8:
-  32:main.c        ****         i2c_MasterWriteByte(0x05);
- 117              		.loc 1 32 0
- 118 000a 0520     		movs	r0, #5
- 119 000c FFF7FEFF 		bl	i2c_MasterWriteByte
- 120              	.LVL9:
-  33:main.c        ****         i2c_MasterWriteByte(0x18);
- 121              		.loc 1 33 0
- 122 0010 1820     		movs	r0, #24
- 123 0012 FFF7FEFF 		bl	i2c_MasterWriteByte
- 124              	.LVL10:
-  34:main.c        ****         i2c_MasterWriteByte(0xf7);
- 125              		.loc 1 34 0
- 126 0016 F720     		movs	r0, #247
- 127 0018 FFF7FEFF 		bl	i2c_MasterWriteByte
- 128              	.LVL11:
- 129 001c 08BD     		pop	{r3, pc}
- 130              		.cfi_endproc
- 131              	.LFE65:
- 132              		.size	Write_Calibracion, .-Write_Calibracion
- 133 001e 00BF     		.section	.text.Read_Voltage_Shut,"ax",%progbits
- 134              		.align	2
- 135              		.global	Read_Voltage_Shut
- 136              		.thumb
- 137              		.thumb_func
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 4
-
-
- 138              		.type	Read_Voltage_Shut, %function
- 139              	Read_Voltage_Shut:
- 140              	.LFB66:
-  35:main.c        **** 
-  36:main.c        **** }
-  37:main.c        **** void Read_Voltage_Shut(){
- 141              		.loc 1 37 0
- 142              		.cfi_startproc
- 143              		@ args = 0, pretend = 0, frame = 0
- 144              		@ frame_needed = 0, uses_anonymous_args = 0
- 145 0000 10B5     		push	{r4, lr}
- 146              		.cfi_def_cfa_offset 8
- 147              		.cfi_offset 4, -8
- 148              		.cfi_offset 14, -4
-  38:main.c        ****     i2c_MasterSendRestart(SLAVE_ADRESS, i2c_READ_XFER_MODE);
- 149              		.loc 1 38 0
- 150 0002 0121     		movs	r1, #1
- 151 0004 4020     		movs	r0, #64
- 152 0006 FFF7FEFF 		bl	i2c_MasterSendRestart
- 153              	.LVL12:
-  39:main.c        ****     Datos2=i2c_MasterReadByte(0x01);
- 154              		.loc 1 39 0
- 155 000a 0120     		movs	r0, #1
- 156 000c FFF7FEFF 		bl	i2c_MasterReadByte
- 157              	.LVL13:
- 158 0010 00B2     		sxth	r0, r0
- 159 0012 0B4C     		ldr	r4, .L13
-  40:main.c        ****     Datos2<<=8;
- 160              		.loc 1 40 0
- 161 0014 0002     		lsls	r0, r0, #8
- 162 0016 2080     		strh	r0, [r4]	@ movhi
-  41:main.c        ****     Datos2+=i2c_MasterReadByte(i2c_ACK_DATA);
- 163              		.loc 1 41 0
- 164 0018 0120     		movs	r0, #1
- 165 001a FFF7FEFF 		bl	i2c_MasterReadByte
- 166              	.LVL14:
- 167 001e 2388     		ldrh	r3, [r4]
- 168 0020 1844     		add	r0, r0, r3
- 169 0022 80B2     		uxth	r0, r0
- 170 0024 03B2     		sxth	r3, r0
- 171 0026 2380     		strh	r3, [r4]	@ movhi
-  42:main.c        ****     //esta es la operacion para convertir el dato el signo y magnitud
-  43:main.c        ****     if((0x8000 & Datos2) == 0x8000){
- 172              		.loc 1 43 0
- 173 0028 002B     		cmp	r3, #0
- 174 002a 03DA     		bge	.L11
-  44:main.c        ****        Datos2-=1;
- 175              		.loc 1 44 0
- 176 002c 0138     		subs	r0, r0, #1
- 177 002e 00B2     		sxth	r0, r0
-  45:main.c        ****        Datos2=~Datos2;
-  46:main.c        ****        Datos2*=-1; 
- 178              		.loc 1 46 0
- 179 0030 0130     		adds	r0, r0, #1
- 180 0032 2080     		strh	r0, [r4]	@ movhi
- 181              	.L11:
-  47:main.c        ****     }
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 5
-
-
-  48:main.c        ****     Voltaje_Shunt=Datos2;
- 182              		.loc 1 48 0
- 183 0034 024B     		ldr	r3, .L13
- 184 0036 1A88     		ldrh	r2, [r3]
- 185 0038 024B     		ldr	r3, .L13+4
- 186 003a 9A80     		strh	r2, [r3, #4]	@ movhi
- 187 003c 10BD     		pop	{r4, pc}
- 188              	.L14:
- 189 003e 00BF     		.align	2
- 190              	.L13:
- 191 0040 00000000 		.word	Datos2
- 192 0044 00000000 		.word	.LANCHOR0
- 193              		.cfi_endproc
- 194              	.LFE66:
- 195              		.size	Read_Voltage_Shut, .-Read_Voltage_Shut
- 196              		.section	.text.Write_Mediciones,"ax",%progbits
- 197              		.align	2
- 198              		.global	Write_Mediciones
- 199              		.thumb
- 200              		.thumb_func
- 201              		.type	Write_Mediciones, %function
- 202              	Write_Mediciones:
- 203              	.LFB67:
-  49:main.c        ****   //  Datos2>>=3;
-  50:main.c        ****     
-  51:main.c        **** }
-  52:main.c        **** void Write_Mediciones(){
- 204              		.loc 1 52 0
- 205              		.cfi_startproc
- 206              		@ args = 0, pretend = 0, frame = 0
- 207              		@ frame_needed = 0, uses_anonymous_args = 0
- 208 0000 08B5     		push	{r3, lr}
- 209              		.cfi_def_cfa_offset 8
- 210              		.cfi_offset 3, -8
- 211              		.cfi_offset 14, -4
- 212              	.LVL15:
-  53:main.c        ****       int16 value_base=0x0fa0;    
-  54:main.c        ****      i2c_MasterSendRestart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);
- 213              		.loc 1 54 0
- 214 0002 0021     		movs	r1, #0
- 215 0004 4020     		movs	r0, #64
- 216 0006 FFF7FEFF 		bl	i2c_MasterSendRestart
- 217              	.LVL16:
-  55:main.c        ****         i2c_MasterWriteByte(0x02);  
- 218              		.loc 1 55 0
- 219 000a 0220     		movs	r0, #2
- 220 000c FFF7FEFF 		bl	i2c_MasterWriteByte
- 221              	.LVL17:
-  56:main.c        ****       CyDelay(1);
- 222              		.loc 1 56 0
- 223 0010 0120     		movs	r0, #1
- 224 0012 FFF7FEFF 		bl	CyDelay
- 225              	.LVL18:
-  57:main.c        ****        i2c_MasterSendRestart(SLAVE_ADRESS,i2c_WRITE_XFER_MODE);
- 226              		.loc 1 57 0
- 227 0016 0021     		movs	r1, #0
- 228 0018 4020     		movs	r0, #64
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 6
-
-
- 229 001a FFF7FEFF 		bl	i2c_MasterSendRestart
- 230              	.LVL19:
-  58:main.c        ****        i2c_MasterWriteByte(0x01);
- 231              		.loc 1 58 0
- 232 001e 0120     		movs	r0, #1
- 233 0020 FFF7FEFF 		bl	i2c_MasterWriteByte
- 234              	.LVL20:
-  59:main.c        ****        i2c_MasterSendRestart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);
- 235              		.loc 1 59 0
- 236 0024 0021     		movs	r1, #0
- 237 0026 4020     		movs	r0, #64
- 238 0028 FFF7FEFF 		bl	i2c_MasterSendRestart
- 239              	.LVL21:
-  60:main.c        ****         i2c_MasterWriteByte(0x03);
- 240              		.loc 1 60 0
- 241 002c 0320     		movs	r0, #3
- 242 002e FFF7FEFF 		bl	i2c_MasterWriteByte
- 243              	.LVL22:
-  61:main.c        ****         CyDelay(1);
- 244              		.loc 1 61 0
- 245 0032 0120     		movs	r0, #1
- 246 0034 FFF7FEFF 		bl	CyDelay
- 247              	.LVL23:
-  62:main.c        ****         i2c_MasterSendRestart(SLAVE_ADRESS,i2c_WRITE_XFER_MODE);
- 248              		.loc 1 62 0
- 249 0038 0021     		movs	r1, #0
- 250 003a 4020     		movs	r0, #64
- 251 003c FFF7FEFF 		bl	i2c_MasterSendRestart
- 252              	.LVL24:
-  63:main.c        ****         i2c_MasterWriteByte(0x04);
- 253              		.loc 1 63 0
- 254 0040 0420     		movs	r0, #4
- 255 0042 FFF7FEFF 		bl	i2c_MasterWriteByte
- 256              	.LVL25:
-  64:main.c        ****         CyDelay(1);
- 257              		.loc 1 64 0
- 258 0046 0120     		movs	r0, #1
- 259 0048 FFF7FEFF 		bl	CyDelay
- 260              	.LVL26:
- 261 004c 08BD     		pop	{r3, pc}
- 262              		.cfi_endproc
- 263              	.LFE67:
- 264              		.size	Write_Mediciones, .-Write_Mediciones
- 265 004e 00BF     		.section	.text.Read_Values,"ax",%progbits
- 266              		.align	2
- 267              		.global	Read_Values
- 268              		.thumb
- 269              		.thumb_func
- 270              		.type	Read_Values, %function
- 271              	Read_Values:
- 272              	.LFB68:
-  65:main.c        **** }
-  66:main.c        **** void Read_Values(int Address_Measure){
- 273              		.loc 1 66 0
- 274              		.cfi_startproc
- 275              		@ args = 0, pretend = 0, frame = 0
- 276              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 7
-
-
- 277              	.LVL27:
- 278 0000 70B5     		push	{r4, r5, r6, lr}
- 279              		.cfi_def_cfa_offset 16
- 280              		.cfi_offset 4, -16
- 281              		.cfi_offset 5, -12
- 282              		.cfi_offset 6, -8
- 283              		.cfi_offset 14, -4
- 284 0002 0446     		mov	r4, r0
- 285              	.LVL28:
-  67:main.c        ****         uint8 num2=0;
-  68:main.c        ****         if(Address_Measure==0x02){
- 286              		.loc 1 68 0
- 287 0004 0228     		cmp	r0, #2
- 288 0006 01D0     		beq	.L23
-  67:main.c        ****         uint8 num2=0;
- 289              		.loc 1 67 0
- 290 0008 0026     		movs	r6, #0
- 291 000a 00E0     		b	.L18
- 292              	.L23:
-  69:main.c        ****    
-  70:main.c        ****            num2=3&255;
- 293              		.loc 1 70 0
- 294 000c 0326     		movs	r6, #3
- 295              	.L18:
- 296              	.LVL29:
-  71:main.c        ****           
-  72:main.c        ****         }
-  73:main.c        ****         i2c_MasterSendRestart(SLAVE_ADRESS,i2c_READ_XFER_MODE);
- 297              		.loc 1 73 0
- 298 000e 0121     		movs	r1, #1
- 299 0010 4020     		movs	r0, #64
- 300              	.LVL30:
- 301 0012 FFF7FEFF 		bl	i2c_MasterSendRestart
- 302              	.LVL31:
-  74:main.c        ****         Datos=i2c_MasterReadByte(Address_Measure);
- 303              		.loc 1 74 0
- 304 0016 E0B2     		uxtb	r0, r4
- 305 0018 FFF7FEFF 		bl	i2c_MasterReadByte
- 306              	.LVL32:
- 307 001c 00B2     		sxth	r0, r0
- 308 001e 0D4D     		ldr	r5, .L25
-  75:main.c        ****         Datos<<=8;
- 309              		.loc 1 75 0
- 310 0020 0002     		lsls	r0, r0, #8
- 311 0022 2880     		strh	r0, [r5]	@ movhi
-  76:main.c        ****         Datos+=i2c_MasterReadByte(i2c_ACK_DATA);
- 312              		.loc 1 76 0
- 313 0024 0120     		movs	r0, #1
- 314 0026 FFF7FEFF 		bl	i2c_MasterReadByte
- 315              	.LVL33:
- 316 002a 2B88     		ldrh	r3, [r5]
- 317 002c 1844     		add	r0, r0, r3
- 318 002e 00B2     		sxth	r0, r0
-  77:main.c        ****         Datos>>=num2;
- 319              		.loc 1 77 0
- 320 0030 3041     		asrs	r0, r0, r6
- 321 0032 2880     		strh	r0, [r5]	@ movhi
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 8
-
-
-  78:main.c        ****         switch(Address_Measure){
- 322              		.loc 1 78 0
- 323 0034 032C     		cmp	r4, #3
- 324 0036 06D0     		beq	.L20
- 325 0038 042C     		cmp	r4, #4
- 326 003a 07D0     		beq	.L21
- 327 003c 022C     		cmp	r4, #2
- 328 003e 07D1     		bne	.L17
-  79:main.c        ****           case 0x02:
-  80:main.c        ****             Voltaje=Datos;
- 329              		.loc 1 80 0
- 330 0040 054B     		ldr	r3, .L25+4
- 331 0042 1880     		strh	r0, [r3]	@ movhi
-  81:main.c        ****          //   Voltaje*=0.004; //obtener la medicion Voltios
-  82:main.c        ****             break;
- 332              		.loc 1 82 0
- 333 0044 70BD     		pop	{r4, r5, r6, pc}
- 334              	.LVL34:
- 335              	.L20:
-  83:main.c        ****           case 0x03:
-  84:main.c        ****             Corriente=Datos;
- 336              		.loc 1 84 0
- 337 0046 054B     		ldr	r3, .L25+8
- 338 0048 1880     		strh	r0, [r3]	@ movhi
-  85:main.c        ****           //  Corriente*=factor_lsb_Corriente; //Obtener la medicion en amperes
-  86:main.c        ****             break;
- 339              		.loc 1 86 0
- 340 004a 70BD     		pop	{r4, r5, r6, pc}
- 341              	.LVL35:
- 342              	.L21:
-  87:main.c        ****           case 0x04:
-  88:main.c        ****             Potencia=Datos;
- 343              		.loc 1 88 0
- 344 004c 044B     		ldr	r3, .L25+12
- 345 004e D880     		strh	r0, [r3, #6]	@ movhi
- 346              	.L17:
- 347 0050 70BD     		pop	{r4, r5, r6, pc}
- 348              	.LVL36:
- 349              	.L26:
- 350 0052 00BF     		.align	2
- 351              	.L25:
- 352 0054 00000000 		.word	Datos
- 353 0058 00000000 		.word	Voltaje
- 354 005c 00000000 		.word	Corriente
- 355 0060 00000000 		.word	.LANCHOR0
- 356              		.cfi_endproc
- 357              	.LFE68:
- 358              		.size	Read_Values, .-Read_Values
- 359              		.section	.text.main,"ax",%progbits
- 360              		.align	2
- 361              		.global	main
- 362              		.thumb
- 363              		.thumb_func
- 364              		.type	main, %function
- 365              	main:
- 366              	.LFB69:
-  89:main.c        ****            // Potencia*=20*factor_lsb_Corriente; //Obtener la medicion en Watts
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 9
-
-
-  90:main.c        ****             break;
-  91:main.c        ****           default:
-  92:main.c        ****             break;
-  93:main.c        ****         }
-  94:main.c        ****        //datos convertidos
-  95:main.c        ****   }
-  96:main.c        **** int main(void)
-  97:main.c        **** {
- 367              		.loc 1 97 0
- 368              		.cfi_startproc
- 369              		@ Volatile: function does not return.
- 370              		@ args = 0, pretend = 0, frame = 0
- 371              		@ frame_needed = 0, uses_anonymous_args = 0
- 372 0000 08B5     		push	{r3, lr}
- 373              		.cfi_def_cfa_offset 8
- 374              		.cfi_offset 3, -8
- 375              		.cfi_offset 14, -4
-  98:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
- 376              		.loc 1 98 0
- 377              		.syntax unified
- 378              	@ 98 "main.c" 1
- 379 0002 62B6     		CPSIE   i
- 380              	@ 0 "" 2
-  99:main.c        ****      
- 100:main.c        ****      /* Place your initialization/startup code here (e.g. MyInst_Start()) */
- 101:main.c        ****     UART_Start();
- 381              		.loc 1 101 0
- 382              		.thumb
- 383              		.syntax unified
- 384 0004 FFF7FEFF 		bl	UART_Start
- 385              	.LVL37:
- 102:main.c        ****     i2c_Start();
- 386              		.loc 1 102 0
- 387 0008 FFF7FEFF 		bl	i2c_Start
- 388              	.LVL38:
- 103:main.c        ****     LCD_Start();
- 389              		.loc 1 103 0
- 390 000c FFF7FEFF 		bl	LCD_Start
- 391              	.LVL39:
- 392              	.L29:
- 104:main.c        ****     for(;;)
- 105:main.c        ****     {
- 106:main.c        ****        Calc_Factor_LSB(2);
- 393              		.loc 1 106 0
- 394 0010 0220     		movs	r0, #2
- 395 0012 FFF7FEFF 		bl	Calc_Factor_LSB
- 396              	.LVL40:
- 397              	.L28:
- 107:main.c        ****         do{
- 108:main.c        ****         i2c_MasterSendStart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);
- 398              		.loc 1 108 0 discriminator 1
- 399 0016 0021     		movs	r1, #0
- 400 0018 4020     		movs	r0, #64
- 401 001a FFF7FEFF 		bl	i2c_MasterSendStart
- 402              	.LVL41:
- 109:main.c        ****         }while(result!=i2c_MSTR_NO_ERROR);
- 403              		.loc 1 109 0 discriminator 1
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 10
-
-
- 404 001e 0D4B     		ldr	r3, .L31
- 405 0020 1B7A     		ldrb	r3, [r3, #8]	@ zero_extendqisi2
- 406 0022 002B     		cmp	r3, #0
- 407 0024 F7D1     		bne	.L28
- 110:main.c        ****         flag=1;
- 408              		.loc 1 110 0
- 409 0026 0122     		movs	r2, #1
- 410 0028 0A4B     		ldr	r3, .L31
- 411 002a DA60     		str	r2, [r3, #12]
- 111:main.c        ****         if(flag==1){
- 112:main.c        ****            Write_Configuration();
- 412              		.loc 1 112 0
- 413 002c FFF7FEFF 		bl	Write_Configuration
- 414              	.LVL42:
- 113:main.c        ****            Write_Calibracion();
- 415              		.loc 1 113 0
- 416 0030 FFF7FEFF 		bl	Write_Calibracion
- 417              	.LVL43:
- 114:main.c        ****            Write_Mediciones();
- 418              		.loc 1 114 0
- 419 0034 FFF7FEFF 		bl	Write_Mediciones
- 420              	.LVL44:
- 115:main.c        ****            Read_Voltage_Shut();
- 421              		.loc 1 115 0
- 422 0038 FFF7FEFF 		bl	Read_Voltage_Shut
- 423              	.LVL45:
- 116:main.c        ****            Read_Values(0x02);
- 424              		.loc 1 116 0
- 425 003c 0220     		movs	r0, #2
- 426 003e FFF7FEFF 		bl	Read_Values
- 427              	.LVL46:
- 117:main.c        ****            Read_Values(0x03);
- 428              		.loc 1 117 0
- 429 0042 0320     		movs	r0, #3
- 430 0044 FFF7FEFF 		bl	Read_Values
- 431              	.LVL47:
- 118:main.c        ****            Read_Values(0x04);
- 432              		.loc 1 118 0
- 433 0048 0420     		movs	r0, #4
- 434 004a FFF7FEFF 		bl	Read_Values
- 435              	.LVL48:
- 119:main.c        ****            i2c_MasterSendStop();
- 436              		.loc 1 119 0
- 437 004e FFF7FEFF 		bl	i2c_MasterSendStop
- 438              	.LVL49:
- 439 0052 DDE7     		b	.L29
- 440              	.L32:
- 441              		.align	2
- 442              	.L31:
- 443 0054 00000000 		.word	.LANCHOR0
- 444              		.cfi_endproc
- 445              	.LFE69:
- 446              		.size	main, .-main
- 447              		.global	flag
- 448              		.global	Potencia
- 449              		.comm	Voltaje,2,2
- 450              		.comm	Corriente,2,2
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 11
-
-
- 451              		.global	factor_lsb_Corriente
- 452              		.global	Voltaje_Shunt
- 453              		.comm	Datos2,2,2
- 454              		.comm	Datos,2,2
- 455              		.global	result
- 456              		.bss
- 457              		.align	2
- 458              		.set	.LANCHOR0,. + 0
- 459              		.type	factor_lsb_Corriente, %object
- 460              		.size	factor_lsb_Corriente, 4
- 461              	factor_lsb_Corriente:
- 462 0000 00000000 		.space	4
- 463              		.type	Voltaje_Shunt, %object
- 464              		.size	Voltaje_Shunt, 2
- 465              	Voltaje_Shunt:
- 466 0004 0000     		.space	2
- 467              		.type	Potencia, %object
- 468              		.size	Potencia, 2
- 469              	Potencia:
- 470 0006 0000     		.space	2
- 471              		.type	result, %object
- 472              		.size	result, 1
- 473              	result:
- 474 0008 00       		.space	1
- 475 0009 000000   		.space	3
- 476              		.type	flag, %object
- 477              		.size	flag, 4
- 478              	flag:
- 479 000c 00000000 		.space	4
- 480              		.text
- 481              	.Letext0:
- 482              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 483              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 484              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
- 485              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
- 486              		.file 6 "Generated_Source\\PSoC5/i2c.h"
- 487              		.file 7 "Generated_Source\\PSoC5/CyLib.h"
- 488              		.file 8 "Generated_Source\\PSoC5/UART.h"
- 489              		.file 9 "Generated_Source\\PSoC5/LCD.h"
- 490              		.section	.debug_info,"",%progbits
- 491              	.Ldebug_info0:
- 492 0000 51050000 		.4byte	0x551
- 493 0004 0400     		.2byte	0x4
- 494 0006 00000000 		.4byte	.Ldebug_abbrev0
- 495 000a 04       		.byte	0x4
- 496 000b 01       		.uleb128 0x1
- 497 000c F4000000 		.4byte	.LASF48
- 498 0010 0C       		.byte	0xc
- 499 0011 C8020000 		.4byte	.LASF49
- 500 0015 62000000 		.4byte	.LASF50
- 501 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 502 001d 00000000 		.4byte	0
- 503 0021 00000000 		.4byte	.Ldebug_line0
- 504 0025 02       		.uleb128 0x2
- 505 0026 01       		.byte	0x1
- 506 0027 06       		.byte	0x6
- 507 0028 0C030000 		.4byte	.LASF0
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 12
-
-
- 508 002c 02       		.uleb128 0x2
- 509 002d 01       		.byte	0x1
- 510 002e 08       		.byte	0x8
- 511 002f E6000000 		.4byte	.LASF1
- 512 0033 02       		.uleb128 0x2
- 513 0034 02       		.byte	0x2
- 514 0035 05       		.byte	0x5
- 515 0036 D4020000 		.4byte	.LASF2
- 516 003a 02       		.uleb128 0x2
- 517 003b 02       		.byte	0x2
- 518 003c 07       		.byte	0x7
- 519 003d C3010000 		.4byte	.LASF3
- 520 0041 03       		.uleb128 0x3
- 521 0042 58000000 		.4byte	.LASF9
- 522 0046 02       		.byte	0x2
- 523 0047 3F       		.byte	0x3f
- 524 0048 4C000000 		.4byte	0x4c
- 525 004c 02       		.uleb128 0x2
- 526 004d 04       		.byte	0x4
- 527 004e 05       		.byte	0x5
- 528 004f F7020000 		.4byte	.LASF4
- 529 0053 02       		.uleb128 0x2
- 530 0054 04       		.byte	0x4
- 531 0055 07       		.byte	0x7
- 532 0056 9B010000 		.4byte	.LASF5
- 533 005a 02       		.uleb128 0x2
- 534 005b 08       		.byte	0x8
- 535 005c 05       		.byte	0x5
- 536 005d 00000000 		.4byte	.LASF6
- 537 0061 02       		.uleb128 0x2
- 538 0062 08       		.byte	0x8
- 539 0063 07       		.byte	0x7
- 540 0064 75020000 		.4byte	.LASF7
- 541 0068 04       		.uleb128 0x4
- 542 0069 04       		.byte	0x4
- 543 006a 05       		.byte	0x5
- 544 006b 696E7400 		.ascii	"int\000"
- 545 006f 02       		.uleb128 0x2
- 546 0070 04       		.byte	0x4
- 547 0071 07       		.byte	0x7
- 548 0072 68020000 		.4byte	.LASF8
- 549 0076 03       		.uleb128 0x3
- 550 0077 A5020000 		.4byte	.LASF10
- 551 007b 03       		.byte	0x3
- 552 007c 2C       		.byte	0x2c
- 553 007d 41000000 		.4byte	0x41
- 554 0081 05       		.uleb128 0x5
- 555 0082 F1020000 		.4byte	.LASF11
- 556 0086 04       		.byte	0x4
- 557 0087 E401     		.2byte	0x1e4
- 558 0089 2C000000 		.4byte	0x2c
- 559 008d 05       		.uleb128 0x5
- 560 008e 95010000 		.4byte	.LASF12
- 561 0092 04       		.byte	0x4
- 562 0093 E801     		.2byte	0x1e8
- 563 0095 33000000 		.4byte	0x33
- 564 0099 05       		.uleb128 0x5
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 13
-
-
- 565 009a 37020000 		.4byte	.LASF13
- 566 009e 04       		.byte	0x4
- 567 009f EA01     		.2byte	0x1ea
- 568 00a1 A5000000 		.4byte	0xa5
- 569 00a5 02       		.uleb128 0x2
- 570 00a6 04       		.byte	0x4
- 571 00a7 04       		.byte	0x4
- 572 00a8 D6000000 		.4byte	.LASF14
- 573 00ac 02       		.uleb128 0x2
- 574 00ad 08       		.byte	0x8
- 575 00ae 04       		.byte	0x4
- 576 00af 1B020000 		.4byte	.LASF15
- 577 00b3 02       		.uleb128 0x2
- 578 00b4 01       		.byte	0x1
- 579 00b5 08       		.byte	0x8
- 580 00b6 CF020000 		.4byte	.LASF16
- 581 00ba 02       		.uleb128 0x2
- 582 00bb 08       		.byte	0x8
- 583 00bc 04       		.byte	0x4
- 584 00bd 00030000 		.4byte	.LASF17
- 585 00c1 02       		.uleb128 0x2
- 586 00c2 04       		.byte	0x4
- 587 00c3 07       		.byte	0x7
- 588 00c4 AD020000 		.4byte	.LASF18
- 589 00c8 06       		.uleb128 0x6
- 590 00c9 C6000000 		.4byte	.LASF23
- 591 00cd 01       		.byte	0x1
- 592 00ce 15       		.byte	0x15
- 593 00cf 00000000 		.4byte	.LFB63
- 594 00d3 1C000000 		.4byte	.LFE63-.LFB63
- 595 00d7 01       		.uleb128 0x1
- 596 00d8 9C       		.byte	0x9c
- 597 00d9 ED000000 		.4byte	0xed
- 598 00dd 07       		.uleb128 0x7
- 599 00de 18030000 		.4byte	.LASF25
- 600 00e2 01       		.byte	0x1
- 601 00e3 15       		.byte	0x15
- 602 00e4 68000000 		.4byte	0x68
- 603 00e8 00000000 		.4byte	.LLST0
- 604 00ec 00       		.byte	0
- 605 00ed 08       		.uleb128 0x8
- 606 00ee F3010000 		.4byte	.LASF19
- 607 00f2 01       		.byte	0x1
- 608 00f3 18       		.byte	0x18
- 609 00f4 00000000 		.4byte	.LFB64
- 610 00f8 1E000000 		.4byte	.LFE64-.LFB64
- 611 00fc 01       		.uleb128 0x1
- 612 00fd 9C       		.byte	0x9c
- 613 00fe 52010000 		.4byte	0x152
- 614 0102 09       		.uleb128 0x9
- 615 0103 0A000000 		.4byte	.LVL4
- 616 0107 F1040000 		.4byte	0x4f1
- 617 010b 1B010000 		.4byte	0x11b
- 618 010f 0A       		.uleb128 0xa
- 619 0110 01       		.uleb128 0x1
- 620 0111 50       		.byte	0x50
- 621 0112 02       		.uleb128 0x2
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 14
-
-
- 622 0113 08       		.byte	0x8
- 623 0114 40       		.byte	0x40
- 624 0115 0A       		.uleb128 0xa
- 625 0116 01       		.uleb128 0x1
- 626 0117 51       		.byte	0x51
- 627 0118 01       		.uleb128 0x1
- 628 0119 30       		.byte	0x30
- 629 011a 00       		.byte	0
- 630 011b 09       		.uleb128 0x9
- 631 011c 10000000 		.4byte	.LVL5
- 632 0120 FC040000 		.4byte	0x4fc
- 633 0124 2E010000 		.4byte	0x12e
- 634 0128 0A       		.uleb128 0xa
- 635 0129 01       		.uleb128 0x1
- 636 012a 50       		.byte	0x50
- 637 012b 01       		.uleb128 0x1
- 638 012c 30       		.byte	0x30
- 639 012d 00       		.byte	0
- 640 012e 09       		.uleb128 0x9
- 641 012f 16000000 		.4byte	.LVL6
- 642 0133 FC040000 		.4byte	0x4fc
- 643 0137 42010000 		.4byte	0x142
- 644 013b 0A       		.uleb128 0xa
- 645 013c 01       		.uleb128 0x1
- 646 013d 50       		.byte	0x50
- 647 013e 02       		.uleb128 0x2
- 648 013f 09       		.byte	0x9
- 649 0140 A4       		.byte	0xa4
- 650 0141 00       		.byte	0
- 651 0142 0B       		.uleb128 0xb
- 652 0143 1C000000 		.4byte	.LVL7
- 653 0147 FC040000 		.4byte	0x4fc
- 654 014b 0A       		.uleb128 0xa
- 655 014c 01       		.uleb128 0x1
- 656 014d 50       		.byte	0x50
- 657 014e 01       		.uleb128 0x1
- 658 014f 4F       		.byte	0x4f
- 659 0150 00       		.byte	0
- 660 0151 00       		.byte	0
- 661 0152 08       		.uleb128 0x8
- 662 0153 B6020000 		.4byte	.LASF20
- 663 0157 01       		.byte	0x1
- 664 0158 1E       		.byte	0x1e
- 665 0159 00000000 		.4byte	.LFB65
- 666 015d 1E000000 		.4byte	.LFE65-.LFB65
- 667 0161 01       		.uleb128 0x1
- 668 0162 9C       		.byte	0x9c
- 669 0163 B7010000 		.4byte	0x1b7
- 670 0167 09       		.uleb128 0x9
- 671 0168 0A000000 		.4byte	.LVL8
- 672 016c F1040000 		.4byte	0x4f1
- 673 0170 80010000 		.4byte	0x180
- 674 0174 0A       		.uleb128 0xa
- 675 0175 01       		.uleb128 0x1
- 676 0176 50       		.byte	0x50
- 677 0177 02       		.uleb128 0x2
- 678 0178 08       		.byte	0x8
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 15
-
-
- 679 0179 40       		.byte	0x40
- 680 017a 0A       		.uleb128 0xa
- 681 017b 01       		.uleb128 0x1
- 682 017c 51       		.byte	0x51
- 683 017d 01       		.uleb128 0x1
- 684 017e 30       		.byte	0x30
- 685 017f 00       		.byte	0
- 686 0180 09       		.uleb128 0x9
- 687 0181 10000000 		.4byte	.LVL9
- 688 0185 FC040000 		.4byte	0x4fc
- 689 0189 93010000 		.4byte	0x193
- 690 018d 0A       		.uleb128 0xa
- 691 018e 01       		.uleb128 0x1
- 692 018f 50       		.byte	0x50
- 693 0190 01       		.uleb128 0x1
- 694 0191 35       		.byte	0x35
- 695 0192 00       		.byte	0
- 696 0193 09       		.uleb128 0x9
- 697 0194 16000000 		.4byte	.LVL10
- 698 0198 FC040000 		.4byte	0x4fc
- 699 019c A6010000 		.4byte	0x1a6
- 700 01a0 0A       		.uleb128 0xa
- 701 01a1 01       		.uleb128 0x1
- 702 01a2 50       		.byte	0x50
- 703 01a3 01       		.uleb128 0x1
- 704 01a4 48       		.byte	0x48
- 705 01a5 00       		.byte	0
- 706 01a6 0B       		.uleb128 0xb
- 707 01a7 1C000000 		.4byte	.LVL11
- 708 01ab FC040000 		.4byte	0x4fc
- 709 01af 0A       		.uleb128 0xa
- 710 01b0 01       		.uleb128 0x1
- 711 01b1 50       		.byte	0x50
- 712 01b2 02       		.uleb128 0x2
- 713 01b3 09       		.byte	0x9
- 714 01b4 F7       		.byte	0xf7
- 715 01b5 00       		.byte	0
- 716 01b6 00       		.byte	0
- 717 01b7 08       		.uleb128 0x8
- 718 01b8 93020000 		.4byte	.LASF21
- 719 01bc 01       		.byte	0x1
- 720 01bd 25       		.byte	0x25
- 721 01be 00000000 		.4byte	.LFB66
- 722 01c2 48000000 		.4byte	.LFE66-.LFB66
- 723 01c6 01       		.uleb128 0x1
- 724 01c7 9C       		.byte	0x9c
- 725 01c8 08020000 		.4byte	0x208
- 726 01cc 09       		.uleb128 0x9
- 727 01cd 0A000000 		.4byte	.LVL12
- 728 01d1 F1040000 		.4byte	0x4f1
- 729 01d5 E5010000 		.4byte	0x1e5
- 730 01d9 0A       		.uleb128 0xa
- 731 01da 01       		.uleb128 0x1
- 732 01db 50       		.byte	0x50
- 733 01dc 02       		.uleb128 0x2
- 734 01dd 08       		.byte	0x8
- 735 01de 40       		.byte	0x40
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 16
-
-
- 736 01df 0A       		.uleb128 0xa
- 737 01e0 01       		.uleb128 0x1
- 738 01e1 51       		.byte	0x51
- 739 01e2 01       		.uleb128 0x1
- 740 01e3 31       		.byte	0x31
- 741 01e4 00       		.byte	0
- 742 01e5 09       		.uleb128 0x9
- 743 01e6 10000000 		.4byte	.LVL13
- 744 01ea 07050000 		.4byte	0x507
- 745 01ee F8010000 		.4byte	0x1f8
- 746 01f2 0A       		.uleb128 0xa
- 747 01f3 01       		.uleb128 0x1
- 748 01f4 50       		.byte	0x50
- 749 01f5 01       		.uleb128 0x1
- 750 01f6 31       		.byte	0x31
- 751 01f7 00       		.byte	0
- 752 01f8 0B       		.uleb128 0xb
- 753 01f9 1E000000 		.4byte	.LVL14
- 754 01fd 07050000 		.4byte	0x507
- 755 0201 0A       		.uleb128 0xa
- 756 0202 01       		.uleb128 0x1
- 757 0203 50       		.byte	0x50
- 758 0204 01       		.uleb128 0x1
- 759 0205 31       		.byte	0x31
- 760 0206 00       		.byte	0
- 761 0207 00       		.byte	0
- 762 0208 08       		.uleb128 0x8
- 763 0209 29030000 		.4byte	.LASF22
- 764 020d 01       		.byte	0x1
- 765 020e 34       		.byte	0x34
- 766 020f 00000000 		.4byte	.LFB67
- 767 0213 4E000000 		.4byte	.LFE67-.LFB67
- 768 0217 01       		.uleb128 0x1
- 769 0218 9C       		.byte	0x9c
- 770 0219 10030000 		.4byte	0x310
- 771 021d 0C       		.uleb128 0xc
- 772 021e 4B020000 		.4byte	.LASF27
- 773 0222 01       		.byte	0x1
- 774 0223 35       		.byte	0x35
- 775 0224 8D000000 		.4byte	0x8d
- 776 0228 A00F     		.2byte	0xfa0
- 777 022a 09       		.uleb128 0x9
- 778 022b 0A000000 		.4byte	.LVL16
- 779 022f F1040000 		.4byte	0x4f1
- 780 0233 43020000 		.4byte	0x243
- 781 0237 0A       		.uleb128 0xa
- 782 0238 01       		.uleb128 0x1
- 783 0239 50       		.byte	0x50
- 784 023a 02       		.uleb128 0x2
- 785 023b 08       		.byte	0x8
- 786 023c 40       		.byte	0x40
- 787 023d 0A       		.uleb128 0xa
- 788 023e 01       		.uleb128 0x1
- 789 023f 51       		.byte	0x51
- 790 0240 01       		.uleb128 0x1
- 791 0241 30       		.byte	0x30
- 792 0242 00       		.byte	0
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 17
-
-
- 793 0243 09       		.uleb128 0x9
- 794 0244 10000000 		.4byte	.LVL17
- 795 0248 FC040000 		.4byte	0x4fc
- 796 024c 56020000 		.4byte	0x256
- 797 0250 0A       		.uleb128 0xa
- 798 0251 01       		.uleb128 0x1
- 799 0252 50       		.byte	0x50
- 800 0253 01       		.uleb128 0x1
- 801 0254 32       		.byte	0x32
- 802 0255 00       		.byte	0
- 803 0256 09       		.uleb128 0x9
- 804 0257 16000000 		.4byte	.LVL18
- 805 025b 12050000 		.4byte	0x512
- 806 025f 69020000 		.4byte	0x269
- 807 0263 0A       		.uleb128 0xa
- 808 0264 01       		.uleb128 0x1
- 809 0265 50       		.byte	0x50
- 810 0266 01       		.uleb128 0x1
- 811 0267 31       		.byte	0x31
- 812 0268 00       		.byte	0
- 813 0269 09       		.uleb128 0x9
- 814 026a 1E000000 		.4byte	.LVL19
- 815 026e F1040000 		.4byte	0x4f1
- 816 0272 82020000 		.4byte	0x282
- 817 0276 0A       		.uleb128 0xa
- 818 0277 01       		.uleb128 0x1
- 819 0278 50       		.byte	0x50
- 820 0279 02       		.uleb128 0x2
- 821 027a 08       		.byte	0x8
- 822 027b 40       		.byte	0x40
- 823 027c 0A       		.uleb128 0xa
- 824 027d 01       		.uleb128 0x1
- 825 027e 51       		.byte	0x51
- 826 027f 01       		.uleb128 0x1
- 827 0280 30       		.byte	0x30
- 828 0281 00       		.byte	0
- 829 0282 09       		.uleb128 0x9
- 830 0283 24000000 		.4byte	.LVL20
- 831 0287 FC040000 		.4byte	0x4fc
- 832 028b 95020000 		.4byte	0x295
- 833 028f 0A       		.uleb128 0xa
- 834 0290 01       		.uleb128 0x1
- 835 0291 50       		.byte	0x50
- 836 0292 01       		.uleb128 0x1
- 837 0293 31       		.byte	0x31
- 838 0294 00       		.byte	0
- 839 0295 09       		.uleb128 0x9
- 840 0296 2C000000 		.4byte	.LVL21
- 841 029a F1040000 		.4byte	0x4f1
- 842 029e AE020000 		.4byte	0x2ae
- 843 02a2 0A       		.uleb128 0xa
- 844 02a3 01       		.uleb128 0x1
- 845 02a4 50       		.byte	0x50
- 846 02a5 02       		.uleb128 0x2
- 847 02a6 08       		.byte	0x8
- 848 02a7 40       		.byte	0x40
- 849 02a8 0A       		.uleb128 0xa
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 18
-
-
- 850 02a9 01       		.uleb128 0x1
- 851 02aa 51       		.byte	0x51
- 852 02ab 01       		.uleb128 0x1
- 853 02ac 30       		.byte	0x30
- 854 02ad 00       		.byte	0
- 855 02ae 09       		.uleb128 0x9
- 856 02af 32000000 		.4byte	.LVL22
- 857 02b3 FC040000 		.4byte	0x4fc
- 858 02b7 C1020000 		.4byte	0x2c1
- 859 02bb 0A       		.uleb128 0xa
- 860 02bc 01       		.uleb128 0x1
- 861 02bd 50       		.byte	0x50
- 862 02be 01       		.uleb128 0x1
- 863 02bf 33       		.byte	0x33
- 864 02c0 00       		.byte	0
- 865 02c1 09       		.uleb128 0x9
- 866 02c2 38000000 		.4byte	.LVL23
- 867 02c6 12050000 		.4byte	0x512
- 868 02ca D4020000 		.4byte	0x2d4
- 869 02ce 0A       		.uleb128 0xa
- 870 02cf 01       		.uleb128 0x1
- 871 02d0 50       		.byte	0x50
- 872 02d1 01       		.uleb128 0x1
- 873 02d2 31       		.byte	0x31
- 874 02d3 00       		.byte	0
- 875 02d4 09       		.uleb128 0x9
- 876 02d5 40000000 		.4byte	.LVL24
- 877 02d9 F1040000 		.4byte	0x4f1
- 878 02dd ED020000 		.4byte	0x2ed
- 879 02e1 0A       		.uleb128 0xa
- 880 02e2 01       		.uleb128 0x1
- 881 02e3 50       		.byte	0x50
- 882 02e4 02       		.uleb128 0x2
- 883 02e5 08       		.byte	0x8
- 884 02e6 40       		.byte	0x40
- 885 02e7 0A       		.uleb128 0xa
- 886 02e8 01       		.uleb128 0x1
- 887 02e9 51       		.byte	0x51
- 888 02ea 01       		.uleb128 0x1
- 889 02eb 30       		.byte	0x30
- 890 02ec 00       		.byte	0
- 891 02ed 09       		.uleb128 0x9
- 892 02ee 46000000 		.4byte	.LVL25
- 893 02f2 FC040000 		.4byte	0x4fc
- 894 02f6 00030000 		.4byte	0x300
- 895 02fa 0A       		.uleb128 0xa
- 896 02fb 01       		.uleb128 0x1
- 897 02fc 50       		.byte	0x50
- 898 02fd 01       		.uleb128 0x1
- 899 02fe 34       		.byte	0x34
- 900 02ff 00       		.byte	0
- 901 0300 0B       		.uleb128 0xb
- 902 0301 4C000000 		.4byte	.LVL26
- 903 0305 12050000 		.4byte	0x512
- 904 0309 0A       		.uleb128 0xa
- 905 030a 01       		.uleb128 0x1
- 906 030b 50       		.byte	0x50
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 19
-
-
- 907 030c 01       		.uleb128 0x1
- 908 030d 31       		.byte	0x31
- 909 030e 00       		.byte	0
- 910 030f 00       		.byte	0
- 911 0310 0D       		.uleb128 0xd
- 912 0311 3F020000 		.4byte	.LASF24
- 913 0315 01       		.byte	0x1
- 914 0316 42       		.byte	0x42
- 915 0317 00000000 		.4byte	.LFB68
- 916 031b 64000000 		.4byte	.LFE68-.LFB68
- 917 031f 01       		.uleb128 0x1
- 918 0320 9C       		.byte	0x9c
- 919 0321 80030000 		.4byte	0x380
- 920 0325 07       		.uleb128 0x7
- 921 0326 22020000 		.4byte	.LASF26
- 922 032a 01       		.byte	0x1
- 923 032b 42       		.byte	0x42
- 924 032c 68000000 		.4byte	0x68
- 925 0330 30000000 		.4byte	.LLST1
- 926 0334 0E       		.uleb128 0xe
- 927 0335 E1010000 		.4byte	.LASF28
- 928 0339 01       		.byte	0x1
- 929 033a 43       		.byte	0x43
- 930 033b 81000000 		.4byte	0x81
- 931 033f 5C000000 		.4byte	.LLST2
- 932 0343 09       		.uleb128 0x9
- 933 0344 16000000 		.4byte	.LVL31
- 934 0348 F1040000 		.4byte	0x4f1
- 935 034c 5C030000 		.4byte	0x35c
- 936 0350 0A       		.uleb128 0xa
- 937 0351 01       		.uleb128 0x1
- 938 0352 50       		.byte	0x50
- 939 0353 02       		.uleb128 0x2
- 940 0354 08       		.byte	0x8
- 941 0355 40       		.byte	0x40
- 942 0356 0A       		.uleb128 0xa
- 943 0357 01       		.uleb128 0x1
- 944 0358 51       		.byte	0x51
- 945 0359 01       		.uleb128 0x1
- 946 035a 31       		.byte	0x31
- 947 035b 00       		.byte	0
- 948 035c 09       		.uleb128 0x9
- 949 035d 1C000000 		.4byte	.LVL32
- 950 0361 07050000 		.4byte	0x507
- 951 0365 70030000 		.4byte	0x370
- 952 0369 0A       		.uleb128 0xa
- 953 036a 01       		.uleb128 0x1
- 954 036b 50       		.byte	0x50
- 955 036c 02       		.uleb128 0x2
- 956 036d 74       		.byte	0x74
- 957 036e 00       		.sleb128 0
- 958 036f 00       		.byte	0
- 959 0370 0B       		.uleb128 0xb
- 960 0371 2A000000 		.4byte	.LVL33
- 961 0375 07050000 		.4byte	0x507
- 962 0379 0A       		.uleb128 0xa
- 963 037a 01       		.uleb128 0x1
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 20
-
-
- 964 037b 50       		.byte	0x50
- 965 037c 01       		.uleb128 0x1
- 966 037d 31       		.byte	0x31
- 967 037e 00       		.byte	0
- 968 037f 00       		.byte	0
- 969 0380 0F       		.uleb128 0xf
- 970 0381 32020000 		.4byte	.LASF51
- 971 0385 01       		.byte	0x1
- 972 0386 60       		.byte	0x60
- 973 0387 68000000 		.4byte	0x68
- 974 038b 00000000 		.4byte	.LFB69
- 975 038f 58000000 		.4byte	.LFE69-.LFB69
- 976 0393 01       		.uleb128 0x1
- 977 0394 9C       		.byte	0x9c
- 978 0395 47040000 		.4byte	0x447
- 979 0399 10       		.uleb128 0x10
- 980 039a 08000000 		.4byte	.LVL37
- 981 039e 1D050000 		.4byte	0x51d
- 982 03a2 10       		.uleb128 0x10
- 983 03a3 0C000000 		.4byte	.LVL38
- 984 03a7 28050000 		.4byte	0x528
- 985 03ab 10       		.uleb128 0x10
- 986 03ac 10000000 		.4byte	.LVL39
- 987 03b0 33050000 		.4byte	0x533
- 988 03b4 09       		.uleb128 0x9
- 989 03b5 16000000 		.4byte	.LVL40
- 990 03b9 C8000000 		.4byte	0xc8
- 991 03bd C7030000 		.4byte	0x3c7
- 992 03c1 0A       		.uleb128 0xa
- 993 03c2 01       		.uleb128 0x1
- 994 03c3 50       		.byte	0x50
- 995 03c4 01       		.uleb128 0x1
- 996 03c5 32       		.byte	0x32
- 997 03c6 00       		.byte	0
- 998 03c7 09       		.uleb128 0x9
- 999 03c8 1E000000 		.4byte	.LVL41
- 1000 03cc 3E050000 		.4byte	0x53e
- 1001 03d0 E0030000 		.4byte	0x3e0
- 1002 03d4 0A       		.uleb128 0xa
- 1003 03d5 01       		.uleb128 0x1
- 1004 03d6 50       		.byte	0x50
- 1005 03d7 02       		.uleb128 0x2
- 1006 03d8 08       		.byte	0x8
- 1007 03d9 40       		.byte	0x40
- 1008 03da 0A       		.uleb128 0xa
- 1009 03db 01       		.uleb128 0x1
- 1010 03dc 51       		.byte	0x51
- 1011 03dd 01       		.uleb128 0x1
- 1012 03de 30       		.byte	0x30
- 1013 03df 00       		.byte	0
- 1014 03e0 10       		.uleb128 0x10
- 1015 03e1 30000000 		.4byte	.LVL42
- 1016 03e5 ED000000 		.4byte	0xed
- 1017 03e9 10       		.uleb128 0x10
- 1018 03ea 34000000 		.4byte	.LVL43
- 1019 03ee 52010000 		.4byte	0x152
- 1020 03f2 10       		.uleb128 0x10
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 21
-
-
- 1021 03f3 38000000 		.4byte	.LVL44
- 1022 03f7 08020000 		.4byte	0x208
- 1023 03fb 10       		.uleb128 0x10
- 1024 03fc 3C000000 		.4byte	.LVL45
- 1025 0400 B7010000 		.4byte	0x1b7
- 1026 0404 09       		.uleb128 0x9
- 1027 0405 42000000 		.4byte	.LVL46
- 1028 0409 10030000 		.4byte	0x310
- 1029 040d 17040000 		.4byte	0x417
- 1030 0411 0A       		.uleb128 0xa
- 1031 0412 01       		.uleb128 0x1
- 1032 0413 50       		.byte	0x50
- 1033 0414 01       		.uleb128 0x1
- 1034 0415 32       		.byte	0x32
- 1035 0416 00       		.byte	0
- 1036 0417 09       		.uleb128 0x9
- 1037 0418 48000000 		.4byte	.LVL47
- 1038 041c 10030000 		.4byte	0x310
- 1039 0420 2A040000 		.4byte	0x42a
- 1040 0424 0A       		.uleb128 0xa
- 1041 0425 01       		.uleb128 0x1
- 1042 0426 50       		.byte	0x50
- 1043 0427 01       		.uleb128 0x1
- 1044 0428 33       		.byte	0x33
- 1045 0429 00       		.byte	0
- 1046 042a 09       		.uleb128 0x9
- 1047 042b 4E000000 		.4byte	.LVL48
- 1048 042f 10030000 		.4byte	0x310
- 1049 0433 3D040000 		.4byte	0x43d
- 1050 0437 0A       		.uleb128 0xa
- 1051 0438 01       		.uleb128 0x1
- 1052 0439 50       		.byte	0x50
- 1053 043a 01       		.uleb128 0x1
- 1054 043b 34       		.byte	0x34
- 1055 043c 00       		.byte	0
- 1056 043d 10       		.uleb128 0x10
- 1057 043e 52000000 		.4byte	.LVL49
- 1058 0442 49050000 		.4byte	0x549
- 1059 0446 00       		.byte	0
- 1060 0447 11       		.uleb128 0x11
- 1061 0448 E6010000 		.4byte	.LASF29
- 1062 044c 05       		.byte	0x5
- 1063 044d 1207     		.2byte	0x712
- 1064 044f 53040000 		.4byte	0x453
- 1065 0453 12       		.uleb128 0x12
- 1066 0454 76000000 		.4byte	0x76
- 1067 0458 13       		.uleb128 0x13
- 1068 0459 8C020000 		.4byte	.LASF30
- 1069 045d 01       		.byte	0x1
- 1070 045e 0E       		.byte	0xe
- 1071 045f 81000000 		.4byte	0x81
- 1072 0463 05       		.uleb128 0x5
- 1073 0464 03       		.byte	0x3
- 1074 0465 00000000 		.4byte	result
- 1075 0469 13       		.uleb128 0x13
- 1076 046a 62020000 		.4byte	.LASF31
- 1077 046e 01       		.byte	0x1
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 22
-
-
- 1078 046f 10       		.byte	0x10
- 1079 0470 8D000000 		.4byte	0x8d
- 1080 0474 05       		.uleb128 0x5
- 1081 0475 03       		.byte	0x3
- 1082 0476 00000000 		.4byte	Datos
- 1083 047a 13       		.uleb128 0x13
- 1084 047b 56020000 		.4byte	.LASF32
- 1085 047f 01       		.byte	0x1
- 1086 0480 10       		.byte	0x10
- 1087 0481 8D000000 		.4byte	0x8d
- 1088 0485 05       		.uleb128 0x5
- 1089 0486 03       		.byte	0x3
- 1090 0487 00000000 		.4byte	Datos2
- 1091 048b 13       		.uleb128 0x13
- 1092 048c 0E000000 		.4byte	.LASF33
- 1093 0490 01       		.byte	0x1
- 1094 0491 10       		.byte	0x10
- 1095 0492 8D000000 		.4byte	0x8d
- 1096 0496 05       		.uleb128 0x5
- 1097 0497 03       		.byte	0x3
- 1098 0498 00000000 		.4byte	Voltaje_Shunt
- 1099 049c 13       		.uleb128 0x13
- 1100 049d 43000000 		.4byte	.LASF34
- 1101 04a1 01       		.byte	0x1
- 1102 04a2 11       		.byte	0x11
- 1103 04a3 99000000 		.4byte	0x99
- 1104 04a7 05       		.uleb128 0x5
- 1105 04a8 03       		.byte	0x3
- 1106 04a9 00000000 		.4byte	factor_lsb_Corriente
- 1107 04ad 13       		.uleb128 0x13
- 1108 04ae 42030000 		.4byte	.LASF35
- 1109 04b2 01       		.byte	0x1
- 1110 04b3 12       		.byte	0x12
- 1111 04b4 8D000000 		.4byte	0x8d
- 1112 04b8 05       		.uleb128 0x5
- 1113 04b9 03       		.byte	0x3
- 1114 04ba 00000000 		.4byte	Corriente
- 1115 04be 13       		.uleb128 0x13
- 1116 04bf BE000000 		.4byte	.LASF36
- 1117 04c3 01       		.byte	0x1
- 1118 04c4 12       		.byte	0x12
- 1119 04c5 8D000000 		.4byte	0x8d
- 1120 04c9 05       		.uleb128 0x5
- 1121 04ca 03       		.byte	0x3
- 1122 04cb 00000000 		.4byte	Voltaje
- 1123 04cf 13       		.uleb128 0x13
- 1124 04d0 82010000 		.4byte	.LASF37
- 1125 04d4 01       		.byte	0x1
- 1126 04d5 12       		.byte	0x12
- 1127 04d6 8D000000 		.4byte	0x8d
- 1128 04da 05       		.uleb128 0x5
- 1129 04db 03       		.byte	0x3
- 1130 04dc 00000000 		.4byte	Potencia
- 1131 04e0 13       		.uleb128 0x13
- 1132 04e1 5D020000 		.4byte	.LASF38
- 1133 04e5 01       		.byte	0x1
- 1134 04e6 13       		.byte	0x13
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 23
-
-
- 1135 04e7 68000000 		.4byte	0x68
- 1136 04eb 05       		.uleb128 0x5
- 1137 04ec 03       		.byte	0x3
- 1138 04ed 00000000 		.4byte	flag
- 1139 04f1 14       		.uleb128 0x14
- 1140 04f2 AD010000 		.4byte	.LASF39
- 1141 04f6 AD010000 		.4byte	.LASF39
- 1142 04fa 06       		.byte	0x6
- 1143 04fb B3       		.byte	0xb3
- 1144 04fc 14       		.uleb128 0x14
- 1145 04fd 1C000000 		.4byte	.LASF40
- 1146 0501 1C000000 		.4byte	.LASF40
- 1147 0505 06       		.byte	0x6
- 1148 0506 B6       		.byte	0xb6
- 1149 0507 14       		.uleb128 0x14
- 1150 0508 DE020000 		.4byte	.LASF41
- 1151 050c DE020000 		.4byte	.LASF41
- 1152 0510 06       		.byte	0x6
- 1153 0511 B7       		.byte	0xb7
- 1154 0512 14       		.uleb128 0x14
- 1155 0513 3A030000 		.4byte	.LASF42
- 1156 0517 3A030000 		.4byte	.LASF42
- 1157 051b 07       		.byte	0x7
- 1158 051c 76       		.byte	0x76
- 1159 051d 14       		.uleb128 0x14
- 1160 051e D6010000 		.4byte	.LASF43
- 1161 0522 D6010000 		.4byte	.LASF43
- 1162 0526 08       		.byte	0x8
- 1163 0527 54       		.byte	0x54
- 1164 0528 14       		.uleb128 0x14
- 1165 0529 8B010000 		.4byte	.LASF44
- 1166 052d 8B010000 		.4byte	.LASF44
- 1167 0531 06       		.byte	0x6
- 1168 0532 93       		.byte	0x93
- 1169 0533 14       		.uleb128 0x14
- 1170 0534 DC000000 		.4byte	.LASF45
- 1171 0538 DC000000 		.4byte	.LASF45
- 1172 053c 09       		.byte	0x9
- 1173 053d 38       		.byte	0x38
- 1174 053e 14       		.uleb128 0x14
- 1175 053f 07020000 		.4byte	.LASF46
- 1176 0543 07020000 		.4byte	.LASF46
- 1177 0547 06       		.byte	0x6
- 1178 0548 B1       		.byte	0xb1
- 1179 0549 14       		.uleb128 0x14
- 1180 054a 30000000 		.4byte	.LASF47
- 1181 054e 30000000 		.4byte	.LASF47
- 1182 0552 06       		.byte	0x6
- 1183 0553 B5       		.byte	0xb5
- 1184 0554 00       		.byte	0
- 1185              		.section	.debug_abbrev,"",%progbits
- 1186              	.Ldebug_abbrev0:
- 1187 0000 01       		.uleb128 0x1
- 1188 0001 11       		.uleb128 0x11
- 1189 0002 01       		.byte	0x1
- 1190 0003 25       		.uleb128 0x25
- 1191 0004 0E       		.uleb128 0xe
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 24
-
-
- 1192 0005 13       		.uleb128 0x13
- 1193 0006 0B       		.uleb128 0xb
- 1194 0007 03       		.uleb128 0x3
- 1195 0008 0E       		.uleb128 0xe
- 1196 0009 1B       		.uleb128 0x1b
- 1197 000a 0E       		.uleb128 0xe
- 1198 000b 55       		.uleb128 0x55
- 1199 000c 17       		.uleb128 0x17
- 1200 000d 11       		.uleb128 0x11
- 1201 000e 01       		.uleb128 0x1
- 1202 000f 10       		.uleb128 0x10
- 1203 0010 17       		.uleb128 0x17
- 1204 0011 00       		.byte	0
- 1205 0012 00       		.byte	0
- 1206 0013 02       		.uleb128 0x2
- 1207 0014 24       		.uleb128 0x24
- 1208 0015 00       		.byte	0
- 1209 0016 0B       		.uleb128 0xb
- 1210 0017 0B       		.uleb128 0xb
- 1211 0018 3E       		.uleb128 0x3e
- 1212 0019 0B       		.uleb128 0xb
- 1213 001a 03       		.uleb128 0x3
- 1214 001b 0E       		.uleb128 0xe
- 1215 001c 00       		.byte	0
- 1216 001d 00       		.byte	0
- 1217 001e 03       		.uleb128 0x3
- 1218 001f 16       		.uleb128 0x16
- 1219 0020 00       		.byte	0
- 1220 0021 03       		.uleb128 0x3
- 1221 0022 0E       		.uleb128 0xe
- 1222 0023 3A       		.uleb128 0x3a
- 1223 0024 0B       		.uleb128 0xb
- 1224 0025 3B       		.uleb128 0x3b
- 1225 0026 0B       		.uleb128 0xb
- 1226 0027 49       		.uleb128 0x49
- 1227 0028 13       		.uleb128 0x13
- 1228 0029 00       		.byte	0
- 1229 002a 00       		.byte	0
- 1230 002b 04       		.uleb128 0x4
- 1231 002c 24       		.uleb128 0x24
- 1232 002d 00       		.byte	0
- 1233 002e 0B       		.uleb128 0xb
- 1234 002f 0B       		.uleb128 0xb
- 1235 0030 3E       		.uleb128 0x3e
- 1236 0031 0B       		.uleb128 0xb
- 1237 0032 03       		.uleb128 0x3
- 1238 0033 08       		.uleb128 0x8
- 1239 0034 00       		.byte	0
- 1240 0035 00       		.byte	0
- 1241 0036 05       		.uleb128 0x5
- 1242 0037 16       		.uleb128 0x16
- 1243 0038 00       		.byte	0
- 1244 0039 03       		.uleb128 0x3
- 1245 003a 0E       		.uleb128 0xe
- 1246 003b 3A       		.uleb128 0x3a
- 1247 003c 0B       		.uleb128 0xb
- 1248 003d 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 25
-
-
- 1249 003e 05       		.uleb128 0x5
- 1250 003f 49       		.uleb128 0x49
- 1251 0040 13       		.uleb128 0x13
- 1252 0041 00       		.byte	0
- 1253 0042 00       		.byte	0
- 1254 0043 06       		.uleb128 0x6
- 1255 0044 2E       		.uleb128 0x2e
- 1256 0045 01       		.byte	0x1
- 1257 0046 3F       		.uleb128 0x3f
- 1258 0047 19       		.uleb128 0x19
- 1259 0048 03       		.uleb128 0x3
- 1260 0049 0E       		.uleb128 0xe
- 1261 004a 3A       		.uleb128 0x3a
- 1262 004b 0B       		.uleb128 0xb
- 1263 004c 3B       		.uleb128 0x3b
- 1264 004d 0B       		.uleb128 0xb
- 1265 004e 27       		.uleb128 0x27
- 1266 004f 19       		.uleb128 0x19
- 1267 0050 11       		.uleb128 0x11
- 1268 0051 01       		.uleb128 0x1
- 1269 0052 12       		.uleb128 0x12
- 1270 0053 06       		.uleb128 0x6
- 1271 0054 40       		.uleb128 0x40
- 1272 0055 18       		.uleb128 0x18
- 1273 0056 9642     		.uleb128 0x2116
- 1274 0058 19       		.uleb128 0x19
- 1275 0059 01       		.uleb128 0x1
- 1276 005a 13       		.uleb128 0x13
- 1277 005b 00       		.byte	0
- 1278 005c 00       		.byte	0
- 1279 005d 07       		.uleb128 0x7
- 1280 005e 05       		.uleb128 0x5
- 1281 005f 00       		.byte	0
- 1282 0060 03       		.uleb128 0x3
- 1283 0061 0E       		.uleb128 0xe
- 1284 0062 3A       		.uleb128 0x3a
- 1285 0063 0B       		.uleb128 0xb
- 1286 0064 3B       		.uleb128 0x3b
- 1287 0065 0B       		.uleb128 0xb
- 1288 0066 49       		.uleb128 0x49
- 1289 0067 13       		.uleb128 0x13
- 1290 0068 02       		.uleb128 0x2
- 1291 0069 17       		.uleb128 0x17
- 1292 006a 00       		.byte	0
- 1293 006b 00       		.byte	0
- 1294 006c 08       		.uleb128 0x8
- 1295 006d 2E       		.uleb128 0x2e
- 1296 006e 01       		.byte	0x1
- 1297 006f 3F       		.uleb128 0x3f
- 1298 0070 19       		.uleb128 0x19
- 1299 0071 03       		.uleb128 0x3
- 1300 0072 0E       		.uleb128 0xe
- 1301 0073 3A       		.uleb128 0x3a
- 1302 0074 0B       		.uleb128 0xb
- 1303 0075 3B       		.uleb128 0x3b
- 1304 0076 0B       		.uleb128 0xb
- 1305 0077 11       		.uleb128 0x11
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 26
-
-
- 1306 0078 01       		.uleb128 0x1
- 1307 0079 12       		.uleb128 0x12
- 1308 007a 06       		.uleb128 0x6
- 1309 007b 40       		.uleb128 0x40
- 1310 007c 18       		.uleb128 0x18
- 1311 007d 9742     		.uleb128 0x2117
- 1312 007f 19       		.uleb128 0x19
- 1313 0080 01       		.uleb128 0x1
- 1314 0081 13       		.uleb128 0x13
- 1315 0082 00       		.byte	0
- 1316 0083 00       		.byte	0
- 1317 0084 09       		.uleb128 0x9
- 1318 0085 898201   		.uleb128 0x4109
- 1319 0088 01       		.byte	0x1
- 1320 0089 11       		.uleb128 0x11
- 1321 008a 01       		.uleb128 0x1
- 1322 008b 31       		.uleb128 0x31
- 1323 008c 13       		.uleb128 0x13
- 1324 008d 01       		.uleb128 0x1
- 1325 008e 13       		.uleb128 0x13
- 1326 008f 00       		.byte	0
- 1327 0090 00       		.byte	0
- 1328 0091 0A       		.uleb128 0xa
- 1329 0092 8A8201   		.uleb128 0x410a
- 1330 0095 00       		.byte	0
- 1331 0096 02       		.uleb128 0x2
- 1332 0097 18       		.uleb128 0x18
- 1333 0098 9142     		.uleb128 0x2111
- 1334 009a 18       		.uleb128 0x18
- 1335 009b 00       		.byte	0
- 1336 009c 00       		.byte	0
- 1337 009d 0B       		.uleb128 0xb
- 1338 009e 898201   		.uleb128 0x4109
- 1339 00a1 01       		.byte	0x1
- 1340 00a2 11       		.uleb128 0x11
- 1341 00a3 01       		.uleb128 0x1
- 1342 00a4 31       		.uleb128 0x31
- 1343 00a5 13       		.uleb128 0x13
- 1344 00a6 00       		.byte	0
- 1345 00a7 00       		.byte	0
- 1346 00a8 0C       		.uleb128 0xc
- 1347 00a9 34       		.uleb128 0x34
- 1348 00aa 00       		.byte	0
- 1349 00ab 03       		.uleb128 0x3
- 1350 00ac 0E       		.uleb128 0xe
- 1351 00ad 3A       		.uleb128 0x3a
- 1352 00ae 0B       		.uleb128 0xb
- 1353 00af 3B       		.uleb128 0x3b
- 1354 00b0 0B       		.uleb128 0xb
- 1355 00b1 49       		.uleb128 0x49
- 1356 00b2 13       		.uleb128 0x13
- 1357 00b3 1C       		.uleb128 0x1c
- 1358 00b4 05       		.uleb128 0x5
- 1359 00b5 00       		.byte	0
- 1360 00b6 00       		.byte	0
- 1361 00b7 0D       		.uleb128 0xd
- 1362 00b8 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 27
-
-
- 1363 00b9 01       		.byte	0x1
- 1364 00ba 3F       		.uleb128 0x3f
- 1365 00bb 19       		.uleb128 0x19
- 1366 00bc 03       		.uleb128 0x3
- 1367 00bd 0E       		.uleb128 0xe
- 1368 00be 3A       		.uleb128 0x3a
- 1369 00bf 0B       		.uleb128 0xb
- 1370 00c0 3B       		.uleb128 0x3b
- 1371 00c1 0B       		.uleb128 0xb
- 1372 00c2 27       		.uleb128 0x27
- 1373 00c3 19       		.uleb128 0x19
- 1374 00c4 11       		.uleb128 0x11
- 1375 00c5 01       		.uleb128 0x1
- 1376 00c6 12       		.uleb128 0x12
- 1377 00c7 06       		.uleb128 0x6
- 1378 00c8 40       		.uleb128 0x40
- 1379 00c9 18       		.uleb128 0x18
- 1380 00ca 9742     		.uleb128 0x2117
- 1381 00cc 19       		.uleb128 0x19
- 1382 00cd 01       		.uleb128 0x1
- 1383 00ce 13       		.uleb128 0x13
- 1384 00cf 00       		.byte	0
- 1385 00d0 00       		.byte	0
- 1386 00d1 0E       		.uleb128 0xe
- 1387 00d2 34       		.uleb128 0x34
- 1388 00d3 00       		.byte	0
- 1389 00d4 03       		.uleb128 0x3
- 1390 00d5 0E       		.uleb128 0xe
- 1391 00d6 3A       		.uleb128 0x3a
- 1392 00d7 0B       		.uleb128 0xb
- 1393 00d8 3B       		.uleb128 0x3b
- 1394 00d9 0B       		.uleb128 0xb
- 1395 00da 49       		.uleb128 0x49
- 1396 00db 13       		.uleb128 0x13
- 1397 00dc 02       		.uleb128 0x2
- 1398 00dd 17       		.uleb128 0x17
- 1399 00de 00       		.byte	0
- 1400 00df 00       		.byte	0
- 1401 00e0 0F       		.uleb128 0xf
- 1402 00e1 2E       		.uleb128 0x2e
- 1403 00e2 01       		.byte	0x1
- 1404 00e3 3F       		.uleb128 0x3f
- 1405 00e4 19       		.uleb128 0x19
- 1406 00e5 03       		.uleb128 0x3
- 1407 00e6 0E       		.uleb128 0xe
- 1408 00e7 3A       		.uleb128 0x3a
- 1409 00e8 0B       		.uleb128 0xb
- 1410 00e9 3B       		.uleb128 0x3b
- 1411 00ea 0B       		.uleb128 0xb
- 1412 00eb 27       		.uleb128 0x27
- 1413 00ec 19       		.uleb128 0x19
- 1414 00ed 49       		.uleb128 0x49
- 1415 00ee 13       		.uleb128 0x13
- 1416 00ef 8701     		.uleb128 0x87
- 1417 00f1 19       		.uleb128 0x19
- 1418 00f2 11       		.uleb128 0x11
- 1419 00f3 01       		.uleb128 0x1
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 28
-
-
- 1420 00f4 12       		.uleb128 0x12
- 1421 00f5 06       		.uleb128 0x6
- 1422 00f6 40       		.uleb128 0x40
- 1423 00f7 18       		.uleb128 0x18
- 1424 00f8 9742     		.uleb128 0x2117
- 1425 00fa 19       		.uleb128 0x19
- 1426 00fb 01       		.uleb128 0x1
- 1427 00fc 13       		.uleb128 0x13
- 1428 00fd 00       		.byte	0
- 1429 00fe 00       		.byte	0
- 1430 00ff 10       		.uleb128 0x10
- 1431 0100 898201   		.uleb128 0x4109
- 1432 0103 00       		.byte	0
- 1433 0104 11       		.uleb128 0x11
- 1434 0105 01       		.uleb128 0x1
- 1435 0106 31       		.uleb128 0x31
- 1436 0107 13       		.uleb128 0x13
- 1437 0108 00       		.byte	0
- 1438 0109 00       		.byte	0
- 1439 010a 11       		.uleb128 0x11
- 1440 010b 34       		.uleb128 0x34
- 1441 010c 00       		.byte	0
- 1442 010d 03       		.uleb128 0x3
- 1443 010e 0E       		.uleb128 0xe
- 1444 010f 3A       		.uleb128 0x3a
- 1445 0110 0B       		.uleb128 0xb
- 1446 0111 3B       		.uleb128 0x3b
- 1447 0112 05       		.uleb128 0x5
- 1448 0113 49       		.uleb128 0x49
- 1449 0114 13       		.uleb128 0x13
- 1450 0115 3F       		.uleb128 0x3f
- 1451 0116 19       		.uleb128 0x19
- 1452 0117 3C       		.uleb128 0x3c
- 1453 0118 19       		.uleb128 0x19
- 1454 0119 00       		.byte	0
- 1455 011a 00       		.byte	0
- 1456 011b 12       		.uleb128 0x12
- 1457 011c 35       		.uleb128 0x35
- 1458 011d 00       		.byte	0
- 1459 011e 49       		.uleb128 0x49
- 1460 011f 13       		.uleb128 0x13
- 1461 0120 00       		.byte	0
- 1462 0121 00       		.byte	0
- 1463 0122 13       		.uleb128 0x13
- 1464 0123 34       		.uleb128 0x34
- 1465 0124 00       		.byte	0
- 1466 0125 03       		.uleb128 0x3
- 1467 0126 0E       		.uleb128 0xe
- 1468 0127 3A       		.uleb128 0x3a
- 1469 0128 0B       		.uleb128 0xb
- 1470 0129 3B       		.uleb128 0x3b
- 1471 012a 0B       		.uleb128 0xb
- 1472 012b 49       		.uleb128 0x49
- 1473 012c 13       		.uleb128 0x13
- 1474 012d 3F       		.uleb128 0x3f
- 1475 012e 19       		.uleb128 0x19
- 1476 012f 02       		.uleb128 0x2
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 29
-
-
- 1477 0130 18       		.uleb128 0x18
- 1478 0131 00       		.byte	0
- 1479 0132 00       		.byte	0
- 1480 0133 14       		.uleb128 0x14
- 1481 0134 2E       		.uleb128 0x2e
- 1482 0135 00       		.byte	0
- 1483 0136 3F       		.uleb128 0x3f
- 1484 0137 19       		.uleb128 0x19
- 1485 0138 3C       		.uleb128 0x3c
- 1486 0139 19       		.uleb128 0x19
- 1487 013a 6E       		.uleb128 0x6e
- 1488 013b 0E       		.uleb128 0xe
- 1489 013c 03       		.uleb128 0x3
- 1490 013d 0E       		.uleb128 0xe
- 1491 013e 3A       		.uleb128 0x3a
- 1492 013f 0B       		.uleb128 0xb
- 1493 0140 3B       		.uleb128 0x3b
- 1494 0141 0B       		.uleb128 0xb
- 1495 0142 00       		.byte	0
- 1496 0143 00       		.byte	0
- 1497 0144 00       		.byte	0
- 1498              		.section	.debug_loc,"",%progbits
- 1499              	.Ldebug_loc0:
- 1500              	.LLST0:
- 1501 0000 00000000 		.4byte	.LVL0
- 1502 0004 0A000000 		.4byte	.LVL1
- 1503 0008 0100     		.2byte	0x1
- 1504 000a 50       		.byte	0x50
- 1505 000b 0A000000 		.4byte	.LVL1
- 1506 000f 0C000000 		.4byte	.LVL2
- 1507 0013 0500     		.2byte	0x5
- 1508 0015 70       		.byte	0x70
- 1509 0016 80817E   		.sleb128 -32640
- 1510 0019 9F       		.byte	0x9f
- 1511 001a 0C000000 		.4byte	.LVL2
- 1512 001e 1C000000 		.4byte	.LFE63
- 1513 0022 0400     		.2byte	0x4
- 1514 0024 F3       		.byte	0xf3
- 1515 0025 01       		.uleb128 0x1
- 1516 0026 50       		.byte	0x50
- 1517 0027 9F       		.byte	0x9f
- 1518 0028 00000000 		.4byte	0
- 1519 002c 00000000 		.4byte	0
- 1520              	.LLST1:
- 1521 0030 00000000 		.4byte	.LVL27
- 1522 0034 12000000 		.4byte	.LVL30
- 1523 0038 0100     		.2byte	0x1
- 1524 003a 50       		.byte	0x50
- 1525 003b 12000000 		.4byte	.LVL30
- 1526 003f 52000000 		.4byte	.LVL36
- 1527 0043 0100     		.2byte	0x1
- 1528 0045 54       		.byte	0x54
- 1529 0046 52000000 		.4byte	.LVL36
- 1530 004a 64000000 		.4byte	.LFE68
- 1531 004e 0400     		.2byte	0x4
- 1532 0050 F3       		.byte	0xf3
- 1533 0051 01       		.uleb128 0x1
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 30
-
-
- 1534 0052 50       		.byte	0x50
- 1535 0053 9F       		.byte	0x9f
- 1536 0054 00000000 		.4byte	0
- 1537 0058 00000000 		.4byte	0
- 1538              	.LLST2:
- 1539 005c 04000000 		.4byte	.LVL28
- 1540 0060 0E000000 		.4byte	.LVL29
- 1541 0064 0200     		.2byte	0x2
- 1542 0066 30       		.byte	0x30
- 1543 0067 9F       		.byte	0x9f
- 1544 0068 0E000000 		.4byte	.LVL29
- 1545 006c 52000000 		.4byte	.LVL36
- 1546 0070 0100     		.2byte	0x1
- 1547 0072 56       		.byte	0x56
- 1548 0073 00000000 		.4byte	0
- 1549 0077 00000000 		.4byte	0
- 1550              		.section	.debug_aranges,"",%progbits
- 1551 0000 4C000000 		.4byte	0x4c
- 1552 0004 0200     		.2byte	0x2
- 1553 0006 00000000 		.4byte	.Ldebug_info0
- 1554 000a 04       		.byte	0x4
- 1555 000b 00       		.byte	0
- 1556 000c 0000     		.2byte	0
- 1557 000e 0000     		.2byte	0
- 1558 0010 00000000 		.4byte	.LFB63
- 1559 0014 1C000000 		.4byte	.LFE63-.LFB63
- 1560 0018 00000000 		.4byte	.LFB64
- 1561 001c 1E000000 		.4byte	.LFE64-.LFB64
- 1562 0020 00000000 		.4byte	.LFB65
- 1563 0024 1E000000 		.4byte	.LFE65-.LFB65
- 1564 0028 00000000 		.4byte	.LFB66
- 1565 002c 48000000 		.4byte	.LFE66-.LFB66
- 1566 0030 00000000 		.4byte	.LFB67
- 1567 0034 4E000000 		.4byte	.LFE67-.LFB67
- 1568 0038 00000000 		.4byte	.LFB68
- 1569 003c 64000000 		.4byte	.LFE68-.LFB68
- 1570 0040 00000000 		.4byte	.LFB69
- 1571 0044 58000000 		.4byte	.LFE69-.LFB69
- 1572 0048 00000000 		.4byte	0
- 1573 004c 00000000 		.4byte	0
- 1574              		.section	.debug_ranges,"",%progbits
- 1575              	.Ldebug_ranges0:
- 1576 0000 00000000 		.4byte	.LFB63
- 1577 0004 1C000000 		.4byte	.LFE63
- 1578 0008 00000000 		.4byte	.LFB64
- 1579 000c 1E000000 		.4byte	.LFE64
- 1580 0010 00000000 		.4byte	.LFB65
- 1581 0014 1E000000 		.4byte	.LFE65
- 1582 0018 00000000 		.4byte	.LFB66
- 1583 001c 48000000 		.4byte	.LFE66
- 1584 0020 00000000 		.4byte	.LFB67
- 1585 0024 4E000000 		.4byte	.LFE67
- 1586 0028 00000000 		.4byte	.LFB68
- 1587 002c 64000000 		.4byte	.LFE68
- 1588 0030 00000000 		.4byte	.LFB69
- 1589 0034 58000000 		.4byte	.LFE69
- 1590 0038 00000000 		.4byte	0
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 31
-
-
- 1591 003c 00000000 		.4byte	0
- 1592              		.section	.debug_line,"",%progbits
- 1593              	.Ldebug_line0:
- 1594 0000 26020000 		.section	.debug_str,"MS",%progbits,1
- 1594      02007301 
- 1594      00000201 
- 1594      FB0E0D00 
- 1594      01010101 
- 1595              	.LASF6:
- 1596 0000 6C6F6E67 		.ascii	"long long int\000"
- 1596      206C6F6E 
- 1596      6720696E 
- 1596      7400
- 1597              	.LASF33:
- 1598 000e 566F6C74 		.ascii	"Voltaje_Shunt\000"
- 1598      616A655F 
- 1598      5368756E 
- 1598      7400
- 1599              	.LASF40:
- 1600 001c 6932635F 		.ascii	"i2c_MasterWriteByte\000"
- 1600      4D617374 
- 1600      65725772 
- 1600      69746542 
- 1600      79746500 
- 1601              	.LASF47:
- 1602 0030 6932635F 		.ascii	"i2c_MasterSendStop\000"
- 1602      4D617374 
- 1602      65725365 
- 1602      6E645374 
- 1602      6F7000
- 1603              	.LASF34:
- 1604 0043 66616374 		.ascii	"factor_lsb_Corriente\000"
- 1604      6F725F6C 
- 1604      73625F43 
- 1604      6F727269 
- 1604      656E7465 
- 1605              	.LASF9:
- 1606 0058 5F5F696E 		.ascii	"__int32_t\000"
- 1606      7433325F 
- 1606      7400
- 1607              	.LASF50:
- 1608 0062 433A5C55 		.ascii	"C:\\Users\\santa\\Documents\\PSoC Creator\\Laborato"
- 1608      73657273 
- 1608      5C73616E 
- 1608      74615C44 
- 1608      6F63756D 
- 1609 0090 72696F5F 		.ascii	"rio_7_Vatimetro\\Lab7_Vatimetro\\Design01.cydsn\000"
- 1609      375F5661 
- 1609      74696D65 
- 1609      74726F5C 
- 1609      4C616237 
- 1610              	.LASF36:
- 1611 00be 566F6C74 		.ascii	"Voltaje\000"
- 1611      616A6500 
- 1612              	.LASF23:
- 1613 00c6 43616C63 		.ascii	"Calc_Factor_LSB\000"
- 1613      5F466163 
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 32
-
-
- 1613      746F725F 
- 1613      4C534200 
- 1614              	.LASF14:
- 1615 00d6 666C6F61 		.ascii	"float\000"
- 1615      7400
- 1616              	.LASF45:
- 1617 00dc 4C43445F 		.ascii	"LCD_Start\000"
- 1617      53746172 
- 1617      7400
- 1618              	.LASF1:
- 1619 00e6 756E7369 		.ascii	"unsigned char\000"
- 1619      676E6564 
- 1619      20636861 
- 1619      7200
- 1620              	.LASF48:
- 1621 00f4 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1621      43313120 
- 1621      352E342E 
- 1621      31203230 
- 1621      31363036 
- 1622 0127 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1622      20726576 
- 1622      6973696F 
- 1622      6E203233 
- 1622      37373135 
- 1623 015a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1623      66756E63 
- 1623      74696F6E 
- 1623      2D736563 
- 1623      74696F6E 
- 1624              	.LASF37:
- 1625 0182 506F7465 		.ascii	"Potencia\000"
- 1625      6E636961 
- 1625      00
- 1626              	.LASF44:
- 1627 018b 6932635F 		.ascii	"i2c_Start\000"
- 1627      53746172 
- 1627      7400
- 1628              	.LASF12:
- 1629 0195 696E7431 		.ascii	"int16\000"
- 1629      3600
- 1630              	.LASF5:
- 1631 019b 6C6F6E67 		.ascii	"long unsigned int\000"
- 1631      20756E73 
- 1631      69676E65 
- 1631      6420696E 
- 1631      7400
- 1632              	.LASF39:
- 1633 01ad 6932635F 		.ascii	"i2c_MasterSendRestart\000"
- 1633      4D617374 
- 1633      65725365 
- 1633      6E645265 
- 1633      73746172 
- 1634              	.LASF3:
- 1635 01c3 73686F72 		.ascii	"short unsigned int\000"
- 1635      7420756E 
- 1635      7369676E 
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 33
-
-
- 1635      65642069 
- 1635      6E7400
- 1636              	.LASF43:
- 1637 01d6 55415254 		.ascii	"UART_Start\000"
- 1637      5F537461 
- 1637      727400
- 1638              	.LASF28:
- 1639 01e1 6E756D32 		.ascii	"num2\000"
- 1639      00
- 1640              	.LASF29:
- 1641 01e6 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1641      52784275 
- 1641      66666572 
- 1641      00
- 1642              	.LASF19:
- 1643 01f3 57726974 		.ascii	"Write_Configuration\000"
- 1643      655F436F 
- 1643      6E666967 
- 1643      75726174 
- 1643      696F6E00 
- 1644              	.LASF46:
- 1645 0207 6932635F 		.ascii	"i2c_MasterSendStart\000"
- 1645      4D617374 
- 1645      65725365 
- 1645      6E645374 
- 1645      61727400 
- 1646              	.LASF15:
- 1647 021b 646F7562 		.ascii	"double\000"
- 1647      6C6500
- 1648              	.LASF26:
- 1649 0222 41646472 		.ascii	"Address_Measure\000"
- 1649      6573735F 
- 1649      4D656173 
- 1649      75726500 
- 1650              	.LASF51:
- 1651 0232 6D61696E 		.ascii	"main\000"
- 1651      00
- 1652              	.LASF13:
- 1653 0237 666C6F61 		.ascii	"float32\000"
- 1653      74333200 
- 1654              	.LASF24:
- 1655 023f 52656164 		.ascii	"Read_Values\000"
- 1655      5F56616C 
- 1655      75657300 
- 1656              	.LASF27:
- 1657 024b 76616C75 		.ascii	"value_base\000"
- 1657      655F6261 
- 1657      736500
- 1658              	.LASF32:
- 1659 0256 4461746F 		.ascii	"Datos2\000"
- 1659      733200
- 1660              	.LASF38:
- 1661 025d 666C6167 		.ascii	"flag\000"
- 1661      00
- 1662              	.LASF31:
- 1663 0262 4461746F 		.ascii	"Datos\000"
- 1663      7300
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 34
-
-
- 1664              	.LASF8:
- 1665 0268 756E7369 		.ascii	"unsigned int\000"
- 1665      676E6564 
- 1665      20696E74 
- 1665      00
- 1666              	.LASF7:
- 1667 0275 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1667      206C6F6E 
- 1667      6720756E 
- 1667      7369676E 
- 1667      65642069 
- 1668              	.LASF30:
- 1669 028c 72657375 		.ascii	"result\000"
- 1669      6C7400
- 1670              	.LASF21:
- 1671 0293 52656164 		.ascii	"Read_Voltage_Shut\000"
- 1671      5F566F6C 
- 1671      74616765 
- 1671      5F536875 
- 1671      7400
- 1672              	.LASF10:
- 1673 02a5 696E7433 		.ascii	"int32_t\000"
- 1673      325F7400 
- 1674              	.LASF18:
- 1675 02ad 73697A65 		.ascii	"sizetype\000"
- 1675      74797065 
- 1675      00
- 1676              	.LASF20:
- 1677 02b6 57726974 		.ascii	"Write_Calibracion\000"
- 1677      655F4361 
- 1677      6C696272 
- 1677      6163696F 
- 1677      6E00
- 1678              	.LASF49:
- 1679 02c8 6D61696E 		.ascii	"main.c\000"
- 1679      2E6300
- 1680              	.LASF16:
- 1681 02cf 63686172 		.ascii	"char\000"
- 1681      00
- 1682              	.LASF2:
- 1683 02d4 73686F72 		.ascii	"short int\000"
- 1683      7420696E 
- 1683      7400
- 1684              	.LASF41:
- 1685 02de 6932635F 		.ascii	"i2c_MasterReadByte\000"
- 1685      4D617374 
- 1685      65725265 
- 1685      61644279 
- 1685      746500
- 1686              	.LASF11:
- 1687 02f1 75696E74 		.ascii	"uint8\000"
- 1687      3800
- 1688              	.LASF4:
- 1689 02f7 6C6F6E67 		.ascii	"long int\000"
- 1689      20696E74 
- 1689      00
- 1690              	.LASF17:
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccNDzicb.s 			page 35
-
-
- 1691 0300 6C6F6E67 		.ascii	"long double\000"
- 1691      20646F75 
- 1691      626C6500 
- 1692              	.LASF0:
- 1693 030c 7369676E 		.ascii	"signed char\000"
- 1693      65642063 
- 1693      68617200 
- 1694              	.LASF25:
- 1695 0318 6D61785F 		.ascii	"max_Current_Wait\000"
- 1695      43757272 
- 1695      656E745F 
- 1695      57616974 
- 1695      00
- 1696              	.LASF22:
- 1697 0329 57726974 		.ascii	"Write_Mediciones\000"
- 1697      655F4D65 
- 1697      64696369 
- 1697      6F6E6573 
- 1697      00
- 1698              	.LASF42:
- 1699 033a 43794465 		.ascii	"CyDelay\000"
- 1699      6C617900 
- 1700              	.LASF35:
- 1701 0342 436F7272 		.ascii	"Corriente\000"
- 1701      69656E74 
- 1701      6500
- 1702              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+  71              	.LVL2:
+  72 0000 08B5     		push	{r3, lr}
+  73              		.cfi_def_cfa_offset 8
+  74              		.cfi_offset 3, -8
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 3
+
+
+  75              		.cfi_offset 14, -4
+  41:main.c        **** factor_lsb_Corriente=(max_Current_Wait/32768);
+  76              		.loc 1 41 0
+  77 0002 0028     		cmp	r0, #0
+  78 0004 02DA     		bge	.L7
+  79 0006 00F5FF40 		add	r0, r0, #32640
+  80              	.LVL3:
+  81 000a 7F30     		adds	r0, r0, #127
+  82              	.LVL4:
+  83              	.L7:
+  84 000c C013     		asrs	r0, r0, #15
+  85 000e FFF7FEFF 		bl	__aeabi_i2f
+  86              	.LVL5:
+  87 0012 014B     		ldr	r3, .L9
+  88 0014 5860     		str	r0, [r3, #4]	@ float
+  89 0016 08BD     		pop	{r3, pc}
+  90              	.L10:
+  91              		.align	2
+  92              	.L9:
+  93 0018 00000000 		.word	.LANCHOR0
+  94              		.cfi_endproc
+  95              	.LFE64:
+  96              		.size	Calc_Factor_LSB, .-Calc_Factor_LSB
+  97              		.section	.text.Write_Configuration,"ax",%progbits
+  98              		.align	2
+  99              		.global	Write_Configuration
+ 100              		.thumb
+ 101              		.thumb_func
+ 102              		.type	Write_Configuration, %function
+ 103              	Write_Configuration:
+ 104              	.LFB65:
+  42:main.c        **** }
+  43:main.c        **** void Write_Configuration(){
+ 105              		.loc 1 43 0
+ 106              		.cfi_startproc
+ 107              		@ args = 0, pretend = 0, frame = 0
+ 108              		@ frame_needed = 0, uses_anonymous_args = 0
+ 109 0000 08B5     		push	{r3, lr}
+ 110              		.cfi_def_cfa_offset 8
+ 111              		.cfi_offset 3, -8
+ 112              		.cfi_offset 14, -4
+  44:main.c        ****         i2c_MasterSendRestart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);  
+ 113              		.loc 1 44 0
+ 114 0002 0021     		movs	r1, #0
+ 115 0004 4020     		movs	r0, #64
+ 116 0006 FFF7FEFF 		bl	i2c_MasterSendRestart
+ 117              	.LVL6:
+  45:main.c        ****         i2c_MasterWriteByte(0x00);
+ 118              		.loc 1 45 0
+ 119 000a 0020     		movs	r0, #0
+ 120 000c FFF7FEFF 		bl	i2c_MasterWriteByte
+ 121              	.LVL7:
+  46:main.c        ****         i2c_MasterWriteByte(0xA4);
+ 122              		.loc 1 46 0
+ 123 0010 A420     		movs	r0, #164
+ 124 0012 FFF7FEFF 		bl	i2c_MasterWriteByte
+ 125              	.LVL8:
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 4
+
+
+  47:main.c        ****         i2c_MasterWriteByte(0x1F);
+ 126              		.loc 1 47 0
+ 127 0016 1F20     		movs	r0, #31
+ 128 0018 FFF7FEFF 		bl	i2c_MasterWriteByte
+ 129              	.LVL9:
+ 130 001c 08BD     		pop	{r3, pc}
+ 131              		.cfi_endproc
+ 132              	.LFE65:
+ 133              		.size	Write_Configuration, .-Write_Configuration
+ 134 001e 00BF     		.section	.text.Write_Calibracion,"ax",%progbits
+ 135              		.align	2
+ 136              		.global	Write_Calibracion
+ 137              		.thumb
+ 138              		.thumb_func
+ 139              		.type	Write_Calibracion, %function
+ 140              	Write_Calibracion:
+ 141              	.LFB66:
+  48:main.c        **** }
+  49:main.c        **** void Write_Calibracion(){
+ 142              		.loc 1 49 0
+ 143              		.cfi_startproc
+ 144              		@ args = 0, pretend = 0, frame = 0
+ 145              		@ frame_needed = 0, uses_anonymous_args = 0
+ 146 0000 08B5     		push	{r3, lr}
+ 147              		.cfi_def_cfa_offset 8
+ 148              		.cfi_offset 3, -8
+ 149              		.cfi_offset 14, -4
+  50:main.c        ****         i2c_MasterSendRestart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);
+ 150              		.loc 1 50 0
+ 151 0002 0021     		movs	r1, #0
+ 152 0004 4020     		movs	r0, #64
+ 153 0006 FFF7FEFF 		bl	i2c_MasterSendRestart
+ 154              	.LVL10:
+  51:main.c        ****         i2c_MasterWriteByte(0x05);
+ 155              		.loc 1 51 0
+ 156 000a 0520     		movs	r0, #5
+ 157 000c FFF7FEFF 		bl	i2c_MasterWriteByte
+ 158              	.LVL11:
+  52:main.c        ****         i2c_MasterWriteByte(0x18);
+ 159              		.loc 1 52 0
+ 160 0010 1820     		movs	r0, #24
+ 161 0012 FFF7FEFF 		bl	i2c_MasterWriteByte
+ 162              	.LVL12:
+  53:main.c        ****         i2c_MasterWriteByte(0xf7);
+ 163              		.loc 1 53 0
+ 164 0016 F720     		movs	r0, #247
+ 165 0018 FFF7FEFF 		bl	i2c_MasterWriteByte
+ 166              	.LVL13:
+ 167 001c 08BD     		pop	{r3, pc}
+ 168              		.cfi_endproc
+ 169              	.LFE66:
+ 170              		.size	Write_Calibracion, .-Write_Calibracion
+ 171 001e 00BF     		.section	.text.Read_Voltage_Shut,"ax",%progbits
+ 172              		.align	2
+ 173              		.global	Read_Voltage_Shut
+ 174              		.thumb
+ 175              		.thumb_func
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 5
+
+
+ 176              		.type	Read_Voltage_Shut, %function
+ 177              	Read_Voltage_Shut:
+ 178              	.LFB67:
+  54:main.c        **** 
+  55:main.c        **** }
+  56:main.c        **** void Read_Voltage_Shut(){
+ 179              		.loc 1 56 0
+ 180              		.cfi_startproc
+ 181              		@ args = 0, pretend = 0, frame = 0
+ 182              		@ frame_needed = 0, uses_anonymous_args = 0
+ 183 0000 10B5     		push	{r4, lr}
+ 184              		.cfi_def_cfa_offset 8
+ 185              		.cfi_offset 4, -8
+ 186              		.cfi_offset 14, -4
+  57:main.c        ****     i2c_MasterSendRestart(SLAVE_ADRESS, i2c_READ_XFER_MODE);
+ 187              		.loc 1 57 0
+ 188 0002 0121     		movs	r1, #1
+ 189 0004 4020     		movs	r0, #64
+ 190 0006 FFF7FEFF 		bl	i2c_MasterSendRestart
+ 191              	.LVL14:
+  58:main.c        ****     Datos2=i2c_MasterReadByte(0x01);
+ 192              		.loc 1 58 0
+ 193 000a 0120     		movs	r0, #1
+ 194 000c FFF7FEFF 		bl	i2c_MasterReadByte
+ 195              	.LVL15:
+ 196 0010 00B2     		sxth	r0, r0
+ 197 0012 0B4C     		ldr	r4, .L18
+  59:main.c        ****     Datos2<<=8;
+ 198              		.loc 1 59 0
+ 199 0014 0002     		lsls	r0, r0, #8
+ 200 0016 2080     		strh	r0, [r4]	@ movhi
+  60:main.c        ****     Datos2+=i2c_MasterReadByte(i2c_ACK_DATA);
+ 201              		.loc 1 60 0
+ 202 0018 0120     		movs	r0, #1
+ 203 001a FFF7FEFF 		bl	i2c_MasterReadByte
+ 204              	.LVL16:
+ 205 001e 2388     		ldrh	r3, [r4]
+ 206 0020 1844     		add	r0, r0, r3
+ 207 0022 80B2     		uxth	r0, r0
+ 208 0024 03B2     		sxth	r3, r0
+ 209 0026 2380     		strh	r3, [r4]	@ movhi
+  61:main.c        ****     //esta es la operacion para convertir el dato el signo y magnitud
+  62:main.c        ****     if((0x8000 & Datos2) == 0x8000){
+ 210              		.loc 1 62 0
+ 211 0028 002B     		cmp	r3, #0
+ 212 002a 03DA     		bge	.L16
+  63:main.c        ****        Datos2-=1;
+ 213              		.loc 1 63 0
+ 214 002c 0138     		subs	r0, r0, #1
+ 215 002e 00B2     		sxth	r0, r0
+  64:main.c        ****        Datos2=~Datos2;
+  65:main.c        ****        Datos2*=-1; 
+ 216              		.loc 1 65 0
+ 217 0030 0130     		adds	r0, r0, #1
+ 218 0032 2080     		strh	r0, [r4]	@ movhi
+ 219              	.L16:
+  66:main.c        ****     }
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 6
+
+
+  67:main.c        ****     Voltaje_Shunt=Datos2;
+ 220              		.loc 1 67 0
+ 221 0034 024B     		ldr	r3, .L18
+ 222 0036 1A88     		ldrh	r2, [r3]
+ 223 0038 024B     		ldr	r3, .L18+4
+ 224 003a 1A81     		strh	r2, [r3, #8]	@ movhi
+ 225 003c 10BD     		pop	{r4, pc}
+ 226              	.L19:
+ 227 003e 00BF     		.align	2
+ 228              	.L18:
+ 229 0040 00000000 		.word	Datos2
+ 230 0044 00000000 		.word	.LANCHOR0
+ 231              		.cfi_endproc
+ 232              	.LFE67:
+ 233              		.size	Read_Voltage_Shut, .-Read_Voltage_Shut
+ 234              		.section	.text.Write_Mediciones,"ax",%progbits
+ 235              		.align	2
+ 236              		.global	Write_Mediciones
+ 237              		.thumb
+ 238              		.thumb_func
+ 239              		.type	Write_Mediciones, %function
+ 240              	Write_Mediciones:
+ 241              	.LFB68:
+  68:main.c        ****   //  Datos2>>=3;
+  69:main.c        ****     
+  70:main.c        **** }
+  71:main.c        **** void Write_Mediciones(){
+ 242              		.loc 1 71 0
+ 243              		.cfi_startproc
+ 244              		@ args = 0, pretend = 0, frame = 0
+ 245              		@ frame_needed = 0, uses_anonymous_args = 0
+ 246 0000 08B5     		push	{r3, lr}
+ 247              		.cfi_def_cfa_offset 8
+ 248              		.cfi_offset 3, -8
+ 249              		.cfi_offset 14, -4
+ 250              	.LVL17:
+  72:main.c        ****       int16 value_base=0x0fa0;    
+  73:main.c        ****      i2c_MasterSendRestart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);
+ 251              		.loc 1 73 0
+ 252 0002 0021     		movs	r1, #0
+ 253 0004 4020     		movs	r0, #64
+ 254 0006 FFF7FEFF 		bl	i2c_MasterSendRestart
+ 255              	.LVL18:
+  74:main.c        ****         i2c_MasterWriteByte(0x02);  
+ 256              		.loc 1 74 0
+ 257 000a 0220     		movs	r0, #2
+ 258 000c FFF7FEFF 		bl	i2c_MasterWriteByte
+ 259              	.LVL19:
+  75:main.c        ****       CyDelay(1);
+ 260              		.loc 1 75 0
+ 261 0010 0120     		movs	r0, #1
+ 262 0012 FFF7FEFF 		bl	CyDelay
+ 263              	.LVL20:
+  76:main.c        ****        i2c_MasterSendRestart(SLAVE_ADRESS,i2c_WRITE_XFER_MODE);
+ 264              		.loc 1 76 0
+ 265 0016 0021     		movs	r1, #0
+ 266 0018 4020     		movs	r0, #64
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 7
+
+
+ 267 001a FFF7FEFF 		bl	i2c_MasterSendRestart
+ 268              	.LVL21:
+  77:main.c        ****        i2c_MasterWriteByte(0x01);
+ 269              		.loc 1 77 0
+ 270 001e 0120     		movs	r0, #1
+ 271 0020 FFF7FEFF 		bl	i2c_MasterWriteByte
+ 272              	.LVL22:
+  78:main.c        ****        i2c_MasterSendRestart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);
+ 273              		.loc 1 78 0
+ 274 0024 0021     		movs	r1, #0
+ 275 0026 4020     		movs	r0, #64
+ 276 0028 FFF7FEFF 		bl	i2c_MasterSendRestart
+ 277              	.LVL23:
+  79:main.c        ****         i2c_MasterWriteByte(0x03);
+ 278              		.loc 1 79 0
+ 279 002c 0320     		movs	r0, #3
+ 280 002e FFF7FEFF 		bl	i2c_MasterWriteByte
+ 281              	.LVL24:
+  80:main.c        ****         CyDelay(1);
+ 282              		.loc 1 80 0
+ 283 0032 0120     		movs	r0, #1
+ 284 0034 FFF7FEFF 		bl	CyDelay
+ 285              	.LVL25:
+  81:main.c        ****         i2c_MasterSendRestart(SLAVE_ADRESS,i2c_WRITE_XFER_MODE);
+ 286              		.loc 1 81 0
+ 287 0038 0021     		movs	r1, #0
+ 288 003a 4020     		movs	r0, #64
+ 289 003c FFF7FEFF 		bl	i2c_MasterSendRestart
+ 290              	.LVL26:
+  82:main.c        ****         i2c_MasterWriteByte(0x04);
+ 291              		.loc 1 82 0
+ 292 0040 0420     		movs	r0, #4
+ 293 0042 FFF7FEFF 		bl	i2c_MasterWriteByte
+ 294              	.LVL27:
+  83:main.c        ****         CyDelay(1);
+ 295              		.loc 1 83 0
+ 296 0046 0120     		movs	r0, #1
+ 297 0048 FFF7FEFF 		bl	CyDelay
+ 298              	.LVL28:
+ 299 004c 08BD     		pop	{r3, pc}
+ 300              		.cfi_endproc
+ 301              	.LFE68:
+ 302              		.size	Write_Mediciones, .-Write_Mediciones
+ 303 004e 00BF     		.section	.text.Read_Values,"ax",%progbits
+ 304              		.align	2
+ 305              		.global	Read_Values
+ 306              		.thumb
+ 307              		.thumb_func
+ 308              		.type	Read_Values, %function
+ 309              	Read_Values:
+ 310              	.LFB69:
+  84:main.c        **** }
+  85:main.c        **** void Read_Values(int Address_Measure){
+ 311              		.loc 1 85 0
+ 312              		.cfi_startproc
+ 313              		@ args = 0, pretend = 0, frame = 0
+ 314              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 8
+
+
+ 315              	.LVL29:
+ 316 0000 70B5     		push	{r4, r5, r6, lr}
+ 317              		.cfi_def_cfa_offset 16
+ 318              		.cfi_offset 4, -16
+ 319              		.cfi_offset 5, -12
+ 320              		.cfi_offset 6, -8
+ 321              		.cfi_offset 14, -4
+ 322 0002 0446     		mov	r4, r0
+ 323              	.LVL30:
+  86:main.c        ****         uint8 num2=0;
+  87:main.c        ****         if(Address_Measure==0x02){
+ 324              		.loc 1 87 0
+ 325 0004 0228     		cmp	r0, #2
+ 326 0006 01D0     		beq	.L28
+  86:main.c        ****         uint8 num2=0;
+ 327              		.loc 1 86 0
+ 328 0008 0026     		movs	r6, #0
+ 329 000a 00E0     		b	.L23
+ 330              	.L28:
+  88:main.c        ****    
+  89:main.c        ****            num2=3&255;
+ 331              		.loc 1 89 0
+ 332 000c 0326     		movs	r6, #3
+ 333              	.L23:
+ 334              	.LVL31:
+  90:main.c        ****           
+  91:main.c        ****         }
+  92:main.c        ****         i2c_MasterSendRestart(SLAVE_ADRESS,i2c_READ_XFER_MODE);
+ 335              		.loc 1 92 0
+ 336 000e 0121     		movs	r1, #1
+ 337 0010 4020     		movs	r0, #64
+ 338              	.LVL32:
+ 339 0012 FFF7FEFF 		bl	i2c_MasterSendRestart
+ 340              	.LVL33:
+  93:main.c        ****         Datos=i2c_MasterReadByte(Address_Measure);
+ 341              		.loc 1 93 0
+ 342 0016 E0B2     		uxtb	r0, r4
+ 343 0018 FFF7FEFF 		bl	i2c_MasterReadByte
+ 344              	.LVL34:
+ 345 001c 00B2     		sxth	r0, r0
+ 346 001e 0D4D     		ldr	r5, .L30
+  94:main.c        ****         Datos<<=8;
+ 347              		.loc 1 94 0
+ 348 0020 0002     		lsls	r0, r0, #8
+ 349 0022 2880     		strh	r0, [r5]	@ movhi
+  95:main.c        ****         Datos+=i2c_MasterReadByte(i2c_ACK_DATA);
+ 350              		.loc 1 95 0
+ 351 0024 0120     		movs	r0, #1
+ 352 0026 FFF7FEFF 		bl	i2c_MasterReadByte
+ 353              	.LVL35:
+ 354 002a 2B88     		ldrh	r3, [r5]
+ 355 002c 1844     		add	r0, r0, r3
+ 356 002e 00B2     		sxth	r0, r0
+  96:main.c        ****         Datos>>=num2;
+ 357              		.loc 1 96 0
+ 358 0030 3041     		asrs	r0, r0, r6
+ 359 0032 2880     		strh	r0, [r5]	@ movhi
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 9
+
+
+  97:main.c        ****         switch(Address_Measure){
+ 360              		.loc 1 97 0
+ 361 0034 032C     		cmp	r4, #3
+ 362 0036 06D0     		beq	.L25
+ 363 0038 042C     		cmp	r4, #4
+ 364 003a 07D0     		beq	.L26
+ 365 003c 022C     		cmp	r4, #2
+ 366 003e 07D1     		bne	.L22
+  98:main.c        ****           case 0x02:
+  99:main.c        ****             Voltaje=Datos;
+ 367              		.loc 1 99 0
+ 368 0040 054B     		ldr	r3, .L30+4
+ 369 0042 1880     		strh	r0, [r3]	@ movhi
+ 100:main.c        ****          //   Voltaje*=0.004; //obtener la medicion Voltios
+ 101:main.c        ****             break;
+ 370              		.loc 1 101 0
+ 371 0044 70BD     		pop	{r4, r5, r6, pc}
+ 372              	.LVL36:
+ 373              	.L25:
+ 102:main.c        ****           case 0x03:
+ 103:main.c        ****             Corriente=Datos;
+ 374              		.loc 1 103 0
+ 375 0046 054B     		ldr	r3, .L30+8
+ 376 0048 1880     		strh	r0, [r3]	@ movhi
+ 104:main.c        ****           //  Corriente*=factor_lsb_Corriente; //Obtener la medicion en amperes
+ 105:main.c        ****             break;
+ 377              		.loc 1 105 0
+ 378 004a 70BD     		pop	{r4, r5, r6, pc}
+ 379              	.LVL37:
+ 380              	.L26:
+ 106:main.c        ****           case 0x04:
+ 107:main.c        ****             Potencia=Datos;
+ 381              		.loc 1 107 0
+ 382 004c 044B     		ldr	r3, .L30+12
+ 383 004e 5881     		strh	r0, [r3, #10]	@ movhi
+ 384              	.L22:
+ 385 0050 70BD     		pop	{r4, r5, r6, pc}
+ 386              	.LVL38:
+ 387              	.L31:
+ 388 0052 00BF     		.align	2
+ 389              	.L30:
+ 390 0054 00000000 		.word	Datos
+ 391 0058 00000000 		.word	Voltaje
+ 392 005c 00000000 		.word	Corriente
+ 393 0060 00000000 		.word	.LANCHOR0
+ 394              		.cfi_endproc
+ 395              	.LFE69:
+ 396              		.size	Read_Values, .-Read_Values
+ 397              		.section	.text.main,"ax",%progbits
+ 398              		.align	2
+ 399              		.global	main
+ 400              		.thumb
+ 401              		.thumb_func
+ 402              		.type	main, %function
+ 403              	main:
+ 404              	.LFB70:
+ 108:main.c        ****            // Potencia*=20*factor_lsb_Corriente; //Obtener la medicion en Watts
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 10
+
+
+ 109:main.c        ****             break;
+ 110:main.c        ****           default:
+ 111:main.c        ****             break;
+ 112:main.c        ****         }
+ 113:main.c        ****        //datos convertidos
+ 114:main.c        ****   }
+ 115:main.c        **** int main(void)
+ 116:main.c        **** {
+ 405              		.loc 1 116 0
+ 406              		.cfi_startproc
+ 407              		@ args = 0, pretend = 0, frame = 0
+ 408              		@ frame_needed = 0, uses_anonymous_args = 0
+ 409 0000 10B5     		push	{r4, lr}
+ 410              		.cfi_def_cfa_offset 8
+ 411              		.cfi_offset 4, -8
+ 412              		.cfi_offset 14, -4
+ 117:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+ 413              		.loc 1 117 0
+ 414              		.syntax unified
+ 415              	@ 117 "main.c" 1
+ 416 0002 62B6     		CPSIE   i
+ 417              	@ 0 "" 2
+ 118:main.c        ****     isr_Rx_StartEx(Rx);
+ 418              		.loc 1 118 0
+ 419              		.thumb
+ 420              		.syntax unified
+ 421 0004 2748     		ldr	r0, .L37
+ 422 0006 FFF7FEFF 		bl	isr_Rx_StartEx
+ 423              	.LVL39:
+ 119:main.c        **** 
+ 120:main.c        ****      /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+ 121:main.c        ****     UART_Start();
+ 424              		.loc 1 121 0
+ 425 000a FFF7FEFF 		bl	UART_Start
+ 426              	.LVL40:
+ 122:main.c        ****     i2c_Start();
+ 427              		.loc 1 122 0
+ 428 000e FFF7FEFF 		bl	i2c_Start
+ 429              	.LVL41:
+ 123:main.c        ****     LCD_Start();
+ 430              		.loc 1 123 0
+ 431 0012 FFF7FEFF 		bl	LCD_Start
+ 432              	.LVL42:
+ 433              	.L34:
+ 124:main.c        ****     for(;;)
+ 125:main.c        ****     {
+ 126:main.c        ****        Calc_Factor_LSB(2);
+ 434              		.loc 1 126 0
+ 435 0016 0220     		movs	r0, #2
+ 436 0018 FFF7FEFF 		bl	Calc_Factor_LSB
+ 437              	.LVL43:
+ 438              	.L33:
+ 127:main.c        ****         do{
+ 128:main.c        ****         i2c_MasterSendStart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);
+ 439              		.loc 1 128 0 discriminator 1
+ 440 001c 0021     		movs	r1, #0
+ 441 001e 4020     		movs	r0, #64
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 11
+
+
+ 442 0020 FFF7FEFF 		bl	i2c_MasterSendStart
+ 443              	.LVL44:
+ 129:main.c        ****         }while(result!=i2c_MSTR_NO_ERROR);
+ 444              		.loc 1 129 0 discriminator 1
+ 445 0024 204B     		ldr	r3, .L37+4
+ 446 0026 1B7B     		ldrb	r3, [r3, #12]	@ zero_extendqisi2
+ 447 0028 002B     		cmp	r3, #0
+ 448 002a F7D1     		bne	.L33
+ 130:main.c        ****            Write_Configuration();
+ 449              		.loc 1 130 0
+ 450 002c FFF7FEFF 		bl	Write_Configuration
+ 451              	.LVL45:
+ 131:main.c        ****            Write_Calibracion();
+ 452              		.loc 1 131 0
+ 453 0030 FFF7FEFF 		bl	Write_Calibracion
+ 454              	.LVL46:
+ 132:main.c        ****            Write_Mediciones();
+ 455              		.loc 1 132 0
+ 456 0034 FFF7FEFF 		bl	Write_Mediciones
+ 457              	.LVL47:
+ 133:main.c        ****            Read_Voltage_Shut();
+ 458              		.loc 1 133 0
+ 459 0038 FFF7FEFF 		bl	Read_Voltage_Shut
+ 460              	.LVL48:
+ 134:main.c        ****            Read_Values(0x02);
+ 461              		.loc 1 134 0
+ 462 003c 0220     		movs	r0, #2
+ 463 003e FFF7FEFF 		bl	Read_Values
+ 464              	.LVL49:
+ 135:main.c        ****            Read_Values(0x03);
+ 465              		.loc 1 135 0
+ 466 0042 0320     		movs	r0, #3
+ 467 0044 FFF7FEFF 		bl	Read_Values
+ 468              	.LVL50:
+ 136:main.c        ****            Read_Values(0x04);
+ 469              		.loc 1 136 0
+ 470 0048 0420     		movs	r0, #4
+ 471 004a FFF7FEFF 		bl	Read_Values
+ 472              	.LVL51:
+ 137:main.c        ****            i2c_MasterSendStop();
+ 473              		.loc 1 137 0
+ 474 004e FFF7FEFF 		bl	i2c_MasterSendStop
+ 475              	.LVL52:
+ 138:main.c        ****            if(flag==1){
+ 476              		.loc 1 138 0
+ 477 0052 154B     		ldr	r3, .L37+4
+ 478 0054 1B68     		ldr	r3, [r3]
+ 479 0056 012B     		cmp	r3, #1
+ 480 0058 DDD1     		bne	.L34
+ 481              	.LVL53:
+ 482              	.LBB2:
+ 139:main.c        ****               int8 temp=0; 
+ 140:main.c        ****               UART_PutChar(Voltaje);
+ 483              		.loc 1 140 0
+ 484 005a 144C     		ldr	r4, .L37+8
+ 485 005c 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
+ 486 005e FFF7FEFF 		bl	UART_PutChar
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 12
+
+
+ 487              	.LVL54:
+ 141:main.c        ****               CyDelay(1);
+ 488              		.loc 1 141 0
+ 489 0062 0120     		movs	r0, #1
+ 490 0064 FFF7FEFF 		bl	CyDelay
+ 491              	.LVL55:
+ 142:main.c        ****               temp=(Voltaje>>8);
+ 143:main.c        ****               UART_PutChar(temp);
+ 492              		.loc 1 143 0
+ 493 0068 6078     		ldrb	r0, [r4, #1]	@ zero_extendqisi2
+ 494 006a FFF7FEFF 		bl	UART_PutChar
+ 495              	.LVL56:
+ 144:main.c        ****               CyDelay(1);
+ 496              		.loc 1 144 0
+ 497 006e 0120     		movs	r0, #1
+ 498 0070 FFF7FEFF 		bl	CyDelay
+ 499              	.LVL57:
+ 145:main.c        ****               UART_PutChar(Corriente);
+ 500              		.loc 1 145 0
+ 501 0074 0E4C     		ldr	r4, .L37+12
+ 502 0076 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
+ 503 0078 FFF7FEFF 		bl	UART_PutChar
+ 504              	.LVL58:
+ 146:main.c        ****               CyDelay(1);
+ 505              		.loc 1 146 0
+ 506 007c 0120     		movs	r0, #1
+ 507 007e FFF7FEFF 		bl	CyDelay
+ 508              	.LVL59:
+ 147:main.c        ****               temp=(Corriente>>8);
+ 148:main.c        ****               UART_PutChar(temp);
+ 509              		.loc 1 148 0
+ 510 0082 6078     		ldrb	r0, [r4, #1]	@ zero_extendqisi2
+ 511 0084 FFF7FEFF 		bl	UART_PutChar
+ 512              	.LVL60:
+ 149:main.c        ****               CyDelay(1);
+ 513              		.loc 1 149 0
+ 514 0088 0120     		movs	r0, #1
+ 515 008a FFF7FEFF 		bl	CyDelay
+ 516              	.LVL61:
+ 150:main.c        ****               UART_PutChar(Potencia);
+ 517              		.loc 1 150 0
+ 518 008e 064C     		ldr	r4, .L37+4
+ 519 0090 A07A     		ldrb	r0, [r4, #10]	@ zero_extendqisi2
+ 520 0092 FFF7FEFF 		bl	UART_PutChar
+ 521              	.LVL62:
+ 151:main.c        ****               CyDelay(1);
+ 522              		.loc 1 151 0
+ 523 0096 0120     		movs	r0, #1
+ 524 0098 FFF7FEFF 		bl	CyDelay
+ 525              	.LVL63:
+ 152:main.c        ****               temp=(Potencia>>8);
+ 153:main.c        ****               UART_PutChar(temp);
+ 526              		.loc 1 153 0
+ 527 009c E07A     		ldrb	r0, [r4, #11]	@ zero_extendqisi2
+ 528 009e FFF7FEFF 		bl	UART_PutChar
+ 529              	.LVL64:
+ 530 00a2 B8E7     		b	.L34
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 13
+
+
+ 531              	.L38:
+ 532              		.align	2
+ 533              	.L37:
+ 534 00a4 00000000 		.word	Rx
+ 535 00a8 00000000 		.word	.LANCHOR0
+ 536 00ac 00000000 		.word	Voltaje
+ 537 00b0 00000000 		.word	Corriente
+ 538              	.LBE2:
+ 539              		.cfi_endproc
+ 540              	.LFE70:
+ 541              		.size	main, .-main
+ 542              		.global	flag
+ 543              		.global	Potencia
+ 544              		.comm	Voltaje,2,2
+ 545              		.comm	Corriente,2,2
+ 546              		.global	factor_lsb_Corriente
+ 547              		.global	Voltaje_Shunt
+ 548              		.comm	Datos2,2,2
+ 549              		.comm	Datos,2,2
+ 550              		.global	result
+ 551              		.bss
+ 552              		.align	2
+ 553              		.set	.LANCHOR0,. + 0
+ 554              		.type	flag, %object
+ 555              		.size	flag, 4
+ 556              	flag:
+ 557 0000 00000000 		.space	4
+ 558              		.type	factor_lsb_Corriente, %object
+ 559              		.size	factor_lsb_Corriente, 4
+ 560              	factor_lsb_Corriente:
+ 561 0004 00000000 		.space	4
+ 562              		.type	Voltaje_Shunt, %object
+ 563              		.size	Voltaje_Shunt, 2
+ 564              	Voltaje_Shunt:
+ 565 0008 0000     		.space	2
+ 566              		.type	Potencia, %object
+ 567              		.size	Potencia, 2
+ 568              	Potencia:
+ 569 000a 0000     		.space	2
+ 570              		.type	result, %object
+ 571              		.size	result, 1
+ 572              	result:
+ 573 000c 00       		.space	1
+ 574              		.text
+ 575              	.Letext0:
+ 576              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 577              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 578              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 579              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 580              		.file 6 "Generated_Source\\PSoC5/UART.h"
+ 581              		.file 7 "Generated_Source\\PSoC5/isr_Rx.h"
+ 582              		.file 8 "Generated_Source\\PSoC5/i2c.h"
+ 583              		.file 9 "Generated_Source\\PSoC5/CyLib.h"
+ 584              		.file 10 "Generated_Source\\PSoC5/LCD.h"
+ 585              		.section	.debug_info,"",%progbits
+ 586              	.Ldebug_info0:
+ 587 0000 88060000 		.4byte	0x688
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 14
+
+
+ 588 0004 0400     		.2byte	0x4
+ 589 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 590 000a 04       		.byte	0x4
+ 591 000b 01       		.uleb128 0x1
+ 592 000c FA000000 		.4byte	.LASF55
+ 593 0010 0C       		.byte	0xc
+ 594 0011 E8020000 		.4byte	.LASF56
+ 595 0015 62000000 		.4byte	.LASF57
+ 596 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 597 001d 00000000 		.4byte	0
+ 598 0021 00000000 		.4byte	.Ldebug_line0
+ 599 0025 02       		.uleb128 0x2
+ 600 0026 01       		.byte	0x1
+ 601 0027 06       		.byte	0x6
+ 602 0028 46030000 		.4byte	.LASF0
+ 603 002c 02       		.uleb128 0x2
+ 604 002d 01       		.byte	0x1
+ 605 002e 08       		.byte	0x8
+ 606 002f EC000000 		.4byte	.LASF1
+ 607 0033 02       		.uleb128 0x2
+ 608 0034 02       		.byte	0x2
+ 609 0035 05       		.byte	0x5
+ 610 0036 F4020000 		.4byte	.LASF2
+ 611 003a 02       		.uleb128 0x2
+ 612 003b 02       		.byte	0x2
+ 613 003c 07       		.byte	0x7
+ 614 003d C9010000 		.4byte	.LASF3
+ 615 0041 03       		.uleb128 0x3
+ 616 0042 58000000 		.4byte	.LASF9
+ 617 0046 02       		.byte	0x2
+ 618 0047 3F       		.byte	0x3f
+ 619 0048 4C000000 		.4byte	0x4c
+ 620 004c 02       		.uleb128 0x2
+ 621 004d 04       		.byte	0x4
+ 622 004e 05       		.byte	0x5
+ 623 004f 25030000 		.4byte	.LASF4
+ 624 0053 02       		.uleb128 0x2
+ 625 0054 04       		.byte	0x4
+ 626 0055 07       		.byte	0x7
+ 627 0056 A1010000 		.4byte	.LASF5
+ 628 005a 02       		.uleb128 0x2
+ 629 005b 08       		.byte	0x8
+ 630 005c 05       		.byte	0x5
+ 631 005d 00000000 		.4byte	.LASF6
+ 632 0061 02       		.uleb128 0x2
+ 633 0062 08       		.byte	0x8
+ 634 0063 07       		.byte	0x7
+ 635 0064 88020000 		.4byte	.LASF7
+ 636 0068 04       		.uleb128 0x4
+ 637 0069 04       		.byte	0x4
+ 638 006a 05       		.byte	0x5
+ 639 006b 696E7400 		.ascii	"int\000"
+ 640 006f 02       		.uleb128 0x2
+ 641 0070 04       		.byte	0x4
+ 642 0071 07       		.byte	0x7
+ 643 0072 76020000 		.4byte	.LASF8
+ 644 0076 03       		.uleb128 0x3
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 15
+
+
+ 645 0077 B8020000 		.4byte	.LASF10
+ 646 007b 03       		.byte	0x3
+ 647 007c 2C       		.byte	0x2c
+ 648 007d 41000000 		.4byte	0x41
+ 649 0081 05       		.uleb128 0x5
+ 650 0082 E6000000 		.4byte	.LASF11
+ 651 0086 04       		.byte	0x4
+ 652 0087 E401     		.2byte	0x1e4
+ 653 0089 2C000000 		.4byte	0x2c
+ 654 008d 05       		.uleb128 0x5
+ 655 008e 45020000 		.4byte	.LASF12
+ 656 0092 04       		.byte	0x4
+ 657 0093 E701     		.2byte	0x1e7
+ 658 0095 25000000 		.4byte	0x25
+ 659 0099 05       		.uleb128 0x5
+ 660 009a 9B010000 		.4byte	.LASF13
+ 661 009e 04       		.byte	0x4
+ 662 009f E801     		.2byte	0x1e8
+ 663 00a1 33000000 		.4byte	0x33
+ 664 00a5 05       		.uleb128 0x5
+ 665 00a6 3D020000 		.4byte	.LASF14
+ 666 00aa 04       		.byte	0x4
+ 667 00ab EA01     		.2byte	0x1ea
+ 668 00ad B1000000 		.4byte	0xb1
+ 669 00b1 02       		.uleb128 0x2
+ 670 00b2 04       		.byte	0x4
+ 671 00b3 04       		.byte	0x4
+ 672 00b4 D6000000 		.4byte	.LASF15
+ 673 00b8 02       		.uleb128 0x2
+ 674 00b9 08       		.byte	0x8
+ 675 00ba 04       		.byte	0x4
+ 676 00bb 21020000 		.4byte	.LASF16
+ 677 00bf 02       		.uleb128 0x2
+ 678 00c0 01       		.byte	0x1
+ 679 00c1 08       		.byte	0x8
+ 680 00c2 EF020000 		.4byte	.LASF17
+ 681 00c6 02       		.uleb128 0x2
+ 682 00c7 08       		.byte	0x8
+ 683 00c8 04       		.byte	0x4
+ 684 00c9 3A030000 		.4byte	.LASF18
+ 685 00cd 02       		.uleb128 0x2
+ 686 00ce 04       		.byte	0x4
+ 687 00cf 07       		.byte	0x7
+ 688 00d0 CD020000 		.4byte	.LASF19
+ 689 00d4 06       		.uleb128 0x6
+ 690 00d5 527800   		.ascii	"Rx\000"
+ 691 00d8 01       		.byte	0x1
+ 692 00d9 17       		.byte	0x17
+ 693 00da 00000000 		.4byte	.LFB63
+ 694 00de 1C000000 		.4byte	.LFE63-.LFB63
+ 695 00e2 01       		.uleb128 0x1
+ 696 00e3 9C       		.byte	0x9c
+ 697 00e4 0A010000 		.4byte	0x10a
+ 698 00e8 07       		.uleb128 0x7
+ 699 00e9 89030000 		.4byte	.LASF25
+ 700 00ed 01       		.byte	0x1
+ 701 00ee 19       		.byte	0x19
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 16
+
+
+ 702 00ef BF000000 		.4byte	0xbf
+ 703 00f3 00000000 		.4byte	.LLST0
+ 704 00f7 08       		.uleb128 0x8
+ 705 00f8 06000000 		.4byte	.LVL0
+ 706 00fc FC050000 		.4byte	0x5fc
+ 707 0100 08       		.uleb128 0x8
+ 708 0101 14000000 		.4byte	.LVL1
+ 709 0105 07060000 		.4byte	0x607
+ 710 0109 00       		.byte	0
+ 711 010a 09       		.uleb128 0x9
+ 712 010b C6000000 		.4byte	.LASF20
+ 713 010f 01       		.byte	0x1
+ 714 0110 28       		.byte	0x28
+ 715 0111 00000000 		.4byte	.LFB64
+ 716 0115 1C000000 		.4byte	.LFE64-.LFB64
+ 717 0119 01       		.uleb128 0x1
+ 718 011a 9C       		.byte	0x9c
+ 719 011b 2F010000 		.4byte	0x12f
+ 720 011f 0A       		.uleb128 0xa
+ 721 0120 5F030000 		.4byte	.LASF28
+ 722 0124 01       		.byte	0x1
+ 723 0125 28       		.byte	0x28
+ 724 0126 68000000 		.4byte	0x68
+ 725 012a 13000000 		.4byte	.LLST1
+ 726 012e 00       		.byte	0
+ 727 012f 0B       		.uleb128 0xb
+ 728 0130 F9010000 		.4byte	.LASF21
+ 729 0134 01       		.byte	0x1
+ 730 0135 2B       		.byte	0x2b
+ 731 0136 00000000 		.4byte	.LFB65
+ 732 013a 1E000000 		.4byte	.LFE65-.LFB65
+ 733 013e 01       		.uleb128 0x1
+ 734 013f 9C       		.byte	0x9c
+ 735 0140 94010000 		.4byte	0x194
+ 736 0144 0C       		.uleb128 0xc
+ 737 0145 0A000000 		.4byte	.LVL6
+ 738 0149 12060000 		.4byte	0x612
+ 739 014d 5D010000 		.4byte	0x15d
+ 740 0151 0D       		.uleb128 0xd
+ 741 0152 01       		.uleb128 0x1
+ 742 0153 50       		.byte	0x50
+ 743 0154 02       		.uleb128 0x2
+ 744 0155 08       		.byte	0x8
+ 745 0156 40       		.byte	0x40
+ 746 0157 0D       		.uleb128 0xd
+ 747 0158 01       		.uleb128 0x1
+ 748 0159 51       		.byte	0x51
+ 749 015a 01       		.uleb128 0x1
+ 750 015b 30       		.byte	0x30
+ 751 015c 00       		.byte	0
+ 752 015d 0C       		.uleb128 0xc
+ 753 015e 10000000 		.4byte	.LVL7
+ 754 0162 1D060000 		.4byte	0x61d
+ 755 0166 70010000 		.4byte	0x170
+ 756 016a 0D       		.uleb128 0xd
+ 757 016b 01       		.uleb128 0x1
+ 758 016c 50       		.byte	0x50
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 17
+
+
+ 759 016d 01       		.uleb128 0x1
+ 760 016e 30       		.byte	0x30
+ 761 016f 00       		.byte	0
+ 762 0170 0C       		.uleb128 0xc
+ 763 0171 16000000 		.4byte	.LVL8
+ 764 0175 1D060000 		.4byte	0x61d
+ 765 0179 84010000 		.4byte	0x184
+ 766 017d 0D       		.uleb128 0xd
+ 767 017e 01       		.uleb128 0x1
+ 768 017f 50       		.byte	0x50
+ 769 0180 02       		.uleb128 0x2
+ 770 0181 09       		.byte	0x9
+ 771 0182 A4       		.byte	0xa4
+ 772 0183 00       		.byte	0
+ 773 0184 0E       		.uleb128 0xe
+ 774 0185 1C000000 		.4byte	.LVL9
+ 775 0189 1D060000 		.4byte	0x61d
+ 776 018d 0D       		.uleb128 0xd
+ 777 018e 01       		.uleb128 0x1
+ 778 018f 50       		.byte	0x50
+ 779 0190 01       		.uleb128 0x1
+ 780 0191 4F       		.byte	0x4f
+ 781 0192 00       		.byte	0
+ 782 0193 00       		.byte	0
+ 783 0194 0B       		.uleb128 0xb
+ 784 0195 D6020000 		.4byte	.LASF22
+ 785 0199 01       		.byte	0x1
+ 786 019a 31       		.byte	0x31
+ 787 019b 00000000 		.4byte	.LFB66
+ 788 019f 1E000000 		.4byte	.LFE66-.LFB66
+ 789 01a3 01       		.uleb128 0x1
+ 790 01a4 9C       		.byte	0x9c
+ 791 01a5 F9010000 		.4byte	0x1f9
+ 792 01a9 0C       		.uleb128 0xc
+ 793 01aa 0A000000 		.4byte	.LVL10
+ 794 01ae 12060000 		.4byte	0x612
+ 795 01b2 C2010000 		.4byte	0x1c2
+ 796 01b6 0D       		.uleb128 0xd
+ 797 01b7 01       		.uleb128 0x1
+ 798 01b8 50       		.byte	0x50
+ 799 01b9 02       		.uleb128 0x2
+ 800 01ba 08       		.byte	0x8
+ 801 01bb 40       		.byte	0x40
+ 802 01bc 0D       		.uleb128 0xd
+ 803 01bd 01       		.uleb128 0x1
+ 804 01be 51       		.byte	0x51
+ 805 01bf 01       		.uleb128 0x1
+ 806 01c0 30       		.byte	0x30
+ 807 01c1 00       		.byte	0
+ 808 01c2 0C       		.uleb128 0xc
+ 809 01c3 10000000 		.4byte	.LVL11
+ 810 01c7 1D060000 		.4byte	0x61d
+ 811 01cb D5010000 		.4byte	0x1d5
+ 812 01cf 0D       		.uleb128 0xd
+ 813 01d0 01       		.uleb128 0x1
+ 814 01d1 50       		.byte	0x50
+ 815 01d2 01       		.uleb128 0x1
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 18
+
+
+ 816 01d3 35       		.byte	0x35
+ 817 01d4 00       		.byte	0
+ 818 01d5 0C       		.uleb128 0xc
+ 819 01d6 16000000 		.4byte	.LVL12
+ 820 01da 1D060000 		.4byte	0x61d
+ 821 01de E8010000 		.4byte	0x1e8
+ 822 01e2 0D       		.uleb128 0xd
+ 823 01e3 01       		.uleb128 0x1
+ 824 01e4 50       		.byte	0x50
+ 825 01e5 01       		.uleb128 0x1
+ 826 01e6 48       		.byte	0x48
+ 827 01e7 00       		.byte	0
+ 828 01e8 0E       		.uleb128 0xe
+ 829 01e9 1C000000 		.4byte	.LVL13
+ 830 01ed 1D060000 		.4byte	0x61d
+ 831 01f1 0D       		.uleb128 0xd
+ 832 01f2 01       		.uleb128 0x1
+ 833 01f3 50       		.byte	0x50
+ 834 01f4 02       		.uleb128 0x2
+ 835 01f5 09       		.byte	0x9
+ 836 01f6 F7       		.byte	0xf7
+ 837 01f7 00       		.byte	0
+ 838 01f8 00       		.byte	0
+ 839 01f9 0B       		.uleb128 0xb
+ 840 01fa A6020000 		.4byte	.LASF23
+ 841 01fe 01       		.byte	0x1
+ 842 01ff 38       		.byte	0x38
+ 843 0200 00000000 		.4byte	.LFB67
+ 844 0204 48000000 		.4byte	.LFE67-.LFB67
+ 845 0208 01       		.uleb128 0x1
+ 846 0209 9C       		.byte	0x9c
+ 847 020a 4A020000 		.4byte	0x24a
+ 848 020e 0C       		.uleb128 0xc
+ 849 020f 0A000000 		.4byte	.LVL14
+ 850 0213 12060000 		.4byte	0x612
+ 851 0217 27020000 		.4byte	0x227
+ 852 021b 0D       		.uleb128 0xd
+ 853 021c 01       		.uleb128 0x1
+ 854 021d 50       		.byte	0x50
+ 855 021e 02       		.uleb128 0x2
+ 856 021f 08       		.byte	0x8
+ 857 0220 40       		.byte	0x40
+ 858 0221 0D       		.uleb128 0xd
+ 859 0222 01       		.uleb128 0x1
+ 860 0223 51       		.byte	0x51
+ 861 0224 01       		.uleb128 0x1
+ 862 0225 31       		.byte	0x31
+ 863 0226 00       		.byte	0
+ 864 0227 0C       		.uleb128 0xc
+ 865 0228 10000000 		.4byte	.LVL15
+ 866 022c 28060000 		.4byte	0x628
+ 867 0230 3A020000 		.4byte	0x23a
+ 868 0234 0D       		.uleb128 0xd
+ 869 0235 01       		.uleb128 0x1
+ 870 0236 50       		.byte	0x50
+ 871 0237 01       		.uleb128 0x1
+ 872 0238 31       		.byte	0x31
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 19
+
+
+ 873 0239 00       		.byte	0
+ 874 023a 0E       		.uleb128 0xe
+ 875 023b 1E000000 		.4byte	.LVL16
+ 876 023f 28060000 		.4byte	0x628
+ 877 0243 0D       		.uleb128 0xd
+ 878 0244 01       		.uleb128 0x1
+ 879 0245 50       		.byte	0x50
+ 880 0246 01       		.uleb128 0x1
+ 881 0247 31       		.byte	0x31
+ 882 0248 00       		.byte	0
+ 883 0249 00       		.byte	0
+ 884 024a 0B       		.uleb128 0xb
+ 885 024b 70030000 		.4byte	.LASF24
+ 886 024f 01       		.byte	0x1
+ 887 0250 47       		.byte	0x47
+ 888 0251 00000000 		.4byte	.LFB68
+ 889 0255 4E000000 		.4byte	.LFE68-.LFB68
+ 890 0259 01       		.uleb128 0x1
+ 891 025a 9C       		.byte	0x9c
+ 892 025b 52030000 		.4byte	0x352
+ 893 025f 0F       		.uleb128 0xf
+ 894 0260 59020000 		.4byte	.LASF26
+ 895 0264 01       		.byte	0x1
+ 896 0265 48       		.byte	0x48
+ 897 0266 99000000 		.4byte	0x99
+ 898 026a A00F     		.2byte	0xfa0
+ 899 026c 0C       		.uleb128 0xc
+ 900 026d 0A000000 		.4byte	.LVL18
+ 901 0271 12060000 		.4byte	0x612
+ 902 0275 85020000 		.4byte	0x285
+ 903 0279 0D       		.uleb128 0xd
+ 904 027a 01       		.uleb128 0x1
+ 905 027b 50       		.byte	0x50
+ 906 027c 02       		.uleb128 0x2
+ 907 027d 08       		.byte	0x8
+ 908 027e 40       		.byte	0x40
+ 909 027f 0D       		.uleb128 0xd
+ 910 0280 01       		.uleb128 0x1
+ 911 0281 51       		.byte	0x51
+ 912 0282 01       		.uleb128 0x1
+ 913 0283 30       		.byte	0x30
+ 914 0284 00       		.byte	0
+ 915 0285 0C       		.uleb128 0xc
+ 916 0286 10000000 		.4byte	.LVL19
+ 917 028a 1D060000 		.4byte	0x61d
+ 918 028e 98020000 		.4byte	0x298
+ 919 0292 0D       		.uleb128 0xd
+ 920 0293 01       		.uleb128 0x1
+ 921 0294 50       		.byte	0x50
+ 922 0295 01       		.uleb128 0x1
+ 923 0296 32       		.byte	0x32
+ 924 0297 00       		.byte	0
+ 925 0298 0C       		.uleb128 0xc
+ 926 0299 16000000 		.4byte	.LVL20
+ 927 029d 33060000 		.4byte	0x633
+ 928 02a1 AB020000 		.4byte	0x2ab
+ 929 02a5 0D       		.uleb128 0xd
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 20
+
+
+ 930 02a6 01       		.uleb128 0x1
+ 931 02a7 50       		.byte	0x50
+ 932 02a8 01       		.uleb128 0x1
+ 933 02a9 31       		.byte	0x31
+ 934 02aa 00       		.byte	0
+ 935 02ab 0C       		.uleb128 0xc
+ 936 02ac 1E000000 		.4byte	.LVL21
+ 937 02b0 12060000 		.4byte	0x612
+ 938 02b4 C4020000 		.4byte	0x2c4
+ 939 02b8 0D       		.uleb128 0xd
+ 940 02b9 01       		.uleb128 0x1
+ 941 02ba 50       		.byte	0x50
+ 942 02bb 02       		.uleb128 0x2
+ 943 02bc 08       		.byte	0x8
+ 944 02bd 40       		.byte	0x40
+ 945 02be 0D       		.uleb128 0xd
+ 946 02bf 01       		.uleb128 0x1
+ 947 02c0 51       		.byte	0x51
+ 948 02c1 01       		.uleb128 0x1
+ 949 02c2 30       		.byte	0x30
+ 950 02c3 00       		.byte	0
+ 951 02c4 0C       		.uleb128 0xc
+ 952 02c5 24000000 		.4byte	.LVL22
+ 953 02c9 1D060000 		.4byte	0x61d
+ 954 02cd D7020000 		.4byte	0x2d7
+ 955 02d1 0D       		.uleb128 0xd
+ 956 02d2 01       		.uleb128 0x1
+ 957 02d3 50       		.byte	0x50
+ 958 02d4 01       		.uleb128 0x1
+ 959 02d5 31       		.byte	0x31
+ 960 02d6 00       		.byte	0
+ 961 02d7 0C       		.uleb128 0xc
+ 962 02d8 2C000000 		.4byte	.LVL23
+ 963 02dc 12060000 		.4byte	0x612
+ 964 02e0 F0020000 		.4byte	0x2f0
+ 965 02e4 0D       		.uleb128 0xd
+ 966 02e5 01       		.uleb128 0x1
+ 967 02e6 50       		.byte	0x50
+ 968 02e7 02       		.uleb128 0x2
+ 969 02e8 08       		.byte	0x8
+ 970 02e9 40       		.byte	0x40
+ 971 02ea 0D       		.uleb128 0xd
+ 972 02eb 01       		.uleb128 0x1
+ 973 02ec 51       		.byte	0x51
+ 974 02ed 01       		.uleb128 0x1
+ 975 02ee 30       		.byte	0x30
+ 976 02ef 00       		.byte	0
+ 977 02f0 0C       		.uleb128 0xc
+ 978 02f1 32000000 		.4byte	.LVL24
+ 979 02f5 1D060000 		.4byte	0x61d
+ 980 02f9 03030000 		.4byte	0x303
+ 981 02fd 0D       		.uleb128 0xd
+ 982 02fe 01       		.uleb128 0x1
+ 983 02ff 50       		.byte	0x50
+ 984 0300 01       		.uleb128 0x1
+ 985 0301 33       		.byte	0x33
+ 986 0302 00       		.byte	0
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 21
+
+
+ 987 0303 0C       		.uleb128 0xc
+ 988 0304 38000000 		.4byte	.LVL25
+ 989 0308 33060000 		.4byte	0x633
+ 990 030c 16030000 		.4byte	0x316
+ 991 0310 0D       		.uleb128 0xd
+ 992 0311 01       		.uleb128 0x1
+ 993 0312 50       		.byte	0x50
+ 994 0313 01       		.uleb128 0x1
+ 995 0314 31       		.byte	0x31
+ 996 0315 00       		.byte	0
+ 997 0316 0C       		.uleb128 0xc
+ 998 0317 40000000 		.4byte	.LVL26
+ 999 031b 12060000 		.4byte	0x612
+ 1000 031f 2F030000 		.4byte	0x32f
+ 1001 0323 0D       		.uleb128 0xd
+ 1002 0324 01       		.uleb128 0x1
+ 1003 0325 50       		.byte	0x50
+ 1004 0326 02       		.uleb128 0x2
+ 1005 0327 08       		.byte	0x8
+ 1006 0328 40       		.byte	0x40
+ 1007 0329 0D       		.uleb128 0xd
+ 1008 032a 01       		.uleb128 0x1
+ 1009 032b 51       		.byte	0x51
+ 1010 032c 01       		.uleb128 0x1
+ 1011 032d 30       		.byte	0x30
+ 1012 032e 00       		.byte	0
+ 1013 032f 0C       		.uleb128 0xc
+ 1014 0330 46000000 		.4byte	.LVL27
+ 1015 0334 1D060000 		.4byte	0x61d
+ 1016 0338 42030000 		.4byte	0x342
+ 1017 033c 0D       		.uleb128 0xd
+ 1018 033d 01       		.uleb128 0x1
+ 1019 033e 50       		.byte	0x50
+ 1020 033f 01       		.uleb128 0x1
+ 1021 0340 34       		.byte	0x34
+ 1022 0341 00       		.byte	0
+ 1023 0342 0E       		.uleb128 0xe
+ 1024 0343 4C000000 		.4byte	.LVL28
+ 1025 0347 33060000 		.4byte	0x633
+ 1026 034b 0D       		.uleb128 0xd
+ 1027 034c 01       		.uleb128 0x1
+ 1028 034d 50       		.byte	0x50
+ 1029 034e 01       		.uleb128 0x1
+ 1030 034f 31       		.byte	0x31
+ 1031 0350 00       		.byte	0
+ 1032 0351 00       		.byte	0
+ 1033 0352 10       		.uleb128 0x10
+ 1034 0353 2E030000 		.4byte	.LASF27
+ 1035 0357 01       		.byte	0x1
+ 1036 0358 55       		.byte	0x55
+ 1037 0359 00000000 		.4byte	.LFB69
+ 1038 035d 64000000 		.4byte	.LFE69-.LFB69
+ 1039 0361 01       		.uleb128 0x1
+ 1040 0362 9C       		.byte	0x9c
+ 1041 0363 C2030000 		.4byte	0x3c2
+ 1042 0367 0A       		.uleb128 0xa
+ 1043 0368 28020000 		.4byte	.LASF29
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 22
+
+
+ 1044 036c 01       		.byte	0x1
+ 1045 036d 55       		.byte	0x55
+ 1046 036e 68000000 		.4byte	0x68
+ 1047 0372 43000000 		.4byte	.LLST2
+ 1048 0376 07       		.uleb128 0x7
+ 1049 0377 E7010000 		.4byte	.LASF30
+ 1050 037b 01       		.byte	0x1
+ 1051 037c 56       		.byte	0x56
+ 1052 037d 81000000 		.4byte	0x81
+ 1053 0381 6F000000 		.4byte	.LLST3
+ 1054 0385 0C       		.uleb128 0xc
+ 1055 0386 16000000 		.4byte	.LVL33
+ 1056 038a 12060000 		.4byte	0x612
+ 1057 038e 9E030000 		.4byte	0x39e
+ 1058 0392 0D       		.uleb128 0xd
+ 1059 0393 01       		.uleb128 0x1
+ 1060 0394 50       		.byte	0x50
+ 1061 0395 02       		.uleb128 0x2
+ 1062 0396 08       		.byte	0x8
+ 1063 0397 40       		.byte	0x40
+ 1064 0398 0D       		.uleb128 0xd
+ 1065 0399 01       		.uleb128 0x1
+ 1066 039a 51       		.byte	0x51
+ 1067 039b 01       		.uleb128 0x1
+ 1068 039c 31       		.byte	0x31
+ 1069 039d 00       		.byte	0
+ 1070 039e 0C       		.uleb128 0xc
+ 1071 039f 1C000000 		.4byte	.LVL34
+ 1072 03a3 28060000 		.4byte	0x628
+ 1073 03a7 B2030000 		.4byte	0x3b2
+ 1074 03ab 0D       		.uleb128 0xd
+ 1075 03ac 01       		.uleb128 0x1
+ 1076 03ad 50       		.byte	0x50
+ 1077 03ae 02       		.uleb128 0x2
+ 1078 03af 74       		.byte	0x74
+ 1079 03b0 00       		.sleb128 0
+ 1080 03b1 00       		.byte	0
+ 1081 03b2 0E       		.uleb128 0xe
+ 1082 03b3 2A000000 		.4byte	.LVL35
+ 1083 03b7 28060000 		.4byte	0x628
+ 1084 03bb 0D       		.uleb128 0xd
+ 1085 03bc 01       		.uleb128 0x1
+ 1086 03bd 50       		.byte	0x50
+ 1087 03be 01       		.uleb128 0x1
+ 1088 03bf 31       		.byte	0x31
+ 1089 03c0 00       		.byte	0
+ 1090 03c1 00       		.byte	0
+ 1091 03c2 11       		.uleb128 0x11
+ 1092 03c3 38020000 		.4byte	.LASF58
+ 1093 03c7 01       		.byte	0x1
+ 1094 03c8 73       		.byte	0x73
+ 1095 03c9 68000000 		.4byte	0x68
+ 1096 03cd 00000000 		.4byte	.LFB70
+ 1097 03d1 B4000000 		.4byte	.LFE70-.LFB70
+ 1098 03d5 01       		.uleb128 0x1
+ 1099 03d6 9C       		.byte	0x9c
+ 1100 03d7 52050000 		.4byte	0x552
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 23
+
+
+ 1101 03db 12       		.uleb128 0x12
+ 1102 03dc 5A000000 		.4byte	.LBB2
+ 1103 03e0 5A000000 		.4byte	.LBE2-.LBB2
+ 1104 03e4 8D040000 		.4byte	0x48d
+ 1105 03e8 07       		.uleb128 0x7
+ 1106 03e9 83020000 		.4byte	.LASF31
+ 1107 03ed 01       		.byte	0x1
+ 1108 03ee 8B       		.byte	0x8b
+ 1109 03ef 8D000000 		.4byte	0x8d
+ 1110 03f3 8E000000 		.4byte	.LLST4
+ 1111 03f7 08       		.uleb128 0x8
+ 1112 03f8 62000000 		.4byte	.LVL54
+ 1113 03fc 3E060000 		.4byte	0x63e
+ 1114 0400 0C       		.uleb128 0xc
+ 1115 0401 68000000 		.4byte	.LVL55
+ 1116 0405 33060000 		.4byte	0x633
+ 1117 0409 13040000 		.4byte	0x413
+ 1118 040d 0D       		.uleb128 0xd
+ 1119 040e 01       		.uleb128 0x1
+ 1120 040f 50       		.byte	0x50
+ 1121 0410 01       		.uleb128 0x1
+ 1122 0411 31       		.byte	0x31
+ 1123 0412 00       		.byte	0
+ 1124 0413 08       		.uleb128 0x8
+ 1125 0414 6E000000 		.4byte	.LVL56
+ 1126 0418 3E060000 		.4byte	0x63e
+ 1127 041c 0C       		.uleb128 0xc
+ 1128 041d 74000000 		.4byte	.LVL57
+ 1129 0421 33060000 		.4byte	0x633
+ 1130 0425 2F040000 		.4byte	0x42f
+ 1131 0429 0D       		.uleb128 0xd
+ 1132 042a 01       		.uleb128 0x1
+ 1133 042b 50       		.byte	0x50
+ 1134 042c 01       		.uleb128 0x1
+ 1135 042d 31       		.byte	0x31
+ 1136 042e 00       		.byte	0
+ 1137 042f 08       		.uleb128 0x8
+ 1138 0430 7C000000 		.4byte	.LVL58
+ 1139 0434 3E060000 		.4byte	0x63e
+ 1140 0438 0C       		.uleb128 0xc
+ 1141 0439 82000000 		.4byte	.LVL59
+ 1142 043d 33060000 		.4byte	0x633
+ 1143 0441 4B040000 		.4byte	0x44b
+ 1144 0445 0D       		.uleb128 0xd
+ 1145 0446 01       		.uleb128 0x1
+ 1146 0447 50       		.byte	0x50
+ 1147 0448 01       		.uleb128 0x1
+ 1148 0449 31       		.byte	0x31
+ 1149 044a 00       		.byte	0
+ 1150 044b 08       		.uleb128 0x8
+ 1151 044c 88000000 		.4byte	.LVL60
+ 1152 0450 3E060000 		.4byte	0x63e
+ 1153 0454 0C       		.uleb128 0xc
+ 1154 0455 8E000000 		.4byte	.LVL61
+ 1155 0459 33060000 		.4byte	0x633
+ 1156 045d 67040000 		.4byte	0x467
+ 1157 0461 0D       		.uleb128 0xd
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 24
+
+
+ 1158 0462 01       		.uleb128 0x1
+ 1159 0463 50       		.byte	0x50
+ 1160 0464 01       		.uleb128 0x1
+ 1161 0465 31       		.byte	0x31
+ 1162 0466 00       		.byte	0
+ 1163 0467 08       		.uleb128 0x8
+ 1164 0468 96000000 		.4byte	.LVL62
+ 1165 046c 3E060000 		.4byte	0x63e
+ 1166 0470 0C       		.uleb128 0xc
+ 1167 0471 9C000000 		.4byte	.LVL63
+ 1168 0475 33060000 		.4byte	0x633
+ 1169 0479 83040000 		.4byte	0x483
+ 1170 047d 0D       		.uleb128 0xd
+ 1171 047e 01       		.uleb128 0x1
+ 1172 047f 50       		.byte	0x50
+ 1173 0480 01       		.uleb128 0x1
+ 1174 0481 31       		.byte	0x31
+ 1175 0482 00       		.byte	0
+ 1176 0483 08       		.uleb128 0x8
+ 1177 0484 A2000000 		.4byte	.LVL64
+ 1178 0488 3E060000 		.4byte	0x63e
+ 1179 048c 00       		.byte	0
+ 1180 048d 0C       		.uleb128 0xc
+ 1181 048e 0A000000 		.4byte	.LVL39
+ 1182 0492 49060000 		.4byte	0x649
+ 1183 0496 A4040000 		.4byte	0x4a4
+ 1184 049a 0D       		.uleb128 0xd
+ 1185 049b 01       		.uleb128 0x1
+ 1186 049c 50       		.byte	0x50
+ 1187 049d 05       		.uleb128 0x5
+ 1188 049e 03       		.byte	0x3
+ 1189 049f 00000000 		.4byte	Rx
+ 1190 04a3 00       		.byte	0
+ 1191 04a4 08       		.uleb128 0x8
+ 1192 04a5 0E000000 		.4byte	.LVL40
+ 1193 04a9 54060000 		.4byte	0x654
+ 1194 04ad 08       		.uleb128 0x8
+ 1195 04ae 12000000 		.4byte	.LVL41
+ 1196 04b2 5F060000 		.4byte	0x65f
+ 1197 04b6 08       		.uleb128 0x8
+ 1198 04b7 16000000 		.4byte	.LVL42
+ 1199 04bb 6A060000 		.4byte	0x66a
+ 1200 04bf 0C       		.uleb128 0xc
+ 1201 04c0 1C000000 		.4byte	.LVL43
+ 1202 04c4 0A010000 		.4byte	0x10a
+ 1203 04c8 D2040000 		.4byte	0x4d2
+ 1204 04cc 0D       		.uleb128 0xd
+ 1205 04cd 01       		.uleb128 0x1
+ 1206 04ce 50       		.byte	0x50
+ 1207 04cf 01       		.uleb128 0x1
+ 1208 04d0 32       		.byte	0x32
+ 1209 04d1 00       		.byte	0
+ 1210 04d2 0C       		.uleb128 0xc
+ 1211 04d3 24000000 		.4byte	.LVL44
+ 1212 04d7 75060000 		.4byte	0x675
+ 1213 04db EB040000 		.4byte	0x4eb
+ 1214 04df 0D       		.uleb128 0xd
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 25
+
+
+ 1215 04e0 01       		.uleb128 0x1
+ 1216 04e1 50       		.byte	0x50
+ 1217 04e2 02       		.uleb128 0x2
+ 1218 04e3 08       		.byte	0x8
+ 1219 04e4 40       		.byte	0x40
+ 1220 04e5 0D       		.uleb128 0xd
+ 1221 04e6 01       		.uleb128 0x1
+ 1222 04e7 51       		.byte	0x51
+ 1223 04e8 01       		.uleb128 0x1
+ 1224 04e9 30       		.byte	0x30
+ 1225 04ea 00       		.byte	0
+ 1226 04eb 08       		.uleb128 0x8
+ 1227 04ec 30000000 		.4byte	.LVL45
+ 1228 04f0 2F010000 		.4byte	0x12f
+ 1229 04f4 08       		.uleb128 0x8
+ 1230 04f5 34000000 		.4byte	.LVL46
+ 1231 04f9 94010000 		.4byte	0x194
+ 1232 04fd 08       		.uleb128 0x8
+ 1233 04fe 38000000 		.4byte	.LVL47
+ 1234 0502 4A020000 		.4byte	0x24a
+ 1235 0506 08       		.uleb128 0x8
+ 1236 0507 3C000000 		.4byte	.LVL48
+ 1237 050b F9010000 		.4byte	0x1f9
+ 1238 050f 0C       		.uleb128 0xc
+ 1239 0510 42000000 		.4byte	.LVL49
+ 1240 0514 52030000 		.4byte	0x352
+ 1241 0518 22050000 		.4byte	0x522
+ 1242 051c 0D       		.uleb128 0xd
+ 1243 051d 01       		.uleb128 0x1
+ 1244 051e 50       		.byte	0x50
+ 1245 051f 01       		.uleb128 0x1
+ 1246 0520 32       		.byte	0x32
+ 1247 0521 00       		.byte	0
+ 1248 0522 0C       		.uleb128 0xc
+ 1249 0523 48000000 		.4byte	.LVL50
+ 1250 0527 52030000 		.4byte	0x352
+ 1251 052b 35050000 		.4byte	0x535
+ 1252 052f 0D       		.uleb128 0xd
+ 1253 0530 01       		.uleb128 0x1
+ 1254 0531 50       		.byte	0x50
+ 1255 0532 01       		.uleb128 0x1
+ 1256 0533 33       		.byte	0x33
+ 1257 0534 00       		.byte	0
+ 1258 0535 0C       		.uleb128 0xc
+ 1259 0536 4E000000 		.4byte	.LVL51
+ 1260 053a 52030000 		.4byte	0x352
+ 1261 053e 48050000 		.4byte	0x548
+ 1262 0542 0D       		.uleb128 0xd
+ 1263 0543 01       		.uleb128 0x1
+ 1264 0544 50       		.byte	0x50
+ 1265 0545 01       		.uleb128 0x1
+ 1266 0546 34       		.byte	0x34
+ 1267 0547 00       		.byte	0
+ 1268 0548 08       		.uleb128 0x8
+ 1269 0549 52000000 		.4byte	.LVL52
+ 1270 054d 80060000 		.4byte	0x680
+ 1271 0551 00       		.byte	0
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 26
+
+
+ 1272 0552 13       		.uleb128 0x13
+ 1273 0553 EC010000 		.4byte	.LASF32
+ 1274 0557 05       		.byte	0x5
+ 1275 0558 1207     		.2byte	0x712
+ 1276 055a 5E050000 		.4byte	0x55e
+ 1277 055e 14       		.uleb128 0x14
+ 1278 055f 76000000 		.4byte	0x76
+ 1279 0563 15       		.uleb128 0x15
+ 1280 0564 9F020000 		.4byte	.LASF33
+ 1281 0568 01       		.byte	0x1
+ 1282 0569 0E       		.byte	0xe
+ 1283 056a 81000000 		.4byte	0x81
+ 1284 056e 05       		.uleb128 0x5
+ 1285 056f 03       		.byte	0x3
+ 1286 0570 00000000 		.4byte	result
+ 1287 0574 15       		.uleb128 0x15
+ 1288 0575 70020000 		.4byte	.LASF34
+ 1289 0579 01       		.byte	0x1
+ 1290 057a 10       		.byte	0x10
+ 1291 057b 99000000 		.4byte	0x99
+ 1292 057f 05       		.uleb128 0x5
+ 1293 0580 03       		.byte	0x3
+ 1294 0581 00000000 		.4byte	Datos
+ 1295 0585 15       		.uleb128 0x15
+ 1296 0586 64020000 		.4byte	.LASF35
+ 1297 058a 01       		.byte	0x1
+ 1298 058b 10       		.byte	0x10
+ 1299 058c 99000000 		.4byte	0x99
+ 1300 0590 05       		.uleb128 0x5
+ 1301 0591 03       		.byte	0x3
+ 1302 0592 00000000 		.4byte	Datos2
+ 1303 0596 15       		.uleb128 0x15
+ 1304 0597 0E000000 		.4byte	.LASF36
+ 1305 059b 01       		.byte	0x1
+ 1306 059c 10       		.byte	0x10
+ 1307 059d 99000000 		.4byte	0x99
+ 1308 05a1 05       		.uleb128 0x5
+ 1309 05a2 03       		.byte	0x3
+ 1310 05a3 00000000 		.4byte	Voltaje_Shunt
+ 1311 05a7 15       		.uleb128 0x15
+ 1312 05a8 43000000 		.4byte	.LASF37
+ 1313 05ac 01       		.byte	0x1
+ 1314 05ad 11       		.byte	0x11
+ 1315 05ae A5000000 		.4byte	0xa5
+ 1316 05b2 05       		.uleb128 0x5
+ 1317 05b3 03       		.byte	0x3
+ 1318 05b4 00000000 		.4byte	factor_lsb_Corriente
+ 1319 05b8 15       		.uleb128 0x15
+ 1320 05b9 94030000 		.4byte	.LASF38
+ 1321 05bd 01       		.byte	0x1
+ 1322 05be 12       		.byte	0x12
+ 1323 05bf 99000000 		.4byte	0x99
+ 1324 05c3 05       		.uleb128 0x5
+ 1325 05c4 03       		.byte	0x3
+ 1326 05c5 00000000 		.4byte	Corriente
+ 1327 05c9 15       		.uleb128 0x15
+ 1328 05ca BE000000 		.4byte	.LASF39
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 27
+
+
+ 1329 05ce 01       		.byte	0x1
+ 1330 05cf 12       		.byte	0x12
+ 1331 05d0 99000000 		.4byte	0x99
+ 1332 05d4 05       		.uleb128 0x5
+ 1333 05d5 03       		.byte	0x3
+ 1334 05d6 00000000 		.4byte	Voltaje
+ 1335 05da 15       		.uleb128 0x15
+ 1336 05db 88010000 		.4byte	.LASF40
+ 1337 05df 01       		.byte	0x1
+ 1338 05e0 12       		.byte	0x12
+ 1339 05e1 99000000 		.4byte	0x99
+ 1340 05e5 05       		.uleb128 0x5
+ 1341 05e6 03       		.byte	0x3
+ 1342 05e7 00000000 		.4byte	Potencia
+ 1343 05eb 15       		.uleb128 0x15
+ 1344 05ec 6B020000 		.4byte	.LASF41
+ 1345 05f0 01       		.byte	0x1
+ 1346 05f1 13       		.byte	0x13
+ 1347 05f2 68000000 		.4byte	0x68
+ 1348 05f6 05       		.uleb128 0x5
+ 1349 05f7 03       		.byte	0x3
+ 1350 05f8 00000000 		.4byte	flag
+ 1351 05fc 16       		.uleb128 0x16
+ 1352 05fd 52030000 		.4byte	.LASF42
+ 1353 0601 52030000 		.4byte	.LASF42
+ 1354 0605 06       		.byte	0x6
+ 1355 0606 71       		.byte	0x71
+ 1356 0607 16       		.uleb128 0x16
+ 1357 0608 11030000 		.4byte	.LASF43
+ 1358 060c 11030000 		.4byte	.LASF43
+ 1359 0610 07       		.byte	0x7
+ 1360 0611 28       		.byte	0x28
+ 1361 0612 16       		.uleb128 0x16
+ 1362 0613 B3010000 		.4byte	.LASF44
+ 1363 0617 B3010000 		.4byte	.LASF44
+ 1364 061b 08       		.byte	0x8
+ 1365 061c B3       		.byte	0xb3
+ 1366 061d 16       		.uleb128 0x16
+ 1367 061e 1C000000 		.4byte	.LASF45
+ 1368 0622 1C000000 		.4byte	.LASF45
+ 1369 0626 08       		.byte	0x8
+ 1370 0627 B6       		.byte	0xb6
+ 1371 0628 16       		.uleb128 0x16
+ 1372 0629 FE020000 		.4byte	.LASF46
+ 1373 062d FE020000 		.4byte	.LASF46
+ 1374 0631 08       		.byte	0x8
+ 1375 0632 B7       		.byte	0xb7
+ 1376 0633 16       		.uleb128 0x16
+ 1377 0634 81030000 		.4byte	.LASF47
+ 1378 0638 81030000 		.4byte	.LASF47
+ 1379 063c 09       		.byte	0x9
+ 1380 063d 76       		.byte	0x76
+ 1381 063e 16       		.uleb128 0x16
+ 1382 063f C0020000 		.4byte	.LASF48
+ 1383 0643 C0020000 		.4byte	.LASF48
+ 1384 0647 06       		.byte	0x6
+ 1385 0648 8A       		.byte	0x8a
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 28
+
+
+ 1386 0649 16       		.uleb128 0x16
+ 1387 064a 4A020000 		.4byte	.LASF49
+ 1388 064e 4A020000 		.4byte	.LASF49
+ 1389 0652 07       		.byte	0x7
+ 1390 0653 18       		.byte	0x18
+ 1391 0654 16       		.uleb128 0x16
+ 1392 0655 DC010000 		.4byte	.LASF50
+ 1393 0659 DC010000 		.4byte	.LASF50
+ 1394 065d 06       		.byte	0x6
+ 1395 065e 54       		.byte	0x54
+ 1396 065f 16       		.uleb128 0x16
+ 1397 0660 91010000 		.4byte	.LASF51
+ 1398 0664 91010000 		.4byte	.LASF51
+ 1399 0668 08       		.byte	0x8
+ 1400 0669 93       		.byte	0x93
+ 1401 066a 16       		.uleb128 0x16
+ 1402 066b DC000000 		.4byte	.LASF52
+ 1403 066f DC000000 		.4byte	.LASF52
+ 1404 0673 0A       		.byte	0xa
+ 1405 0674 38       		.byte	0x38
+ 1406 0675 16       		.uleb128 0x16
+ 1407 0676 0D020000 		.4byte	.LASF53
+ 1408 067a 0D020000 		.4byte	.LASF53
+ 1409 067e 08       		.byte	0x8
+ 1410 067f B1       		.byte	0xb1
+ 1411 0680 16       		.uleb128 0x16
+ 1412 0681 30000000 		.4byte	.LASF54
+ 1413 0685 30000000 		.4byte	.LASF54
+ 1414 0689 08       		.byte	0x8
+ 1415 068a B5       		.byte	0xb5
+ 1416 068b 00       		.byte	0
+ 1417              		.section	.debug_abbrev,"",%progbits
+ 1418              	.Ldebug_abbrev0:
+ 1419 0000 01       		.uleb128 0x1
+ 1420 0001 11       		.uleb128 0x11
+ 1421 0002 01       		.byte	0x1
+ 1422 0003 25       		.uleb128 0x25
+ 1423 0004 0E       		.uleb128 0xe
+ 1424 0005 13       		.uleb128 0x13
+ 1425 0006 0B       		.uleb128 0xb
+ 1426 0007 03       		.uleb128 0x3
+ 1427 0008 0E       		.uleb128 0xe
+ 1428 0009 1B       		.uleb128 0x1b
+ 1429 000a 0E       		.uleb128 0xe
+ 1430 000b 55       		.uleb128 0x55
+ 1431 000c 17       		.uleb128 0x17
+ 1432 000d 11       		.uleb128 0x11
+ 1433 000e 01       		.uleb128 0x1
+ 1434 000f 10       		.uleb128 0x10
+ 1435 0010 17       		.uleb128 0x17
+ 1436 0011 00       		.byte	0
+ 1437 0012 00       		.byte	0
+ 1438 0013 02       		.uleb128 0x2
+ 1439 0014 24       		.uleb128 0x24
+ 1440 0015 00       		.byte	0
+ 1441 0016 0B       		.uleb128 0xb
+ 1442 0017 0B       		.uleb128 0xb
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 29
+
+
+ 1443 0018 3E       		.uleb128 0x3e
+ 1444 0019 0B       		.uleb128 0xb
+ 1445 001a 03       		.uleb128 0x3
+ 1446 001b 0E       		.uleb128 0xe
+ 1447 001c 00       		.byte	0
+ 1448 001d 00       		.byte	0
+ 1449 001e 03       		.uleb128 0x3
+ 1450 001f 16       		.uleb128 0x16
+ 1451 0020 00       		.byte	0
+ 1452 0021 03       		.uleb128 0x3
+ 1453 0022 0E       		.uleb128 0xe
+ 1454 0023 3A       		.uleb128 0x3a
+ 1455 0024 0B       		.uleb128 0xb
+ 1456 0025 3B       		.uleb128 0x3b
+ 1457 0026 0B       		.uleb128 0xb
+ 1458 0027 49       		.uleb128 0x49
+ 1459 0028 13       		.uleb128 0x13
+ 1460 0029 00       		.byte	0
+ 1461 002a 00       		.byte	0
+ 1462 002b 04       		.uleb128 0x4
+ 1463 002c 24       		.uleb128 0x24
+ 1464 002d 00       		.byte	0
+ 1465 002e 0B       		.uleb128 0xb
+ 1466 002f 0B       		.uleb128 0xb
+ 1467 0030 3E       		.uleb128 0x3e
+ 1468 0031 0B       		.uleb128 0xb
+ 1469 0032 03       		.uleb128 0x3
+ 1470 0033 08       		.uleb128 0x8
+ 1471 0034 00       		.byte	0
+ 1472 0035 00       		.byte	0
+ 1473 0036 05       		.uleb128 0x5
+ 1474 0037 16       		.uleb128 0x16
+ 1475 0038 00       		.byte	0
+ 1476 0039 03       		.uleb128 0x3
+ 1477 003a 0E       		.uleb128 0xe
+ 1478 003b 3A       		.uleb128 0x3a
+ 1479 003c 0B       		.uleb128 0xb
+ 1480 003d 3B       		.uleb128 0x3b
+ 1481 003e 05       		.uleb128 0x5
+ 1482 003f 49       		.uleb128 0x49
+ 1483 0040 13       		.uleb128 0x13
+ 1484 0041 00       		.byte	0
+ 1485 0042 00       		.byte	0
+ 1486 0043 06       		.uleb128 0x6
+ 1487 0044 2E       		.uleb128 0x2e
+ 1488 0045 01       		.byte	0x1
+ 1489 0046 3F       		.uleb128 0x3f
+ 1490 0047 19       		.uleb128 0x19
+ 1491 0048 03       		.uleb128 0x3
+ 1492 0049 08       		.uleb128 0x8
+ 1493 004a 3A       		.uleb128 0x3a
+ 1494 004b 0B       		.uleb128 0xb
+ 1495 004c 3B       		.uleb128 0x3b
+ 1496 004d 0B       		.uleb128 0xb
+ 1497 004e 27       		.uleb128 0x27
+ 1498 004f 19       		.uleb128 0x19
+ 1499 0050 11       		.uleb128 0x11
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 30
+
+
+ 1500 0051 01       		.uleb128 0x1
+ 1501 0052 12       		.uleb128 0x12
+ 1502 0053 06       		.uleb128 0x6
+ 1503 0054 40       		.uleb128 0x40
+ 1504 0055 18       		.uleb128 0x18
+ 1505 0056 9742     		.uleb128 0x2117
+ 1506 0058 19       		.uleb128 0x19
+ 1507 0059 01       		.uleb128 0x1
+ 1508 005a 13       		.uleb128 0x13
+ 1509 005b 00       		.byte	0
+ 1510 005c 00       		.byte	0
+ 1511 005d 07       		.uleb128 0x7
+ 1512 005e 34       		.uleb128 0x34
+ 1513 005f 00       		.byte	0
+ 1514 0060 03       		.uleb128 0x3
+ 1515 0061 0E       		.uleb128 0xe
+ 1516 0062 3A       		.uleb128 0x3a
+ 1517 0063 0B       		.uleb128 0xb
+ 1518 0064 3B       		.uleb128 0x3b
+ 1519 0065 0B       		.uleb128 0xb
+ 1520 0066 49       		.uleb128 0x49
+ 1521 0067 13       		.uleb128 0x13
+ 1522 0068 02       		.uleb128 0x2
+ 1523 0069 17       		.uleb128 0x17
+ 1524 006a 00       		.byte	0
+ 1525 006b 00       		.byte	0
+ 1526 006c 08       		.uleb128 0x8
+ 1527 006d 898201   		.uleb128 0x4109
+ 1528 0070 00       		.byte	0
+ 1529 0071 11       		.uleb128 0x11
+ 1530 0072 01       		.uleb128 0x1
+ 1531 0073 31       		.uleb128 0x31
+ 1532 0074 13       		.uleb128 0x13
+ 1533 0075 00       		.byte	0
+ 1534 0076 00       		.byte	0
+ 1535 0077 09       		.uleb128 0x9
+ 1536 0078 2E       		.uleb128 0x2e
+ 1537 0079 01       		.byte	0x1
+ 1538 007a 3F       		.uleb128 0x3f
+ 1539 007b 19       		.uleb128 0x19
+ 1540 007c 03       		.uleb128 0x3
+ 1541 007d 0E       		.uleb128 0xe
+ 1542 007e 3A       		.uleb128 0x3a
+ 1543 007f 0B       		.uleb128 0xb
+ 1544 0080 3B       		.uleb128 0x3b
+ 1545 0081 0B       		.uleb128 0xb
+ 1546 0082 27       		.uleb128 0x27
+ 1547 0083 19       		.uleb128 0x19
+ 1548 0084 11       		.uleb128 0x11
+ 1549 0085 01       		.uleb128 0x1
+ 1550 0086 12       		.uleb128 0x12
+ 1551 0087 06       		.uleb128 0x6
+ 1552 0088 40       		.uleb128 0x40
+ 1553 0089 18       		.uleb128 0x18
+ 1554 008a 9642     		.uleb128 0x2116
+ 1555 008c 19       		.uleb128 0x19
+ 1556 008d 01       		.uleb128 0x1
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 31
+
+
+ 1557 008e 13       		.uleb128 0x13
+ 1558 008f 00       		.byte	0
+ 1559 0090 00       		.byte	0
+ 1560 0091 0A       		.uleb128 0xa
+ 1561 0092 05       		.uleb128 0x5
+ 1562 0093 00       		.byte	0
+ 1563 0094 03       		.uleb128 0x3
+ 1564 0095 0E       		.uleb128 0xe
+ 1565 0096 3A       		.uleb128 0x3a
+ 1566 0097 0B       		.uleb128 0xb
+ 1567 0098 3B       		.uleb128 0x3b
+ 1568 0099 0B       		.uleb128 0xb
+ 1569 009a 49       		.uleb128 0x49
+ 1570 009b 13       		.uleb128 0x13
+ 1571 009c 02       		.uleb128 0x2
+ 1572 009d 17       		.uleb128 0x17
+ 1573 009e 00       		.byte	0
+ 1574 009f 00       		.byte	0
+ 1575 00a0 0B       		.uleb128 0xb
+ 1576 00a1 2E       		.uleb128 0x2e
+ 1577 00a2 01       		.byte	0x1
+ 1578 00a3 3F       		.uleb128 0x3f
+ 1579 00a4 19       		.uleb128 0x19
+ 1580 00a5 03       		.uleb128 0x3
+ 1581 00a6 0E       		.uleb128 0xe
+ 1582 00a7 3A       		.uleb128 0x3a
+ 1583 00a8 0B       		.uleb128 0xb
+ 1584 00a9 3B       		.uleb128 0x3b
+ 1585 00aa 0B       		.uleb128 0xb
+ 1586 00ab 11       		.uleb128 0x11
+ 1587 00ac 01       		.uleb128 0x1
+ 1588 00ad 12       		.uleb128 0x12
+ 1589 00ae 06       		.uleb128 0x6
+ 1590 00af 40       		.uleb128 0x40
+ 1591 00b0 18       		.uleb128 0x18
+ 1592 00b1 9742     		.uleb128 0x2117
+ 1593 00b3 19       		.uleb128 0x19
+ 1594 00b4 01       		.uleb128 0x1
+ 1595 00b5 13       		.uleb128 0x13
+ 1596 00b6 00       		.byte	0
+ 1597 00b7 00       		.byte	0
+ 1598 00b8 0C       		.uleb128 0xc
+ 1599 00b9 898201   		.uleb128 0x4109
+ 1600 00bc 01       		.byte	0x1
+ 1601 00bd 11       		.uleb128 0x11
+ 1602 00be 01       		.uleb128 0x1
+ 1603 00bf 31       		.uleb128 0x31
+ 1604 00c0 13       		.uleb128 0x13
+ 1605 00c1 01       		.uleb128 0x1
+ 1606 00c2 13       		.uleb128 0x13
+ 1607 00c3 00       		.byte	0
+ 1608 00c4 00       		.byte	0
+ 1609 00c5 0D       		.uleb128 0xd
+ 1610 00c6 8A8201   		.uleb128 0x410a
+ 1611 00c9 00       		.byte	0
+ 1612 00ca 02       		.uleb128 0x2
+ 1613 00cb 18       		.uleb128 0x18
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 32
+
+
+ 1614 00cc 9142     		.uleb128 0x2111
+ 1615 00ce 18       		.uleb128 0x18
+ 1616 00cf 00       		.byte	0
+ 1617 00d0 00       		.byte	0
+ 1618 00d1 0E       		.uleb128 0xe
+ 1619 00d2 898201   		.uleb128 0x4109
+ 1620 00d5 01       		.byte	0x1
+ 1621 00d6 11       		.uleb128 0x11
+ 1622 00d7 01       		.uleb128 0x1
+ 1623 00d8 31       		.uleb128 0x31
+ 1624 00d9 13       		.uleb128 0x13
+ 1625 00da 00       		.byte	0
+ 1626 00db 00       		.byte	0
+ 1627 00dc 0F       		.uleb128 0xf
+ 1628 00dd 34       		.uleb128 0x34
+ 1629 00de 00       		.byte	0
+ 1630 00df 03       		.uleb128 0x3
+ 1631 00e0 0E       		.uleb128 0xe
+ 1632 00e1 3A       		.uleb128 0x3a
+ 1633 00e2 0B       		.uleb128 0xb
+ 1634 00e3 3B       		.uleb128 0x3b
+ 1635 00e4 0B       		.uleb128 0xb
+ 1636 00e5 49       		.uleb128 0x49
+ 1637 00e6 13       		.uleb128 0x13
+ 1638 00e7 1C       		.uleb128 0x1c
+ 1639 00e8 05       		.uleb128 0x5
+ 1640 00e9 00       		.byte	0
+ 1641 00ea 00       		.byte	0
+ 1642 00eb 10       		.uleb128 0x10
+ 1643 00ec 2E       		.uleb128 0x2e
+ 1644 00ed 01       		.byte	0x1
+ 1645 00ee 3F       		.uleb128 0x3f
+ 1646 00ef 19       		.uleb128 0x19
+ 1647 00f0 03       		.uleb128 0x3
+ 1648 00f1 0E       		.uleb128 0xe
+ 1649 00f2 3A       		.uleb128 0x3a
+ 1650 00f3 0B       		.uleb128 0xb
+ 1651 00f4 3B       		.uleb128 0x3b
+ 1652 00f5 0B       		.uleb128 0xb
+ 1653 00f6 27       		.uleb128 0x27
+ 1654 00f7 19       		.uleb128 0x19
+ 1655 00f8 11       		.uleb128 0x11
+ 1656 00f9 01       		.uleb128 0x1
+ 1657 00fa 12       		.uleb128 0x12
+ 1658 00fb 06       		.uleb128 0x6
+ 1659 00fc 40       		.uleb128 0x40
+ 1660 00fd 18       		.uleb128 0x18
+ 1661 00fe 9742     		.uleb128 0x2117
+ 1662 0100 19       		.uleb128 0x19
+ 1663 0101 01       		.uleb128 0x1
+ 1664 0102 13       		.uleb128 0x13
+ 1665 0103 00       		.byte	0
+ 1666 0104 00       		.byte	0
+ 1667 0105 11       		.uleb128 0x11
+ 1668 0106 2E       		.uleb128 0x2e
+ 1669 0107 01       		.byte	0x1
+ 1670 0108 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 33
+
+
+ 1671 0109 19       		.uleb128 0x19
+ 1672 010a 03       		.uleb128 0x3
+ 1673 010b 0E       		.uleb128 0xe
+ 1674 010c 3A       		.uleb128 0x3a
+ 1675 010d 0B       		.uleb128 0xb
+ 1676 010e 3B       		.uleb128 0x3b
+ 1677 010f 0B       		.uleb128 0xb
+ 1678 0110 27       		.uleb128 0x27
+ 1679 0111 19       		.uleb128 0x19
+ 1680 0112 49       		.uleb128 0x49
+ 1681 0113 13       		.uleb128 0x13
+ 1682 0114 8701     		.uleb128 0x87
+ 1683 0116 19       		.uleb128 0x19
+ 1684 0117 11       		.uleb128 0x11
+ 1685 0118 01       		.uleb128 0x1
+ 1686 0119 12       		.uleb128 0x12
+ 1687 011a 06       		.uleb128 0x6
+ 1688 011b 40       		.uleb128 0x40
+ 1689 011c 18       		.uleb128 0x18
+ 1690 011d 9742     		.uleb128 0x2117
+ 1691 011f 19       		.uleb128 0x19
+ 1692 0120 01       		.uleb128 0x1
+ 1693 0121 13       		.uleb128 0x13
+ 1694 0122 00       		.byte	0
+ 1695 0123 00       		.byte	0
+ 1696 0124 12       		.uleb128 0x12
+ 1697 0125 0B       		.uleb128 0xb
+ 1698 0126 01       		.byte	0x1
+ 1699 0127 11       		.uleb128 0x11
+ 1700 0128 01       		.uleb128 0x1
+ 1701 0129 12       		.uleb128 0x12
+ 1702 012a 06       		.uleb128 0x6
+ 1703 012b 01       		.uleb128 0x1
+ 1704 012c 13       		.uleb128 0x13
+ 1705 012d 00       		.byte	0
+ 1706 012e 00       		.byte	0
+ 1707 012f 13       		.uleb128 0x13
+ 1708 0130 34       		.uleb128 0x34
+ 1709 0131 00       		.byte	0
+ 1710 0132 03       		.uleb128 0x3
+ 1711 0133 0E       		.uleb128 0xe
+ 1712 0134 3A       		.uleb128 0x3a
+ 1713 0135 0B       		.uleb128 0xb
+ 1714 0136 3B       		.uleb128 0x3b
+ 1715 0137 05       		.uleb128 0x5
+ 1716 0138 49       		.uleb128 0x49
+ 1717 0139 13       		.uleb128 0x13
+ 1718 013a 3F       		.uleb128 0x3f
+ 1719 013b 19       		.uleb128 0x19
+ 1720 013c 3C       		.uleb128 0x3c
+ 1721 013d 19       		.uleb128 0x19
+ 1722 013e 00       		.byte	0
+ 1723 013f 00       		.byte	0
+ 1724 0140 14       		.uleb128 0x14
+ 1725 0141 35       		.uleb128 0x35
+ 1726 0142 00       		.byte	0
+ 1727 0143 49       		.uleb128 0x49
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 34
+
+
+ 1728 0144 13       		.uleb128 0x13
+ 1729 0145 00       		.byte	0
+ 1730 0146 00       		.byte	0
+ 1731 0147 15       		.uleb128 0x15
+ 1732 0148 34       		.uleb128 0x34
+ 1733 0149 00       		.byte	0
+ 1734 014a 03       		.uleb128 0x3
+ 1735 014b 0E       		.uleb128 0xe
+ 1736 014c 3A       		.uleb128 0x3a
+ 1737 014d 0B       		.uleb128 0xb
+ 1738 014e 3B       		.uleb128 0x3b
+ 1739 014f 0B       		.uleb128 0xb
+ 1740 0150 49       		.uleb128 0x49
+ 1741 0151 13       		.uleb128 0x13
+ 1742 0152 3F       		.uleb128 0x3f
+ 1743 0153 19       		.uleb128 0x19
+ 1744 0154 02       		.uleb128 0x2
+ 1745 0155 18       		.uleb128 0x18
+ 1746 0156 00       		.byte	0
+ 1747 0157 00       		.byte	0
+ 1748 0158 16       		.uleb128 0x16
+ 1749 0159 2E       		.uleb128 0x2e
+ 1750 015a 00       		.byte	0
+ 1751 015b 3F       		.uleb128 0x3f
+ 1752 015c 19       		.uleb128 0x19
+ 1753 015d 3C       		.uleb128 0x3c
+ 1754 015e 19       		.uleb128 0x19
+ 1755 015f 6E       		.uleb128 0x6e
+ 1756 0160 0E       		.uleb128 0xe
+ 1757 0161 03       		.uleb128 0x3
+ 1758 0162 0E       		.uleb128 0xe
+ 1759 0163 3A       		.uleb128 0x3a
+ 1760 0164 0B       		.uleb128 0xb
+ 1761 0165 3B       		.uleb128 0x3b
+ 1762 0166 0B       		.uleb128 0xb
+ 1763 0167 00       		.byte	0
+ 1764 0168 00       		.byte	0
+ 1765 0169 00       		.byte	0
+ 1766              		.section	.debug_loc,"",%progbits
+ 1767              	.Ldebug_loc0:
+ 1768              	.LLST0:
+ 1769 0000 06000000 		.4byte	.LVL0
+ 1770 0004 13000000 		.4byte	.LVL1-1
+ 1771 0008 0100     		.2byte	0x1
+ 1772 000a 50       		.byte	0x50
+ 1773 000b 00000000 		.4byte	0
+ 1774 000f 00000000 		.4byte	0
+ 1775              	.LLST1:
+ 1776 0013 00000000 		.4byte	.LVL2
+ 1777 0017 0A000000 		.4byte	.LVL3
+ 1778 001b 0100     		.2byte	0x1
+ 1779 001d 50       		.byte	0x50
+ 1780 001e 0A000000 		.4byte	.LVL3
+ 1781 0022 0C000000 		.4byte	.LVL4
+ 1782 0026 0500     		.2byte	0x5
+ 1783 0028 70       		.byte	0x70
+ 1784 0029 80817E   		.sleb128 -32640
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 35
+
+
+ 1785 002c 9F       		.byte	0x9f
+ 1786 002d 0C000000 		.4byte	.LVL4
+ 1787 0031 1C000000 		.4byte	.LFE64
+ 1788 0035 0400     		.2byte	0x4
+ 1789 0037 F3       		.byte	0xf3
+ 1790 0038 01       		.uleb128 0x1
+ 1791 0039 50       		.byte	0x50
+ 1792 003a 9F       		.byte	0x9f
+ 1793 003b 00000000 		.4byte	0
+ 1794 003f 00000000 		.4byte	0
+ 1795              	.LLST2:
+ 1796 0043 00000000 		.4byte	.LVL29
+ 1797 0047 12000000 		.4byte	.LVL32
+ 1798 004b 0100     		.2byte	0x1
+ 1799 004d 50       		.byte	0x50
+ 1800 004e 12000000 		.4byte	.LVL32
+ 1801 0052 52000000 		.4byte	.LVL38
+ 1802 0056 0100     		.2byte	0x1
+ 1803 0058 54       		.byte	0x54
+ 1804 0059 52000000 		.4byte	.LVL38
+ 1805 005d 64000000 		.4byte	.LFE69
+ 1806 0061 0400     		.2byte	0x4
+ 1807 0063 F3       		.byte	0xf3
+ 1808 0064 01       		.uleb128 0x1
+ 1809 0065 50       		.byte	0x50
+ 1810 0066 9F       		.byte	0x9f
+ 1811 0067 00000000 		.4byte	0
+ 1812 006b 00000000 		.4byte	0
+ 1813              	.LLST3:
+ 1814 006f 04000000 		.4byte	.LVL30
+ 1815 0073 0E000000 		.4byte	.LVL31
+ 1816 0077 0200     		.2byte	0x2
+ 1817 0079 30       		.byte	0x30
+ 1818 007a 9F       		.byte	0x9f
+ 1819 007b 0E000000 		.4byte	.LVL31
+ 1820 007f 52000000 		.4byte	.LVL38
+ 1821 0083 0100     		.2byte	0x1
+ 1822 0085 56       		.byte	0x56
+ 1823 0086 00000000 		.4byte	0
+ 1824 008a 00000000 		.4byte	0
+ 1825              	.LLST4:
+ 1826 008e 5A000000 		.4byte	.LVL53
+ 1827 0092 68000000 		.4byte	.LVL55
+ 1828 0096 0200     		.2byte	0x2
+ 1829 0098 30       		.byte	0x30
+ 1830 0099 9F       		.byte	0x9f
+ 1831 009a 68000000 		.4byte	.LVL55
+ 1832 009e 6D000000 		.4byte	.LVL56-1
+ 1833 00a2 0500     		.2byte	0x5
+ 1834 00a4 03       		.byte	0x3
+ 1835 00a5 01000000 		.4byte	Voltaje+1
+ 1836 00a9 82000000 		.4byte	.LVL59
+ 1837 00ad 87000000 		.4byte	.LVL60-1
+ 1838 00b1 0500     		.2byte	0x5
+ 1839 00b3 03       		.byte	0x3
+ 1840 00b4 01000000 		.4byte	Corriente+1
+ 1841 00b8 9C000000 		.4byte	.LVL63
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 36
+
+
+ 1842 00bc A1000000 		.4byte	.LVL64-1
+ 1843 00c0 0500     		.2byte	0x5
+ 1844 00c2 03       		.byte	0x3
+ 1845 00c3 01000000 		.4byte	Potencia+1
+ 1846 00c7 00000000 		.4byte	0
+ 1847 00cb 00000000 		.4byte	0
+ 1848              		.section	.debug_aranges,"",%progbits
+ 1849 0000 54000000 		.4byte	0x54
+ 1850 0004 0200     		.2byte	0x2
+ 1851 0006 00000000 		.4byte	.Ldebug_info0
+ 1852 000a 04       		.byte	0x4
+ 1853 000b 00       		.byte	0
+ 1854 000c 0000     		.2byte	0
+ 1855 000e 0000     		.2byte	0
+ 1856 0010 00000000 		.4byte	.LFB63
+ 1857 0014 1C000000 		.4byte	.LFE63-.LFB63
+ 1858 0018 00000000 		.4byte	.LFB64
+ 1859 001c 1C000000 		.4byte	.LFE64-.LFB64
+ 1860 0020 00000000 		.4byte	.LFB65
+ 1861 0024 1E000000 		.4byte	.LFE65-.LFB65
+ 1862 0028 00000000 		.4byte	.LFB66
+ 1863 002c 1E000000 		.4byte	.LFE66-.LFB66
+ 1864 0030 00000000 		.4byte	.LFB67
+ 1865 0034 48000000 		.4byte	.LFE67-.LFB67
+ 1866 0038 00000000 		.4byte	.LFB68
+ 1867 003c 4E000000 		.4byte	.LFE68-.LFB68
+ 1868 0040 00000000 		.4byte	.LFB69
+ 1869 0044 64000000 		.4byte	.LFE69-.LFB69
+ 1870 0048 00000000 		.4byte	.LFB70
+ 1871 004c B4000000 		.4byte	.LFE70-.LFB70
+ 1872 0050 00000000 		.4byte	0
+ 1873 0054 00000000 		.4byte	0
+ 1874              		.section	.debug_ranges,"",%progbits
+ 1875              	.Ldebug_ranges0:
+ 1876 0000 00000000 		.4byte	.LFB63
+ 1877 0004 1C000000 		.4byte	.LFE63
+ 1878 0008 00000000 		.4byte	.LFB64
+ 1879 000c 1C000000 		.4byte	.LFE64
+ 1880 0010 00000000 		.4byte	.LFB65
+ 1881 0014 1E000000 		.4byte	.LFE65
+ 1882 0018 00000000 		.4byte	.LFB66
+ 1883 001c 1E000000 		.4byte	.LFE66
+ 1884 0020 00000000 		.4byte	.LFB67
+ 1885 0024 48000000 		.4byte	.LFE67
+ 1886 0028 00000000 		.4byte	.LFB68
+ 1887 002c 4E000000 		.4byte	.LFE68
+ 1888 0030 00000000 		.4byte	.LFB69
+ 1889 0034 64000000 		.4byte	.LFE69
+ 1890 0038 00000000 		.4byte	.LFB70
+ 1891 003c B4000000 		.4byte	.LFE70
+ 1892 0040 00000000 		.4byte	0
+ 1893 0044 00000000 		.4byte	0
+ 1894              		.section	.debug_line,"",%progbits
+ 1895              	.Ldebug_line0:
+ 1896 0000 52020000 		.section	.debug_str,"MS",%progbits,1
+ 1896      02007F01 
+ 1896      00000201 
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 37
+
+
+ 1896      FB0E0D00 
+ 1896      01010101 
+ 1897              	.LASF6:
+ 1898 0000 6C6F6E67 		.ascii	"long long int\000"
+ 1898      206C6F6E 
+ 1898      6720696E 
+ 1898      7400
+ 1899              	.LASF36:
+ 1900 000e 566F6C74 		.ascii	"Voltaje_Shunt\000"
+ 1900      616A655F 
+ 1900      5368756E 
+ 1900      7400
+ 1901              	.LASF45:
+ 1902 001c 6932635F 		.ascii	"i2c_MasterWriteByte\000"
+ 1902      4D617374 
+ 1902      65725772 
+ 1902      69746542 
+ 1902      79746500 
+ 1903              	.LASF54:
+ 1904 0030 6932635F 		.ascii	"i2c_MasterSendStop\000"
+ 1904      4D617374 
+ 1904      65725365 
+ 1904      6E645374 
+ 1904      6F7000
+ 1905              	.LASF37:
+ 1906 0043 66616374 		.ascii	"factor_lsb_Corriente\000"
+ 1906      6F725F6C 
+ 1906      73625F43 
+ 1906      6F727269 
+ 1906      656E7465 
+ 1907              	.LASF9:
+ 1908 0058 5F5F696E 		.ascii	"__int32_t\000"
+ 1908      7433325F 
+ 1908      7400
+ 1909              	.LASF57:
+ 1910 0062 433A5C55 		.ascii	"C:\\Users\\santa\\Documents\\PSoC Creator\\Laborato"
+ 1910      73657273 
+ 1910      5C73616E 
+ 1910      74615C44 
+ 1910      6F63756D 
+ 1911 0090 72696F5F 		.ascii	"rio_7_Vatimetro\\Lab7_Vatimetro\\Design01.cydsn\000"
+ 1911      375F5661 
+ 1911      74696D65 
+ 1911      74726F5C 
+ 1911      4C616237 
+ 1912              	.LASF39:
+ 1913 00be 566F6C74 		.ascii	"Voltaje\000"
+ 1913      616A6500 
+ 1914              	.LASF20:
+ 1915 00c6 43616C63 		.ascii	"Calc_Factor_LSB\000"
+ 1915      5F466163 
+ 1915      746F725F 
+ 1915      4C534200 
+ 1916              	.LASF15:
+ 1917 00d6 666C6F61 		.ascii	"float\000"
+ 1917      7400
+ 1918              	.LASF52:
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 38
+
+
+ 1919 00dc 4C43445F 		.ascii	"LCD_Start\000"
+ 1919      53746172 
+ 1919      7400
+ 1920              	.LASF11:
+ 1921 00e6 75696E74 		.ascii	"uint8\000"
+ 1921      3800
+ 1922              	.LASF1:
+ 1923 00ec 756E7369 		.ascii	"unsigned char\000"
+ 1923      676E6564 
+ 1923      20636861 
+ 1923      7200
+ 1924              	.LASF55:
+ 1925 00fa 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1925      43313120 
+ 1925      352E342E 
+ 1925      31203230 
+ 1925      31363036 
+ 1926 012d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1926      20726576 
+ 1926      6973696F 
+ 1926      6E203233 
+ 1926      37373135 
+ 1927 0160 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1927      66756E63 
+ 1927      74696F6E 
+ 1927      2D736563 
+ 1927      74696F6E 
+ 1928              	.LASF40:
+ 1929 0188 506F7465 		.ascii	"Potencia\000"
+ 1929      6E636961 
+ 1929      00
+ 1930              	.LASF51:
+ 1931 0191 6932635F 		.ascii	"i2c_Start\000"
+ 1931      53746172 
+ 1931      7400
+ 1932              	.LASF13:
+ 1933 019b 696E7431 		.ascii	"int16\000"
+ 1933      3600
+ 1934              	.LASF5:
+ 1935 01a1 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1935      20756E73 
+ 1935      69676E65 
+ 1935      6420696E 
+ 1935      7400
+ 1936              	.LASF44:
+ 1937 01b3 6932635F 		.ascii	"i2c_MasterSendRestart\000"
+ 1937      4D617374 
+ 1937      65725365 
+ 1937      6E645265 
+ 1937      73746172 
+ 1938              	.LASF3:
+ 1939 01c9 73686F72 		.ascii	"short unsigned int\000"
+ 1939      7420756E 
+ 1939      7369676E 
+ 1939      65642069 
+ 1939      6E7400
+ 1940              	.LASF50:
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 39
+
+
+ 1941 01dc 55415254 		.ascii	"UART_Start\000"
+ 1941      5F537461 
+ 1941      727400
+ 1942              	.LASF30:
+ 1943 01e7 6E756D32 		.ascii	"num2\000"
+ 1943      00
+ 1944              	.LASF32:
+ 1945 01ec 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1945      52784275 
+ 1945      66666572 
+ 1945      00
+ 1946              	.LASF21:
+ 1947 01f9 57726974 		.ascii	"Write_Configuration\000"
+ 1947      655F436F 
+ 1947      6E666967 
+ 1947      75726174 
+ 1947      696F6E00 
+ 1948              	.LASF53:
+ 1949 020d 6932635F 		.ascii	"i2c_MasterSendStart\000"
+ 1949      4D617374 
+ 1949      65725365 
+ 1949      6E645374 
+ 1949      61727400 
+ 1950              	.LASF16:
+ 1951 0221 646F7562 		.ascii	"double\000"
+ 1951      6C6500
+ 1952              	.LASF29:
+ 1953 0228 41646472 		.ascii	"Address_Measure\000"
+ 1953      6573735F 
+ 1953      4D656173 
+ 1953      75726500 
+ 1954              	.LASF58:
+ 1955 0238 6D61696E 		.ascii	"main\000"
+ 1955      00
+ 1956              	.LASF14:
+ 1957 023d 666C6F61 		.ascii	"float32\000"
+ 1957      74333200 
+ 1958              	.LASF12:
+ 1959 0245 696E7438 		.ascii	"int8\000"
+ 1959      00
+ 1960              	.LASF49:
+ 1961 024a 6973725F 		.ascii	"isr_Rx_StartEx\000"
+ 1961      52785F53 
+ 1961      74617274 
+ 1961      457800
+ 1962              	.LASF26:
+ 1963 0259 76616C75 		.ascii	"value_base\000"
+ 1963      655F6261 
+ 1963      736500
+ 1964              	.LASF35:
+ 1965 0264 4461746F 		.ascii	"Datos2\000"
+ 1965      733200
+ 1966              	.LASF41:
+ 1967 026b 666C6167 		.ascii	"flag\000"
+ 1967      00
+ 1968              	.LASF34:
+ 1969 0270 4461746F 		.ascii	"Datos\000"
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 40
+
+
+ 1969      7300
+ 1970              	.LASF8:
+ 1971 0276 756E7369 		.ascii	"unsigned int\000"
+ 1971      676E6564 
+ 1971      20696E74 
+ 1971      00
+ 1972              	.LASF31:
+ 1973 0283 74656D70 		.ascii	"temp\000"
+ 1973      00
+ 1974              	.LASF7:
+ 1975 0288 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1975      206C6F6E 
+ 1975      6720756E 
+ 1975      7369676E 
+ 1975      65642069 
+ 1976              	.LASF33:
+ 1977 029f 72657375 		.ascii	"result\000"
+ 1977      6C7400
+ 1978              	.LASF23:
+ 1979 02a6 52656164 		.ascii	"Read_Voltage_Shut\000"
+ 1979      5F566F6C 
+ 1979      74616765 
+ 1979      5F536875 
+ 1979      7400
+ 1980              	.LASF10:
+ 1981 02b8 696E7433 		.ascii	"int32_t\000"
+ 1981      325F7400 
+ 1982              	.LASF48:
+ 1983 02c0 55415254 		.ascii	"UART_PutChar\000"
+ 1983      5F507574 
+ 1983      43686172 
+ 1983      00
+ 1984              	.LASF19:
+ 1985 02cd 73697A65 		.ascii	"sizetype\000"
+ 1985      74797065 
+ 1985      00
+ 1986              	.LASF22:
+ 1987 02d6 57726974 		.ascii	"Write_Calibracion\000"
+ 1987      655F4361 
+ 1987      6C696272 
+ 1987      6163696F 
+ 1987      6E00
+ 1988              	.LASF56:
+ 1989 02e8 6D61696E 		.ascii	"main.c\000"
+ 1989      2E6300
+ 1990              	.LASF17:
+ 1991 02ef 63686172 		.ascii	"char\000"
+ 1991      00
+ 1992              	.LASF2:
+ 1993 02f4 73686F72 		.ascii	"short int\000"
+ 1993      7420696E 
+ 1993      7400
+ 1994              	.LASF46:
+ 1995 02fe 6932635F 		.ascii	"i2c_MasterReadByte\000"
+ 1995      4D617374 
+ 1995      65725265 
+ 1995      61644279 
+ARM GAS  C:\Users\santa\AppData\Local\Temp\cczAvCun.s 			page 41
+
+
+ 1995      746500
+ 1996              	.LASF43:
+ 1997 0311 6973725F 		.ascii	"isr_Rx_ClearPending\000"
+ 1997      52785F43 
+ 1997      6C656172 
+ 1997      50656E64 
+ 1997      696E6700 
+ 1998              	.LASF4:
+ 1999 0325 6C6F6E67 		.ascii	"long int\000"
+ 1999      20696E74 
+ 1999      00
+ 2000              	.LASF27:
+ 2001 032e 52656164 		.ascii	"Read_Values\000"
+ 2001      5F56616C 
+ 2001      75657300 
+ 2002              	.LASF18:
+ 2003 033a 6C6F6E67 		.ascii	"long double\000"
+ 2003      20646F75 
+ 2003      626C6500 
+ 2004              	.LASF0:
+ 2005 0346 7369676E 		.ascii	"signed char\000"
+ 2005      65642063 
+ 2005      68617200 
+ 2006              	.LASF42:
+ 2007 0352 55415254 		.ascii	"UART_GetChar\000"
+ 2007      5F476574 
+ 2007      43686172 
+ 2007      00
+ 2008              	.LASF28:
+ 2009 035f 6D61785F 		.ascii	"max_Current_Wait\000"
+ 2009      43757272 
+ 2009      656E745F 
+ 2009      57616974 
+ 2009      00
+ 2010              	.LASF24:
+ 2011 0370 57726974 		.ascii	"Write_Mediciones\000"
+ 2011      655F4D65 
+ 2011      64696369 
+ 2011      6F6E6573 
+ 2011      00
+ 2012              	.LASF47:
+ 2013 0381 43794465 		.ascii	"CyDelay\000"
+ 2013      6C617900 
+ 2014              	.LASF25:
+ 2015 0389 56616C75 		.ascii	"Value_Init\000"
+ 2015      655F496E 
+ 2015      697400
+ 2016              	.LASF38:
+ 2017 0394 436F7272 		.ascii	"Corriente\000"
+ 2017      69656E74 
+ 2017      6500
+ 2018              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

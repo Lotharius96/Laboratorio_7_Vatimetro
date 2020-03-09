@@ -123,8 +123,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LCD_LCDPort_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LCD_LCDPort.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LCD_LCDPort.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Tx.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Tx.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Rx.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Rx.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RST_2_aliases.h</File>
