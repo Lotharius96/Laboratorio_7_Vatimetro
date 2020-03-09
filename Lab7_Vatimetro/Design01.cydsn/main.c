@@ -14,12 +14,12 @@
 uint8 result=0;
 
 int16 Datos,Datos2,Voltaje_Shunt=0;
-float32 factor_lsb=0;
+float32 factor_lsb_Corriente=0;
 int16 Corriente,Voltaje,Potencia=0;
 int flag=0;
 //SE BUSCA UNA RESOLUCION DE 40MV
 void Calc_Factor_LSB(int max_Current_Wait){
-factor_lsb=(max_Current_Wait/32768);
+factor_lsb_Corriente=(max_Current_Wait/32768);
 }
 void Write_Configuration(){
         i2c_MasterSendRestart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);  
@@ -78,12 +78,15 @@ void Read_Values(int Address_Measure){
         switch(Address_Measure){
           case 0x02:
             Voltaje=Datos;
+            Voltaje*=0.004; //obtener la medicion Voltios
             break;
           case 0x03:
             Corriente=Datos;
+            Corriente*=factor_lsb_Corriente; //Obtener la medicion en amperes
             break;
           case 0x04:
             Potencia=Datos;
+            Potencia*=20*factor_lsb_Corriente; //Obtener la medicion en Watts
             break;
           default:
             break;
@@ -109,12 +112,17 @@ int main(void)
            Write_Configuration();
            Write_Calibracion();
            Write_Mediciones();
+           Read_Voltage_Shut();
+           Read_Values(0x02);
+           Read_Values(0x03);
+           Read_Values(0x04);
            i2c_MasterSendStop();
            
         
         
         }
-     
+     /// ENVIAR DATOS POR MODULO UART
+        
      ///Establecer la   
      
         
