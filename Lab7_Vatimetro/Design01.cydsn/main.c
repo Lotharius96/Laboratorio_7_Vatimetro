@@ -10,6 +10,8 @@
  * ========================================
 */
 #include "project.h"
+#include <stdio.h>
+#include <stdlib.h>
 #define SLAVE_ADRESS 0x40
 uint8 result=0;
 
@@ -123,7 +125,7 @@ int main(void)
     LCD_Start();
     for(;;)
     {
-       Calc_Factor_LSB(2);
+       Calc_Factor_LSB(3);
         do{
         i2c_MasterSendStart(SLAVE_ADRESS, i2c_WRITE_XFER_MODE);
         }while(result!=i2c_MSTR_NO_ERROR);
@@ -152,7 +154,10 @@ int main(void)
               temp=(Potencia>>8);
               UART_PutChar(temp);
            }
-     
+         LCD_Position(0,0);
+         char shunt[2];
+         sprintf(shunt,"%d",Voltaje_Shunt);
+         LCD_PrintString(shunt);
      /// ENVIAR DATOS POR MODULO UART
         ///1-ESTABLECER COMUNICACION
         

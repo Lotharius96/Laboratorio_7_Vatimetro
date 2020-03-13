@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 1
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 1
 
 
    1              		.syntax unified
@@ -27,9 +27,9 @@ ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 1
   24              		.section	.cyconfigecc,"a",%progbits
   25              		.align	2
   26              		.type	cy_meta_configecc, %object
-  27              		.size	cy_meta_configecc, 2720
+  27              		.size	cy_meta_configecc, 2428
   28              	cy_meta_configecc:
-  29 0000 06       		.byte	6
+  29 0000 05       		.byte	5
   30 0001 52       		.byte	82
   31 0002 00       		.byte	0
   32 0003 40       		.byte	64
@@ -37,3334 +37,3027 @@ ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 1
   34 0005 64       		.byte	100
   35 0006 00       		.byte	0
   36 0007 40       		.byte	64
-  37 0008 5B       		.byte	91
+  37 0008 64       		.byte	100
   38 0009 00       		.byte	0
   39 000a 01       		.byte	1
   40 000b 40       		.byte	64
-  41 000c 34       		.byte	52
+  41 000c 38       		.byte	56
   42 000d 01       		.byte	1
   43 000e 01       		.byte	1
   44 000f 40       		.byte	64
-  45 0010 53       		.byte	83
+  45 0010 55       		.byte	85
   46 0011 02       		.byte	2
   47 0012 01       		.byte	1
   48 0013 40       		.byte	64
-  49 0014 47       		.byte	71
+  49 0014 54       		.byte	84
   50 0015 03       		.byte	3
   51 0016 01       		.byte	1
   52 0017 40       		.byte	64
-  53 0018 48       		.byte	72
+  53 0018 54       		.byte	84
   54 0019 04       		.byte	4
   55 001a 01       		.byte	1
   56 001b 40       		.byte	64
-  57 001c 52       		.byte	82
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 2
+  57 001c 50       		.byte	80
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 2
 
 
   58 001d 05       		.byte	5
   59 001e 01       		.byte	1
   60 001f 40       		.byte	64
-  61 0020 3D       		.byte	61
+  61 0020 09       		.byte	9
   62 0021 06       		.byte	6
   63 0022 01       		.byte	1
   64 0023 40       		.byte	64
-  65 0024 54       		.byte	84
+  65 0024 47       		.byte	71
   66 0025 07       		.byte	7
   67 0026 01       		.byte	1
   68 0027 40       		.byte	64
-  69 0028 53       		.byte	83
-  70 0029 08       		.byte	8
+  69 0028 04       		.byte	4
+  70 0029 09       		.byte	9
   71 002a 01       		.byte	1
   72 002b 40       		.byte	64
-  73 002c 55       		.byte	85
-  74 002d 09       		.byte	9
+  73 002c 0B       		.byte	11
+  74 002d 0B       		.byte	11
   75 002e 01       		.byte	1
   76 002f 40       		.byte	64
-  77 0030 50       		.byte	80
-  78 0031 0A       		.byte	10
+  77 0030 47       		.byte	71
+  78 0031 0C       		.byte	12
   79 0032 01       		.byte	1
   80 0033 40       		.byte	64
-  81 0034 42       		.byte	66
-  82 0035 0B       		.byte	11
+  81 0034 43       		.byte	67
+  82 0035 0D       		.byte	13
   83 0036 01       		.byte	1
   84 0037 40       		.byte	64
-  85 0038 03       		.byte	3
-  86 0039 0D       		.byte	13
+  85 0038 5A       		.byte	90
+  86 0039 0E       		.byte	14
   87 003a 01       		.byte	1
   88 003b 40       		.byte	64
-  89 003c 06       		.byte	6
-  90 003d 15       		.byte	21
+  89 003c 39       		.byte	57
+  90 003d 0F       		.byte	15
   91 003e 01       		.byte	1
   92 003f 40       		.byte	64
-  93 0040 4D       		.byte	77
-  94 0041 16       		.byte	22
+  93 0040 02       		.byte	2
+  94 0041 15       		.byte	21
   95 0042 01       		.byte	1
   96 0043 40       		.byte	64
-  97 0044 41       		.byte	65
-  98 0045 17       		.byte	23
+  97 0044 51       		.byte	81
+  98 0045 16       		.byte	22
   99 0046 01       		.byte	1
  100 0047 40       		.byte	64
- 101 0048 4C       		.byte	76
- 102 0049 18       		.byte	24
+ 101 0048 3E       		.byte	62
+ 102 0049 17       		.byte	23
  103 004a 01       		.byte	1
  104 004b 40       		.byte	64
- 105 004c 50       		.byte	80
+ 105 004c 03       		.byte	3
  106 004d 19       		.byte	25
  107 004e 01       		.byte	1
  108 004f 40       		.byte	64
- 109 0050 04       		.byte	4
- 110 0051 1B       		.byte	27
+ 109 0050 05       		.byte	5
+ 110 0051 40       		.byte	64
  111 0052 01       		.byte	1
  112 0053 40       		.byte	64
- 113 0054 05       		.byte	5
- 114 0055 40       		.byte	64
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 3
+ 113 0054 0B       		.byte	11
+ 114 0055 41       		.byte	65
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 3
 
 
  115 0056 01       		.byte	1
  116 0057 40       		.byte	64
- 117 0058 0C       		.byte	12
- 118 0059 41       		.byte	65
+ 117 0058 0A       		.byte	10
+ 118 0059 42       		.byte	66
  119 005a 01       		.byte	1
  120 005b 40       		.byte	64
- 121 005c 08       		.byte	8
- 122 005d 42       		.byte	66
+ 121 005c 03       		.byte	3
+ 122 005d 43       		.byte	67
  123 005e 01       		.byte	1
  124 005f 40       		.byte	64
- 125 0060 06       		.byte	6
- 126 0061 43       		.byte	67
+ 125 0060 07       		.byte	7
+ 126 0061 45       		.byte	69
  127 0062 01       		.byte	1
  128 0063 40       		.byte	64
- 129 0064 02       		.byte	2
+ 129 0064 03       		.byte	3
  130 0065 46       		.byte	70
  131 0066 01       		.byte	1
  132 0067 40       		.byte	64
- 133 0068 02       		.byte	2
- 134 0069 47       		.byte	71
+ 133 0068 06       		.byte	6
+ 134 0069 50       		.byte	80
  135 006a 01       		.byte	1
  136 006b 40       		.byte	64
- 137 006c 04       		.byte	4
- 138 006d 4C       		.byte	76
+ 137 006c 01       		.byte	1
+ 138 006d 51       		.byte	81
  139 006e 01       		.byte	1
  140 006f 40       		.byte	64
- 141 0070 07       		.byte	7
- 142 0071 50       		.byte	80
+ 141 0070 00       		.byte	0
+ 142 0071 02       		.byte	2
  143 0072 01       		.byte	1
- 144 0073 40       		.byte	64
- 145 0074 01       		.byte	1
- 146 0075 51       		.byte	81
- 147 0076 01       		.byte	1
- 148 0077 40       		.byte	64
- 149 0078 00       		.byte	0
- 150 0079 03       		.byte	3
- 151 007a 01       		.byte	1
- 152 007b 02       		.byte	2
- 153 007c 04       		.byte	4
- 154 007d 0F       		.byte	15
- 155 007e 78       		.byte	120
- 156 007f 10       		.byte	16
- 157 0080 79       		.byte	121
- 158 0081 10       		.byte	16
- 159 0082 7C       		.byte	124
- 160 0083 20       		.byte	32
- 161 0084 21       		.byte	33
- 162 0085 0F       		.byte	15
- 163 0086 22       		.byte	34
- 164 0087 04       		.byte	4
- 165 0088 31       		.byte	49
- 166 0089 08       		.byte	8
- 167 008a 80       		.byte	-128
- 168 008b 0F       		.byte	15
- 169 008c 89       		.byte	-119
- 170 008d 38       		.byte	56
- 171 008e 8A       		.byte	-118
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 4
+ 144 0073 03       		.byte	3
+ 145 0074 04       		.byte	4
+ 146 0075 0F       		.byte	15
+ 147 0076 11       		.byte	17
+ 148 0077 80       		.byte	-128
+ 149 0078 14       		.byte	20
+ 150 0079 40       		.byte	64
+ 151 007a 21       		.byte	33
+ 152 007b 0F       		.byte	15
+ 153 007c 26       		.byte	38
+ 154 007d 04       		.byte	4
+ 155 007e 31       		.byte	49
+ 156 007f 08       		.byte	8
+ 157 0080 83       		.byte	-125
+ 158 0081 0F       		.byte	15
+ 159 0082 8D       		.byte	-115
+ 160 0083 72       		.byte	114
+ 161 0084 8E       		.byte	-114
+ 162 0085 38       		.byte	56
+ 163 0086 02       		.byte	2
+ 164 0087 01       		.byte	1
+ 165 0088 08       		.byte	8
+ 166 0089 10       		.byte	16
+ 167 008a 0A       		.byte	10
+ 168 008b 01       		.byte	1
+ 169 008c 0E       		.byte	14
+ 170 008d 08       		.byte	8
+ 171 008e 10       		.byte	16
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 4
 
 
- 172 008f 72       		.byte	114
- 173 0090 00       		.byte	0
- 174 0091 01       		.byte	1
- 175 0092 01       		.byte	1
+ 172 008f 18       		.byte	24
+ 173 0090 12       		.byte	18
+ 174 0091 02       		.byte	2
+ 175 0092 16       		.byte	22
  176 0093 10       		.byte	16
- 177 0094 05       		.byte	5
- 178 0095 05       		.byte	5
- 179 0096 09       		.byte	9
- 180 0097 01       		.byte	1
- 181 0098 0B       		.byte	11
- 182 0099 02       		.byte	2
- 183 009a 0D       		.byte	13
- 184 009b 04       		.byte	4
- 185 009c 0F       		.byte	15
+ 177 0094 17       		.byte	23
+ 178 0095 01       		.byte	1
+ 179 0096 1A       		.byte	26
+ 180 0097 13       		.byte	19
+ 181 0098 1E       		.byte	30
+ 182 0099 04       		.byte	4
+ 183 009a 20       		.byte	32
+ 184 009b 10       		.byte	16
+ 185 009c 22       		.byte	34
  186 009d 01       		.byte	1
- 187 009e 12       		.byte	18
+ 187 009e 25       		.byte	37
  188 009f 02       		.byte	2
- 189 00a0 19       		.byte	25
- 190 00a1 05       		.byte	5
- 191 00a2 1A       		.byte	26
- 192 00a3 01       		.byte	1
- 193 00a4 1C       		.byte	28
- 194 00a5 01       		.byte	1
- 195 00a6 1D       		.byte	29
- 196 00a7 01       		.byte	1
- 197 00a8 1F       		.byte	31
- 198 00a9 0E       		.byte	14
- 199 00aa 20       		.byte	32
- 200 00ab 01       		.byte	1
- 201 00ac 21       		.byte	33
- 202 00ad 05       		.byte	5
- 203 00ae 24       		.byte	36
- 204 00af 01       		.byte	1
- 205 00b0 28       		.byte	40
- 206 00b1 01       		.byte	1
- 207 00b2 29       		.byte	41
- 208 00b3 04       		.byte	4
- 209 00b4 2B       		.byte	43
- 210 00b5 01       		.byte	1
- 211 00b6 2D       		.byte	45
- 212 00b7 01       		.byte	1
- 213 00b8 2E       		.byte	46
- 214 00b9 04       		.byte	4
- 215 00ba 2F       		.byte	47
- 216 00bb 08       		.byte	8
- 217 00bc 30       		.byte	48
- 218 00bd 04       		.byte	4
- 219 00be 33       		.byte	51
- 220 00bf 10       		.byte	16
- 221 00c0 34       		.byte	52
- 222 00c1 03       		.byte	3
- 223 00c2 37       		.byte	55
- 224 00c3 0F       		.byte	15
- 225 00c4 3B       		.byte	59
- 226 00c5 80       		.byte	-128
- 227 00c6 3F       		.byte	63
- 228 00c7 04       		.byte	4
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 5
+ 189 00a0 29       		.byte	41
+ 190 00a1 03       		.byte	3
+ 191 00a2 2C       		.byte	44
+ 192 00a3 18       		.byte	24
+ 193 00a4 2D       		.byte	45
+ 194 00a5 03       		.byte	3
+ 195 00a6 30       		.byte	48
+ 196 00a7 18       		.byte	24
+ 197 00a8 34       		.byte	52
+ 198 00a9 07       		.byte	7
+ 199 00aa 37       		.byte	55
+ 200 00ab 03       		.byte	3
+ 201 00ac 39       		.byte	57
+ 202 00ad 80       		.byte	-128
+ 203 00ae 3A       		.byte	58
+ 204 00af 20       		.byte	32
+ 205 00b0 3F       		.byte	63
+ 206 00b1 40       		.byte	64
+ 207 00b2 40       		.byte	64
+ 208 00b3 36       		.byte	54
+ 209 00b4 41       		.byte	65
+ 210 00b5 04       		.byte	4
+ 211 00b6 45       		.byte	69
+ 212 00b7 E0       		.byte	-32
+ 213 00b8 46       		.byte	70
+ 214 00b9 BC       		.byte	-68
+ 215 00ba 48       		.byte	72
+ 216 00bb 0E       		.byte	14
+ 217 00bc 49       		.byte	73
+ 218 00bd FF       		.byte	-1
+ 219 00be 4A       		.byte	74
+ 220 00bf FF       		.byte	-1
+ 221 00c0 4B       		.byte	75
+ 222 00c1 FF       		.byte	-1
+ 223 00c2 4E       		.byte	78
+ 224 00c3 F0       		.byte	-16
+ 225 00c4 4F       		.byte	79
+ 226 00c5 44       		.byte	68
+ 227 00c6 50       		.byte	80
+ 228 00c7 0C       		.byte	12
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 5
 
 
- 229 00c8 40       		.byte	64
- 230 00c9 36       		.byte	54
- 231 00ca 41       		.byte	65
+ 229 00c8 58       		.byte	88
+ 230 00c9 04       		.byte	4
+ 231 00ca 59       		.byte	89
  232 00cb 04       		.byte	4
- 233 00cc 45       		.byte	69
- 234 00cd E0       		.byte	-32
- 235 00ce 46       		.byte	70
- 236 00cf C0       		.byte	-64
- 237 00d0 47       		.byte	71
- 238 00d1 0B       		.byte	11
- 239 00d2 48       		.byte	72
- 240 00d3 1A       		.byte	26
- 241 00d4 49       		.byte	73
- 242 00d5 FF       		.byte	-1
- 243 00d6 4A       		.byte	74
- 244 00d7 FF       		.byte	-1
- 245 00d8 4B       		.byte	75
- 246 00d9 FF       		.byte	-1
- 247 00da 4E       		.byte	78
- 248 00db F0       		.byte	-16
- 249 00dc 4F       		.byte	79
- 250 00dd 44       		.byte	68
- 251 00de 50       		.byte	80
- 252 00df 0C       		.byte	12
- 253 00e0 54       		.byte	84
- 254 00e1 01       		.byte	1
- 255 00e2 58       		.byte	88
- 256 00e3 04       		.byte	4
- 257 00e4 59       		.byte	89
- 258 00e5 04       		.byte	4
- 259 00e6 5A       		.byte	90
+ 233 00cc 5A       		.byte	90
+ 234 00cd 04       		.byte	4
+ 235 00ce 5D       		.byte	93
+ 236 00cf 02       		.byte	2
+ 237 00d0 5F       		.byte	95
+ 238 00d1 09       		.byte	9
+ 239 00d2 66       		.byte	102
+ 240 00d3 C0       		.byte	-64
+ 241 00d4 6A       		.byte	106
+ 242 00d5 40       		.byte	64
+ 243 00d6 6B       		.byte	107
+ 244 00d7 02       		.byte	2
+ 245 00d8 83       		.byte	-125
+ 246 00d9 01       		.byte	1
+ 247 00da 85       		.byte	-123
+ 248 00db 26       		.byte	38
+ 249 00dc 86       		.byte	-122
+ 250 00dd 1B       		.byte	27
+ 251 00de 87       		.byte	-121
+ 252 00df 08       		.byte	8
+ 253 00e0 89       		.byte	-119
+ 254 00e1 0E       		.byte	14
+ 255 00e2 90       		.byte	-112
+ 256 00e3 01       		.byte	1
+ 257 00e4 91       		.byte	-111
+ 258 00e5 0E       		.byte	14
+ 259 00e6 92       		.byte	-110
  260 00e7 04       		.byte	4
- 261 00e8 5B       		.byte	91
- 262 00e9 04       		.byte	4
- 263 00ea 5D       		.byte	93
- 264 00eb 22       		.byte	34
- 265 00ec 5F       		.byte	95
- 266 00ed 0D       		.byte	13
- 267 00ee 66       		.byte	102
- 268 00ef C0       		.byte	-64
- 269 00f0 6A       		.byte	106
- 270 00f1 40       		.byte	64
- 271 00f2 6B       		.byte	107
- 272 00f3 02       		.byte	2
- 273 00f4 80       		.byte	-128
- 274 00f5 1F       		.byte	31
- 275 00f6 84       		.byte	-124
- 276 00f7 1C       		.byte	28
- 277 00f8 86       		.byte	-122
- 278 00f9 02       		.byte	2
- 279 00fa 88       		.byte	-120
- 280 00fb 04       		.byte	4
- 281 00fc 8C       		.byte	-116
+ 261 00e8 93       		.byte	-109
+ 262 00e9 20       		.byte	32
+ 263 00ea 94       		.byte	-108
+ 264 00eb 0A       		.byte	10
+ 265 00ec 96       		.byte	-106
+ 266 00ed 01       		.byte	1
+ 267 00ee 98       		.byte	-104
+ 268 00ef 01       		.byte	1
+ 269 00f0 9A       		.byte	-102
+ 270 00f1 06       		.byte	6
+ 271 00f2 9B       		.byte	-101
+ 272 00f3 40       		.byte	64
+ 273 00f4 9D       		.byte	-99
+ 274 00f5 02       		.byte	2
+ 275 00f6 9E       		.byte	-98
+ 276 00f7 0B       		.byte	11
+ 277 00f8 9F       		.byte	-97
+ 278 00f9 1C       		.byte	28
+ 279 00fa A1       		.byte	-95
+ 280 00fb 20       		.byte	32
+ 281 00fc A4       		.byte	-92
  282 00fd 01       		.byte	1
- 283 00fe 8E       		.byte	-114
- 284 00ff 1E       		.byte	30
- 285 0100 90       		.byte	-112
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 6
+ 283 00fe A5       		.byte	-91
+ 284 00ff 2C       		.byte	44
+ 285 0100 A6       		.byte	-90
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 6
 
 
- 286 0101 01       		.byte	1
- 287 0102 94       		.byte	-108
- 288 0103 12       		.byte	18
- 289 0104 96       		.byte	-106
- 290 0105 08       		.byte	8
- 291 0106 98       		.byte	-104
- 292 0107 06       		.byte	6
- 293 0108 9C       		.byte	-100
- 294 0109 02       		.byte	2
- 295 010a A0       		.byte	-96
- 296 010b 18       		.byte	24
- 297 010c A2       		.byte	-94
- 298 010d 06       		.byte	6
- 299 010e A4       		.byte	-92
- 300 010f 0A       		.byte	10
- 301 0110 A6       		.byte	-90
- 302 0111 10       		.byte	16
- 303 0112 AC       		.byte	-84
- 304 0113 02       		.byte	2
- 305 0114 AE       		.byte	-82
- 306 0115 18       		.byte	24
- 307 0116 B0       		.byte	-80
- 308 0117 1F       		.byte	31
- 309 0118 B8       		.byte	-72
- 310 0119 02       		.byte	2
- 311 011a C0       		.byte	-64
- 312 011b 62       		.byte	98
- 313 011c C5       		.byte	-59
- 314 011d 20       		.byte	32
- 315 011e C7       		.byte	-57
- 316 011f 50       		.byte	80
- 317 0120 C8       		.byte	-56
- 318 0121 22       		.byte	34
- 319 0122 C9       		.byte	-55
- 320 0123 FF       		.byte	-1
- 321 0124 CA       		.byte	-54
- 322 0125 FF       		.byte	-1
- 323 0126 CB       		.byte	-53
- 324 0127 FF       		.byte	-1
- 325 0128 CC       		.byte	-52
- 326 0129 42       		.byte	66
- 327 012a CD       		.byte	-51
- 328 012b A0       		.byte	-96
- 329 012c CE       		.byte	-50
- 330 012d 70       		.byte	112
- 331 012e D0       		.byte	-48
- 332 012f 08       		.byte	8
- 333 0130 D1       		.byte	-47
- 334 0131 10       		.byte	16
- 335 0132 D8       		.byte	-40
- 336 0133 04       		.byte	4
- 337 0134 DA       		.byte	-38
- 338 0135 04       		.byte	4
- 339 0136 DF       		.byte	-33
- 340 0137 01       		.byte	1
- 341 0138 E1       		.byte	-31
- 342 0139 48       		.byte	72
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 7
+ 286 0101 0A       		.byte	10
+ 287 0102 A7       		.byte	-89
+ 288 0103 02       		.byte	2
+ 289 0104 A9       		.byte	-87
+ 290 0105 24       		.byte	36
+ 291 0106 AA       		.byte	-86
+ 292 0107 0B       		.byte	11
+ 293 0108 AB       		.byte	-85
+ 294 0109 0A       		.byte	10
+ 295 010a AD       		.byte	-83
+ 296 010b 22       		.byte	34
+ 297 010c AF       		.byte	-81
+ 298 010d 10       		.byte	16
+ 299 010e B1       		.byte	-79
+ 300 010f 1E       		.byte	30
+ 301 0110 B2       		.byte	-78
+ 302 0111 08       		.byte	8
+ 303 0112 B3       		.byte	-77
+ 304 0113 01       		.byte	1
+ 305 0114 B4       		.byte	-76
+ 306 0115 07       		.byte	7
+ 307 0116 B6       		.byte	-74
+ 308 0117 10       		.byte	16
+ 309 0118 B7       		.byte	-73
+ 310 0119 60       		.byte	96
+ 311 011a BA       		.byte	-70
+ 312 011b 20       		.byte	32
+ 313 011c BB       		.byte	-69
+ 314 011d 02       		.byte	2
+ 315 011e BE       		.byte	-66
+ 316 011f 04       		.byte	4
+ 317 0120 C0       		.byte	-64
+ 318 0121 23       		.byte	35
+ 319 0122 C5       		.byte	-59
+ 320 0123 02       		.byte	2
+ 321 0124 C6       		.byte	-58
+ 322 0125 50       		.byte	80
+ 323 0126 C8       		.byte	-56
+ 324 0127 09       		.byte	9
+ 325 0128 C9       		.byte	-55
+ 326 0129 FF       		.byte	-1
+ 327 012a CA       		.byte	-54
+ 328 012b FF       		.byte	-1
+ 329 012c CB       		.byte	-53
+ 330 012d FF       		.byte	-1
+ 331 012e CC       		.byte	-52
+ 332 012f 42       		.byte	66
+ 333 0130 CD       		.byte	-51
+ 334 0131 A0       		.byte	-96
+ 335 0132 CE       		.byte	-50
+ 336 0133 70       		.byte	112
+ 337 0134 D0       		.byte	-48
+ 338 0135 08       		.byte	8
+ 339 0136 D1       		.byte	-47
+ 340 0137 10       		.byte	16
+ 341 0138 D8       		.byte	-40
+ 342 0139 04       		.byte	4
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 7
 
 
- 343 013a E2       		.byte	-30
- 344 013b 40       		.byte	64
- 345 013c E3       		.byte	-29
- 346 013d 48       		.byte	72
- 347 013e E4       		.byte	-28
- 348 013f 80       		.byte	-128
- 349 0140 E5       		.byte	-27
+ 343 013a D9       		.byte	-39
+ 344 013b 04       		.byte	4
+ 345 013c DA       		.byte	-38
+ 346 013d 04       		.byte	4
+ 347 013e DF       		.byte	-33
+ 348 013f 01       		.byte	1
+ 349 0140 E1       		.byte	-31
  350 0141 48       		.byte	72
- 351 0142 E6       		.byte	-26
- 352 0143 80       		.byte	-128
- 353 0144 E7       		.byte	-25
+ 351 0142 E2       		.byte	-30
+ 352 0143 40       		.byte	64
+ 353 0144 E3       		.byte	-29
  354 0145 48       		.byte	72
- 355 0146 02       		.byte	2
- 356 0147 40       		.byte	64
- 357 0148 04       		.byte	4
- 358 0149 84       		.byte	-124
- 359 014a 06       		.byte	6
- 360 014b 44       		.byte	68
- 361 014c 08       		.byte	8
- 362 014d 01       		.byte	1
- 363 014e 0A       		.byte	10
- 364 014f 05       		.byte	5
- 365 0150 0C       		.byte	12
- 366 0151 04       		.byte	4
- 367 0152 0E       		.byte	14
- 368 0153 49       		.byte	73
- 369 0154 10       		.byte	16
- 370 0155 84       		.byte	-124
- 371 0156 11       		.byte	17
- 372 0157 40       		.byte	64
- 373 0158 13       		.byte	19
- 374 0159 08       		.byte	8
- 375 015a 14       		.byte	20
- 376 015b 40       		.byte	64
- 377 015c 15       		.byte	21
- 378 015d 80       		.byte	-128
- 379 015e 17       		.byte	23
- 380 015f 08       		.byte	8
- 381 0160 18       		.byte	24
- 382 0161 04       		.byte	4
- 383 0162 1A       		.byte	26
- 384 0163 84       		.byte	-124
- 385 0164 1E       		.byte	30
- 386 0165 40       		.byte	64
- 387 0166 22       		.byte	34
- 388 0167 84       		.byte	-124
- 389 0168 28       		.byte	40
- 390 0169 44       		.byte	68
- 391 016a 2A       		.byte	42
- 392 016b 40       		.byte	64
- 393 016c 32       		.byte	50
- 394 016d A0       		.byte	-96
- 395 016e 38       		.byte	56
+ 355 0146 E4       		.byte	-28
+ 356 0147 80       		.byte	-128
+ 357 0148 E5       		.byte	-27
+ 358 0149 48       		.byte	72
+ 359 014a E6       		.byte	-26
+ 360 014b 80       		.byte	-128
+ 361 014c E7       		.byte	-25
+ 362 014d 48       		.byte	72
+ 363 014e 00       		.byte	0
+ 364 014f 10       		.byte	16
+ 365 0150 01       		.byte	1
+ 366 0151 42       		.byte	66
+ 367 0152 03       		.byte	3
+ 368 0153 02       		.byte	2
+ 369 0154 04       		.byte	4
+ 370 0155 04       		.byte	4
+ 371 0156 09       		.byte	9
+ 372 0157 02       		.byte	2
+ 373 0158 0A       		.byte	10
+ 374 0159 06       		.byte	6
+ 375 015a 0B       		.byte	11
+ 376 015b 20       		.byte	32
+ 377 015c 0D       		.byte	13
+ 378 015d 06       		.byte	6
+ 379 015e 0E       		.byte	14
+ 380 015f 49       		.byte	73
+ 381 0160 12       		.byte	18
+ 382 0161 02       		.byte	2
+ 383 0162 13       		.byte	19
+ 384 0163 02       		.byte	2
+ 385 0164 15       		.byte	21
+ 386 0165 04       		.byte	4
+ 387 0166 17       		.byte	23
+ 388 0167 20       		.byte	32
+ 389 0168 1A       		.byte	26
+ 390 0169 04       		.byte	4
+ 391 016a 1B       		.byte	27
+ 392 016b 02       		.byte	2
+ 393 016c 1E       		.byte	30
+ 394 016d 09       		.byte	9
+ 395 016e 1F       		.byte	31
  396 016f 04       		.byte	4
- 397 0170 39       		.byte	57
- 398 0171 80       		.byte	-128
- 399 0172 3B       		.byte	59
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 8
+ 397 0170 20       		.byte	32
+ 398 0171 02       		.byte	2
+ 399 0172 26       		.byte	38
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 8
 
 
- 400 0173 12       		.byte	18
- 401 0174 40       		.byte	64
- 402 0175 60       		.byte	96
- 403 0176 44       		.byte	68
- 404 0177 10       		.byte	16
- 405 0178 45       		.byte	69
- 406 0179 10       		.byte	16
- 407 017a 46       		.byte	70
- 408 017b 10       		.byte	16
- 409 017c 49       		.byte	73
- 410 017d 01       		.byte	1
- 411 017e 4A       		.byte	74
- 412 017f 08       		.byte	8
- 413 0180 4B       		.byte	75
- 414 0181 02       		.byte	2
- 415 0182 4C       		.byte	76
- 416 0183 04       		.byte	4
- 417 0184 4F       		.byte	79
- 418 0185 01       		.byte	1
- 419 0186 52       		.byte	82
- 420 0187 10       		.byte	16
- 421 0188 53       		.byte	83
- 422 0189 04       		.byte	4
- 423 018a 56       		.byte	86
- 424 018b 02       		.byte	2
- 425 018c 58       		.byte	88
- 426 018d 10       		.byte	16
- 427 018e 59       		.byte	89
- 428 018f 81       		.byte	-127
- 429 0190 5A       		.byte	90
+ 400 0173 40       		.byte	64
+ 401 0174 27       		.byte	39
+ 402 0175 63       		.byte	99
+ 403 0176 28       		.byte	40
+ 404 0177 30       		.byte	48
+ 405 0178 29       		.byte	41
+ 406 0179 20       		.byte	32
+ 407 017a 2A       		.byte	42
+ 408 017b 80       		.byte	-128
+ 409 017c 2B       		.byte	43
+ 410 017d 09       		.byte	9
+ 411 017e 2C       		.byte	44
+ 412 017f 04       		.byte	4
+ 413 0180 2E       		.byte	46
+ 414 0181 42       		.byte	66
+ 415 0182 2F       		.byte	47
+ 416 0183 10       		.byte	16
+ 417 0184 30       		.byte	48
+ 418 0185 08       		.byte	8
+ 419 0186 36       		.byte	54
+ 420 0187 90       		.byte	-112
+ 421 0188 37       		.byte	55
+ 422 0189 41       		.byte	65
+ 423 018a 3C       		.byte	60
+ 424 018b 10       		.byte	16
+ 425 018c 3E       		.byte	62
+ 426 018d 05       		.byte	5
+ 427 018e 42       		.byte	66
+ 428 018f 80       		.byte	-128
+ 429 0190 43       		.byte	67
  430 0191 08       		.byte	8
- 431 0192 78       		.byte	120
- 432 0193 02       		.byte	2
- 433 0194 7A       		.byte	122
- 434 0195 80       		.byte	-128
- 435 0196 7B       		.byte	123
- 436 0197 08       		.byte	8
- 437 0198 82       		.byte	-126
- 438 0199 40       		.byte	64
- 439 019a C0       		.byte	-64
- 440 019b F8       		.byte	-8
- 441 019c C2       		.byte	-62
- 442 019d FB       		.byte	-5
- 443 019e C4       		.byte	-60
- 444 019f BF       		.byte	-65
- 445 01a0 CA       		.byte	-54
- 446 01a1 0D       		.byte	13
- 447 01a2 CC       		.byte	-52
- 448 01a3 0C       		.byte	12
- 449 01a4 CE       		.byte	-50
- 450 01a5 0F       		.byte	15
- 451 01a6 D0       		.byte	-48
- 452 01a7 23       		.byte	35
- 453 01a8 D2       		.byte	-46
- 454 01a9 24       		.byte	36
- 455 01aa D6       		.byte	-42
- 456 01ab 0F       		.byte	15
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 9
+ 431 0192 45       		.byte	69
+ 432 0193 28       		.byte	40
+ 433 0194 48       		.byte	72
+ 434 0195 08       		.byte	8
+ 435 0196 4B       		.byte	75
+ 436 0197 01       		.byte	1
+ 437 0198 4F       		.byte	79
+ 438 0199 04       		.byte	4
+ 439 019a 50       		.byte	80
+ 440 019b 90       		.byte	-112
+ 441 019c 52       		.byte	82
+ 442 019d 40       		.byte	64
+ 443 019e 57       		.byte	87
+ 444 019f 10       		.byte	16
+ 445 01a0 7B       		.byte	123
+ 446 01a1 04       		.byte	4
+ 447 01a2 87       		.byte	-121
+ 448 01a3 01       		.byte	1
+ 449 01a4 89       		.byte	-119
+ 450 01a5 20       		.byte	32
+ 451 01a6 8C       		.byte	-116
+ 452 01a7 18       		.byte	24
+ 453 01a8 C0       		.byte	-64
+ 454 01a9 2B       		.byte	43
+ 455 01aa C2       		.byte	-62
+ 456 01ab FF       		.byte	-1
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 9
 
 
- 457 01ac DE       		.byte	-34
- 458 01ad 04       		.byte	4
- 459 01ae 03       		.byte	3
- 460 01af 03       		.byte	3
- 461 01b0 07       		.byte	7
- 462 01b1 03       		.byte	3
- 463 01b2 0D       		.byte	13
- 464 01b3 01       		.byte	1
- 465 01b4 0F       		.byte	15
- 466 01b5 04       		.byte	4
- 467 01b6 10       		.byte	16
- 468 01b7 08       		.byte	8
- 469 01b8 11       		.byte	17
- 470 01b9 01       		.byte	1
- 471 01ba 12       		.byte	18
- 472 01bb 12       		.byte	18
- 473 01bc 13       		.byte	19
- 474 01bd 06       		.byte	6
- 475 01be 15       		.byte	21
- 476 01bf 03       		.byte	3
- 477 01c0 18       		.byte	24
- 478 01c1 01       		.byte	1
- 479 01c2 20       		.byte	32
- 480 01c3 08       		.byte	8
- 481 01c4 22       		.byte	34
- 482 01c5 10       		.byte	16
- 483 01c6 23       		.byte	35
- 484 01c7 03       		.byte	3
- 485 01c8 25       		.byte	37
- 486 01c9 02       		.byte	2
- 487 01ca 26       		.byte	38
+ 457 01ac C4       		.byte	-60
+ 458 01ad 69       		.byte	105
+ 459 01ae CA       		.byte	-54
+ 460 01af FE       		.byte	-2
+ 461 01b0 CC       		.byte	-52
+ 462 01b1 B2       		.byte	-78
+ 463 01b2 CE       		.byte	-50
+ 464 01b3 E0       		.byte	-32
+ 465 01b4 D0       		.byte	-48
+ 466 01b5 63       		.byte	99
+ 467 01b6 D2       		.byte	-46
+ 468 01b7 04       		.byte	4
+ 469 01b8 DE       		.byte	-34
+ 470 01b9 04       		.byte	4
+ 471 01ba E4       		.byte	-28
+ 472 01bb 08       		.byte	8
+ 473 01bc E6       		.byte	-26
+ 474 01bd 02       		.byte	2
+ 475 01be 00       		.byte	0
+ 476 01bf 01       		.byte	1
+ 477 01c0 03       		.byte	3
+ 478 01c1 78       		.byte	120
+ 479 01c2 05       		.byte	5
+ 480 01c3 03       		.byte	3
+ 481 01c4 07       		.byte	7
+ 482 01c5 20       		.byte	32
+ 483 01c6 0B       		.byte	11
+ 484 01c7 13       		.byte	19
+ 485 01c8 0D       		.byte	13
+ 486 01c9 01       		.byte	1
+ 487 01ca 0F       		.byte	15
  488 01cb 04       		.byte	4
- 489 01cc 27       		.byte	39
- 490 01cd 09       		.byte	9
- 491 01ce 29       		.byte	41
- 492 01cf 03       		.byte	3
- 493 01d0 2A       		.byte	42
- 494 01d1 01       		.byte	1
- 495 01d2 2F       		.byte	47
- 496 01d3 03       		.byte	3
- 497 01d4 30       		.byte	48
- 498 01d5 04       		.byte	4
- 499 01d6 31       		.byte	49
- 500 01d7 07       		.byte	7
- 501 01d8 32       		.byte	50
- 502 01d9 18       		.byte	24
- 503 01da 34       		.byte	52
- 504 01db 02       		.byte	2
- 505 01dc 35       		.byte	53
- 506 01dd 08       		.byte	8
- 507 01de 36       		.byte	54
- 508 01df 01       		.byte	1
- 509 01e0 38       		.byte	56
- 510 01e1 80       		.byte	-128
- 511 01e2 3B       		.byte	59
- 512 01e3 02       		.byte	2
- 513 01e4 40       		.byte	64
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 10
+ 489 01cc 10       		.byte	16
+ 490 01cd 04       		.byte	4
+ 491 01ce 11       		.byte	17
+ 492 01cf 78       		.byte	120
+ 493 01d0 13       		.byte	19
+ 494 01d1 03       		.byte	3
+ 495 01d2 15       		.byte	21
+ 496 01d3 01       		.byte	1
+ 497 01d4 16       		.byte	22
+ 498 01d5 01       		.byte	1
+ 499 01d6 17       		.byte	23
+ 500 01d7 06       		.byte	6
+ 501 01d8 18       		.byte	24
+ 502 01d9 06       		.byte	6
+ 503 01da 19       		.byte	25
+ 504 01db 78       		.byte	120
+ 505 01dc 1F       		.byte	31
+ 506 01dd 0B       		.byte	11
+ 507 01de 20       		.byte	32
+ 508 01df 06       		.byte	6
+ 509 01e0 23       		.byte	35
+ 510 01e1 43       		.byte	67
+ 511 01e2 25       		.byte	37
+ 512 01e3 03       		.byte	3
+ 513 01e4 27       		.byte	39
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 10
 
 
- 514 01e5 34       		.byte	52
- 515 01e6 44       		.byte	68
- 516 01e7 02       		.byte	2
- 517 01e8 46       		.byte	70
- 518 01e9 D0       		.byte	-48
- 519 01ea 47       		.byte	71
- 520 01eb 0B       		.byte	11
- 521 01ec 48       		.byte	72
- 522 01ed 18       		.byte	24
- 523 01ee 49       		.byte	73
- 524 01ef FF       		.byte	-1
- 525 01f0 4A       		.byte	74
- 526 01f1 7F       		.byte	127
- 527 01f2 4B       		.byte	75
- 528 01f3 FF       		.byte	-1
- 529 01f4 4C       		.byte	76
- 530 01f5 42       		.byte	66
- 531 01f6 4D       		.byte	77
- 532 01f7 A0       		.byte	-96
- 533 01f8 4E       		.byte	78
- 534 01f9 70       		.byte	112
- 535 01fa 50       		.byte	80
- 536 01fb 0C       		.byte	12
- 537 01fc 58       		.byte	88
- 538 01fd 04       		.byte	4
- 539 01fe 59       		.byte	89
- 540 01ff 04       		.byte	4
- 541 0200 5A       		.byte	90
+ 514 01e5 40       		.byte	64
+ 515 01e6 2B       		.byte	43
+ 516 01e7 78       		.byte	120
+ 517 01e8 2D       		.byte	45
+ 518 01e9 02       		.byte	2
+ 519 01ea 2F       		.byte	47
+ 520 01eb 81       		.byte	-127
+ 521 01ec 30       		.byte	48
+ 522 01ed 01       		.byte	1
+ 523 01ee 33       		.byte	51
+ 524 01ef 07       		.byte	7
+ 525 01f0 34       		.byte	52
+ 526 01f1 02       		.byte	2
+ 527 01f2 35       		.byte	53
+ 528 01f3 80       		.byte	-128
+ 529 01f4 36       		.byte	54
+ 530 01f5 04       		.byte	4
+ 531 01f6 37       		.byte	55
+ 532 01f7 78       		.byte	120
+ 533 01f8 38       		.byte	56
+ 534 01f9 A2       		.byte	-94
+ 535 01fa 3B       		.byte	59
+ 536 01fb 08       		.byte	8
+ 537 01fc 3E       		.byte	62
+ 538 01fd 10       		.byte	16
+ 539 01fe 3F       		.byte	63
+ 540 01ff 40       		.byte	64
+ 541 0200 58       		.byte	88
  542 0201 04       		.byte	4
- 543 0202 5F       		.byte	95
- 544 0203 01       		.byte	1
- 545 0204 61       		.byte	97
- 546 0205 09       		.byte	9
- 547 0206 62       		.byte	98
- 548 0207 40       		.byte	64
- 549 0208 63       		.byte	99
- 550 0209 09       		.byte	9
- 551 020a 64       		.byte	100
- 552 020b 30       		.byte	48
- 553 020c 65       		.byte	101
- 554 020d 09       		.byte	9
- 555 020e 81       		.byte	-127
- 556 020f 08       		.byte	8
- 557 0210 84       		.byte	-124
- 558 0211 01       		.byte	1
- 559 0212 85       		.byte	-123
- 560 0213 02       		.byte	2
- 561 0214 86       		.byte	-122
- 562 0215 02       		.byte	2
- 563 0216 88       		.byte	-120
- 564 0217 09       		.byte	9
- 565 0218 8A       		.byte	-118
- 566 0219 04       		.byte	4
- 567 021a 8B       		.byte	-117
+ 543 0202 59       		.byte	89
+ 544 0203 04       		.byte	4
+ 545 0204 5F       		.byte	95
+ 546 0205 01       		.byte	1
+ 547 0206 81       		.byte	-127
+ 548 0207 08       		.byte	8
+ 549 0208 86       		.byte	-122
+ 550 0209 20       		.byte	32
+ 551 020a 88       		.byte	-120
+ 552 020b 43       		.byte	67
+ 553 020c 8A       		.byte	-118
+ 554 020d 1C       		.byte	28
+ 555 020e 92       		.byte	-110
+ 556 020f 10       		.byte	16
+ 557 0210 94       		.byte	-108
+ 558 0211 03       		.byte	3
+ 559 0212 95       		.byte	-107
+ 560 0213 01       		.byte	1
+ 561 0214 96       		.byte	-106
+ 562 0215 04       		.byte	4
+ 563 0216 97       		.byte	-105
+ 564 0217 02       		.byte	2
+ 565 0218 9C       		.byte	-100
+ 566 0219 43       		.byte	67
+ 567 021a 9E       		.byte	-98
  568 021b 08       		.byte	8
- 569 021c 8E       		.byte	-114
- 570 021d 09       		.byte	9
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 11
+ 569 021c A0       		.byte	-96
+ 570 021d 03       		.byte	3
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 11
 
 
- 571 021e 91       		.byte	-111
- 572 021f 04       		.byte	4
- 573 0220 94       		.byte	-108
- 574 0221 10       		.byte	16
- 575 0222 95       		.byte	-107
- 576 0223 02       		.byte	2
- 577 0224 99       		.byte	-103
- 578 0225 02       		.byte	2
- 579 0226 9A       		.byte	-102
- 580 0227 05       		.byte	5
- 581 0228 9C       		.byte	-100
- 582 0229 10       		.byte	16
- 583 022a 9D       		.byte	-99
- 584 022b 02       		.byte	2
- 585 022c A1       		.byte	-95
- 586 022d 02       		.byte	2
- 587 022e A2       		.byte	-94
- 588 022f 20       		.byte	32
- 589 0230 A6       		.byte	-90
- 590 0231 08       		.byte	8
- 591 0232 AA       		.byte	-86
+ 571 021e A2       		.byte	-94
+ 572 021f 48       		.byte	72
+ 573 0220 A4       		.byte	-92
+ 574 0221 12       		.byte	18
+ 575 0222 A6       		.byte	-90
+ 576 0223 48       		.byte	72
+ 577 0224 AA       		.byte	-86
+ 578 0225 49       		.byte	73
+ 579 0226 AD       		.byte	-83
+ 580 0227 01       		.byte	1
+ 581 0228 AF       		.byte	-81
+ 582 0229 06       		.byte	6
+ 583 022a B0       		.byte	-80
+ 584 022b 40       		.byte	64
+ 585 022c B2       		.byte	-78
+ 586 022d 20       		.byte	32
+ 587 022e B3       		.byte	-77
+ 588 022f 08       		.byte	8
+ 589 0230 B4       		.byte	-76
+ 590 0231 1F       		.byte	31
+ 591 0232 B5       		.byte	-75
  592 0233 04       		.byte	4
- 593 0234 AB       		.byte	-85
- 594 0235 01       		.byte	1
- 595 0236 AE       		.byte	-82
- 596 0237 0E       		.byte	14
- 597 0238 B0       		.byte	-80
- 598 0239 0F       		.byte	15
- 599 023a B2       		.byte	-78
- 600 023b 20       		.byte	32
- 601 023c B3       		.byte	-77
- 602 023d 07       		.byte	7
- 603 023e B4       		.byte	-76
- 604 023f 10       		.byte	16
- 605 0240 B5       		.byte	-75
- 606 0241 08       		.byte	8
- 607 0242 B8       		.byte	-72
- 608 0243 20       		.byte	32
- 609 0244 B9       		.byte	-71
- 610 0245 08       		.byte	8
- 611 0246 BA       		.byte	-70
- 612 0247 02       		.byte	2
- 613 0248 BE       		.byte	-66
- 614 0249 10       		.byte	16
- 615 024a BF       		.byte	-65
- 616 024b 04       		.byte	4
- 617 024c D8       		.byte	-40
- 618 024d 04       		.byte	4
- 619 024e D9       		.byte	-39
- 620 024f 04       		.byte	4
- 621 0250 DC       		.byte	-36
- 622 0251 22       		.byte	34
- 623 0252 DF       		.byte	-33
- 624 0253 01       		.byte	1
- 625 0254 01       		.byte	1
- 626 0255 28       		.byte	40
- 627 0256 02       		.byte	2
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 12
+ 593 0234 B7       		.byte	-73
+ 594 0235 03       		.byte	3
+ 595 0236 BA       		.byte	-70
+ 596 0237 20       		.byte	32
+ 597 0238 BE       		.byte	-66
+ 598 0239 01       		.byte	1
+ 599 023a BF       		.byte	-65
+ 600 023b 04       		.byte	4
+ 601 023c C0       		.byte	-64
+ 602 023d 05       		.byte	5
+ 603 023e C5       		.byte	-59
+ 604 023f 04       		.byte	4
+ 605 0240 C9       		.byte	-55
+ 606 0241 FF       		.byte	-1
+ 607 0242 CA       		.byte	-54
+ 608 0243 07       		.byte	7
+ 609 0244 CB       		.byte	-53
+ 610 0245 FF       		.byte	-1
+ 611 0246 CC       		.byte	-52
+ 612 0247 40       		.byte	64
+ 613 0248 CD       		.byte	-51
+ 614 0249 20       		.byte	32
+ 615 024a CE       		.byte	-50
+ 616 024b F0       		.byte	-16
+ 617 024c CF       		.byte	-49
+ 618 024d 05       		.byte	5
+ 619 024e D0       		.byte	-48
+ 620 024f 08       		.byte	8
+ 621 0250 D4       		.byte	-44
+ 622 0251 01       		.byte	1
+ 623 0252 D8       		.byte	-40
+ 624 0253 04       		.byte	4
+ 625 0254 D9       		.byte	-39
+ 626 0255 04       		.byte	4
+ 627 0256 DA       		.byte	-38
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 12
 
 
- 628 0257 02       		.byte	2
- 629 0258 04       		.byte	4
- 630 0259 40       		.byte	64
- 631 025a 06       		.byte	6
- 632 025b 01       		.byte	1
- 633 025c 08       		.byte	8
- 634 025d 20       		.byte	32
- 635 025e 09       		.byte	9
- 636 025f 40       		.byte	64
- 637 0260 0B       		.byte	11
- 638 0261 21       		.byte	33
- 639 0262 0C       		.byte	12
- 640 0263 80       		.byte	-128
- 641 0264 0D       		.byte	13
+ 628 0257 04       		.byte	4
+ 629 0258 DB       		.byte	-37
+ 630 0259 04       		.byte	4
+ 631 025a DC       		.byte	-36
+ 632 025b 02       		.byte	2
+ 633 025c DD       		.byte	-35
+ 634 025d 22       		.byte	34
+ 635 025e DF       		.byte	-33
+ 636 025f 0D       		.byte	13
+ 637 0260 E0       		.byte	-32
+ 638 0261 40       		.byte	64
+ 639 0262 E1       		.byte	-31
+ 640 0263 A8       		.byte	-88
+ 641 0264 E2       		.byte	-30
  642 0265 40       		.byte	64
- 643 0266 0F       		.byte	15
- 644 0267 46       		.byte	70
- 645 0268 10       		.byte	16
+ 643 0266 E3       		.byte	-29
+ 644 0267 20       		.byte	32
+ 645 0268 01       		.byte	1
  646 0269 20       		.byte	32
- 647 026a 11       		.byte	17
- 648 026b 01       		.byte	1
- 649 026c 12       		.byte	18
- 650 026d 09       		.byte	9
- 651 026e 15       		.byte	21
- 652 026f 12       		.byte	18
- 653 0270 17       		.byte	23
- 654 0271 04       		.byte	4
- 655 0272 18       		.byte	24
- 656 0273 48       		.byte	72
- 657 0274 19       		.byte	25
- 658 0275 09       		.byte	9
- 659 0276 1B       		.byte	27
- 660 0277 08       		.byte	8
- 661 0278 1C       		.byte	28
- 662 0279 20       		.byte	32
- 663 027a 1D       		.byte	29
- 664 027b 10       		.byte	16
- 665 027c 1F       		.byte	31
- 666 027d 41       		.byte	65
- 667 027e 21       		.byte	33
- 668 027f 18       		.byte	24
- 669 0280 23       		.byte	35
- 670 0281 10       		.byte	16
- 671 0282 25       		.byte	37
- 672 0283 21       		.byte	33
- 673 0284 26       		.byte	38
- 674 0285 01       		.byte	1
- 675 0286 27       		.byte	39
- 676 0287 04       		.byte	4
- 677 0288 28       		.byte	40
- 678 0289 40       		.byte	64
- 679 028a 2A       		.byte	42
- 680 028b 20       		.byte	32
- 681 028c 2C       		.byte	44
- 682 028d 46       		.byte	70
- 683 028e 2F       		.byte	47
- 684 028f 20       		.byte	32
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 13
+ 647 026a 02       		.byte	2
+ 648 026b 10       		.byte	16
+ 649 026c 07       		.byte	7
+ 650 026d 40       		.byte	64
+ 651 026e 08       		.byte	8
+ 652 026f 40       		.byte	64
+ 653 0270 09       		.byte	9
+ 654 0271 01       		.byte	1
+ 655 0272 0A       		.byte	10
+ 656 0273 20       		.byte	32
+ 657 0274 0C       		.byte	12
+ 658 0275 40       		.byte	64
+ 659 0276 0D       		.byte	13
+ 660 0277 02       		.byte	2
+ 661 0278 0E       		.byte	14
+ 662 0279 10       		.byte	16
+ 663 027a 0F       		.byte	15
+ 664 027b 06       		.byte	6
+ 665 027c 10       		.byte	16
+ 666 027d 18       		.byte	24
+ 667 027e 12       		.byte	18
+ 668 027f 40       		.byte	64
+ 669 0280 17       		.byte	23
+ 670 0281 01       		.byte	1
+ 671 0282 18       		.byte	24
+ 672 0283 20       		.byte	32
+ 673 0284 19       		.byte	25
+ 674 0285 20       		.byte	32
+ 675 0286 1A       		.byte	26
+ 676 0287 60       		.byte	96
+ 677 0288 1B       		.byte	27
+ 678 0289 24       		.byte	36
+ 679 028a 1C       		.byte	28
+ 680 028b 80       		.byte	-128
+ 681 028c 1D       		.byte	29
+ 682 028d 22       		.byte	34
+ 683 028e 1E       		.byte	30
+ 684 028f 02       		.byte	2
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 13
 
 
- 685 0290 30       		.byte	48
- 686 0291 86       		.byte	-122
- 687 0292 32       		.byte	50
- 688 0293 20       		.byte	32
- 689 0294 33       		.byte	51
- 690 0295 01       		.byte	1
- 691 0296 36       		.byte	54
- 692 0297 01       		.byte	1
- 693 0298 37       		.byte	55
- 694 0299 08       		.byte	8
- 695 029a 38       		.byte	56
- 696 029b 06       		.byte	6
- 697 029c 39       		.byte	57
- 698 029d 20       		.byte	32
- 699 029e 3A       		.byte	58
- 700 029f C0       		.byte	-64
- 701 02a0 3B       		.byte	59
- 702 02a1 80       		.byte	-128
- 703 02a2 3E       		.byte	62
- 704 02a3 84       		.byte	-124
- 705 02a4 3F       		.byte	63
- 706 02a5 02       		.byte	2
- 707 02a6 45       		.byte	69
- 708 02a7 28       		.byte	40
- 709 02a8 47       		.byte	71
- 710 02a9 02       		.byte	2
- 711 02aa 56       		.byte	86
- 712 02ab 24       		.byte	36
- 713 02ac 82       		.byte	-126
- 714 02ad 20       		.byte	32
- 715 02ae 8D       		.byte	-115
- 716 02af 01       		.byte	1
- 717 02b0 90       		.byte	-112
- 718 02b1 04       		.byte	4
- 719 02b2 92       		.byte	-110
- 720 02b3 84       		.byte	-124
- 721 02b4 93       		.byte	-109
- 722 02b5 09       		.byte	9
- 723 02b6 94       		.byte	-108
- 724 02b7 C8       		.byte	-56
- 725 02b8 95       		.byte	-107
- 726 02b9 C0       		.byte	-64
- 727 02ba 96       		.byte	-106
+ 685 0290 20       		.byte	32
+ 686 0291 04       		.byte	4
+ 687 0292 22       		.byte	34
+ 688 0293 A4       		.byte	-92
+ 689 0294 25       		.byte	37
+ 690 0295 40       		.byte	64
+ 691 0296 26       		.byte	38
+ 692 0297 04       		.byte	4
+ 693 0298 27       		.byte	39
+ 694 0299 29       		.byte	41
+ 695 029a 28       		.byte	40
+ 696 029b 02       		.byte	2
+ 697 029c 2D       		.byte	45
+ 698 029d 01       		.byte	1
+ 699 029e 2F       		.byte	47
+ 700 029f 1A       		.byte	26
+ 701 02a0 33       		.byte	51
+ 702 02a1 08       		.byte	8
+ 703 02a2 35       		.byte	53
+ 704 02a3 02       		.byte	2
+ 705 02a4 36       		.byte	54
+ 706 02a5 65       		.byte	101
+ 707 02a6 3B       		.byte	59
+ 708 02a7 01       		.byte	1
+ 709 02a8 3C       		.byte	60
+ 710 02a9 90       		.byte	-112
+ 711 02aa 3E       		.byte	62
+ 712 02ab 05       		.byte	5
+ 713 02ac 48       		.byte	72
+ 714 02ad 21       		.byte	33
+ 715 02ae 49       		.byte	73
+ 716 02af 04       		.byte	4
+ 717 02b0 50       		.byte	80
+ 718 02b1 08       		.byte	8
+ 719 02b2 58       		.byte	88
+ 720 02b3 01       		.byte	1
+ 721 02b4 5A       		.byte	90
+ 722 02b5 48       		.byte	72
+ 723 02b6 5B       		.byte	91
+ 724 02b7 10       		.byte	16
+ 725 02b8 64       		.byte	100
+ 726 02b9 01       		.byte	1
+ 727 02ba 67       		.byte	103
  728 02bb 01       		.byte	1
- 729 02bc 97       		.byte	-105
- 730 02bd 10       		.byte	16
- 731 02be 98       		.byte	-104
- 732 02bf 02       		.byte	2
- 733 02c0 9A       		.byte	-102
- 734 02c1 12       		.byte	18
- 735 02c2 9C       		.byte	-100
- 736 02c3 65       		.byte	101
- 737 02c4 9D       		.byte	-99
- 738 02c5 80       		.byte	-128
- 739 02c6 9E       		.byte	-98
- 740 02c7 44       		.byte	68
- 741 02c8 9F       		.byte	-97
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 14
+ 729 02bc 7B       		.byte	123
+ 730 02bd 04       		.byte	4
+ 731 02be 86       		.byte	-122
+ 732 02bf 84       		.byte	-124
+ 733 02c0 88       		.byte	-120
+ 734 02c1 04       		.byte	4
+ 735 02c2 89       		.byte	-119
+ 736 02c3 01       		.byte	1
+ 737 02c4 8B       		.byte	-117
+ 738 02c5 08       		.byte	8
+ 739 02c6 91       		.byte	-111
+ 740 02c7 40       		.byte	64
+ 741 02c8 92       		.byte	-110
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 14
 
 
- 742 02c9 08       		.byte	8
- 743 02ca A4       		.byte	-92
- 744 02cb 80       		.byte	-128
- 745 02cc A5       		.byte	-91
- 746 02cd 10       		.byte	16
- 747 02ce A6       		.byte	-90
- 748 02cf 2C       		.byte	44
- 749 02d0 A7       		.byte	-89
- 750 02d1 08       		.byte	8
- 751 02d2 C0       		.byte	-64
- 752 02d3 07       		.byte	7
- 753 02d4 C2       		.byte	-62
- 754 02d5 57       		.byte	87
- 755 02d6 C4       		.byte	-60
- 756 02d7 7F       		.byte	127
- 757 02d8 CA       		.byte	-54
- 758 02d9 F5       		.byte	-11
- 759 02da CC       		.byte	-52
- 760 02db CF       		.byte	-49
- 761 02dc CE       		.byte	-50
- 762 02dd D7       		.byte	-41
- 763 02de D0       		.byte	-48
- 764 02df E0       		.byte	-32
- 765 02e0 E0       		.byte	-32
- 766 02e1 04       		.byte	4
- 767 02e2 01       		.byte	1
- 768 02e3 01       		.byte	1
- 769 02e4 03       		.byte	3
- 770 02e5 02       		.byte	2
- 771 02e6 06       		.byte	6
- 772 02e7 02       		.byte	2
- 773 02e8 07       		.byte	7
- 774 02e9 30       		.byte	48
- 775 02ea 09       		.byte	9
- 776 02eb 01       		.byte	1
- 777 02ec 0B       		.byte	11
- 778 02ed 06       		.byte	6
- 779 02ee 0E       		.byte	14
- 780 02ef 02       		.byte	2
- 781 02f0 0F       		.byte	15
- 782 02f1 03       		.byte	3
- 783 02f2 12       		.byte	18
- 784 02f3 04       		.byte	4
- 785 02f4 13       		.byte	19
- 786 02f5 10       		.byte	16
- 787 02f6 14       		.byte	20
+ 742 02c9 05       		.byte	5
+ 743 02ca 93       		.byte	-109
+ 744 02cb 0D       		.byte	13
+ 745 02cc 94       		.byte	-108
+ 746 02cd 14       		.byte	20
+ 747 02ce 95       		.byte	-107
+ 748 02cf 0C       		.byte	12
+ 749 02d0 96       		.byte	-106
+ 750 02d1 02       		.byte	2
+ 751 02d2 97       		.byte	-105
+ 752 02d3 20       		.byte	32
+ 753 02d4 98       		.byte	-104
+ 754 02d5 18       		.byte	24
+ 755 02d6 9A       		.byte	-102
+ 756 02d7 40       		.byte	64
+ 757 02d8 9B       		.byte	-101
+ 758 02d9 10       		.byte	16
+ 759 02da 9C       		.byte	-100
+ 760 02db 04       		.byte	4
+ 761 02dc 9D       		.byte	-99
+ 762 02dd 26       		.byte	38
+ 763 02de 9E       		.byte	-98
+ 764 02df 02       		.byte	2
+ 765 02e0 A0       		.byte	-96
+ 766 02e1 01       		.byte	1
+ 767 02e2 A2       		.byte	-94
+ 768 02e3 40       		.byte	64
+ 769 02e4 A3       		.byte	-93
+ 770 02e5 10       		.byte	16
+ 771 02e6 A4       		.byte	-92
+ 772 02e7 08       		.byte	8
+ 773 02e8 A5       		.byte	-91
+ 774 02e9 2A       		.byte	42
+ 775 02ea A6       		.byte	-90
+ 776 02eb 12       		.byte	18
+ 777 02ec A7       		.byte	-89
+ 778 02ed 05       		.byte	5
+ 779 02ee A8       		.byte	-88
+ 780 02ef 20       		.byte	32
+ 781 02f0 B0       		.byte	-80
+ 782 02f1 08       		.byte	8
+ 783 02f2 B2       		.byte	-78
+ 784 02f3 80       		.byte	-128
+ 785 02f4 B4       		.byte	-76
+ 786 02f5 80       		.byte	-128
+ 787 02f6 B5       		.byte	-75
  788 02f7 04       		.byte	4
- 789 02f8 17       		.byte	23
- 790 02f9 40       		.byte	64
- 791 02fa 18       		.byte	24
- 792 02fb 02       		.byte	2
- 793 02fc 19       		.byte	25
- 794 02fd 02       		.byte	2
- 795 02fe 1B       		.byte	27
- 796 02ff 01       		.byte	1
- 797 0300 1E       		.byte	30
- 798 0301 05       		.byte	5
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 15
+ 789 02f8 B7       		.byte	-73
+ 790 02f9 10       		.byte	16
+ 791 02fa C0       		.byte	-64
+ 792 02fb 16       		.byte	22
+ 793 02fc C2       		.byte	-62
+ 794 02fd 7D       		.byte	125
+ 795 02fe C4       		.byte	-60
+ 796 02ff 1E       		.byte	30
+ 797 0300 CA       		.byte	-54
+ 798 0301 F8       		.byte	-8
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 15
 
 
- 799 0302 1F       		.byte	31
- 800 0303 03       		.byte	3
- 801 0304 21       		.byte	33
- 802 0305 01       		.byte	1
- 803 0306 22       		.byte	34
- 804 0307 04       		.byte	4
- 805 0308 23       		.byte	35
- 806 0309 24       		.byte	36
- 807 030a 26       		.byte	38
- 808 030b 02       		.byte	2
- 809 030c 27       		.byte	39
- 810 030d 10       		.byte	16
- 811 030e 2A       		.byte	42
+ 799 0302 CC       		.byte	-52
+ 800 0303 F2       		.byte	-14
+ 801 0304 CE       		.byte	-50
+ 802 0305 F1       		.byte	-15
+ 803 0306 D2       		.byte	-46
+ 804 0307 08       		.byte	8
+ 805 0308 D6       		.byte	-42
+ 806 0309 0F       		.byte	15
+ 807 030a DE       		.byte	-34
+ 808 030b 04       		.byte	4
+ 809 030c E2       		.byte	-30
+ 810 030d 20       		.byte	32
+ 811 030e EE       		.byte	-18
  812 030f 04       		.byte	4
- 813 0310 2B       		.byte	43
- 814 0311 0B       		.byte	11
- 815 0312 2C       		.byte	44
- 816 0313 02       		.byte	2
- 817 0314 2F       		.byte	47
+ 813 0310 01       		.byte	1
+ 814 0311 25       		.byte	37
+ 815 0312 03       		.byte	3
+ 816 0313 0A       		.byte	10
+ 817 0314 04       		.byte	4
  818 0315 10       		.byte	16
- 819 0316 32       		.byte	50
- 820 0317 01       		.byte	1
- 821 0318 33       		.byte	51
- 822 0319 07       		.byte	7
- 823 031a 34       		.byte	52
- 824 031b 04       		.byte	4
- 825 031c 35       		.byte	53
- 826 031d 70       		.byte	112
- 827 031e 36       		.byte	54
- 828 031f 02       		.byte	2
- 829 0320 37       		.byte	55
- 830 0321 08       		.byte	8
- 831 0322 3B       		.byte	59
- 832 0323 28       		.byte	40
- 833 0324 3E       		.byte	62
- 834 0325 50       		.byte	80
- 835 0326 58       		.byte	88
- 836 0327 04       		.byte	4
- 837 0328 59       		.byte	89
- 838 0329 04       		.byte	4
- 839 032a 5F       		.byte	95
- 840 032b 01       		.byte	1
- 841 032c 81       		.byte	-127
- 842 032d 10       		.byte	16
- 843 032e 85       		.byte	-123
- 844 032f 27       		.byte	39
- 845 0330 87       		.byte	-121
- 846 0331 40       		.byte	64
- 847 0332 88       		.byte	-120
- 848 0333 0F       		.byte	15
- 849 0334 89       		.byte	-119
- 850 0335 01       		.byte	1
- 851 0336 8B       		.byte	-117
- 852 0337 0E       		.byte	14
- 853 0338 91       		.byte	-111
- 854 0339 27       		.byte	39
- 855 033a 92       		.byte	-110
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 16
+ 819 0316 05       		.byte	5
+ 820 0317 26       		.byte	38
+ 821 0318 06       		.byte	6
+ 822 0319 05       		.byte	5
+ 823 031a 09       		.byte	9
+ 824 031b 21       		.byte	33
+ 825 031c 0B       		.byte	11
+ 826 031d 02       		.byte	2
+ 827 031e 0E       		.byte	14
+ 828 031f 40       		.byte	64
+ 829 0320 10       		.byte	16
+ 830 0321 10       		.byte	16
+ 831 0322 11       		.byte	17
+ 832 0323 0F       		.byte	15
+ 833 0324 12       		.byte	18
+ 834 0325 0E       		.byte	14
+ 835 0326 14       		.byte	20
+ 836 0327 41       		.byte	65
+ 837 0328 16       		.byte	22
+ 838 0329 02       		.byte	2
+ 839 032a 18       		.byte	24
+ 840 032b 09       		.byte	9
+ 841 032c 19       		.byte	25
+ 842 032d 01       		.byte	1
+ 843 032e 1A       		.byte	26
+ 844 032f 14       		.byte	20
+ 845 0330 1B       		.byte	27
+ 846 0331 22       		.byte	34
+ 847 0332 1D       		.byte	29
+ 848 0333 40       		.byte	64
+ 849 0334 21       		.byte	33
+ 850 0335 08       		.byte	8
+ 851 0336 22       		.byte	34
+ 852 0337 09       		.byte	9
+ 853 0338 23       		.byte	35
+ 854 0339 05       		.byte	5
+ 855 033a 26       		.byte	38
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 16
 
 
- 856 033b 0F       		.byte	15
- 857 033c 93       		.byte	-109
- 858 033d 40       		.byte	64
- 859 033e 95       		.byte	-107
- 860 033f 02       		.byte	2
- 861 0340 96       		.byte	-106
- 862 0341 08       		.byte	8
- 863 0342 97       		.byte	-105
- 864 0343 05       		.byte	5
- 865 0344 99       		.byte	-103
- 866 0345 03       		.byte	3
- 867 0346 9A       		.byte	-102
- 868 0347 01       		.byte	1
- 869 0348 9B       		.byte	-101
- 870 0349 04       		.byte	4
- 871 034a 9E       		.byte	-98
- 872 034b 02       		.byte	2
- 873 034c A0       		.byte	-96
- 874 034d 0F       		.byte	15
- 875 034e A1       		.byte	-95
- 876 034f 01       		.byte	1
- 877 0350 A3       		.byte	-93
- 878 0351 08       		.byte	8
- 879 0352 A5       		.byte	-91
- 880 0353 10       		.byte	16
- 881 0354 A6       		.byte	-90
- 882 0355 04       		.byte	4
- 883 0356 A9       		.byte	-87
- 884 0357 06       		.byte	6
- 885 0358 AA       		.byte	-86
- 886 0359 08       		.byte	8
- 887 035a AB       		.byte	-85
- 888 035b 01       		.byte	1
- 889 035c AE       		.byte	-82
- 890 035d 0F       		.byte	15
- 891 035e B3       		.byte	-77
- 892 035f 0F       		.byte	15
- 893 0360 B4       		.byte	-76
- 894 0361 0F       		.byte	15
- 895 0362 B7       		.byte	-73
- 896 0363 70       		.byte	112
- 897 0364 B9       		.byte	-71
- 898 0365 80       		.byte	-128
- 899 0366 BB       		.byte	-69
- 900 0367 08       		.byte	8
- 901 0368 BE       		.byte	-66
+ 856 033b 08       		.byte	8
+ 857 033c 27       		.byte	39
+ 858 033d 10       		.byte	16
+ 859 033e 28       		.byte	40
+ 860 033f 20       		.byte	32
+ 861 0340 29       		.byte	41
+ 862 0341 21       		.byte	33
+ 863 0342 2A       		.byte	42
+ 864 0343 04       		.byte	4
+ 865 0344 2B       		.byte	43
+ 866 0345 04       		.byte	4
+ 867 0346 2D       		.byte	45
+ 868 0347 20       		.byte	32
+ 869 0348 2F       		.byte	47
+ 870 0349 02       		.byte	2
+ 871 034a 30       		.byte	48
+ 872 034b 0F       		.byte	15
+ 873 034c 31       		.byte	49
+ 874 034d 1F       		.byte	31
+ 875 034e 33       		.byte	51
+ 876 034f 60       		.byte	96
+ 877 0350 34       		.byte	52
+ 878 0351 30       		.byte	48
+ 879 0352 36       		.byte	54
+ 880 0353 40       		.byte	64
+ 881 0354 38       		.byte	56
+ 882 0355 20       		.byte	32
+ 883 0356 39       		.byte	57
+ 884 0357 08       		.byte	8
+ 885 0358 3A       		.byte	58
+ 886 0359 02       		.byte	2
+ 887 035a 3F       		.byte	63
+ 888 035b 04       		.byte	4
+ 889 035c 58       		.byte	88
+ 890 035d 04       		.byte	4
+ 891 035e 59       		.byte	89
+ 892 035f 04       		.byte	4
+ 893 0360 5C       		.byte	92
+ 894 0361 02       		.byte	2
+ 895 0362 5F       		.byte	95
+ 896 0363 01       		.byte	1
+ 897 0364 81       		.byte	-127
+ 898 0365 02       		.byte	2
+ 899 0366 82       		.byte	-126
+ 900 0367 14       		.byte	20
+ 901 0368 84       		.byte	-124
  902 0369 10       		.byte	16
- 903 036a BF       		.byte	-65
- 904 036b 40       		.byte	64
- 905 036c D8       		.byte	-40
- 906 036d 04       		.byte	4
- 907 036e D9       		.byte	-39
- 908 036f 04       		.byte	4
- 909 0370 DF       		.byte	-33
- 910 0371 01       		.byte	1
- 911 0372 00       		.byte	0
- 912 0373 08       		.byte	8
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 17
+ 903 036a 85       		.byte	-123
+ 904 036b 0A       		.byte	10
+ 905 036c 86       		.byte	-122
+ 906 036d 02       		.byte	2
+ 907 036e 87       		.byte	-121
+ 908 036f 10       		.byte	16
+ 909 0370 88       		.byte	-120
+ 910 0371 10       		.byte	16
+ 911 0372 89       		.byte	-119
+ 912 0373 06       		.byte	6
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 17
 
 
- 913 0374 03       		.byte	3
- 914 0375 02       		.byte	2
- 915 0376 05       		.byte	5
- 916 0377 10       		.byte	16
- 917 0378 06       		.byte	6
- 918 0379 04       		.byte	4
- 919 037a 08       		.byte	8
- 920 037b 20       		.byte	32
- 921 037c 0A       		.byte	10
- 922 037d A0       		.byte	-96
- 923 037e 0B       		.byte	11
- 924 037f 02       		.byte	2
- 925 0380 0C       		.byte	12
- 926 0381 54       		.byte	84
- 927 0382 0D       		.byte	13
- 928 0383 11       		.byte	17
- 929 0384 0E       		.byte	14
- 930 0385 A6       		.byte	-90
- 931 0386 0F       		.byte	15
- 932 0387 02       		.byte	2
- 933 0388 12       		.byte	18
- 934 0389 95       		.byte	-107
- 935 038a 15       		.byte	21
- 936 038b C0       		.byte	-64
- 937 038c 17       		.byte	23
- 938 038d 19       		.byte	25
- 939 038e 18       		.byte	24
- 940 038f 04       		.byte	4
- 941 0390 19       		.byte	25
- 942 0391 80       		.byte	-128
- 943 0392 1A       		.byte	26
+ 913 0374 8A       		.byte	-118
+ 914 0375 01       		.byte	1
+ 915 0376 8B       		.byte	-117
+ 916 0377 20       		.byte	32
+ 917 0378 8C       		.byte	-116
+ 918 0379 44       		.byte	68
+ 919 037a 8D       		.byte	-115
+ 920 037b 3F       		.byte	63
+ 921 037c 8E       		.byte	-114
+ 922 037d 08       		.byte	8
+ 923 037e 90       		.byte	-112
+ 924 037f 7F       		.byte	127
+ 925 0380 91       		.byte	-111
+ 926 0381 02       		.byte	2
+ 927 0382 93       		.byte	-109
+ 928 0383 18       		.byte	24
+ 929 0384 94       		.byte	-108
+ 930 0385 0F       		.byte	15
+ 931 0386 95       		.byte	-107
+ 932 0387 18       		.byte	24
+ 933 0388 97       		.byte	-105
+ 934 0389 06       		.byte	6
+ 935 038a 99       		.byte	-103
+ 936 038b 01       		.byte	1
+ 937 038c 9D       		.byte	-99
+ 938 038d 1C       		.byte	28
+ 939 038e 9E       		.byte	-98
+ 940 038f 20       		.byte	32
+ 941 0390 9F       		.byte	-97
+ 942 0391 02       		.byte	2
+ 943 0392 A1       		.byte	-95
  944 0393 20       		.byte	32
- 945 0394 1F       		.byte	31
- 946 0395 10       		.byte	16
- 947 0396 21       		.byte	33
- 948 0397 40       		.byte	64
- 949 0398 22       		.byte	34
- 950 0399 A0       		.byte	-96
- 951 039a 23       		.byte	35
- 952 039b 1C       		.byte	28
- 953 039c 24       		.byte	36
- 954 039d 10       		.byte	16
- 955 039e 27       		.byte	39
- 956 039f 02       		.byte	2
- 957 03a0 28       		.byte	40
- 958 03a1 90       		.byte	-112
- 959 03a2 29       		.byte	41
- 960 03a3 10       		.byte	16
- 961 03a4 2B       		.byte	43
- 962 03a5 01       		.byte	1
- 963 03a6 2C       		.byte	44
- 964 03a7 04       		.byte	4
- 965 03a8 2E       		.byte	46
- 966 03a9 08       		.byte	8
- 967 03aa 2F       		.byte	47
- 968 03ab 50       		.byte	80
- 969 03ac 32       		.byte	50
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 18
+ 945 0394 A2       		.byte	-94
+ 946 0395 08       		.byte	8
+ 947 0396 A5       		.byte	-91
+ 948 0397 12       		.byte	18
+ 949 0398 A6       		.byte	-90
+ 950 0399 80       		.byte	-128
+ 951 039a A7       		.byte	-89
+ 952 039b 08       		.byte	8
+ 953 039c A9       		.byte	-87
+ 954 039d 04       		.byte	4
+ 955 039e AA       		.byte	-86
+ 956 039f 18       		.byte	24
+ 957 03a0 AD       		.byte	-83
+ 958 03a1 01       		.byte	1
+ 959 03a2 AF       		.byte	-81
+ 960 03a3 1E       		.byte	30
+ 961 03a4 B0       		.byte	-80
+ 962 03a5 40       		.byte	64
+ 963 03a6 B2       		.byte	-78
+ 964 03a7 3F       		.byte	63
+ 965 03a8 B3       		.byte	-77
+ 966 03a9 1F       		.byte	31
+ 967 03aa B4       		.byte	-76
+ 968 03ab 80       		.byte	-128
+ 969 03ac B5       		.byte	-75
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 18
 
 
- 970 03ad 54       		.byte	84
- 971 03ae 33       		.byte	51
- 972 03af 01       		.byte	1
- 973 03b0 36       		.byte	54
- 974 03b1 29       		.byte	41
- 975 03b2 39       		.byte	57
- 976 03b3 80       		.byte	-128
- 977 03b4 3B       		.byte	59
- 978 03b5 16       		.byte	22
- 979 03b6 3C       		.byte	60
- 980 03b7 10       		.byte	16
- 981 03b8 3E       		.byte	62
- 982 03b9 04       		.byte	4
- 983 03ba 3F       		.byte	63
- 984 03bb 01       		.byte	1
- 985 03bc 48       		.byte	72
+ 970 03ad 20       		.byte	32
+ 971 03ae B8       		.byte	-72
+ 972 03af 0A       		.byte	10
+ 973 03b0 B9       		.byte	-71
+ 974 03b1 08       		.byte	8
+ 975 03b2 D8       		.byte	-40
+ 976 03b3 04       		.byte	4
+ 977 03b4 D9       		.byte	-39
+ 978 03b5 04       		.byte	4
+ 979 03b6 DF       		.byte	-33
+ 980 03b7 01       		.byte	1
+ 981 03b8 01       		.byte	1
+ 982 03b9 80       		.byte	-128
+ 983 03ba 03       		.byte	3
+ 984 03bb 20       		.byte	32
+ 985 03bc 05       		.byte	5
  986 03bd 04       		.byte	4
- 987 03be 49       		.byte	73
- 988 03bf 20       		.byte	32
- 989 03c0 64       		.byte	100
- 990 03c1 80       		.byte	-128
- 991 03c2 67       		.byte	103
- 992 03c3 80       		.byte	-128
- 993 03c4 80       		.byte	-128
- 994 03c5 20       		.byte	32
- 995 03c6 82       		.byte	-126
- 996 03c7 04       		.byte	4
- 997 03c8 83       		.byte	-125
- 998 03c9 20       		.byte	32
- 999 03ca 84       		.byte	-124
- 1000 03cb 01       		.byte	1
- 1001 03cc 8A       		.byte	-118
- 1002 03cd 14       		.byte	20
- 1003 03ce 8B       		.byte	-117
- 1004 03cf 08       		.byte	8
- 1005 03d0 92       		.byte	-110
- 1006 03d1 84       		.byte	-124
- 1007 03d2 93       		.byte	-109
- 1008 03d3 8B       		.byte	-117
- 1009 03d4 94       		.byte	-108
- 1010 03d5 80       		.byte	-128
- 1011 03d6 95       		.byte	-107
- 1012 03d7 52       		.byte	82
- 1013 03d8 96       		.byte	-106
- 1014 03d9 01       		.byte	1
- 1015 03da 97       		.byte	-105
- 1016 03db 20       		.byte	32
- 1017 03dc 98       		.byte	-104
- 1018 03dd 02       		.byte	2
- 1019 03de 99       		.byte	-103
- 1020 03df 10       		.byte	16
- 1021 03e0 9A       		.byte	-102
- 1022 03e1 33       		.byte	51
- 1023 03e2 9C       		.byte	-100
- 1024 03e3 65       		.byte	101
- 1025 03e4 9D       		.byte	-99
- 1026 03e5 A0       		.byte	-96
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 19
+ 987 03be 06       		.byte	6
+ 988 03bf 89       		.byte	-119
+ 989 03c0 08       		.byte	8
+ 990 03c1 10       		.byte	16
+ 991 03c2 09       		.byte	9
+ 992 03c3 40       		.byte	64
+ 993 03c4 0A       		.byte	10
+ 994 03c5 61       		.byte	97
+ 995 03c6 0D       		.byte	13
+ 996 03c7 02       		.byte	2
+ 997 03c8 0E       		.byte	14
+ 998 03c9 01       		.byte	1
+ 999 03ca 0F       		.byte	15
+ 1000 03cb 60       		.byte	96
+ 1001 03cc 10       		.byte	16
+ 1002 03cd 28       		.byte	40
+ 1003 03ce 11       		.byte	17
+ 1004 03cf 02       		.byte	2
+ 1005 03d0 13       		.byte	19
+ 1006 03d1 02       		.byte	2
+ 1007 03d2 15       		.byte	21
+ 1008 03d3 22       		.byte	34
+ 1009 03d4 17       		.byte	23
+ 1010 03d5 08       		.byte	8
+ 1011 03d6 19       		.byte	25
+ 1012 03d7 A0       		.byte	-96
+ 1013 03d8 1A       		.byte	26
+ 1014 03d9 40       		.byte	64
+ 1015 03da 1B       		.byte	27
+ 1016 03db 01       		.byte	1
+ 1017 03dc 1E       		.byte	30
+ 1018 03dd 08       		.byte	8
+ 1019 03de 1F       		.byte	31
+ 1020 03df 0A       		.byte	10
+ 1021 03e0 21       		.byte	33
+ 1022 03e1 09       		.byte	9
+ 1023 03e2 25       		.byte	37
+ 1024 03e3 20       		.byte	32
+ 1025 03e4 27       		.byte	39
+ 1026 03e5 10       		.byte	16
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 19
 
 
- 1027 03e6 9F       		.byte	-97
- 1028 03e7 0B       		.byte	11
- 1029 03e8 A0       		.byte	-96
- 1030 03e9 10       		.byte	16
- 1031 03ea A1       		.byte	-95
- 1032 03eb 49       		.byte	73
- 1033 03ec A3       		.byte	-93
- 1034 03ed 02       		.byte	2
- 1035 03ee A4       		.byte	-92
- 1036 03ef A0       		.byte	-96
- 1037 03f0 A5       		.byte	-91
- 1038 03f1 10       		.byte	16
- 1039 03f2 A6       		.byte	-90
- 1040 03f3 26       		.byte	38
- 1041 03f4 AA       		.byte	-86
- 1042 03f5 08       		.byte	8
- 1043 03f6 AB       		.byte	-85
- 1044 03f7 02       		.byte	2
- 1045 03f8 AD       		.byte	-83
- 1046 03f9 01       		.byte	1
- 1047 03fa AF       		.byte	-81
- 1048 03fb 64       		.byte	100
- 1049 03fc B1       		.byte	-79
- 1050 03fd 01       		.byte	1
- 1051 03fe B3       		.byte	-77
- 1052 03ff 40       		.byte	64
- 1053 0400 B4       		.byte	-76
- 1054 0401 01       		.byte	1
- 1055 0402 B5       		.byte	-75
- 1056 0403 08       		.byte	8
- 1057 0404 C0       		.byte	-64
- 1058 0405 45       		.byte	69
- 1059 0406 C2       		.byte	-62
- 1060 0407 FF       		.byte	-1
- 1061 0408 C4       		.byte	-60
- 1062 0409 FF       		.byte	-1
- 1063 040a CA       		.byte	-54
- 1064 040b EF       		.byte	-17
- 1065 040c CC       		.byte	-52
- 1066 040d EF       		.byte	-17
- 1067 040e CE       		.byte	-50
- 1068 040f EF       		.byte	-17
- 1069 0410 E2       		.byte	-30
+ 1027 03e6 28       		.byte	40
+ 1028 03e7 04       		.byte	4
+ 1029 03e8 29       		.byte	41
+ 1030 03e9 0A       		.byte	10
+ 1031 03ea 2A       		.byte	42
+ 1032 03eb 81       		.byte	-127
+ 1033 03ec 2E       		.byte	46
+ 1034 03ed 20       		.byte	32
+ 1035 03ee 2F       		.byte	47
+ 1036 03ef 52       		.byte	82
+ 1037 03f0 31       		.byte	49
+ 1038 03f1 02       		.byte	2
+ 1039 03f2 32       		.byte	50
+ 1040 03f3 A0       		.byte	-96
+ 1041 03f4 34       		.byte	52
+ 1042 03f5 05       		.byte	5
+ 1043 03f6 35       		.byte	53
+ 1044 03f7 04       		.byte	4
+ 1045 03f8 36       		.byte	54
+ 1046 03f9 40       		.byte	64
+ 1047 03fa 37       		.byte	55
+ 1048 03fb 10       		.byte	16
+ 1049 03fc 39       		.byte	57
+ 1050 03fd 22       		.byte	34
+ 1051 03fe 3A       		.byte	58
+ 1052 03ff 08       		.byte	8
+ 1053 0400 3B       		.byte	59
+ 1054 0401 20       		.byte	32
+ 1055 0402 3E       		.byte	62
+ 1056 0403 06       		.byte	6
+ 1057 0404 3F       		.byte	63
+ 1058 0405 50       		.byte	80
+ 1059 0406 4A       		.byte	74
+ 1060 0407 02       		.byte	2
+ 1061 0408 4B       		.byte	75
+ 1062 0409 80       		.byte	-128
+ 1063 040a 5D       		.byte	93
+ 1064 040b 04       		.byte	4
+ 1065 040c 5E       		.byte	94
+ 1066 040d 08       		.byte	8
+ 1067 040e 78       		.byte	120
+ 1068 040f 01       		.byte	1
+ 1069 0410 79       		.byte	121
  1070 0411 03       		.byte	3
- 1071 0412 E4       		.byte	-28
- 1072 0413 04       		.byte	4
- 1073 0414 EA       		.byte	-22
- 1074 0415 24       		.byte	36
- 1075 0416 06       		.byte	6
- 1076 0417 08       		.byte	8
- 1077 0418 0A       		.byte	10
- 1078 0419 14       		.byte	20
- 1079 041a 10       		.byte	16
- 1080 041b 3F       		.byte	63
- 1081 041c 16       		.byte	22
- 1082 041d 18       		.byte	24
- 1083 041e 18       		.byte	24
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 20
+ 1071 0412 83       		.byte	-125
+ 1072 0413 10       		.byte	16
+ 1073 0414 85       		.byte	-123
+ 1074 0415 20       		.byte	32
+ 1075 0416 87       		.byte	-121
+ 1076 0417 10       		.byte	16
+ 1077 0418 89       		.byte	-119
+ 1078 0419 20       		.byte	32
+ 1079 041a 8B       		.byte	-117
+ 1080 041b 02       		.byte	2
+ 1081 041c 91       		.byte	-111
+ 1082 041d 40       		.byte	64
+ 1083 041e 92       		.byte	-110
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 20
 
 
- 1084 041f 10       		.byte	16
- 1085 0420 1A       		.byte	26
- 1086 0421 01       		.byte	1
- 1087 0422 1C       		.byte	28
+ 1084 041f 24       		.byte	36
+ 1085 0420 93       		.byte	-109
+ 1086 0421 0C       		.byte	12
+ 1087 0422 94       		.byte	-108
  1088 0423 10       		.byte	16
- 1089 0424 1E       		.byte	30
- 1090 0425 02       		.byte	2
- 1091 0426 20       		.byte	32
- 1092 0427 04       		.byte	4
- 1093 0428 22       		.byte	34
- 1094 0429 08       		.byte	8
- 1095 042a 2A       		.byte	42
- 1096 042b 20       		.byte	32
- 1097 042c 2C       		.byte	44
- 1098 042d 0F       		.byte	15
- 1099 042e 30       		.byte	48
- 1100 042f 3F       		.byte	63
- 1101 0430 38       		.byte	56
- 1102 0431 02       		.byte	2
- 1103 0432 58       		.byte	88
- 1104 0433 04       		.byte	4
- 1105 0434 5F       		.byte	95
- 1106 0435 01       		.byte	1
- 1107 0436 80       		.byte	-128
- 1108 0437 5D       		.byte	93
- 1109 0438 81       		.byte	-127
- 1110 0439 04       		.byte	4
- 1111 043a 82       		.byte	-126
- 1112 043b A2       		.byte	-94
- 1113 043c 86       		.byte	-122
- 1114 043d 08       		.byte	8
- 1115 043e 87       		.byte	-121
- 1116 043f 02       		.byte	2
- 1117 0440 88       		.byte	-120
- 1118 0441 04       		.byte	4
- 1119 0442 89       		.byte	-119
- 1120 0443 1A       		.byte	26
- 1121 0444 8A       		.byte	-118
- 1122 0445 E0       		.byte	-32
- 1123 0446 8B       		.byte	-117
- 1124 0447 60       		.byte	96
- 1125 0448 8E       		.byte	-114
- 1126 0449 FF       		.byte	-1
- 1127 044a 8F       		.byte	-113
- 1128 044b 04       		.byte	4
- 1129 044c 90       		.byte	-112
- 1130 044d E2       		.byte	-30
- 1131 044e 93       		.byte	-109
- 1132 044f B5       		.byte	-75
- 1133 0450 94       		.byte	-108
- 1134 0451 92       		.byte	-110
- 1135 0452 95       		.byte	-107
- 1136 0453 A5       		.byte	-91
- 1137 0454 96       		.byte	-106
- 1138 0455 60       		.byte	96
- 1139 0456 97       		.byte	-105
- 1140 0457 4A       		.byte	74
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 21
+ 1089 0424 95       		.byte	-107
+ 1090 0425 0D       		.byte	13
+ 1091 0426 96       		.byte	-106
+ 1092 0427 12       		.byte	18
+ 1093 0428 97       		.byte	-105
+ 1094 0429 20       		.byte	32
+ 1095 042a 98       		.byte	-104
+ 1096 042b 18       		.byte	24
+ 1097 042c 99       		.byte	-103
+ 1098 042d 02       		.byte	2
+ 1099 042e 9A       		.byte	-102
+ 1100 042f 80       		.byte	-128
+ 1101 0430 9B       		.byte	-101
+ 1102 0431 28       		.byte	40
+ 1103 0432 9E       		.byte	-98
+ 1104 0433 02       		.byte	2
+ 1105 0434 A0       		.byte	-96
+ 1106 0435 28       		.byte	40
+ 1107 0436 A1       		.byte	-95
+ 1108 0437 42       		.byte	66
+ 1109 0438 A2       		.byte	-94
+ 1110 0439 C0       		.byte	-64
+ 1111 043a A3       		.byte	-93
+ 1112 043b 30       		.byte	48
+ 1113 043c A5       		.byte	-91
+ 1114 043d 09       		.byte	9
+ 1115 043e A6       		.byte	-90
+ 1116 043f 12       		.byte	18
+ 1117 0440 A7       		.byte	-89
+ 1118 0441 09       		.byte	9
+ 1119 0442 AB       		.byte	-85
+ 1120 0443 40       		.byte	64
+ 1121 0444 AC       		.byte	-84
+ 1122 0445 02       		.byte	2
+ 1123 0446 AE       		.byte	-82
+ 1124 0447 10       		.byte	16
+ 1125 0448 AF       		.byte	-81
+ 1126 0449 02       		.byte	2
+ 1127 044a B4       		.byte	-76
+ 1128 044b 10       		.byte	16
+ 1129 044c C0       		.byte	-64
+ 1130 044d F5       		.byte	-11
+ 1131 044e C2       		.byte	-62
+ 1132 044f BE       		.byte	-66
+ 1133 0450 C4       		.byte	-60
+ 1134 0451 7E       		.byte	126
+ 1135 0452 CA       		.byte	-54
+ 1136 0453 FF       		.byte	-1
+ 1137 0454 CC       		.byte	-52
+ 1138 0455 FD       		.byte	-3
+ 1139 0456 CE       		.byte	-50
+ 1140 0457 F7       		.byte	-9
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 21
 
 
- 1141 0458 98       		.byte	-104
- 1142 0459 3D       		.byte	61
- 1143 045a 99       		.byte	-103
- 1144 045b 4D       		.byte	77
- 1145 045c 9A       		.byte	-102
- 1146 045d C2       		.byte	-62
- 1147 045e 9B       		.byte	-101
- 1148 045f 92       		.byte	-110
- 1149 0460 9D       		.byte	-99
- 1150 0461 FF       		.byte	-1
- 1151 0462 9E       		.byte	-98
- 1152 0463 02       		.byte	2
- 1153 0464 A0       		.byte	-96
- 1154 0465 01       		.byte	1
- 1155 0466 A3       		.byte	-93
- 1156 0467 01       		.byte	1
- 1157 0468 A4       		.byte	-92
- 1158 0469 40       		.byte	64
- 1159 046a A5       		.byte	-91
+ 1141 0458 87       		.byte	-121
+ 1142 0459 01       		.byte	1
+ 1143 045a 92       		.byte	-110
+ 1144 045b 01       		.byte	1
+ 1145 045c 96       		.byte	-106
+ 1146 045d 01       		.byte	1
+ 1147 045e B2       		.byte	-78
+ 1148 045f 01       		.byte	1
+ 1149 0460 B3       		.byte	-77
+ 1150 0461 01       		.byte	1
+ 1151 0462 BE       		.byte	-66
+ 1152 0463 04       		.byte	4
+ 1153 0464 D8       		.byte	-40
+ 1154 0465 04       		.byte	4
+ 1155 0466 D9       		.byte	-39
+ 1156 0467 04       		.byte	4
+ 1157 0468 DF       		.byte	-33
+ 1158 0469 01       		.byte	1
+ 1159 046a 05       		.byte	5
  1160 046b 02       		.byte	2
- 1161 046c A6       		.byte	-90
- 1162 046d 1D       		.byte	29
- 1163 046e A8       		.byte	-88
- 1164 046f 01       		.byte	1
- 1165 0470 A9       		.byte	-87
- 1166 0471 CC       		.byte	-52
- 1167 0472 AB       		.byte	-85
- 1168 0473 13       		.byte	19
- 1169 0474 AC       		.byte	-84
- 1170 0475 0D       		.byte	13
- 1171 0476 AD       		.byte	-83
- 1172 0477 A9       		.byte	-87
- 1173 0478 AF       		.byte	-81
- 1174 0479 54       		.byte	84
- 1175 047a B4       		.byte	-76
- 1176 047b FF       		.byte	-1
- 1177 047c B7       		.byte	-73
- 1178 047d FF       		.byte	-1
- 1179 047e BE       		.byte	-66
- 1180 047f 10       		.byte	16
- 1181 0480 BF       		.byte	-65
- 1182 0481 40       		.byte	64
- 1183 0482 D2       		.byte	-46
- 1184 0483 F6       		.byte	-10
- 1185 0484 D4       		.byte	-44
- 1186 0485 20       		.byte	32
- 1187 0486 D6       		.byte	-42
+ 1161 046c 06       		.byte	6
+ 1162 046d 04       		.byte	4
+ 1163 046e 07       		.byte	7
+ 1164 046f 12       		.byte	18
+ 1165 0470 08       		.byte	8
+ 1166 0471 02       		.byte	2
+ 1167 0472 09       		.byte	9
+ 1168 0473 08       		.byte	8
+ 1169 0474 0C       		.byte	12
+ 1170 0475 40       		.byte	64
+ 1171 0476 0D       		.byte	13
+ 1172 0477 22       		.byte	34
+ 1173 0478 0E       		.byte	14
+ 1174 0479 40       		.byte	64
+ 1175 047a 0F       		.byte	15
+ 1176 047b 20       		.byte	32
+ 1177 047c 16       		.byte	22
+ 1178 047d 98       		.byte	-104
+ 1179 047e 17       		.byte	23
+ 1180 047f 40       		.byte	64
+ 1181 0480 1A       		.byte	26
+ 1182 0481 20       		.byte	32
+ 1183 0482 1E       		.byte	30
+ 1184 0483 20       		.byte	32
+ 1185 0484 1F       		.byte	31
+ 1186 0485 01       		.byte	1
+ 1187 0486 21       		.byte	33
  1188 0487 04       		.byte	4
- 1189 0488 D8       		.byte	-40
- 1190 0489 04       		.byte	4
- 1191 048a D9       		.byte	-39
+ 1189 0488 26       		.byte	38
+ 1190 0489 08       		.byte	8
+ 1191 048a 27       		.byte	39
  1192 048b 04       		.byte	4
- 1193 048c DB       		.byte	-37
- 1194 048d 04       		.byte	4
- 1195 048e DF       		.byte	-33
- 1196 048f 01       		.byte	1
- 1197 0490 01       		.byte	1
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 22
+ 1193 048c 2D       		.byte	45
+ 1194 048d 01       		.byte	1
+ 1195 048e 2E       		.byte	46
+ 1196 048f 40       		.byte	64
+ 1197 0490 2F       		.byte	47
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 22
 
 
- 1198 0491 02       		.byte	2
- 1199 0492 02       		.byte	2
- 1200 0493 08       		.byte	8
- 1201 0494 03       		.byte	3
- 1202 0495 21       		.byte	33
- 1203 0496 07       		.byte	7
- 1204 0497 18       		.byte	24
- 1205 0498 08       		.byte	8
- 1206 0499 04       		.byte	4
- 1207 049a 0A       		.byte	10
- 1208 049b C5       		.byte	-59
- 1209 049c 0B       		.byte	11
- 1210 049d 80       		.byte	-128
- 1211 049e 0E       		.byte	14
- 1212 049f 66       		.byte	102
- 1213 04a0 10       		.byte	16
- 1214 04a1 02       		.byte	2
- 1215 04a2 11       		.byte	17
- 1216 04a3 01       		.byte	1
- 1217 04a4 12       		.byte	18
- 1218 04a5 20       		.byte	32
- 1219 04a6 13       		.byte	19
- 1220 04a7 10       		.byte	16
- 1221 04a8 16       		.byte	22
- 1222 04a9 0A       		.byte	10
- 1223 04aa 17       		.byte	23
- 1224 04ab 01       		.byte	1
- 1225 04ac 1A       		.byte	26
- 1226 04ad 08       		.byte	8
- 1227 04ae 1E       		.byte	30
- 1228 04af 80       		.byte	-128
- 1229 04b0 23       		.byte	35
- 1230 04b1 01       		.byte	1
- 1231 04b2 28       		.byte	40
- 1232 04b3 05       		.byte	5
- 1233 04b4 29       		.byte	41
- 1234 04b5 01       		.byte	1
- 1235 04b6 2B       		.byte	43
- 1236 04b7 20       		.byte	32
- 1237 04b8 32       		.byte	50
- 1238 04b9 68       		.byte	104
- 1239 04ba 33       		.byte	51
+ 1198 0491 10       		.byte	16
+ 1199 0492 36       		.byte	54
+ 1200 0493 42       		.byte	66
+ 1201 0494 37       		.byte	55
+ 1202 0495 04       		.byte	4
+ 1203 0496 39       		.byte	57
+ 1204 0497 04       		.byte	4
+ 1205 0498 3C       		.byte	60
+ 1206 0499 10       		.byte	16
+ 1207 049a 3E       		.byte	62
+ 1208 049b 81       		.byte	-127
+ 1209 049c 3F       		.byte	63
+ 1210 049d 04       		.byte	4
+ 1211 049e 47       		.byte	71
+ 1212 049f 08       		.byte	8
+ 1213 04a0 4E       		.byte	78
+ 1214 04a1 2A       		.byte	42
+ 1215 04a2 56       		.byte	86
+ 1216 04a3 20       		.byte	32
+ 1217 04a4 5C       		.byte	92
+ 1218 04a5 09       		.byte	9
+ 1219 04a6 5D       		.byte	93
+ 1220 04a7 40       		.byte	64
+ 1221 04a8 5F       		.byte	95
+ 1222 04a9 20       		.byte	32
+ 1223 04aa 67       		.byte	103
+ 1224 04ab 8A       		.byte	-118
+ 1225 04ac 6E       		.byte	110
+ 1226 04ad 14       		.byte	20
+ 1227 04ae 6F       		.byte	111
+ 1228 04af 10       		.byte	16
+ 1229 04b0 74       		.byte	116
+ 1230 04b1 02       		.byte	2
+ 1231 04b2 76       		.byte	118
+ 1232 04b3 16       		.byte	22
+ 1233 04b4 7A       		.byte	122
+ 1234 04b5 20       		.byte	32
+ 1235 04b6 7B       		.byte	123
+ 1236 04b7 10       		.byte	16
+ 1237 04b8 87       		.byte	-121
+ 1238 04b9 52       		.byte	82
+ 1239 04ba 8C       		.byte	-116
  1240 04bb 01       		.byte	1
- 1241 04bc 34       		.byte	52
- 1242 04bd 01       		.byte	1
- 1243 04be 35       		.byte	53
- 1244 04bf 02       		.byte	2
- 1245 04c0 36       		.byte	54
+ 1241 04bc 8F       		.byte	-113
+ 1242 04bd 04       		.byte	4
+ 1243 04be 91       		.byte	-111
+ 1244 04bf 47       		.byte	71
+ 1245 04c0 92       		.byte	-110
  1246 04c1 01       		.byte	1
- 1247 04c2 38       		.byte	56
- 1248 04c3 08       		.byte	8
- 1249 04c4 39       		.byte	57
- 1250 04c5 A1       		.byte	-95
- 1251 04c6 40       		.byte	64
- 1252 04c7 10       		.byte	16
- 1253 04c8 41       		.byte	65
- 1254 04c9 40       		.byte	64
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 23
+ 1247 04c2 93       		.byte	-109
+ 1248 04c3 0C       		.byte	12
+ 1249 04c4 94       		.byte	-108
+ 1250 04c5 10       		.byte	16
+ 1251 04c6 95       		.byte	-107
+ 1252 04c7 08       		.byte	8
+ 1253 04c8 96       		.byte	-106
+ 1254 04c9 12       		.byte	18
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 23
 
 
- 1255 04ca 42       		.byte	66
- 1256 04cb 01       		.byte	1
- 1257 04cc 43       		.byte	67
- 1258 04cd 04       		.byte	4
- 1259 04ce 58       		.byte	88
+ 1255 04ca 97       		.byte	-105
+ 1256 04cb 20       		.byte	32
+ 1257 04cc 98       		.byte	-104
+ 1258 04cd 0B       		.byte	11
+ 1259 04ce 99       		.byte	-103
  1260 04cf 02       		.byte	2
- 1261 04d0 59       		.byte	89
- 1262 04d1 20       		.byte	32
- 1263 04d2 5B       		.byte	91
- 1264 04d3 44       		.byte	68
- 1265 04d4 60       		.byte	96
+ 1261 04d0 9A       		.byte	-102
+ 1262 04d1 80       		.byte	-128
+ 1263 04d2 9B       		.byte	-101
+ 1264 04d3 28       		.byte	40
+ 1265 04d4 9C       		.byte	-100
  1266 04d5 04       		.byte	4
- 1267 04d6 61       		.byte	97
- 1268 04d7 82       		.byte	-126
- 1269 04d8 69       		.byte	105
- 1270 04d9 14       		.byte	20
- 1271 04da 70       		.byte	112
- 1272 04db 04       		.byte	4
- 1273 04dc 71       		.byte	113
- 1274 04dd 21       		.byte	33
- 1275 04de 72       		.byte	114
- 1276 04df 01       		.byte	1
- 1277 04e0 73       		.byte	115
- 1278 04e1 10       		.byte	16
- 1279 04e2 7A       		.byte	122
+ 1267 04d6 9D       		.byte	-99
+ 1268 04d7 08       		.byte	8
+ 1269 04d8 9E       		.byte	-98
+ 1270 04d9 22       		.byte	34
+ 1271 04da A1       		.byte	-95
+ 1272 04db 22       		.byte	34
+ 1273 04dc A2       		.byte	-94
+ 1274 04dd 40       		.byte	64
+ 1275 04de A6       		.byte	-90
+ 1276 04df 32       		.byte	50
+ 1277 04e0 AE       		.byte	-82
+ 1278 04e1 48       		.byte	72
+ 1279 04e2 B0       		.byte	-80
  1280 04e3 02       		.byte	2
- 1281 04e4 7B       		.byte	123
- 1282 04e5 01       		.byte	1
- 1283 04e6 80       		.byte	-128
- 1284 04e7 04       		.byte	4
- 1285 04e8 83       		.byte	-125
- 1286 04e9 04       		.byte	4
- 1287 04ea 84       		.byte	-124
- 1288 04eb 02       		.byte	2
- 1289 04ec 85       		.byte	-123
- 1290 04ed 02       		.byte	2
- 1291 04ee 86       		.byte	-122
- 1292 04ef 20       		.byte	32
- 1293 04f0 89       		.byte	-119
- 1294 04f1 25       		.byte	37
- 1295 04f2 8E       		.byte	-114
- 1296 04f3 01       		.byte	1
- 1297 04f4 90       		.byte	-112
- 1298 04f5 14       		.byte	20
- 1299 04f6 91       		.byte	-111
- 1300 04f7 20       		.byte	32
- 1301 04f8 92       		.byte	-110
- 1302 04f9 04       		.byte	4
- 1303 04fa 93       		.byte	-109
- 1304 04fb A8       		.byte	-88
- 1305 04fc 94       		.byte	-108
- 1306 04fd 80       		.byte	-128
- 1307 04fe 95       		.byte	-107
- 1308 04ff 10       		.byte	16
- 1309 0500 96       		.byte	-106
- 1310 0501 09       		.byte	9
- 1311 0502 98       		.byte	-104
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 24
+ 1281 04e4 C0       		.byte	-64
+ 1282 04e5 F0       		.byte	-16
+ 1283 04e6 C2       		.byte	-62
+ 1284 04e7 FC       		.byte	-4
+ 1285 04e8 C4       		.byte	-60
+ 1286 04e9 F0       		.byte	-16
+ 1287 04ea CA       		.byte	-54
+ 1288 04eb D0       		.byte	-48
+ 1289 04ec CC       		.byte	-52
+ 1290 04ed D0       		.byte	-48
+ 1291 04ee CE       		.byte	-50
+ 1292 04ef F2       		.byte	-14
+ 1293 04f0 D0       		.byte	-48
+ 1294 04f1 40       		.byte	64
+ 1295 04f2 D2       		.byte	-46
+ 1296 04f3 30       		.byte	48
+ 1297 04f4 D6       		.byte	-42
+ 1298 04f5 F0       		.byte	-16
+ 1299 04f6 D8       		.byte	-40
+ 1300 04f7 B0       		.byte	-80
+ 1301 04f8 90       		.byte	-112
+ 1302 04f9 80       		.byte	-128
+ 1303 04fa 9C       		.byte	-100
+ 1304 04fb 08       		.byte	8
+ 1305 04fc B0       		.byte	-80
+ 1306 04fd 04       		.byte	4
+ 1307 04fe EA       		.byte	-22
+ 1308 04ff 20       		.byte	32
+ 1309 0500 89       		.byte	-119
+ 1310 0501 80       		.byte	-128
+ 1311 0502 90       		.byte	-112
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 24
 
 
- 1312 0503 06       		.byte	6
- 1313 0504 9A       		.byte	-102
- 1314 0505 3A       		.byte	58
- 1315 0506 9B       		.byte	-101
- 1316 0507 08       		.byte	8
- 1317 0508 9C       		.byte	-100
- 1318 0509 20       		.byte	32
- 1319 050a 9F       		.byte	-97
- 1320 050b 11       		.byte	17
- 1321 050c A0       		.byte	-96
- 1322 050d 30       		.byte	48
- 1323 050e A1       		.byte	-95
- 1324 050f 49       		.byte	73
- 1325 0510 A2       		.byte	-94
- 1326 0511 20       		.byte	32
- 1327 0512 A3       		.byte	-93
- 1328 0513 02       		.byte	2
- 1329 0514 A4       		.byte	-92
- 1330 0515 04       		.byte	4
- 1331 0516 A5       		.byte	-91
- 1332 0517 10       		.byte	16
- 1333 0518 A6       		.byte	-90
- 1334 0519 5B       		.byte	91
- 1335 051a A7       		.byte	-89
- 1336 051b 20       		.byte	32
- 1337 051c AF       		.byte	-81
- 1338 051d 01       		.byte	1
- 1339 051e B4       		.byte	-76
- 1340 051f 80       		.byte	-128
- 1341 0520 B7       		.byte	-73
- 1342 0521 10       		.byte	16
- 1343 0522 C0       		.byte	-64
- 1344 0523 6F       		.byte	111
- 1345 0524 C2       		.byte	-62
- 1346 0525 FF       		.byte	-1
- 1347 0526 C4       		.byte	-60
- 1348 0527 DF       		.byte	-33
- 1349 0528 CA       		.byte	-54
- 1350 0529 0F       		.byte	15
- 1351 052a CC       		.byte	-52
- 1352 052b 0F       		.byte	15
- 1353 052c CE       		.byte	-50
- 1354 052d 0F       		.byte	15
- 1355 052e D6       		.byte	-42
- 1356 052f 0F       		.byte	15
- 1357 0530 D8       		.byte	-40
- 1358 0531 0D       		.byte	13
- 1359 0532 E4       		.byte	-28
- 1360 0533 01       		.byte	1
- 1361 0534 E6       		.byte	-26
- 1362 0535 06       		.byte	6
- 1363 0536 E8       		.byte	-24
- 1364 0537 02       		.byte	2
- 1365 0538 01       		.byte	1
- 1366 0539 20       		.byte	32
- 1367 053a 03       		.byte	3
- 1368 053b 14       		.byte	20
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 25
+ 1312 0503 80       		.byte	-128
+ 1313 0504 9C       		.byte	-100
+ 1314 0505 08       		.byte	8
+ 1315 0506 A0       		.byte	-96
+ 1316 0507 04       		.byte	4
+ 1317 0508 A5       		.byte	-91
+ 1318 0509 80       		.byte	-128
+ 1319 050a B0       		.byte	-80
+ 1320 050b 01       		.byte	1
+ 1321 050c B4       		.byte	-76
+ 1322 050d 01       		.byte	1
+ 1323 050e B6       		.byte	-74
+ 1324 050f 08       		.byte	8
+ 1325 0510 B7       		.byte	-73
+ 1326 0511 14       		.byte	20
+ 1327 0512 E0       		.byte	-32
+ 1328 0513 20       		.byte	32
+ 1329 0514 EC       		.byte	-20
+ 1330 0515 40       		.byte	64
+ 1331 0516 02       		.byte	2
+ 1332 0517 08       		.byte	8
+ 1333 0518 04       		.byte	4
+ 1334 0519 6F       		.byte	111
+ 1335 051a 08       		.byte	8
+ 1336 051b 22       		.byte	34
+ 1337 051c 0A       		.byte	10
+ 1338 051d 41       		.byte	65
+ 1339 051e 0C       		.byte	12
+ 1340 051f 01       		.byte	1
+ 1341 0520 0E       		.byte	14
+ 1342 0521 06       		.byte	6
+ 1343 0522 11       		.byte	17
+ 1344 0523 01       		.byte	1
+ 1345 0524 14       		.byte	20
+ 1346 0525 44       		.byte	68
+ 1347 0526 16       		.byte	22
+ 1348 0527 21       		.byte	33
+ 1349 0528 24       		.byte	36
+ 1350 0529 77       		.byte	119
+ 1351 052a 28       		.byte	40
+ 1352 052b 77       		.byte	119
+ 1353 052c 2C       		.byte	44
+ 1354 052d 10       		.byte	16
+ 1355 052e 30       		.byte	48
+ 1356 052f 07       		.byte	7
+ 1357 0530 31       		.byte	49
+ 1358 0531 01       		.byte	1
+ 1359 0532 32       		.byte	50
+ 1360 0533 60       		.byte	96
+ 1361 0534 34       		.byte	52
+ 1362 0535 10       		.byte	16
+ 1363 0536 36       		.byte	54
+ 1364 0537 08       		.byte	8
+ 1365 0538 3F       		.byte	63
+ 1366 0539 01       		.byte	1
+ 1367 053a 58       		.byte	88
+ 1368 053b 04       		.byte	4
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 25
 
 
- 1369 053c 05       		.byte	5
- 1370 053d 20       		.byte	32
- 1371 053e 07       		.byte	7
- 1372 053f 0B       		.byte	11
- 1373 0540 09       		.byte	9
- 1374 0541 28       		.byte	40
- 1375 0542 0B       		.byte	11
- 1376 0543 02       		.byte	2
- 1377 0544 0D       		.byte	13
- 1378 0545 2F       		.byte	47
- 1379 0546 11       		.byte	17
- 1380 0547 01       		.byte	1
- 1381 0548 15       		.byte	21
- 1382 0549 22       		.byte	34
- 1383 054a 17       		.byte	23
- 1384 054b 09       		.byte	9
- 1385 054c 19       		.byte	25
- 1386 054d 03       		.byte	3
- 1387 054e 1D       		.byte	29
- 1388 054f 1F       		.byte	31
- 1389 0550 21       		.byte	33
- 1390 0551 03       		.byte	3
- 1391 0552 27       		.byte	39
- 1392 0553 01       		.byte	1
- 1393 0554 29       		.byte	41
- 1394 0555 01       		.byte	1
- 1395 0556 2D       		.byte	45
- 1396 0557 10       		.byte	16
- 1397 0558 2F       		.byte	47
- 1398 0559 0B       		.byte	11
- 1399 055a 31       		.byte	49
- 1400 055b 1F       		.byte	31
- 1401 055c 37       		.byte	55
- 1402 055d 20       		.byte	32
- 1403 055e 39       		.byte	57
- 1404 055f 80       		.byte	-128
- 1405 0560 3F       		.byte	63
- 1406 0561 40       		.byte	64
- 1407 0562 40       		.byte	64
+ 1369 053c 59       		.byte	89
+ 1370 053d 04       		.byte	4
+ 1371 053e 5C       		.byte	92
+ 1372 053f 02       		.byte	2
+ 1373 0540 5F       		.byte	95
+ 1374 0541 01       		.byte	1
+ 1375 0542 80       		.byte	-128
+ 1376 0543 20       		.byte	32
+ 1377 0544 81       		.byte	-127
+ 1378 0545 10       		.byte	16
+ 1379 0546 84       		.byte	-124
+ 1380 0547 23       		.byte	35
+ 1381 0548 85       		.byte	-123
+ 1382 0549 18       		.byte	24
+ 1383 054a 86       		.byte	-122
+ 1384 054b 1C       		.byte	28
+ 1385 054c 89       		.byte	-119
+ 1386 054d 08       		.byte	8
+ 1387 054e 8A       		.byte	-118
+ 1388 054f 20       		.byte	32
+ 1389 0550 8D       		.byte	-115
+ 1390 0551 7B       		.byte	123
+ 1391 0552 90       		.byte	-112
+ 1392 0553 B8       		.byte	-72
+ 1393 0554 91       		.byte	-111
+ 1394 0555 03       		.byte	3
+ 1395 0556 92       		.byte	-110
+ 1396 0557 03       		.byte	3
+ 1397 0558 94       		.byte	-108
+ 1398 0559 33       		.byte	51
+ 1399 055a 95       		.byte	-107
+ 1400 055b 03       		.byte	3
+ 1401 055c 96       		.byte	-106
+ 1402 055d 44       		.byte	68
+ 1403 055e 97       		.byte	-105
+ 1404 055f 04       		.byte	4
+ 1405 0560 9A       		.byte	-102
+ 1406 0561 98       		.byte	-104
+ 1407 0562 9B       		.byte	-101
  1408 0563 03       		.byte	3
- 1409 0564 47       		.byte	71
- 1410 0565 04       		.byte	4
- 1411 0566 49       		.byte	73
- 1412 0567 FF       		.byte	-1
- 1413 0568 4A       		.byte	74
- 1414 0569 07       		.byte	7
- 1415 056a 4B       		.byte	75
- 1416 056b FF       		.byte	-1
- 1417 056c 4C       		.byte	76
- 1418 056d 40       		.byte	64
- 1419 056e 4D       		.byte	77
- 1420 056f 20       		.byte	32
- 1421 0570 4E       		.byte	78
- 1422 0571 F0       		.byte	-16
- 1423 0572 4F       		.byte	79
- 1424 0573 05       		.byte	5
- 1425 0574 50       		.byte	80
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 26
+ 1409 0564 9C       		.byte	-100
+ 1410 0565 02       		.byte	2
+ 1411 0566 9D       		.byte	-99
+ 1412 0567 63       		.byte	99
+ 1413 0568 9F       		.byte	-97
+ 1414 0569 1C       		.byte	28
+ 1415 056a A0       		.byte	-96
+ 1416 056b 23       		.byte	35
+ 1417 056c A1       		.byte	-95
+ 1418 056d 38       		.byte	56
+ 1419 056e A2       		.byte	-94
+ 1420 056f C8       		.byte	-56
+ 1421 0570 A3       		.byte	-93
+ 1422 0571 43       		.byte	67
+ 1423 0572 A4       		.byte	-92
+ 1424 0573 01       		.byte	1
+ 1425 0574 A5       		.byte	-91
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 26
 
 
- 1426 0575 08       		.byte	8
- 1427 0576 59       		.byte	89
- 1428 0577 04       		.byte	4
- 1429 0578 5A       		.byte	90
- 1430 0579 04       		.byte	4
- 1431 057a 5D       		.byte	93
- 1432 057b 02       		.byte	2
- 1433 057c 5F       		.byte	95
- 1434 057d 09       		.byte	9
- 1435 057e 60       		.byte	96
- 1436 057f 40       		.byte	64
- 1437 0580 61       		.byte	97
- 1438 0581 A8       		.byte	-88
- 1439 0582 62       		.byte	98
- 1440 0583 40       		.byte	64
- 1441 0584 63       		.byte	99
- 1442 0585 20       		.byte	32
- 1443 0586 80       		.byte	-128
- 1444 0587 06       		.byte	6
- 1445 0588 82       		.byte	-126
- 1446 0589 08       		.byte	8
- 1447 058a 84       		.byte	-124
- 1448 058b 36       		.byte	54
- 1449 058c 85       		.byte	-123
- 1450 058d 1C       		.byte	28
- 1451 058e 86       		.byte	-122
- 1452 058f 01       		.byte	1
- 1453 0590 88       		.byte	-120
- 1454 0591 30       		.byte	48
- 1455 0592 89       		.byte	-119
- 1456 0593 1C       		.byte	28
- 1457 0594 8A       		.byte	-118
- 1458 0595 07       		.byte	7
- 1459 0596 8C       		.byte	-116
- 1460 0597 07       		.byte	7
- 1461 0598 8E       		.byte	-114
- 1462 0599 38       		.byte	56
- 1463 059a 8F       		.byte	-113
- 1464 059b 02       		.byte	2
- 1465 059c 90       		.byte	-112
- 1466 059d 04       		.byte	4
- 1467 059e 91       		.byte	-111
- 1468 059f 04       		.byte	4
- 1469 05a0 93       		.byte	-109
- 1470 05a1 18       		.byte	24
- 1471 05a2 94       		.byte	-108
- 1472 05a3 02       		.byte	2
- 1473 05a4 99       		.byte	-103
- 1474 05a5 08       		.byte	8
- 1475 05a6 9A       		.byte	-102
- 1476 05a7 06       		.byte	6
- 1477 05a8 9B       		.byte	-101
- 1478 05a9 04       		.byte	4
- 1479 05aa 9C       		.byte	-100
- 1480 05ab 37       		.byte	55
- 1481 05ac 9F       		.byte	-97
- 1482 05ad 01       		.byte	1
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 27
+ 1426 0575 02       		.byte	2
+ 1427 0576 A8       		.byte	-88
+ 1428 0577 03       		.byte	3
+ 1429 0578 A9       		.byte	-87
+ 1430 0579 3B       		.byte	59
+ 1431 057a AB       		.byte	-85
+ 1432 057b 40       		.byte	64
+ 1433 057c AC       		.byte	-84
+ 1434 057d BB       		.byte	-69
+ 1435 057e AD       		.byte	-83
+ 1436 057f 01       		.byte	1
+ 1437 0580 B0       		.byte	-80
+ 1438 0581 F3       		.byte	-13
+ 1439 0582 B3       		.byte	-77
+ 1440 0583 20       		.byte	32
+ 1441 0584 B4       		.byte	-76
+ 1442 0585 0F       		.byte	15
+ 1443 0586 B5       		.byte	-75
+ 1444 0587 40       		.byte	64
+ 1445 0588 B7       		.byte	-73
+ 1446 0589 1F       		.byte	31
+ 1447 058a B9       		.byte	-71
+ 1448 058b 20       		.byte	32
+ 1449 058c BA       		.byte	-70
+ 1450 058d 22       		.byte	34
+ 1451 058e BB       		.byte	-69
+ 1452 058f 80       		.byte	-128
+ 1453 0590 BF       		.byte	-65
+ 1454 0591 04       		.byte	4
+ 1455 0592 D6       		.byte	-42
+ 1456 0593 02       		.byte	2
+ 1457 0594 D7       		.byte	-41
+ 1458 0595 12       		.byte	18
+ 1459 0596 D8       		.byte	-40
+ 1460 0597 04       		.byte	4
+ 1461 0598 D9       		.byte	-39
+ 1462 0599 04       		.byte	4
+ 1463 059a DB       		.byte	-37
+ 1464 059b 04       		.byte	4
+ 1465 059c DC       		.byte	-36
+ 1466 059d 22       		.byte	34
+ 1467 059e DD       		.byte	-35
+ 1468 059f 20       		.byte	32
+ 1469 05a0 DE       		.byte	-34
+ 1470 05a1 08       		.byte	8
+ 1471 05a2 DF       		.byte	-33
+ 1472 05a3 01       		.byte	1
+ 1473 05a4 00       		.byte	0
+ 1474 05a5 01       		.byte	1
+ 1475 05a6 02       		.byte	2
+ 1476 05a7 10       		.byte	16
+ 1477 05a8 03       		.byte	3
+ 1478 05a9 08       		.byte	8
+ 1479 05aa 04       		.byte	4
+ 1480 05ab 40       		.byte	64
+ 1481 05ac 06       		.byte	6
+ 1482 05ad 80       		.byte	-128
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 27
 
 
- 1483 05ae A0       		.byte	-96
- 1484 05af 20       		.byte	32
- 1485 05b0 A3       		.byte	-93
- 1486 05b1 02       		.byte	2
- 1487 05b2 A4       		.byte	-92
- 1488 05b3 10       		.byte	16
- 1489 05b4 A8       		.byte	-88
- 1490 05b5 30       		.byte	48
- 1491 05b6 A9       		.byte	-87
- 1492 05b7 1D       		.byte	29
- 1493 05b8 AC       		.byte	-84
- 1494 05b9 06       		.byte	6
- 1495 05ba AD       		.byte	-83
- 1496 05bb 10       		.byte	16
- 1497 05bc AF       		.byte	-81
- 1498 05bd 04       		.byte	4
- 1499 05be B0       		.byte	-80
- 1500 05bf 3E       		.byte	62
- 1501 05c0 B1       		.byte	-79
- 1502 05c1 1C       		.byte	28
- 1503 05c2 B3       		.byte	-77
- 1504 05c3 02       		.byte	2
- 1505 05c4 B6       		.byte	-74
- 1506 05c5 01       		.byte	1
- 1507 05c6 B7       		.byte	-73
- 1508 05c7 01       		.byte	1
- 1509 05c8 B8       		.byte	-72
- 1510 05c9 80       		.byte	-128
- 1511 05ca BA       		.byte	-70
- 1512 05cb 02       		.byte	2
- 1513 05cc BF       		.byte	-65
- 1514 05cd 04       		.byte	4
- 1515 05ce D4       		.byte	-44
- 1516 05cf 18       		.byte	24
- 1517 05d0 D6       		.byte	-42
- 1518 05d1 04       		.byte	4
- 1519 05d2 D8       		.byte	-40
- 1520 05d3 04       		.byte	4
- 1521 05d4 D9       		.byte	-39
- 1522 05d5 04       		.byte	4
- 1523 05d6 DB       		.byte	-37
- 1524 05d7 04       		.byte	4
- 1525 05d8 DC       		.byte	-36
- 1526 05d9 22       		.byte	34
- 1527 05da DD       		.byte	-35
- 1528 05db 20       		.byte	32
- 1529 05dc DF       		.byte	-33
- 1530 05dd 05       		.byte	5
- 1531 05de 00       		.byte	0
- 1532 05df 68       		.byte	104
- 1533 05e0 02       		.byte	2
- 1534 05e1 80       		.byte	-128
- 1535 05e2 08       		.byte	8
- 1536 05e3 01       		.byte	1
- 1537 05e4 09       		.byte	9
+ 1483 05ae 07       		.byte	7
+ 1484 05af 14       		.byte	20
+ 1485 05b0 08       		.byte	8
+ 1486 05b1 04       		.byte	4
+ 1487 05b2 0A       		.byte	10
+ 1488 05b3 85       		.byte	-123
+ 1489 05b4 0E       		.byte	14
+ 1490 05b5 10       		.byte	16
+ 1491 05b6 10       		.byte	16
+ 1492 05b7 68       		.byte	104
+ 1493 05b8 11       		.byte	17
+ 1494 05b9 40       		.byte	64
+ 1495 05ba 15       		.byte	21
+ 1496 05bb 80       		.byte	-128
+ 1497 05bc 17       		.byte	23
+ 1498 05bd 28       		.byte	40
+ 1499 05be 19       		.byte	25
+ 1500 05bf 21       		.byte	33
+ 1501 05c0 1C       		.byte	28
+ 1502 05c1 60       		.byte	96
+ 1503 05c2 1D       		.byte	29
+ 1504 05c3 04       		.byte	4
+ 1505 05c4 1E       		.byte	30
+ 1506 05c5 14       		.byte	20
+ 1507 05c6 1F       		.byte	31
+ 1508 05c7 72       		.byte	114
+ 1509 05c8 20       		.byte	32
+ 1510 05c9 0A       		.byte	10
+ 1511 05ca 22       		.byte	34
+ 1512 05cb 44       		.byte	68
+ 1513 05cc 25       		.byte	37
+ 1514 05cd 01       		.byte	1
+ 1515 05ce 28       		.byte	40
+ 1516 05cf 41       		.byte	65
+ 1517 05d0 29       		.byte	41
+ 1518 05d1 25       		.byte	37
+ 1519 05d2 2A       		.byte	42
+ 1520 05d3 10       		.byte	16
+ 1521 05d4 32       		.byte	50
+ 1522 05d5 48       		.byte	72
+ 1523 05d6 33       		.byte	51
+ 1524 05d7 22       		.byte	34
+ 1525 05d8 34       		.byte	52
+ 1526 05d9 04       		.byte	4
+ 1527 05da 36       		.byte	54
+ 1528 05db 08       		.byte	8
+ 1529 05dc 37       		.byte	55
+ 1530 05dd 02       		.byte	2
+ 1531 05de 38       		.byte	56
+ 1532 05df 28       		.byte	40
+ 1533 05e0 39       		.byte	57
+ 1534 05e1 40       		.byte	64
+ 1535 05e2 3A       		.byte	58
+ 1536 05e3 82       		.byte	-126
+ 1537 05e4 3B       		.byte	59
  1538 05e5 80       		.byte	-128
- 1539 05e6 0A       		.byte	10
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 28
+ 1539 05e6 5A       		.byte	90
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 28
 
 
- 1540 05e7 24       		.byte	36
- 1541 05e8 10       		.byte	16
- 1542 05e9 84       		.byte	-124
- 1543 05ea 12       		.byte	18
- 1544 05eb 12       		.byte	18
- 1545 05ec 18       		.byte	24
- 1546 05ed 40       		.byte	64
- 1547 05ee 1A       		.byte	26
- 1548 05ef 41       		.byte	65
- 1549 05f0 21       		.byte	33
- 1550 05f1 81       		.byte	-127
- 1551 05f2 22       		.byte	34
- 1552 05f3 46       		.byte	70
- 1553 05f4 25       		.byte	37
+ 1540 05e7 08       		.byte	8
+ 1541 05e8 69       		.byte	105
+ 1542 05e9 80       		.byte	-128
+ 1543 05ea 6B       		.byte	107
+ 1544 05eb 28       		.byte	40
+ 1545 05ec 70       		.byte	112
+ 1546 05ed 3C       		.byte	60
+ 1547 05ee 71       		.byte	113
+ 1548 05ef 08       		.byte	8
+ 1549 05f0 72       		.byte	114
+ 1550 05f1 03       		.byte	3
+ 1551 05f2 7A       		.byte	122
+ 1552 05f3 08       		.byte	8
+ 1553 05f4 8D       		.byte	-115
  1554 05f5 01       		.byte	1
- 1555 05f6 26       		.byte	38
- 1556 05f7 40       		.byte	64
- 1557 05f8 28       		.byte	40
- 1558 05f9 09       		.byte	9
- 1559 05fa 29       		.byte	41
- 1560 05fb 01       		.byte	1
- 1561 05fc 2D       		.byte	45
- 1562 05fd 80       		.byte	-128
- 1563 05fe 2E       		.byte	46
+ 1555 05f6 90       		.byte	-112
+ 1556 05f7 80       		.byte	-128
+ 1557 05f8 94       		.byte	-108
+ 1558 05f9 41       		.byte	65
+ 1559 05fa 95       		.byte	-107
+ 1560 05fb 40       		.byte	64
+ 1561 05fc 96       		.byte	-106
+ 1562 05fd 85       		.byte	-123
+ 1563 05fe 97       		.byte	-105
  1564 05ff 20       		.byte	32
- 1565 0600 2F       		.byte	47
- 1566 0601 90       		.byte	-112
- 1567 0602 31       		.byte	49
- 1568 0603 80       		.byte	-128
- 1569 0604 32       		.byte	50
- 1570 0605 12       		.byte	18
- 1571 0606 34       		.byte	52
- 1572 0607 40       		.byte	64
- 1573 0608 36       		.byte	54
- 1574 0609 01       		.byte	1
- 1575 060a 37       		.byte	55
- 1576 060b 18       		.byte	24
- 1577 060c 39       		.byte	57
- 1578 060d 94       		.byte	-108
- 1579 060e 3D       		.byte	61
- 1580 060f 82       		.byte	-126
- 1581 0610 3E       		.byte	62
- 1582 0611 08       		.byte	8
- 1583 0612 3F       		.byte	63
- 1584 0613 10       		.byte	16
- 1585 0614 47       		.byte	71
- 1586 0615 04       		.byte	4
- 1587 0616 56       		.byte	86
- 1588 0617 04       		.byte	4
- 1589 0618 57       		.byte	87
- 1590 0619 40       		.byte	64
- 1591 061a 5A       		.byte	90
- 1592 061b 02       		.byte	2
- 1593 061c 60       		.byte	96
- 1594 061d 04       		.byte	4
- 1595 061e 63       		.byte	99
- 1596 061f 42       		.byte	66
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 29
+ 1565 0600 9B       		.byte	-101
+ 1566 0601 02       		.byte	2
+ 1567 0602 9C       		.byte	-100
+ 1568 0603 48       		.byte	72
+ 1569 0604 9E       		.byte	-98
+ 1570 0605 90       		.byte	-112
+ 1571 0606 A3       		.byte	-93
+ 1572 0607 08       		.byte	8
+ 1573 0608 A4       		.byte	-92
+ 1574 0609 31       		.byte	49
+ 1575 060a A5       		.byte	-91
+ 1576 060b 88       		.byte	-120
+ 1577 060c A6       		.byte	-90
+ 1578 060d 08       		.byte	8
+ 1579 060e A9       		.byte	-87
+ 1580 060f 02       		.byte	2
+ 1581 0610 AB       		.byte	-85
+ 1582 0611 20       		.byte	32
+ 1583 0612 B0       		.byte	-80
+ 1584 0613 20       		.byte	32
+ 1585 0614 B1       		.byte	-79
+ 1586 0615 40       		.byte	64
+ 1587 0616 B6       		.byte	-74
+ 1588 0617 08       		.byte	8
+ 1589 0618 C0       		.byte	-64
+ 1590 0619 FE       		.byte	-2
+ 1591 061a C2       		.byte	-62
+ 1592 061b 2F       		.byte	47
+ 1593 061c C4       		.byte	-60
+ 1594 061d EF       		.byte	-17
+ 1595 061e CA       		.byte	-54
+ 1596 061f 0F       		.byte	15
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 29
 
 
- 1597 0620 78       		.byte	120
- 1598 0621 80       		.byte	-128
- 1599 0622 7A       		.byte	122
- 1600 0623 80       		.byte	-128
- 1601 0624 7B       		.byte	123
+ 1597 0620 CC       		.byte	-52
+ 1598 0621 8F       		.byte	-113
+ 1599 0622 CE       		.byte	-50
+ 1600 0623 0F       		.byte	15
+ 1601 0624 D6       		.byte	-42
  1602 0625 02       		.byte	2
- 1603 0626 7E       		.byte	126
- 1604 0627 80       		.byte	-128
- 1605 0628 80       		.byte	-128
- 1606 0629 08       		.byte	8
- 1607 062a 82       		.byte	-126
- 1608 062b 81       		.byte	-127
- 1609 062c 87       		.byte	-121
- 1610 062d 40       		.byte	64
- 1611 062e 8A       		.byte	-118
- 1612 062f 20       		.byte	32
- 1613 0630 8B       		.byte	-117
- 1614 0631 10       		.byte	16
- 1615 0632 8C       		.byte	-116
- 1616 0633 80       		.byte	-128
- 1617 0634 8D       		.byte	-115
- 1618 0635 01       		.byte	1
- 1619 0636 90       		.byte	-112
- 1620 0637 20       		.byte	32
- 1621 0638 91       		.byte	-111
- 1622 0639 DC       		.byte	-36
- 1623 063a 92       		.byte	-110
- 1624 063b 32       		.byte	50
- 1625 063c 93       		.byte	-109
- 1626 063d 14       		.byte	20
- 1627 063e 94       		.byte	-108
- 1628 063f 40       		.byte	64
- 1629 0640 95       		.byte	-107
- 1630 0641 02       		.byte	2
- 1631 0642 96       		.byte	-106
- 1632 0643 80       		.byte	-128
- 1633 0644 97       		.byte	-105
- 1634 0645 20       		.byte	32
- 1635 0646 98       		.byte	-104
- 1636 0647 40       		.byte	64
- 1637 0648 99       		.byte	-103
- 1638 0649 80       		.byte	-128
- 1639 064a 9A       		.byte	-102
- 1640 064b 08       		.byte	8
- 1641 064c 9B       		.byte	-101
- 1642 064d 18       		.byte	24
- 1643 064e 9D       		.byte	-99
- 1644 064f 10       		.byte	16
- 1645 0650 9E       		.byte	-98
- 1646 0651 24       		.byte	36
- 1647 0652 A0       		.byte	-96
- 1648 0653 88       		.byte	-120
- 1649 0654 A1       		.byte	-95
- 1650 0655 4C       		.byte	76
- 1651 0656 A2       		.byte	-94
- 1652 0657 80       		.byte	-128
- 1653 0658 A3       		.byte	-93
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 30
+ 1603 0626 DE       		.byte	-34
+ 1604 0627 04       		.byte	4
+ 1605 0628 E8       		.byte	-24
+ 1606 0629 10       		.byte	16
+ 1607 062a 00       		.byte	0
+ 1608 062b 08       		.byte	8
+ 1609 062c 02       		.byte	2
+ 1610 062d C0       		.byte	-64
+ 1611 062e 03       		.byte	3
+ 1612 062f 01       		.byte	1
+ 1613 0630 04       		.byte	4
+ 1614 0631 06       		.byte	6
+ 1615 0632 06       		.byte	6
+ 1616 0633 19       		.byte	25
+ 1617 0634 08       		.byte	8
+ 1618 0635 10       		.byte	16
+ 1619 0636 0A       		.byte	10
+ 1620 0637 40       		.byte	64
+ 1621 0638 0C       		.byte	12
+ 1622 0639 18       		.byte	24
+ 1623 063a 0E       		.byte	14
+ 1624 063b 20       		.byte	32
+ 1625 063c 10       		.byte	16
+ 1626 063d 19       		.byte	25
+ 1627 063e 12       		.byte	18
+ 1628 063f 06       		.byte	6
+ 1629 0640 14       		.byte	20
+ 1630 0641 06       		.byte	6
+ 1631 0642 1A       		.byte	26
+ 1632 0643 19       		.byte	25
+ 1633 0644 1C       		.byte	28
+ 1634 0645 04       		.byte	4
+ 1635 0646 20       		.byte	32
+ 1636 0647 07       		.byte	7
+ 1637 0648 22       		.byte	34
+ 1638 0649 18       		.byte	24
+ 1639 064a 24       		.byte	36
+ 1640 064b 02       		.byte	2
+ 1641 064c 28       		.byte	40
+ 1642 064d 9F       		.byte	-97
+ 1643 064e 2C       		.byte	44
+ 1644 064f 1F       		.byte	31
+ 1645 0650 2F       		.byte	47
+ 1646 0651 01       		.byte	1
+ 1647 0652 30       		.byte	48
+ 1648 0653 18       		.byte	24
+ 1649 0654 32       		.byte	50
+ 1650 0655 80       		.byte	-128
+ 1651 0656 34       		.byte	52
+ 1652 0657 60       		.byte	96
+ 1653 0658 36       		.byte	54
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 30
 
 
- 1654 0659 80       		.byte	-128
- 1655 065a A4       		.byte	-92
- 1656 065b 14       		.byte	20
- 1657 065c A5       		.byte	-91
- 1658 065d 20       		.byte	32
- 1659 065e A6       		.byte	-90
- 1660 065f 01       		.byte	1
- 1661 0660 A7       		.byte	-89
- 1662 0661 42       		.byte	66
- 1663 0662 AF       		.byte	-81
- 1664 0663 80       		.byte	-128
- 1665 0664 B0       		.byte	-80
- 1666 0665 84       		.byte	-124
- 1667 0666 B4       		.byte	-76
- 1668 0667 20       		.byte	32
- 1669 0668 B6       		.byte	-74
- 1670 0669 10       		.byte	16
- 1671 066a B7       		.byte	-73
- 1672 066b 08       		.byte	8
- 1673 066c C0       		.byte	-64
- 1674 066d 0F       		.byte	15
- 1675 066e C2       		.byte	-62
- 1676 066f 0F       		.byte	15
- 1677 0670 C4       		.byte	-60
- 1678 0671 0F       		.byte	15
- 1679 0672 CA       		.byte	-54
- 1680 0673 FD       		.byte	-3
- 1681 0674 CC       		.byte	-52
- 1682 0675 FD       		.byte	-3
- 1683 0676 CE       		.byte	-50
- 1684 0677 FE       		.byte	-2
- 1685 0678 D0       		.byte	-48
- 1686 0679 40       		.byte	64
- 1687 067a D6       		.byte	-42
- 1688 067b 01       		.byte	1
- 1689 067c D8       		.byte	-40
- 1690 067d 0D       		.byte	13
- 1691 067e DE       		.byte	-34
- 1692 067f 81       		.byte	-127
- 1693 0680 E0       		.byte	-32
- 1694 0681 20       		.byte	32
- 1695 0682 E2       		.byte	-30
- 1696 0683 10       		.byte	16
- 1697 0684 E4       		.byte	-28
- 1698 0685 80       		.byte	-128
- 1699 0686 EC       		.byte	-20
- 1700 0687 40       		.byte	64
- 1701 0688 01       		.byte	1
- 1702 0689 0C       		.byte	12
- 1703 068a 03       		.byte	3
- 1704 068b 01       		.byte	1
- 1705 068c 04       		.byte	4
- 1706 068d 01       		.byte	1
- 1707 068e 05       		.byte	5
- 1708 068f 60       		.byte	96
- 1709 0690 08       		.byte	8
- 1710 0691 01       		.byte	1
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 31
+ 1654 0659 07       		.byte	7
+ 1655 065a 37       		.byte	55
+ 1656 065b 01       		.byte	1
+ 1657 065c 3E       		.byte	62
+ 1658 065d 10       		.byte	16
+ 1659 065e 3F       		.byte	63
+ 1660 065f 40       		.byte	64
+ 1661 0660 40       		.byte	64
+ 1662 0661 56       		.byte	86
+ 1663 0662 41       		.byte	65
+ 1664 0663 04       		.byte	4
+ 1665 0664 42       		.byte	66
+ 1666 0665 03       		.byte	3
+ 1667 0666 44       		.byte	68
+ 1668 0667 02       		.byte	2
+ 1669 0668 46       		.byte	70
+ 1670 0669 0E       		.byte	14
+ 1671 066a 47       		.byte	71
+ 1672 066b C0       		.byte	-64
+ 1673 066c 48       		.byte	72
+ 1674 066d 24       		.byte	36
+ 1675 066e 49       		.byte	73
+ 1676 066f FF       		.byte	-1
+ 1677 0670 4A       		.byte	74
+ 1678 0671 FF       		.byte	-1
+ 1679 0672 4B       		.byte	75
+ 1680 0673 FF       		.byte	-1
+ 1681 0674 4C       		.byte	76
+ 1682 0675 62       		.byte	98
+ 1683 0676 4D       		.byte	77
+ 1684 0677 A0       		.byte	-96
+ 1685 0678 4E       		.byte	78
+ 1686 0679 F0       		.byte	-16
+ 1687 067a 4F       		.byte	79
+ 1688 067b 41       		.byte	65
+ 1689 067c 50       		.byte	80
+ 1690 067d 0C       		.byte	12
+ 1691 067e 54       		.byte	84
+ 1692 067f 18       		.byte	24
+ 1693 0680 56       		.byte	86
+ 1694 0681 04       		.byte	4
+ 1695 0682 58       		.byte	88
+ 1696 0683 04       		.byte	4
+ 1697 0684 59       		.byte	89
+ 1698 0685 04       		.byte	4
+ 1699 0686 5A       		.byte	90
+ 1700 0687 04       		.byte	4
+ 1701 0688 5B       		.byte	91
+ 1702 0689 04       		.byte	4
+ 1703 068a 5C       		.byte	92
+ 1704 068b 02       		.byte	2
+ 1705 068c 5D       		.byte	93
+ 1706 068d 22       		.byte	34
+ 1707 068e 5F       		.byte	95
+ 1708 068f 0D       		.byte	13
+ 1709 0690 66       		.byte	102
+ 1710 0691 40       		.byte	64
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 31
 
 
- 1711 0692 09       		.byte	9
- 1712 0693 60       		.byte	96
- 1713 0694 0C       		.byte	12
- 1714 0695 01       		.byte	1
- 1715 0696 0D       		.byte	13
- 1716 0697 0C       		.byte	12
- 1717 0698 10       		.byte	16
- 1718 0699 01       		.byte	1
- 1719 069a 15       		.byte	21
- 1720 069b 48       		.byte	72
- 1721 069c 17       		.byte	23
- 1722 069d 22       		.byte	34
- 1723 069e 1B       		.byte	27
- 1724 069f 0C       		.byte	12
- 1725 06a0 1D       		.byte	29
+ 1711 0692 67       		.byte	103
+ 1712 0693 02       		.byte	2
+ 1713 0694 69       		.byte	105
+ 1714 0695 10       		.byte	16
+ 1715 0696 6A       		.byte	106
+ 1716 0697 30       		.byte	48
+ 1717 0698 6B       		.byte	107
+ 1718 0699 10       		.byte	16
+ 1719 069a 6D       		.byte	109
+ 1720 069b 10       		.byte	16
+ 1721 069c 6E       		.byte	110
+ 1722 069d 10       		.byte	16
+ 1723 069e 6F       		.byte	111
+ 1724 069f 12       		.byte	18
+ 1725 06a0 80       		.byte	-128
  1726 06a1 0C       		.byte	12
- 1727 06a2 23       		.byte	35
+ 1727 06a2 81       		.byte	-127
  1728 06a3 0C       		.byte	12
- 1729 06a4 25       		.byte	37
- 1730 06a5 24       		.byte	36
- 1731 06a6 27       		.byte	39
- 1732 06a7 52       		.byte	82
- 1733 06a8 2B       		.byte	43
- 1734 06a9 0C       		.byte	12
- 1735 06aa 2D       		.byte	45
- 1736 06ab 7C       		.byte	124
- 1737 06ac 30       		.byte	48
- 1738 06ad 01       		.byte	1
- 1739 06ae 31       		.byte	49
- 1740 06af 0C       		.byte	12
- 1741 06b0 33       		.byte	51
- 1742 06b1 60       		.byte	96
- 1743 06b2 35       		.byte	53
- 1744 06b3 10       		.byte	16
- 1745 06b4 37       		.byte	55
- 1746 06b5 03       		.byte	3
- 1747 06b6 3E       		.byte	62
- 1748 06b7 01       		.byte	1
- 1749 06b8 3F       		.byte	63
- 1750 06b9 40       		.byte	64
- 1751 06ba 40       		.byte	64
- 1752 06bb 46       		.byte	70
- 1753 06bc 41       		.byte	65
- 1754 06bd 05       		.byte	5
- 1755 06be 42       		.byte	66
- 1756 06bf 02       		.byte	2
- 1757 06c0 44       		.byte	68
- 1758 06c1 01       		.byte	1
- 1759 06c2 46       		.byte	70
- 1760 06c3 0C       		.byte	12
- 1761 06c4 47       		.byte	71
- 1762 06c5 0E       		.byte	14
- 1763 06c6 48       		.byte	72
- 1764 06c7 14       		.byte	20
- 1765 06c8 49       		.byte	73
- 1766 06c9 FF       		.byte	-1
- 1767 06ca 4A       		.byte	74
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 32
+ 1729 06a4 82       		.byte	-126
+ 1730 06a5 13       		.byte	19
+ 1731 06a6 83       		.byte	-125
+ 1732 06a7 11       		.byte	17
+ 1733 06a8 85       		.byte	-123
+ 1734 06a9 10       		.byte	16
+ 1735 06aa 8C       		.byte	-116
+ 1736 06ab 01       		.byte	1
+ 1737 06ac 8D       		.byte	-115
+ 1738 06ad 10       		.byte	16
+ 1739 06ae 8E       		.byte	-114
+ 1740 06af 0E       		.byte	14
+ 1741 06b0 8F       		.byte	-113
+ 1742 06b1 0C       		.byte	12
+ 1743 06b2 91       		.byte	-111
+ 1744 06b3 09       		.byte	9
+ 1745 06b4 93       		.byte	-109
+ 1746 06b5 10       		.byte	16
+ 1747 06b6 95       		.byte	-107
+ 1748 06b7 1F       		.byte	31
+ 1749 06b8 96       		.byte	-106
+ 1750 06b9 20       		.byte	32
+ 1751 06ba 99       		.byte	-103
+ 1752 06bb 14       		.byte	20
+ 1753 06bc 9A       		.byte	-102
+ 1754 06bd 08       		.byte	8
+ 1755 06be 9E       		.byte	-98
+ 1756 06bf 0C       		.byte	12
+ 1757 06c0 9F       		.byte	-97
+ 1758 06c1 03       		.byte	3
+ 1759 06c2 A4       		.byte	-92
+ 1760 06c3 10       		.byte	16
+ 1761 06c4 A5       		.byte	-91
+ 1762 06c5 1C       		.byte	28
+ 1763 06c6 A7       		.byte	-89
+ 1764 06c7 02       		.byte	2
+ 1765 06c8 A8       		.byte	-88
+ 1766 06c9 3F       		.byte	63
+ 1767 06ca AC       		.byte	-84
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 32
 
 
- 1768 06cb FF       		.byte	-1
- 1769 06cc 4B       		.byte	75
- 1770 06cd FF       		.byte	-1
- 1771 06ce 4C       		.byte	76
- 1772 06cf 62       		.byte	98
- 1773 06d0 4D       		.byte	77
- 1774 06d1 A0       		.byte	-96
- 1775 06d2 4E       		.byte	78
- 1776 06d3 F0       		.byte	-16
- 1777 06d4 4F       		.byte	79
- 1778 06d5 41       		.byte	65
- 1779 06d6 50       		.byte	80
- 1780 06d7 0C       		.byte	12
- 1781 06d8 56       		.byte	86
- 1782 06d9 02       		.byte	2
- 1783 06da 57       		.byte	87
- 1784 06db 13       		.byte	19
- 1785 06dc 58       		.byte	88
- 1786 06dd 04       		.byte	4
- 1787 06de 59       		.byte	89
- 1788 06df 04       		.byte	4
- 1789 06e0 5A       		.byte	90
- 1790 06e1 04       		.byte	4
- 1791 06e2 5B       		.byte	91
- 1792 06e3 04       		.byte	4
- 1793 06e4 5C       		.byte	92
- 1794 06e5 20       		.byte	32
- 1795 06e6 5D       		.byte	93
- 1796 06e7 22       		.byte	34
- 1797 06e8 5E       		.byte	94
- 1798 06e9 08       		.byte	8
- 1799 06ea 5F       		.byte	95
- 1800 06eb 09       		.byte	9
- 1801 06ec 66       		.byte	102
- 1802 06ed 40       		.byte	64
- 1803 06ee 67       		.byte	103
- 1804 06ef 02       		.byte	2
- 1805 06f0 69       		.byte	105
- 1806 06f1 10       		.byte	16
- 1807 06f2 6A       		.byte	106
- 1808 06f3 30       		.byte	48
- 1809 06f4 6B       		.byte	107
- 1810 06f5 10       		.byte	16
- 1811 06f6 6D       		.byte	109
- 1812 06f7 10       		.byte	16
- 1813 06f8 6E       		.byte	110
+ 1768 06cb 02       		.byte	2
+ 1769 06cc AE       		.byte	-82
+ 1770 06cd 05       		.byte	5
+ 1771 06ce B1       		.byte	-79
+ 1772 06cf 1F       		.byte	31
+ 1773 06d0 B2       		.byte	-78
+ 1774 06d1 20       		.byte	32
+ 1775 06d2 B4       		.byte	-76
+ 1776 06d3 1F       		.byte	31
+ 1777 06d4 B7       		.byte	-73
+ 1778 06d5 1F       		.byte	31
+ 1779 06d6 D8       		.byte	-40
+ 1780 06d7 04       		.byte	4
+ 1781 06d8 D9       		.byte	-39
+ 1782 06d9 04       		.byte	4
+ 1783 06da DC       		.byte	-36
+ 1784 06db 22       		.byte	34
+ 1785 06dc DF       		.byte	-33
+ 1786 06dd 01       		.byte	1
+ 1787 06de 00       		.byte	0
+ 1788 06df 61       		.byte	97
+ 1789 06e0 02       		.byte	2
+ 1790 06e1 10       		.byte	16
+ 1791 06e2 05       		.byte	5
+ 1792 06e3 02       		.byte	2
+ 1793 06e4 06       		.byte	6
+ 1794 06e5 02       		.byte	2
+ 1795 06e6 09       		.byte	9
+ 1796 06e7 08       		.byte	8
+ 1797 06e8 0A       		.byte	10
+ 1798 06e9 85       		.byte	-123
+ 1799 06ea 0D       		.byte	13
+ 1800 06eb 80       		.byte	-128
+ 1801 06ec 0E       		.byte	14
+ 1802 06ed 12       		.byte	18
+ 1803 06ee 0F       		.byte	15
+ 1804 06ef 08       		.byte	8
+ 1805 06f0 10       		.byte	16
+ 1806 06f1 60       		.byte	96
+ 1807 06f2 11       		.byte	17
+ 1808 06f3 40       		.byte	64
+ 1809 06f4 12       		.byte	18
+ 1810 06f5 08       		.byte	8
+ 1811 06f6 14       		.byte	20
+ 1812 06f7 02       		.byte	2
+ 1813 06f8 15       		.byte	21
  1814 06f9 10       		.byte	16
- 1815 06fa 6F       		.byte	111
- 1816 06fb 12       		.byte	18
- 1817 06fc 81       		.byte	-127
- 1818 06fd 10       		.byte	16
- 1819 06fe 83       		.byte	-125
- 1820 06ff 07       		.byte	7
- 1821 0700 85       		.byte	-123
- 1822 0701 03       		.byte	3
- 1823 0702 89       		.byte	-119
- 1824 0703 08       		.byte	8
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 33
+ 1815 06fa 17       		.byte	23
+ 1816 06fb 04       		.byte	4
+ 1817 06fc 18       		.byte	24
+ 1818 06fd 04       		.byte	4
+ 1819 06fe 19       		.byte	25
+ 1820 06ff 41       		.byte	65
+ 1821 0700 1B       		.byte	27
+ 1822 0701 08       		.byte	8
+ 1823 0702 1E       		.byte	30
+ 1824 0703 10       		.byte	16
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 33
 
 
- 1825 0704 8B       		.byte	-117
- 1826 0705 07       		.byte	7
- 1827 0706 8D       		.byte	-115
- 1828 0707 05       		.byte	5
- 1829 0708 8F       		.byte	-113
- 1830 0709 78       		.byte	120
- 1831 070a 91       		.byte	-111
- 1832 070b 01       		.byte	1
- 1833 070c 95       		.byte	-107
- 1834 070d 22       		.byte	34
- 1835 070e 97       		.byte	-105
- 1836 070f 05       		.byte	5
- 1837 0710 99       		.byte	-103
- 1838 0711 03       		.byte	3
- 1839 0712 9D       		.byte	-99
- 1840 0713 40       		.byte	64
- 1841 0714 9F       		.byte	-97
- 1842 0715 07       		.byte	7
- 1843 0716 A1       		.byte	-95
- 1844 0717 7F       		.byte	127
- 1845 0718 A5       		.byte	-91
- 1846 0719 01       		.byte	1
- 1847 071a A9       		.byte	-87
- 1848 071b 01       		.byte	1
- 1849 071c AD       		.byte	-83
- 1850 071d 3A       		.byte	58
- 1851 071e AF       		.byte	-81
- 1852 071f 04       		.byte	4
- 1853 0720 B3       		.byte	-77
- 1854 0721 7F       		.byte	127
- 1855 0722 BF       		.byte	-65
- 1856 0723 04       		.byte	4
- 1857 0724 D9       		.byte	-39
- 1858 0725 04       		.byte	4
- 1859 0726 DF       		.byte	-33
- 1860 0727 01       		.byte	1
- 1861 0728 00       		.byte	0
- 1862 0729 68       		.byte	104
- 1863 072a 03       		.byte	3
+ 1825 0704 1F       		.byte	31
+ 1826 0705 20       		.byte	32
+ 1827 0706 22       		.byte	34
+ 1828 0707 80       		.byte	-128
+ 1829 0708 27       		.byte	39
+ 1830 0709 82       		.byte	-126
+ 1831 070a 29       		.byte	41
+ 1832 070b 40       		.byte	64
+ 1833 070c 2F       		.byte	47
+ 1834 070d 20       		.byte	32
+ 1835 070e 36       		.byte	54
+ 1836 070f 09       		.byte	9
+ 1837 0710 37       		.byte	55
+ 1838 0711 90       		.byte	-112
+ 1839 0712 38       		.byte	56
+ 1840 0713 02       		.byte	2
+ 1841 0714 3E       		.byte	62
+ 1842 0715 0A       		.byte	10
+ 1843 0716 3F       		.byte	63
+ 1844 0717 48       		.byte	72
+ 1845 0718 40       		.byte	64
+ 1846 0719 24       		.byte	36
+ 1847 071a 42       		.byte	66
+ 1848 071b 80       		.byte	-128
+ 1849 071c 48       		.byte	72
+ 1850 071d 01       		.byte	1
+ 1851 071e 4B       		.byte	75
+ 1852 071f 20       		.byte	32
+ 1853 0720 50       		.byte	80
+ 1854 0721 41       		.byte	65
+ 1855 0722 59       		.byte	89
+ 1856 0723 01       		.byte	1
+ 1857 0724 60       		.byte	96
+ 1858 0725 88       		.byte	-120
+ 1859 0726 62       		.byte	98
+ 1860 0727 80       		.byte	-128
+ 1861 0728 79       		.byte	121
+ 1862 0729 10       		.byte	16
+ 1863 072a 7A       		.byte	122
  1864 072b 08       		.byte	8
- 1865 072c 0A       		.byte	10
+ 1865 072c 84       		.byte	-124
  1866 072d 80       		.byte	-128
- 1867 072e 0B       		.byte	11
- 1868 072f 40       		.byte	64
- 1869 0730 14       		.byte	20
- 1870 0731 08       		.byte	8
- 1871 0732 16       		.byte	22
- 1872 0733 08       		.byte	8
- 1873 0734 19       		.byte	25
- 1874 0735 01       		.byte	1
- 1875 0736 20       		.byte	32
- 1876 0737 01       		.byte	1
- 1877 0738 21       		.byte	33
- 1878 0739 08       		.byte	8
- 1879 073a 22       		.byte	34
- 1880 073b 01       		.byte	1
- 1881 073c 23       		.byte	35
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 34
+ 1867 072e 86       		.byte	-122
+ 1868 072f 02       		.byte	2
+ 1869 0730 88       		.byte	-120
+ 1870 0731 02       		.byte	2
+ 1871 0732 8B       		.byte	-117
+ 1872 0733 40       		.byte	64
+ 1873 0734 8F       		.byte	-113
+ 1874 0735 14       		.byte	20
+ 1875 0736 C0       		.byte	-64
+ 1876 0737 9F       		.byte	-97
+ 1877 0738 C2       		.byte	-62
+ 1878 0739 EF       		.byte	-17
+ 1879 073a C4       		.byte	-60
+ 1880 073b EF       		.byte	-17
+ 1881 073c CA       		.byte	-54
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 34
 
 
- 1882 073d 04       		.byte	4
- 1883 073e 27       		.byte	39
- 1884 073f 20       		.byte	32
- 1885 0740 28       		.byte	40
- 1886 0741 A1       		.byte	-95
- 1887 0742 2B       		.byte	43
- 1888 0743 08       		.byte	8
- 1889 0744 2C       		.byte	44
- 1890 0745 40       		.byte	64
- 1891 0746 2D       		.byte	45
+ 1882 073d 48       		.byte	72
+ 1883 073e CC       		.byte	-52
+ 1884 073f F0       		.byte	-16
+ 1885 0740 CE       		.byte	-50
+ 1886 0741 D1       		.byte	-47
+ 1887 0742 D0       		.byte	-48
+ 1888 0743 07       		.byte	7
+ 1889 0744 D2       		.byte	-46
+ 1890 0745 0C       		.byte	12
+ 1891 0746 D6       		.byte	-42
  1892 0747 01       		.byte	1
- 1893 0748 2E       		.byte	46
- 1894 0749 20       		.byte	32
- 1895 074a 2F       		.byte	47
- 1896 074b 12       		.byte	18
- 1897 074c 31       		.byte	49
- 1898 074d 18       		.byte	24
- 1899 074e 32       		.byte	50
- 1900 074f 40       		.byte	64
- 1901 0750 35       		.byte	53
- 1902 0751 80       		.byte	-128
- 1903 0752 36       		.byte	54
- 1904 0753 01       		.byte	1
- 1905 0754 37       		.byte	55
- 1906 0755 98       		.byte	-104
- 1907 0756 38       		.byte	56
- 1908 0757 40       		.byte	64
- 1909 0758 39       		.byte	57
- 1910 0759 16       		.byte	22
- 1911 075a 3D       		.byte	61
- 1912 075b 80       		.byte	-128
- 1913 075c 3F       		.byte	63
- 1914 075d 1A       		.byte	26
- 1915 075e 40       		.byte	64
- 1916 075f 41       		.byte	65
- 1917 0760 41       		.byte	65
- 1918 0761 20       		.byte	32
- 1919 0762 49       		.byte	73
- 1920 0763 10       		.byte	16
- 1921 0764 4B       		.byte	75
- 1922 0765 40       		.byte	64
- 1923 0766 51       		.byte	81
- 1924 0767 44       		.byte	68
- 1925 0768 59       		.byte	89
- 1926 0769 01       		.byte	1
- 1927 076a 68       		.byte	104
- 1928 076b 08       		.byte	8
- 1929 076c 69       		.byte	105
- 1930 076d 54       		.byte	84
- 1931 076e 70       		.byte	112
- 1932 076f 90       		.byte	-112
- 1933 0770 72       		.byte	114
- 1934 0771 10       		.byte	16
- 1935 0772 78       		.byte	120
- 1936 0773 01       		.byte	1
- 1937 0774 7A       		.byte	122
- 1938 0775 80       		.byte	-128
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 35
+ 1893 0748 D8       		.byte	-40
+ 1894 0749 0D       		.byte	13
+ 1895 074a DE       		.byte	-34
+ 1896 074b 04       		.byte	4
+ 1897 074c E0       		.byte	-32
+ 1898 074d 20       		.byte	32
+ 1899 074e E4       		.byte	-28
+ 1900 074f 50       		.byte	80
+ 1901 0750 AC       		.byte	-84
+ 1902 0751 04       		.byte	4
+ 1903 0752 AE       		.byte	-82
+ 1904 0753 40       		.byte	64
+ 1905 0754 00       		.byte	0
+ 1906 0755 40       		.byte	64
+ 1907 0756 01       		.byte	1
+ 1908 0757 42       		.byte	66
+ 1909 0758 02       		.byte	2
+ 1910 0759 13       		.byte	19
+ 1911 075a 03       		.byte	3
+ 1912 075b 09       		.byte	9
+ 1913 075c 07       		.byte	7
+ 1914 075d 01       		.byte	1
+ 1915 075e 08       		.byte	8
+ 1916 075f 46       		.byte	70
+ 1917 0760 09       		.byte	9
+ 1918 0761 01       		.byte	1
+ 1919 0762 0A       		.byte	10
+ 1920 0763 A9       		.byte	-87
+ 1921 0764 0C       		.byte	12
+ 1922 0765 2A       		.byte	42
+ 1923 0766 0D       		.byte	13
+ 1924 0767 1F       		.byte	31
+ 1925 0768 0E       		.byte	14
+ 1926 0769 54       		.byte	84
+ 1927 076a 10       		.byte	16
+ 1928 076b FF       		.byte	-1
+ 1929 076c 11       		.byte	17
+ 1930 076d 03       		.byte	3
+ 1931 076e 14       		.byte	20
+ 1932 076f 33       		.byte	51
+ 1933 0770 15       		.byte	21
+ 1934 0771 40       		.byte	64
+ 1935 0772 16       		.byte	22
+ 1936 0773 0C       		.byte	12
+ 1937 0774 17       		.byte	23
+ 1938 0775 14       		.byte	20
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 35
 
 
- 1939 0776 82       		.byte	-126
- 1940 0777 04       		.byte	4
- 1941 0778 83       		.byte	-125
- 1942 0779 84       		.byte	-124
- 1943 077a 87       		.byte	-121
+ 1939 0776 19       		.byte	25
+ 1940 0777 03       		.byte	3
+ 1941 0778 1A       		.byte	26
+ 1942 0779 01       		.byte	1
+ 1943 077a 1B       		.byte	27
  1944 077b 20       		.byte	32
- 1945 077c 88       		.byte	-120
- 1946 077d 08       		.byte	8
- 1947 077e 89       		.byte	-119
- 1948 077f 40       		.byte	64
- 1949 0780 8B       		.byte	-117
- 1950 0781 11       		.byte	17
- 1951 0782 91       		.byte	-111
- 1952 0783 01       		.byte	1
- 1953 0784 9B       		.byte	-101
- 1954 0785 10       		.byte	16
- 1955 0786 A1       		.byte	-95
- 1956 0787 04       		.byte	4
- 1957 0788 A2       		.byte	-94
- 1958 0789 80       		.byte	-128
- 1959 078a A7       		.byte	-89
+ 1945 077c 1C       		.byte	28
+ 1946 077d 0E       		.byte	14
+ 1947 077e 1D       		.byte	29
+ 1948 077f 4F       		.byte	79
+ 1949 0780 1E       		.byte	30
+ 1950 0781 30       		.byte	48
+ 1951 0782 20       		.byte	32
+ 1952 0783 80       		.byte	-128
+ 1953 0784 21       		.byte	33
+ 1954 0785 90       		.byte	-112
+ 1955 0786 22       		.byte	34
+ 1956 0787 56       		.byte	86
+ 1957 0788 23       		.byte	35
+ 1958 0789 0B       		.byte	11
+ 1959 078a 25       		.byte	37
  1960 078b 40       		.byte	64
- 1961 078c AB       		.byte	-85
- 1962 078d 40       		.byte	64
- 1963 078e B1       		.byte	-79
+ 1961 078c 27       		.byte	39
+ 1962 078d 0B       		.byte	11
+ 1963 078e 29       		.byte	41
  1964 078f 01       		.byte	1
- 1965 0790 B6       		.byte	-74
- 1966 0791 80       		.byte	-128
- 1967 0792 C0       		.byte	-64
- 1968 0793 07       		.byte	7
- 1969 0794 C2       		.byte	-62
- 1970 0795 08       		.byte	8
- 1971 0796 CA       		.byte	-54
- 1972 0797 FF       		.byte	-1
- 1973 0798 CC       		.byte	-52
- 1974 0799 FE       		.byte	-2
- 1975 079a CE       		.byte	-50
- 1976 079b FF       		.byte	-1
- 1977 079c D0       		.byte	-48
- 1978 079d 0D       		.byte	13
- 1979 079e D2       		.byte	-46
- 1980 079f 0C       		.byte	12
- 1981 07a0 D6       		.byte	-42
- 1982 07a1 01       		.byte	1
- 1983 07a2 DE       		.byte	-34
+ 1965 0790 2D       		.byte	45
+ 1966 0791 48       		.byte	72
+ 1967 0792 2F       		.byte	47
+ 1968 0793 02       		.byte	2
+ 1969 0794 31       		.byte	49
+ 1970 0795 E0       		.byte	-32
+ 1971 0796 33       		.byte	51
+ 1972 0797 1F       		.byte	31
+ 1973 0798 34       		.byte	52
+ 1974 0799 FF       		.byte	-1
+ 1975 079a 39       		.byte	57
+ 1976 079b 02       		.byte	2
+ 1977 079c 3F       		.byte	63
+ 1978 079d 01       		.byte	1
+ 1979 079e 58       		.byte	88
+ 1980 079f 04       		.byte	4
+ 1981 07a0 59       		.byte	89
+ 1982 07a1 04       		.byte	4
+ 1983 07a2 5F       		.byte	95
  1984 07a3 01       		.byte	1
- 1985 07a4 E0       		.byte	-32
- 1986 07a5 80       		.byte	-128
- 1987 07a6 E4       		.byte	-28
- 1988 07a7 A0       		.byte	-96
- 1989 07a8 E8       		.byte	-24
- 1990 07a9 40       		.byte	64
- 1991 07aa EC       		.byte	-20
- 1992 07ab 80       		.byte	-128
- 1993 07ac 83       		.byte	-125
- 1994 07ad 10       		.byte	16
- 1995 07ae 8D       		.byte	-115
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 36
+ 1985 07a4 82       		.byte	-126
+ 1986 07a5 B5       		.byte	-75
+ 1987 07a6 83       		.byte	-125
+ 1988 07a7 02       		.byte	2
+ 1989 07a8 84       		.byte	-124
+ 1990 07a9 1A       		.byte	26
+ 1991 07aa 85       		.byte	-123
+ 1992 07ab 01       		.byte	1
+ 1993 07ac 86       		.byte	-122
+ 1994 07ad 60       		.byte	96
+ 1995 07ae 88       		.byte	-120
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 36
 
 
  1996 07af 04       		.byte	4
- 1997 07b0 E4       		.byte	-28
- 1998 07b1 40       		.byte	64
- 1999 07b2 AC       		.byte	-84
- 2000 07b3 84       		.byte	-124
- 2001 07b4 AE       		.byte	-82
- 2002 07b5 10       		.byte	16
- 2003 07b6 AF       		.byte	-81
- 2004 07b7 80       		.byte	-128
- 2005 07b8 B2       		.byte	-78
- 2006 07b9 04       		.byte	4
- 2007 07ba B3       		.byte	-77
- 2008 07bb 01       		.byte	1
- 2009 07bc EE       		.byte	-18
- 2010 07bd 02       		.byte	2
- 2011 07be 03       		.byte	3
- 2012 07bf 10       		.byte	16
- 2013 07c0 04       		.byte	4
- 2014 07c1 2A       		.byte	42
- 2015 07c2 05       		.byte	5
- 2016 07c3 26       		.byte	38
- 2017 07c4 06       		.byte	6
- 2018 07c5 54       		.byte	84
- 2019 07c6 09       		.byte	9
- 2020 07c7 40       		.byte	64
- 2021 07c8 0C       		.byte	12
- 2022 07c9 80       		.byte	-128
- 2023 07ca 0D       		.byte	13
- 2024 07cb 80       		.byte	-128
- 2025 07cc 0E       		.byte	14
- 2026 07cd 56       		.byte	86
- 2027 07ce 10       		.byte	16
- 2028 07cf FF       		.byte	-1
- 2029 07d0 11       		.byte	17
- 2030 07d1 21       		.byte	33
- 2031 07d2 13       		.byte	19
+ 1997 07b0 89       		.byte	-119
+ 1998 07b1 01       		.byte	1
+ 1999 07b2 8C       		.byte	-116
+ 2000 07b3 A5       		.byte	-91
+ 2001 07b4 8D       		.byte	-115
+ 2002 07b5 40       		.byte	64
+ 2003 07b6 8E       		.byte	-114
+ 2004 07b7 4A       		.byte	74
+ 2005 07b8 8F       		.byte	-113
+ 2006 07b9 1D       		.byte	29
+ 2007 07ba 90       		.byte	-112
+ 2008 07bb FF       		.byte	-1
+ 2009 07bc 91       		.byte	-111
+ 2010 07bd E2       		.byte	-30
+ 2011 07be 94       		.byte	-108
+ 2012 07bf CC       		.byte	-52
+ 2013 07c0 95       		.byte	-107
+ 2014 07c1 5D       		.byte	93
+ 2015 07c2 96       		.byte	-106
+ 2016 07c3 13       		.byte	19
+ 2017 07c4 97       		.byte	-105
+ 2018 07c5 A2       		.byte	-94
+ 2019 07c6 98       		.byte	-104
+ 2020 07c7 02       		.byte	2
+ 2021 07c8 9B       		.byte	-101
+ 2022 07c9 08       		.byte	8
+ 2023 07ca 9C       		.byte	-100
+ 2024 07cb 4D       		.byte	77
+ 2025 07cc 9D       		.byte	-99
+ 2026 07cd 3D       		.byte	61
+ 2027 07ce 9E       		.byte	-98
+ 2028 07cf 92       		.byte	-110
+ 2029 07d0 9F       		.byte	-97
+ 2030 07d1 C2       		.byte	-62
+ 2031 07d2 A2       		.byte	-94
  2032 07d3 04       		.byte	4
- 2033 07d4 14       		.byte	20
- 2034 07d5 46       		.byte	70
- 2035 07d6 15       		.byte	21
- 2036 07d7 25       		.byte	37
- 2037 07d8 16       		.byte	22
- 2038 07d9 A9       		.byte	-87
- 2039 07da 17       		.byte	23
- 2040 07db 0A       		.byte	10
- 2041 07dc 18       		.byte	24
- 2042 07dd 0E       		.byte	14
- 2043 07de 19       		.byte	25
- 2044 07df 20       		.byte	32
- 2045 07e0 1A       		.byte	26
- 2046 07e1 30       		.byte	48
- 2047 07e2 1B       		.byte	27
- 2048 07e3 02       		.byte	2
- 2049 07e4 1C       		.byte	28
- 2050 07e5 33       		.byte	51
- 2051 07e6 1D       		.byte	29
- 2052 07e7 08       		.byte	8
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 37
+ 2033 07d4 A3       		.byte	-93
+ 2034 07d5 FF       		.byte	-1
+ 2035 07d6 A5       		.byte	-91
+ 2036 07d7 0D       		.byte	13
+ 2037 07d8 A6       		.byte	-90
+ 2038 07d9 02       		.byte	2
+ 2039 07da A8       		.byte	-88
+ 2040 07db A9       		.byte	-87
+ 2041 07dc A9       		.byte	-87
+ 2042 07dd 92       		.byte	-110
+ 2043 07de AA       		.byte	-86
+ 2044 07df 54       		.byte	84
+ 2045 07e0 AB       		.byte	-85
+ 2046 07e1 60       		.byte	96
+ 2047 07e2 AD       		.byte	-83
+ 2048 07e3 04       		.byte	4
+ 2049 07e4 AE       		.byte	-82
+ 2050 07e5 01       		.byte	1
+ 2051 07e6 AF       		.byte	-81
+ 2052 07e7 E0       		.byte	-32
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 37
 
 
- 2053 07e8 1E       		.byte	30
- 2054 07e9 0C       		.byte	12
- 2055 07ea 1F       		.byte	31
- 2056 07eb 05       		.byte	5
- 2057 07ec 21       		.byte	33
- 2058 07ed 21       		.byte	33
- 2059 07ee 23       		.byte	35
- 2060 07ef 02       		.byte	2
- 2061 07f0 25       		.byte	37
- 2062 07f1 80       		.byte	-128
- 2063 07f2 26       		.byte	38
- 2064 07f3 01       		.byte	1
- 2065 07f4 28       		.byte	40
- 2066 07f5 40       		.byte	64
- 2067 07f6 29       		.byte	41
- 2068 07f7 01       		.byte	1
- 2069 07f8 2A       		.byte	42
- 2070 07f9 13       		.byte	19
- 2071 07fa 2B       		.byte	43
- 2072 07fb 22       		.byte	34
- 2073 07fc 2D       		.byte	45
- 2074 07fd 8F       		.byte	-113
- 2075 07fe 32       		.byte	50
- 2076 07ff FF       		.byte	-1
- 2077 0800 33       		.byte	51
- 2078 0801 1F       		.byte	31
- 2079 0802 35       		.byte	53
- 2080 0803 60       		.byte	96
- 2081 0804 37       		.byte	55
- 2082 0805 80       		.byte	-128
- 2083 0806 39       		.byte	57
- 2084 0807 A0       		.byte	-96
- 2085 0808 3F       		.byte	63
- 2086 0809 10       		.byte	16
- 2087 080a 58       		.byte	88
- 2088 080b 04       		.byte	4
- 2089 080c 59       		.byte	89
- 2090 080d 04       		.byte	4
- 2091 080e 5F       		.byte	95
- 2092 080f 01       		.byte	1
- 2093 0810 82       		.byte	-126
- 2094 0811 04       		.byte	4
- 2095 0812 85       		.byte	-123
- 2096 0813 14       		.byte	20
- 2097 0814 86       		.byte	-122
- 2098 0815 08       		.byte	8
- 2099 0816 8A       		.byte	-118
- 2100 0817 02       		.byte	2
- 2101 0818 8B       		.byte	-117
- 2102 0819 03       		.byte	3
- 2103 081a 8C       		.byte	-116
- 2104 081b 10       		.byte	16
- 2105 081c 90       		.byte	-112
- 2106 081d 1E       		.byte	30
- 2107 081e 94       		.byte	-108
- 2108 081f 0E       		.byte	14
- 2109 0820 95       		.byte	-107
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 38
+ 2053 07e8 B1       		.byte	-79
+ 2054 07e9 FF       		.byte	-1
+ 2055 07ea B2       		.byte	-78
+ 2056 07eb FF       		.byte	-1
+ 2057 07ec BE       		.byte	-66
+ 2058 07ed 04       		.byte	4
+ 2059 07ee BF       		.byte	-65
+ 2060 07ef 01       		.byte	1
+ 2061 07f0 D8       		.byte	-40
+ 2062 07f1 04       		.byte	4
+ 2063 07f2 D9       		.byte	-39
+ 2064 07f3 04       		.byte	4
+ 2065 07f4 DF       		.byte	-33
+ 2066 07f5 01       		.byte	1
+ 2067 07f6 00       		.byte	0
+ 2068 07f7 08       		.byte	8
+ 2069 07f8 01       		.byte	1
+ 2070 07f9 82       		.byte	-126
+ 2071 07fa 02       		.byte	2
+ 2072 07fb 04       		.byte	4
+ 2073 07fc 05       		.byte	5
+ 2074 07fd 90       		.byte	-112
+ 2075 07fe 06       		.byte	6
+ 2076 07ff 80       		.byte	-128
+ 2077 0800 09       		.byte	9
+ 2078 0801 22       		.byte	34
+ 2079 0802 0B       		.byte	11
+ 2080 0803 62       		.byte	98
+ 2081 0804 0C       		.byte	12
+ 2082 0805 54       		.byte	84
+ 2083 0806 0D       		.byte	13
+ 2084 0807 02       		.byte	2
+ 2085 0808 10       		.byte	16
+ 2086 0809 02       		.byte	2
+ 2087 080a 12       		.byte	18
+ 2088 080b 18       		.byte	24
+ 2089 080c 13       		.byte	19
+ 2090 080d 01       		.byte	1
+ 2091 080e 14       		.byte	20
+ 2092 080f 80       		.byte	-128
+ 2093 0810 19       		.byte	25
+ 2094 0811 08       		.byte	8
+ 2095 0812 1D       		.byte	29
+ 2096 0813 10       		.byte	16
+ 2097 0814 1F       		.byte	31
+ 2098 0815 10       		.byte	16
+ 2099 0816 22       		.byte	34
+ 2100 0817 01       		.byte	1
+ 2101 0818 24       		.byte	36
+ 2102 0819 10       		.byte	16
+ 2103 081a 26       		.byte	38
+ 2104 081b 0A       		.byte	10
+ 2105 081c 28       		.byte	40
+ 2106 081d 91       		.byte	-111
+ 2107 081e 29       		.byte	41
+ 2108 081f 92       		.byte	-110
+ 2109 0820 2B       		.byte	43
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 38
 
 
- 2110 0821 09       		.byte	9
- 2111 0822 97       		.byte	-105
- 2112 0823 10       		.byte	16
- 2113 0824 98       		.byte	-104
- 2114 0825 01       		.byte	1
- 2115 0826 99       		.byte	-103
- 2116 0827 10       		.byte	16
- 2117 0828 9D       		.byte	-99
- 2118 0829 2C       		.byte	44
- 2119 082a 9F       		.byte	-97
- 2120 082b 11       		.byte	17
- 2121 082c A1       		.byte	-95
- 2122 082d 1C       		.byte	28
- 2123 082e A3       		.byte	-93
- 2124 082f 22       		.byte	34
- 2125 0830 A4       		.byte	-92
- 2126 0831 04       		.byte	4
- 2127 0832 A5       		.byte	-91
- 2128 0833 30       		.byte	48
- 2129 0834 A7       		.byte	-89
- 2130 0835 0C       		.byte	12
- 2131 0836 A9       		.byte	-87
- 2132 0837 1F       		.byte	31
- 2133 0838 AA       		.byte	-86
+ 2110 0821 01       		.byte	1
+ 2111 0822 2D       		.byte	45
+ 2112 0823 02       		.byte	2
+ 2113 0824 2E       		.byte	46
+ 2114 0825 80       		.byte	-128
+ 2115 0826 2F       		.byte	47
+ 2116 0827 15       		.byte	21
+ 2117 0828 30       		.byte	48
+ 2118 0829 40       		.byte	64
+ 2119 082a 31       		.byte	49
+ 2120 082b 22       		.byte	34
+ 2121 082c 32       		.byte	50
+ 2122 082d 08       		.byte	8
+ 2123 082e 34       		.byte	52
+ 2124 082f 54       		.byte	84
+ 2125 0830 35       		.byte	53
+ 2126 0831 01       		.byte	1
+ 2127 0832 36       		.byte	54
+ 2128 0833 68       		.byte	104
+ 2129 0834 3A       		.byte	58
+ 2130 0835 96       		.byte	-106
+ 2131 0836 3B       		.byte	59
+ 2132 0837 19       		.byte	25
+ 2133 0838 3E       		.byte	62
  2134 0839 04       		.byte	4
- 2135 083a AC       		.byte	-84
- 2136 083b 04       		.byte	4
- 2137 083c AD       		.byte	-83
- 2138 083d 40       		.byte	64
- 2139 083e B0       		.byte	-80
- 2140 083f 10       		.byte	16
- 2141 0840 B2       		.byte	-78
- 2142 0841 06       		.byte	6
- 2143 0842 B3       		.byte	-77
- 2144 0843 60       		.byte	96
- 2145 0844 B4       		.byte	-76
- 2146 0845 08       		.byte	8
- 2147 0846 B5       		.byte	-75
- 2148 0847 1F       		.byte	31
- 2149 0848 B6       		.byte	-74
- 2150 0849 01       		.byte	1
- 2151 084a B8       		.byte	-72
- 2152 084b 02       		.byte	2
- 2153 084c B9       		.byte	-71
- 2154 084d 08       		.byte	8
- 2155 084e BE       		.byte	-66
- 2156 084f 40       		.byte	64
- 2157 0850 D8       		.byte	-40
- 2158 0851 04       		.byte	4
- 2159 0852 D9       		.byte	-39
- 2160 0853 04       		.byte	4
- 2161 0854 DC       		.byte	-36
- 2162 0855 20       		.byte	32
- 2163 0856 DF       		.byte	-33
- 2164 0857 01       		.byte	1
- 2165 0858 03       		.byte	3
- 2166 0859 A9       		.byte	-87
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 39
+ 2135 083a 3F       		.byte	63
+ 2136 083b 52       		.byte	82
+ 2137 083c 81       		.byte	-127
+ 2138 083d 21       		.byte	33
+ 2139 083e 92       		.byte	-110
+ 2140 083f 04       		.byte	4
+ 2141 0840 94       		.byte	-108
+ 2142 0841 10       		.byte	16
+ 2143 0842 96       		.byte	-106
+ 2144 0843 02       		.byte	2
+ 2145 0844 97       		.byte	-105
+ 2146 0845 20       		.byte	32
+ 2147 0846 98       		.byte	-104
+ 2148 0847 01       		.byte	1
+ 2149 0848 99       		.byte	-103
+ 2150 0849 02       		.byte	2
+ 2151 084a 9A       		.byte	-102
+ 2152 084b 96       		.byte	-106
+ 2153 084c 9C       		.byte	-100
+ 2154 084d 44       		.byte	68
+ 2155 084e 9D       		.byte	-99
+ 2156 084f 08       		.byte	8
+ 2157 0850 A0       		.byte	-96
+ 2158 0851 02       		.byte	2
+ 2159 0852 A1       		.byte	-95
+ 2160 0853 22       		.byte	34
+ 2161 0854 A2       		.byte	-94
+ 2162 0855 60       		.byte	96
+ 2163 0856 A6       		.byte	-90
+ 2164 0857 02       		.byte	2
+ 2165 0858 A8       		.byte	-88
+ 2166 0859 10       		.byte	16
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 39
 
 
- 2167 085a 07       		.byte	7
- 2168 085b 11       		.byte	17
- 2169 085c 09       		.byte	9
- 2170 085d 08       		.byte	8
- 2171 085e 0A       		.byte	10
- 2172 085f 40       		.byte	64
- 2173 0860 0B       		.byte	11
- 2174 0861 04       		.byte	4
- 2175 0862 0E       		.byte	14
- 2176 0863 66       		.byte	102
- 2177 0864 10       		.byte	16
- 2178 0865 01       		.byte	1
- 2179 0866 11       		.byte	17
- 2180 0867 04       		.byte	4
- 2181 0868 13       		.byte	19
- 2182 0869 20       		.byte	32
- 2183 086a 16       		.byte	22
- 2184 086b 20       		.byte	32
- 2185 086c 17       		.byte	23
- 2186 086d 20       		.byte	32
- 2187 086e 18       		.byte	24
- 2188 086f 80       		.byte	-128
- 2189 0870 1A       		.byte	26
+ 2167 085a A9       		.byte	-87
+ 2168 085b 08       		.byte	8
+ 2169 085c AB       		.byte	-85
+ 2170 085d 40       		.byte	64
+ 2171 085e B1       		.byte	-79
+ 2172 085f 01       		.byte	1
+ 2173 0860 B2       		.byte	-78
+ 2174 0861 08       		.byte	8
+ 2175 0862 B6       		.byte	-74
+ 2176 0863 10       		.byte	16
+ 2177 0864 C0       		.byte	-64
+ 2178 0865 DF       		.byte	-33
+ 2179 0866 C2       		.byte	-62
+ 2180 0867 FF       		.byte	-1
+ 2181 0868 C4       		.byte	-60
+ 2182 0869 1F       		.byte	31
+ 2183 086a CA       		.byte	-54
+ 2184 086b FF       		.byte	-1
+ 2185 086c CC       		.byte	-52
+ 2186 086d FF       		.byte	-1
+ 2187 086e CE       		.byte	-50
+ 2188 086f FF       		.byte	-1
+ 2189 0870 EA       		.byte	-22
  2190 0871 01       		.byte	1
- 2191 0872 1B       		.byte	27
- 2192 0873 28       		.byte	40
- 2193 0874 1E       		.byte	30
- 2194 0875 20       		.byte	32
- 2195 0876 21       		.byte	33
- 2196 0877 10       		.byte	16
- 2197 0878 22       		.byte	34
- 2198 0879 04       		.byte	4
- 2199 087a 23       		.byte	35
- 2200 087b 04       		.byte	4
- 2201 087c 25       		.byte	37
- 2202 087d 10       		.byte	16
- 2203 087e 26       		.byte	38
- 2204 087f 88       		.byte	-120
- 2205 0880 27       		.byte	39
- 2206 0881 11       		.byte	17
- 2207 0882 28       		.byte	40
- 2208 0883 A0       		.byte	-96
- 2209 0884 2B       		.byte	43
- 2210 0885 06       		.byte	6
- 2211 0886 2E       		.byte	46
- 2212 0887 60       		.byte	96
- 2213 0888 2F       		.byte	47
- 2214 0889 90       		.byte	-112
- 2215 088a 30       		.byte	48
- 2216 088b A0       		.byte	-96
- 2217 088c 32       		.byte	50
- 2218 088d 04       		.byte	4
- 2219 088e 36       		.byte	54
- 2220 088f A9       		.byte	-87
- 2221 0890 37       		.byte	55
- 2222 0891 20       		.byte	32
- 2223 0892 39       		.byte	57
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 40
+ 2191 0872 A8       		.byte	-88
+ 2192 0873 40       		.byte	64
+ 2193 0874 B4       		.byte	-76
+ 2194 0875 08       		.byte	8
+ 2195 0876 E8       		.byte	-24
+ 2196 0877 40       		.byte	64
+ 2197 0878 30       		.byte	48
+ 2198 0879 80       		.byte	-128
+ 2199 087a 35       		.byte	53
+ 2200 087b 20       		.byte	32
+ 2201 087c 85       		.byte	-123
+ 2202 087d 20       		.byte	32
+ 2203 087e CC       		.byte	-52
+ 2204 087f 30       		.byte	48
+ 2205 0880 E6       		.byte	-26
+ 2206 0881 40       		.byte	64
+ 2207 0882 00       		.byte	0
+ 2208 0883 08       		.byte	8
+ 2209 0884 03       		.byte	3
+ 2210 0885 01       		.byte	1
+ 2211 0886 06       		.byte	6
+ 2212 0887 20       		.byte	32
+ 2213 0888 07       		.byte	7
+ 2214 0889 02       		.byte	2
+ 2215 088a 51       		.byte	81
+ 2216 088b 01       		.byte	1
+ 2217 088c 56       		.byte	86
+ 2218 088d 01       		.byte	1
+ 2219 088e 89       		.byte	-119
+ 2220 088f 01       		.byte	1
+ 2221 0890 A4       		.byte	-92
+ 2222 0891 80       		.byte	-128
+ 2223 0892 C0       		.byte	-64
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 40
 
 
- 2224 0893 20       		.byte	32
- 2225 0894 3B       		.byte	59
- 2226 0895 08       		.byte	8
- 2227 0896 3C       		.byte	60
+ 2224 0893 F0       		.byte	-16
+ 2225 0894 D4       		.byte	-44
+ 2226 0895 80       		.byte	-128
+ 2227 0896 D6       		.byte	-42
  2228 0897 20       		.byte	32
- 2229 0898 3D       		.byte	61
- 2230 0899 84       		.byte	-124
- 2231 089a 3E       		.byte	62
- 2232 089b 04       		.byte	4
- 2233 089c 3F       		.byte	63
- 2234 089d 01       		.byte	1
- 2235 089e 80       		.byte	-128
- 2236 089f 80       		.byte	-128
- 2237 08a0 86       		.byte	-122
- 2238 08a1 10       		.byte	16
- 2239 08a2 8A       		.byte	-118
- 2240 08a3 01       		.byte	1
- 2241 08a4 92       		.byte	-110
- 2242 08a5 44       		.byte	68
- 2243 08a6 93       		.byte	-109
- 2244 08a7 29       		.byte	41
- 2245 08a8 94       		.byte	-108
- 2246 08a9 80       		.byte	-128
- 2247 08aa 98       		.byte	-104
- 2248 08ab 21       		.byte	33
- 2249 08ac 9A       		.byte	-102
- 2250 08ad 30       		.byte	48
- 2251 08ae 9F       		.byte	-97
- 2252 08af 11       		.byte	17
- 2253 08b0 A0       		.byte	-96
- 2254 08b1 30       		.byte	48
- 2255 08b2 A1       		.byte	-95
- 2256 08b3 48       		.byte	72
- 2257 08b4 A2       		.byte	-94
- 2258 08b5 21       		.byte	33
- 2259 08b6 A3       		.byte	-93
- 2260 08b7 06       		.byte	6
- 2261 08b8 A4       		.byte	-92
- 2262 08b9 04       		.byte	4
- 2263 08ba A5       		.byte	-91
- 2264 08bb 10       		.byte	16
- 2265 08bc A6       		.byte	-90
- 2266 08bd 18       		.byte	24
- 2267 08be A7       		.byte	-89
- 2268 08bf 29       		.byte	41
- 2269 08c0 AB       		.byte	-85
- 2270 08c1 48       		.byte	72
- 2271 08c2 AD       		.byte	-83
- 2272 08c3 80       		.byte	-128
- 2273 08c4 B4       		.byte	-76
- 2274 08c5 20       		.byte	32
- 2275 08c6 B5       		.byte	-75
- 2276 08c7 21       		.byte	33
- 2277 08c8 C0       		.byte	-64
- 2278 08c9 AF       		.byte	-81
- 2279 08ca C2       		.byte	-62
- 2280 08cb FE       		.byte	-2
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 41
+ 2229 0898 82       		.byte	-126
+ 2230 0899 01       		.byte	1
+ 2231 089a 9E       		.byte	-98
+ 2232 089b 01       		.byte	1
+ 2233 089c A4       		.byte	-92
+ 2234 089d 80       		.byte	-128
+ 2235 089e AB       		.byte	-85
+ 2236 089f 02       		.byte	2
+ 2237 08a0 AC       		.byte	-84
+ 2238 08a1 04       		.byte	4
+ 2239 08a2 AE       		.byte	-82
+ 2240 08a3 20       		.byte	32
+ 2241 08a4 AF       		.byte	-81
+ 2242 08a5 01       		.byte	1
+ 2243 08a6 E2       		.byte	-30
+ 2244 08a7 20       		.byte	32
+ 2245 08a8 E8       		.byte	-24
+ 2246 08a9 50       		.byte	80
+ 2247 08aa EC       		.byte	-20
+ 2248 08ab C0       		.byte	-64
+ 2249 08ac 84       		.byte	-124
+ 2250 08ad 80       		.byte	-128
+ 2251 08ae A4       		.byte	-92
+ 2252 08af 80       		.byte	-128
+ 2253 08b0 E2       		.byte	-30
+ 2254 08b1 10       		.byte	16
+ 2255 08b2 09       		.byte	9
+ 2256 08b3 10       		.byte	16
+ 2257 08b4 0A       		.byte	10
+ 2258 08b5 04       		.byte	4
+ 2259 08b6 60       		.byte	96
+ 2260 08b7 10       		.byte	16
+ 2261 08b8 8C       		.byte	-116
+ 2262 08b9 10       		.byte	16
+ 2263 08ba C2       		.byte	-62
+ 2264 08bb 02       		.byte	2
+ 2265 08bc D8       		.byte	-40
+ 2266 08bd 02       		.byte	2
+ 2267 08be E0       		.byte	-32
+ 2268 08bf 08       		.byte	8
+ 2269 08c0 B2       		.byte	-78
+ 2270 08c1 04       		.byte	4
+ 2271 08c2 B5       		.byte	-75
+ 2272 08c3 10       		.byte	16
+ 2273 08c4 EE       		.byte	-18
+ 2274 08c5 0C       		.byte	12
+ 2275 08c6 00       		.byte	0
+ 2276 08c7 05       		.byte	5
+ 2277 08c8 08       		.byte	8
+ 2278 08c9 05       		.byte	5
+ 2279 08ca 0A       		.byte	10
+ 2280 08cb 05       		.byte	5
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 41
 
 
- 2281 08cc C4       		.byte	-60
- 2282 08cd 67       		.byte	103
- 2283 08ce CA       		.byte	-54
- 2284 08cf FF       		.byte	-1
- 2285 08d0 CC       		.byte	-52
- 2286 08d1 FE       		.byte	-2
- 2287 08d2 CE       		.byte	-50
- 2288 08d3 F6       		.byte	-10
- 2289 08d4 E0       		.byte	-32
- 2290 08d5 02       		.byte	2
- 2291 08d6 E2       		.byte	-30
- 2292 08d7 04       		.byte	4
- 2293 08d8 EE       		.byte	-18
- 2294 08d9 02       		.byte	2
- 2295 08da 04       		.byte	4
- 2296 08db 02       		.byte	2
- 2297 08dc 05       		.byte	5
- 2298 08dd 63       		.byte	99
- 2299 08de 06       		.byte	6
- 2300 08df 05       		.byte	5
- 2301 08e0 07       		.byte	7
- 2302 08e1 08       		.byte	8
- 2303 08e2 0A       		.byte	10
- 2304 08e3 08       		.byte	8
- 2305 08e4 0C       		.byte	12
- 2306 08e5 10       		.byte	16
- 2307 08e6 0F       		.byte	15
- 2308 08e7 29       		.byte	41
- 2309 08e8 12       		.byte	18
- 2310 08e9 20       		.byte	32
- 2311 08ea 14       		.byte	20
- 2312 08eb 0C       		.byte	12
- 2313 08ec 15       		.byte	21
- 2314 08ed 63       		.byte	99
- 2315 08ee 16       		.byte	22
- 2316 08ef 13       		.byte	19
- 2317 08f0 17       		.byte	23
- 2318 08f1 1C       		.byte	28
- 2319 08f2 18       		.byte	24
- 2320 08f3 01       		.byte	1
- 2321 08f4 19       		.byte	25
- 2322 08f5 03       		.byte	3
- 2323 08f6 1A       		.byte	26
- 2324 08f7 0E       		.byte	14
- 2325 08f8 1B       		.byte	27
- 2326 08f9 08       		.byte	8
- 2327 08fa 1D       		.byte	29
- 2328 08fb 03       		.byte	3
- 2329 08fc 1E       		.byte	30
- 2330 08fd 40       		.byte	64
- 2331 08fe 1F       		.byte	31
- 2332 08ff 04       		.byte	4
- 2333 0900 22       		.byte	34
- 2334 0901 0C       		.byte	12
- 2335 0902 23       		.byte	35
- 2336 0903 10       		.byte	16
- 2337 0904 26       		.byte	38
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 42
+ 2281 08cc 0E       		.byte	14
+ 2282 08cd 04       		.byte	4
+ 2283 08ce 10       		.byte	16
+ 2284 08cf 01       		.byte	1
+ 2285 08d0 1A       		.byte	26
+ 2286 08d1 01       		.byte	1
+ 2287 08d2 00       		.byte	0
+ 2288 08d3 0F       		.byte	15
+ 2289 08d4 40       		.byte	64
+ 2290 08d5 10       		.byte	16
+ 2291 08d6 07       		.byte	7
+ 2292 08d7 00       		.byte	0
+ 2293 08d8 01       		.byte	1
+ 2294 08d9 10       		.byte	16
+ 2295 08da 00       		.byte	0
+ 2296 08db 00       		.byte	0
+ 2297 08dc 01       		.byte	1
+ 2298 08dd 25       		.byte	37
+ 2299 08de 00       		.byte	0
+ 2300 08df 40       		.byte	64
+ 2301 08e0 90       		.byte	-112
+ 2302 08e1 05       		.byte	5
+ 2303 08e2 07       		.byte	7
+ 2304 08e3 00       		.byte	0
+ 2305 08e4 7F       		.byte	127
+ 2306 08e5 01       		.byte	1
+ 2307 08e6 00       		.byte	0
+ 2308 08e7 02       		.byte	2
+ 2309 08e8 03       		.byte	3
+ 2310 08e9 01       		.byte	1
+ 2311 08ea 00       		.byte	0
+ 2312 08eb 0E       		.byte	14
+ 2313 08ec 03       		.byte	3
+ 2314 08ed 00       		.byte	0
+ 2315 08ee 00       		.byte	0
+ 2316 08ef 00       		.byte	0
+ 2317 08f0 85       		.byte	-123
+ 2318 08f1 25       		.byte	37
+ 2319 08f2 78       		.byte	120
+ 2320 08f3 40       		.byte	64
+ 2321 08f4 88       		.byte	-120
+ 2322 08f5 04       		.byte	4
+ 2323 08f6 07       		.byte	7
+ 2324 08f7 01       		.byte	1
+ 2325 08f8 01       		.byte	1
+ 2326 08f9 04       		.byte	4
+ 2327 08fa 00       		.byte	0
+ 2328 08fb 01       		.byte	1
+ 2329 08fc A2       		.byte	-94
+ 2330 08fd 00       		.byte	0
+ 2331 08fe 05       		.byte	5
+ 2332 08ff 00       		.byte	0
+ 2333 0900 BA       		.byte	-70
+ 2334 0901 01       		.byte	1
+ 2335 0902 04       		.byte	4
+ 2336 0903 08       		.byte	8
+ 2337 0904 80       		.byte	-128
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 42
 
 
- 2338 0905 40       		.byte	64
- 2339 0906 28       		.byte	40
- 2340 0907 3F       		.byte	63
- 2341 0908 29       		.byte	41
- 2342 0909 52       		.byte	82
- 2343 090a 2B       		.byte	43
- 2344 090b 08       		.byte	8
- 2345 090c 30       		.byte	48
- 2346 090d 20       		.byte	32
- 2347 090e 32       		.byte	50
- 2348 090f 1F       		.byte	31
- 2349 0910 33       		.byte	51
- 2350 0911 1F       		.byte	31
- 2351 0912 34       		.byte	52
- 2352 0913 40       		.byte	64
- 2353 0914 35       		.byte	53
- 2354 0915 60       		.byte	96
- 2355 0916 39       		.byte	57
- 2356 0917 20       		.byte	32
- 2357 0918 3B       		.byte	59
- 2358 0919 08       		.byte	8
- 2359 091a 3E       		.byte	62
- 2360 091b 10       		.byte	16
- 2361 091c 3F       		.byte	63
- 2362 091d 10       		.byte	16
- 2363 091e 58       		.byte	88
- 2364 091f 04       		.byte	4
- 2365 0920 59       		.byte	89
- 2366 0921 04       		.byte	4
- 2367 0922 5C       		.byte	92
- 2368 0923 22       		.byte	34
- 2369 0924 5F       		.byte	95
- 2370 0925 01       		.byte	1
- 2371 0926 80       		.byte	-128
- 2372 0927 07       		.byte	7
- 2373 0928 84       		.byte	-124
- 2374 0929 06       		.byte	6
- 2375 092a 86       		.byte	-122
- 2376 092b 01       		.byte	1
- 2377 092c 87       		.byte	-121
- 2378 092d 20       		.byte	32
- 2379 092e 88       		.byte	-120
- 2380 092f 02       		.byte	2
- 2381 0930 89       		.byte	-119
- 2382 0931 01       		.byte	1
- 2383 0932 8C       		.byte	-116
- 2384 0933 07       		.byte	7
- 2385 0934 8D       		.byte	-115
- 2386 0935 02       		.byte	2
- 2387 0936 90       		.byte	-112
- 2388 0937 01       		.byte	1
- 2389 0938 91       		.byte	-111
- 2390 0939 BB       		.byte	-69
- 2391 093a 92       		.byte	-110
- 2392 093b 06       		.byte	6
- 2393 093c 94       		.byte	-108
- 2394 093d 06       		.byte	6
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 43
+ 2338 0905 00       		.byte	0
+ 2339 0906 7F       		.byte	127
+ 2340 0907 70       		.byte	112
+ 2341 0908 00       		.byte	0
+ 2342 0909 0F       		.byte	15
+ 2343 090a 00       		.byte	0
+ 2344 090b 00       		.byte	0
+ 2345 090c 02       		.byte	2
+ 2346 090d 08       		.byte	8
+ 2347 090e 00       		.byte	0
+ 2348 090f 20       		.byte	32
+ 2349 0910 00       		.byte	0
+ 2350 0911 00       		.byte	0
+ 2351 0912 05       		.byte	5
+ 2352 0913 04       		.byte	4
+ 2353 0914 56       		.byte	86
+ 2354 0915 00       		.byte	0
+ 2355 0916 00       		.byte	0
+ 2356 0917 00       		.byte	0
+ 2357 0918 03       		.byte	3
+ 2358 0919 0D       		.byte	13
+ 2359 091a B0       		.byte	-80
+ 2360 091b 00       		.byte	0
+ 2361 091c 09       		.byte	9
+ 2362 091d FF       		.byte	-1
+ 2363 091e 7F       		.byte	127
+ 2364 091f FF       		.byte	-1
+ 2365 0920 42       		.byte	66
+ 2366 0921 A0       		.byte	-96
+ 2367 0922 70       		.byte	112
+ 2368 0923 00       		.byte	0
+ 2369 0924 0C       		.byte	12
+ 2370 0925 00       		.byte	0
+ 2371 0926 F6       		.byte	-10
+ 2372 0927 00       		.byte	0
+ 2373 0928 20       		.byte	32
+ 2374 0929 00       		.byte	0
+ 2375 092a 04       		.byte	4
+ 2376 092b 00       		.byte	0
+ 2377 092c 04       		.byte	4
+ 2378 092d 04       		.byte	4
+ 2379 092e 04       		.byte	4
+ 2380 092f 04       		.byte	4
+ 2381 0930 00       		.byte	0
+ 2382 0931 00       		.byte	0
+ 2383 0932 00       		.byte	0
+ 2384 0933 01       		.byte	1
+ 2385 0934 00       		.byte	0
+ 2386 0935 09       		.byte	9
+ 2387 0936 40       		.byte	64
+ 2388 0937 09       		.byte	9
+ 2389 0938 30       		.byte	48
+ 2390 0939 09       		.byte	9
+ 2391 093a 00       		.byte	0
+ 2392 093b 00       		.byte	0
+ 2393 093c 00       		.byte	0
+ 2394 093d 00       		.byte	0
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 43
 
 
- 2395 093e 95       		.byte	-107
- 2396 093f 03       		.byte	3
- 2397 0940 99       		.byte	-103
- 2398 0941 20       		.byte	32
- 2399 0942 9A       		.byte	-102
- 2400 0943 01       		.byte	1
- 2401 0944 9C       		.byte	-100
- 2402 0945 07       		.byte	7
- 2403 0946 9D       		.byte	-99
- 2404 0947 B8       		.byte	-72
- 2405 0948 9F       		.byte	-97
- 2406 0949 03       		.byte	3
- 2407 094a A0       		.byte	-96
- 2408 094b 04       		.byte	4
- 2409 094c A1       		.byte	-95
- 2410 094d 23       		.byte	35
- 2411 094e A3       		.byte	-93
- 2412 094f 1C       		.byte	28
- 2413 0950 A4       		.byte	-92
- 2414 0951 08       		.byte	8
- 2415 0952 A7       		.byte	-89
- 2416 0953 98       		.byte	-104
- 2417 0954 A8       		.byte	-88
- 2418 0955 08       		.byte	8
- 2419 0956 A9       		.byte	-87
- 2420 0957 33       		.byte	51
- 2421 0958 AB       		.byte	-85
- 2422 0959 44       		.byte	68
- 2423 095a AC       		.byte	-84
- 2424 095b 08       		.byte	8
- 2425 095c AD       		.byte	-83
- 2426 095d 23       		.byte	35
- 2427 095e AF       		.byte	-81
- 2428 095f C8       		.byte	-56
- 2429 0960 B0       		.byte	-80
- 2430 0961 07       		.byte	7
- 2431 0962 B3       		.byte	-77
- 2432 0963 F3       		.byte	-13
- 2433 0964 B4       		.byte	-76
- 2434 0965 08       		.byte	8
- 2435 0966 B5       		.byte	-75
- 2436 0967 0F       		.byte	15
- 2437 0968 BB       		.byte	-69
- 2438 0969 28       		.byte	40
- 2439 096a D8       		.byte	-40
- 2440 096b 04       		.byte	4
- 2441 096c D9       		.byte	-39
- 2442 096d 04       		.byte	4
- 2443 096e DC       		.byte	-36
- 2444 096f 22       		.byte	34
- 2445 0970 DF       		.byte	-33
- 2446 0971 01       		.byte	1
- 2447 0972 00       		.byte	0
- 2448 0973 08       		.byte	8
- 2449 0974 01       		.byte	1
- 2450 0975 90       		.byte	-112
- 2451 0976 02       		.byte	2
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 44
+ 2395 093e 00       		.byte	0
+ 2396 093f 00       		.byte	0
+ 2397 0940 00       		.byte	0
+ 2398 0941 00       		.byte	0
+ 2399 0942 00       		.byte	0
+ 2400 0943 00       		.byte	0
+ 2401 0944 00       		.byte	0
+ 2402 0945 00       		.byte	0
+ 2403 0946 00       		.byte	0
+ 2404 0947 00       		.byte	0
+ 2405 0948 00       		.byte	0
+ 2406 0949 00       		.byte	0
+ 2407 094a 00       		.byte	0
+ 2408 094b 00       		.byte	0
+ 2409 094c 00       		.byte	0
+ 2410 094d 00       		.byte	0
+ 2411 094e 00       		.byte	0
+ 2412 094f 00       		.byte	0
+ 2413 0950 00       		.byte	0
+ 2414 0951 00       		.byte	0
+ 2415 0952 00       		.byte	0
+ 2416 0953 00       		.byte	0
+ 2417 0954 03       		.byte	3
+ 2418 0955 00       		.byte	0
+ 2419 0956 0C       		.byte	12
+ 2420 0957 00       		.byte	0
+ 2421 0958 03       		.byte	3
+ 2422 0959 00       		.byte	0
+ 2423 095a 03       		.byte	3
+ 2424 095b 00       		.byte	0
+ 2425 095c 00       		.byte	0
+ 2426 095d 00       		.byte	0
+ 2427 095e 00       		.byte	0
+ 2428 095f 00       		.byte	0
+ 2429 0960 00       		.byte	0
+ 2430 0961 7F       		.byte	127
+ 2431 0962 7F       		.byte	127
+ 2432 0963 00       		.byte	0
+ 2433 0964 00       		.byte	0
+ 2434 0965 00       		.byte	0
+ 2435 0966 00       		.byte	0
+ 2436 0967 00       		.byte	0
+ 2437 0968 00       		.byte	0
+ 2438 0969 0B       		.byte	11
+ 2439 096a 0B       		.byte	11
+ 2440 096b 00       		.byte	0
+ 2441 096c 00       		.byte	0
+ 2442 096d 00       		.byte	0
+ 2443 096e 00       		.byte	0
+ 2444 096f 00       		.byte	0
+ 2445 0970 80       		.byte	-128
+ 2446 0971 00       		.byte	0
+ 2447 0972 40       		.byte	64
+ 2448 0973 80       		.byte	-128
+ 2449 0974 80       		.byte	-128
+ 2450 0975 00       		.byte	0
+ 2451 0976 80       		.byte	-128
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 44
 
 
- 2452 0977 80       		.byte	-128
- 2453 0978 04       		.byte	4
- 2454 0979 40       		.byte	64
- 2455 097a 06       		.byte	6
- 2456 097b 04       		.byte	4
- 2457 097c 07       		.byte	7
- 2458 097d 10       		.byte	16
- 2459 097e 08       		.byte	8
- 2460 097f 04       		.byte	4
- 2461 0980 09       		.byte	9
- 2462 0981 80       		.byte	-128
- 2463 0982 0A       		.byte	10
- 2464 0983 D6       		.byte	-42
- 2465 0984 0D       		.byte	13
- 2466 0985 08       		.byte	8
- 2467 0986 0E       		.byte	14
- 2468 0987 81       		.byte	-127
- 2469 0988 0F       		.byte	15
- 2470 0989 08       		.byte	8
- 2471 098a 10       		.byte	16
- 2472 098b 88       		.byte	-120
- 2473 098c 11       		.byte	17
- 2474 098d 44       		.byte	68
- 2475 098e 12       		.byte	18
- 2476 098f 40       		.byte	64
- 2477 0990 14       		.byte	20
- 2478 0991 08       		.byte	8
- 2479 0992 15       		.byte	21
- 2480 0993 09       		.byte	9
- 2481 0994 19       		.byte	25
- 2482 0995 11       		.byte	17
- 2483 0996 1A       		.byte	26
- 2484 0997 04       		.byte	4
- 2485 0998 1B       		.byte	27
- 2486 0999 20       		.byte	32
- 2487 099a 1C       		.byte	28
- 2488 099b 04       		.byte	4
- 2489 099c 1D       		.byte	29
- 2490 099d 08       		.byte	8
- 2491 099e 1E       		.byte	30
- 2492 099f 80       		.byte	-128
- 2493 09a0 1F       		.byte	31
- 2494 09a1 08       		.byte	8
- 2495 09a2 20       		.byte	32
- 2496 09a3 28       		.byte	40
- 2497 09a4 26       		.byte	38
- 2498 09a5 04       		.byte	4
- 2499 09a6 27       		.byte	39
- 2500 09a7 14       		.byte	20
- 2501 09a8 28       		.byte	40
- 2502 09a9 88       		.byte	-120
- 2503 09aa 29       		.byte	41
- 2504 09ab 80       		.byte	-128
- 2505 09ac 2B       		.byte	43
- 2506 09ad 20       		.byte	32
- 2507 09ae 2D       		.byte	45
- 2508 09af 01       		.byte	1
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 45
+ 2452 0977 00       		.byte	0
+ 2453 0978 00       		.byte	0
+ 2454 0979 00       		.byte	0
+ 2455 097a 00       		.byte	0
+ 2456 097b 00       		.byte	0
+ 2457              		.section	.cywolatch,"a",%progbits
+ 2458              		.align	2
+ 2459              		.type	cy_meta_wonvl, %object
+ 2460              		.size	cy_meta_wonvl, 4
+ 2461              	cy_meta_wonvl:
+ 2462 0000 BC       		.byte	-68
+ 2463 0001 90       		.byte	-112
+ 2464 0002 AC       		.byte	-84
+ 2465 0003 AF       		.byte	-81
+ 2466              		.section	.cycustnvl,"a",%progbits
+ 2467              		.align	2
+ 2468              		.type	cy_meta_custnvl, %object
+ 2469              		.size	cy_meta_custnvl, 4
+ 2470              	cy_meta_custnvl:
+ 2471 0000 00       		.byte	0
+ 2472 0001 00       		.byte	0
+ 2473 0002 40       		.byte	64
+ 2474 0003 05       		.byte	5
+ 2475              		.section	.cymeta,"a",%progbits
+ 2476              		.align	2
+ 2477              		.type	cy_metadata, %object
+ 2478              		.size	cy_metadata, 12
+ 2479              	cy_metadata:
+ 2480 0000 00       		.byte	0
+ 2481 0001 01       		.byte	1
+ 2482 0002 2E       		.byte	46
+ 2483 0003 16       		.byte	22
+ 2484 0004 10       		.byte	16
+ 2485 0005 69       		.byte	105
+ 2486 0006 00       		.byte	0
+ 2487 0007 01       		.byte	1
+ 2488 0008 00       		.byte	0
+ 2489 0009 00       		.byte	0
+ 2490 000a 00       		.byte	0
+ 2491 000b 00       		.byte	0
+ 2492              		.section	.cyflashprotect,"a",%progbits
+ 2493              		.align	2
+ 2494              		.type	cy_meta_flashprotect, %object
+ 2495              		.size	cy_meta_flashprotect, 256
+ 2496              	cy_meta_flashprotect:
+ 2497 0000 00000000 		.space	256
+ 2497      00000000 
+ 2497      00000000 
+ 2497      00000000 
+ 2497      00000000 
+ 2498              		.text
+ 2499              	.Letext0:
+ 2500              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2501              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2502              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 2503              		.section	.debug_info,"",%progbits
+ 2504              	.Ldebug_info0:
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 45
 
 
- 2509 09b0 2F       		.byte	47
- 2510 09b1 88       		.byte	-120
- 2511 09b2 30       		.byte	48
- 2512 09b3 04       		.byte	4
- 2513 09b4 32       		.byte	50
- 2514 09b5 51       		.byte	81
- 2515 09b6 36       		.byte	54
- 2516 09b7 84       		.byte	-124
- 2517 09b8 37       		.byte	55
- 2518 09b9 20       		.byte	32
- 2519 09ba 38       		.byte	56
- 2520 09bb 20       		.byte	32
- 2521 09bc 39       		.byte	57
- 2522 09bd 10       		.byte	16
- 2523 09be 3A       		.byte	58
- 2524 09bf 50       		.byte	80
- 2525 09c0 3B       		.byte	59
- 2526 09c1 04       		.byte	4
- 2527 09c2 3C       		.byte	60
- 2528 09c3 40       		.byte	64
- 2529 09c4 3D       		.byte	61
- 2530 09c5 08       		.byte	8
- 2531 09c6 3F       		.byte	63
- 2532 09c7 88       		.byte	-120
- 2533 09c8 81       		.byte	-127
- 2534 09c9 04       		.byte	4
- 2535 09ca 84       		.byte	-124
- 2536 09cb 10       		.byte	16
- 2537 09cc 85       		.byte	-123
- 2538 09cd 80       		.byte	-128
- 2539 09ce 87       		.byte	-121
- 2540 09cf 20       		.byte	32
- 2541 09d0 90       		.byte	-112
- 2542 09d1 20       		.byte	32
- 2543 09d2 91       		.byte	-111
- 2544 09d3 4C       		.byte	76
- 2545 09d4 92       		.byte	-110
- 2546 09d5 71       		.byte	113
- 2547 09d6 93       		.byte	-109
- 2548 09d7 04       		.byte	4
- 2549 09d8 94       		.byte	-108
- 2550 09d9 04       		.byte	4
- 2551 09da 96       		.byte	-106
- 2552 09db 04       		.byte	4
- 2553 09dc 98       		.byte	-104
- 2554 09dd 08       		.byte	8
- 2555 09de 9A       		.byte	-102
- 2556 09df 04       		.byte	4
- 2557 09e0 9C       		.byte	-100
- 2558 09e1 04       		.byte	4
- 2559 09e2 9D       		.byte	-99
- 2560 09e3 11       		.byte	17
- 2561 09e4 9E       		.byte	-98
- 2562 09e5 10       		.byte	16
- 2563 09e6 9F       		.byte	-97
- 2564 09e7 04       		.byte	4
- 2565 09e8 A0       		.byte	-96
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 46
+ 2505 0000 35010000 		.4byte	0x135
+ 2506 0004 0400     		.2byte	0x4
+ 2507 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 2508 000a 04       		.byte	0x4
+ 2509 000b 01       		.uleb128 0x1
+ 2510 000c 80000000 		.4byte	.LASF17
+ 2511 0010 0C       		.byte	0xc
+ 2512 0011 DA010000 		.4byte	.LASF18
+ 2513 0015 0A000000 		.4byte	.LASF19
+ 2514 0019 00000000 		.4byte	.Ldebug_line0
+ 2515 001d 02       		.uleb128 0x2
+ 2516 001e 01       		.byte	0x1
+ 2517 001f 06       		.byte	0x6
+ 2518 0020 CE010000 		.4byte	.LASF0
+ 2519 0024 03       		.uleb128 0x3
+ 2520 0025 00000000 		.4byte	.LASF9
+ 2521 0029 01       		.byte	0x1
+ 2522 002a 1D       		.byte	0x1d
+ 2523 002b 2F000000 		.4byte	0x2f
+ 2524 002f 02       		.uleb128 0x2
+ 2525 0030 01       		.byte	0x1
+ 2526 0031 08       		.byte	0x8
+ 2527 0032 72000000 		.4byte	.LASF1
+ 2528 0036 02       		.uleb128 0x2
+ 2529 0037 02       		.byte	0x2
+ 2530 0038 05       		.byte	0x5
+ 2531 0039 BB010000 		.4byte	.LASF2
+ 2532 003d 02       		.uleb128 0x2
+ 2533 003e 02       		.byte	0x2
+ 2534 003f 07       		.byte	0x7
+ 2535 0040 20010000 		.4byte	.LASF3
+ 2536 0044 02       		.uleb128 0x2
+ 2537 0045 04       		.byte	0x4
+ 2538 0046 05       		.byte	0x5
+ 2539 0047 C5010000 		.4byte	.LASF4
+ 2540 004b 02       		.uleb128 0x2
+ 2541 004c 04       		.byte	0x4
+ 2542 004d 07       		.byte	0x7
+ 2543 004e 0E010000 		.4byte	.LASF5
+ 2544 0052 02       		.uleb128 0x2
+ 2545 0053 08       		.byte	0x8
+ 2546 0054 05       		.byte	0x5
+ 2547 0055 AD010000 		.4byte	.LASF6
+ 2548 0059 02       		.uleb128 0x2
+ 2549 005a 08       		.byte	0x8
+ 2550 005b 07       		.byte	0x7
+ 2551 005c 62010000 		.4byte	.LASF7
+ 2552 0060 04       		.uleb128 0x4
+ 2553 0061 04       		.byte	0x4
+ 2554 0062 05       		.byte	0x5
+ 2555 0063 696E7400 		.ascii	"int\000"
+ 2556 0067 02       		.uleb128 0x2
+ 2557 0068 04       		.byte	0x4
+ 2558 0069 07       		.byte	0x7
+ 2559 006a 55010000 		.4byte	.LASF8
+ 2560 006e 03       		.uleb128 0x3
+ 2561 006f 79010000 		.4byte	.LASF10
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 46
 
 
- 2566 09e9 88       		.byte	-120
- 2567 09ea A1       		.byte	-95
- 2568 09eb 84       		.byte	-124
- 2569 09ec A2       		.byte	-94
- 2570 09ed 80       		.byte	-128
- 2571 09ee A3       		.byte	-93
- 2572 09ef 40       		.byte	64
- 2573 09f0 A4       		.byte	-92
- 2574 09f1 14       		.byte	20
- 2575 09f2 A6       		.byte	-90
- 2576 09f3 04       		.byte	4
- 2577 09f4 AE       		.byte	-82
- 2578 09f5 40       		.byte	64
- 2579 09f6 B0       		.byte	-80
- 2580 09f7 01       		.byte	1
- 2581 09f8 B1       		.byte	-79
- 2582 09f9 08       		.byte	8
- 2583 09fa B2       		.byte	-78
- 2584 09fb 04       		.byte	4
- 2585 09fc B3       		.byte	-77
- 2586 09fd 01       		.byte	1
- 2587 09fe B5       		.byte	-75
- 2588 09ff 21       		.byte	33
- 2589 0a00 B6       		.byte	-74
- 2590 0a01 04       		.byte	4
- 2591 0a02 C0       		.byte	-64
- 2592 0a03 EF       		.byte	-17
- 2593 0a04 C2       		.byte	-62
- 2594 0a05 FF       		.byte	-1
- 2595 0a06 C4       		.byte	-60
- 2596 0a07 7F       		.byte	127
- 2597 0a08 CA       		.byte	-54
- 2598 0a09 AF       		.byte	-81
- 2599 0a0a CC       		.byte	-52
- 2600 0a0b 7F       		.byte	127
- 2601 0a0c CE       		.byte	-50
- 2602 0a0d 5E       		.byte	94
- 2603 0a0e E4       		.byte	-28
- 2604 0a0f 80       		.byte	-128
- 2605 0a10 EA       		.byte	-22
- 2606 0a11 40       		.byte	64
- 2607 0a12 AF       		.byte	-81
- 2608 0a13 08       		.byte	8
- 2609 0a14 B0       		.byte	-80
- 2610 0a15 84       		.byte	-124
- 2611 0a16 B3       		.byte	-77
- 2612 0a17 80       		.byte	-128
- 2613 0a18 E8       		.byte	-24
- 2614 0a19 80       		.byte	-128
- 2615 0a1a 30       		.byte	48
- 2616 0a1b 20       		.byte	32
- 2617 0a1c 36       		.byte	54
- 2618 0a1d 20       		.byte	32
- 2619 0a1e 80       		.byte	-128
- 2620 0a1f 02       		.byte	2
- 2621 0a20 CC       		.byte	-52
- 2622 0a21 30       		.byte	48
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 47
+ 2562 0073 02       		.byte	0x2
+ 2563 0074 18       		.byte	0x18
+ 2564 0075 24000000 		.4byte	0x24
+ 2565 0079 05       		.uleb128 0x5
+ 2566 007a 91000000 		.4byte	0x91
+ 2567 007e 8A000000 		.4byte	0x8a
+ 2568 0082 06       		.uleb128 0x6
+ 2569 0083 8A000000 		.4byte	0x8a
+ 2570 0087 7B09     		.2byte	0x97b
+ 2571 0089 00       		.byte	0
+ 2572 008a 02       		.uleb128 0x2
+ 2573 008b 04       		.byte	0x4
+ 2574 008c 07       		.byte	0x7
+ 2575 008d A4010000 		.4byte	.LASF11
+ 2576 0091 07       		.uleb128 0x7
+ 2577 0092 6E000000 		.4byte	0x6e
+ 2578 0096 08       		.uleb128 0x8
+ 2579 0097 43010000 		.4byte	.LASF12
+ 2580 009b 03       		.byte	0x3
+ 2581 009c 1F       		.byte	0x1f
+ 2582 009d A7000000 		.4byte	0xa7
+ 2583 00a1 05       		.uleb128 0x5
+ 2584 00a2 03       		.byte	0x3
+ 2585 00a3 00000000 		.4byte	cy_meta_configecc
+ 2586 00a7 07       		.uleb128 0x7
+ 2587 00a8 79000000 		.4byte	0x79
+ 2588 00ac 05       		.uleb128 0x5
+ 2589 00ad 91000000 		.4byte	0x91
+ 2590 00b1 BC000000 		.4byte	0xbc
+ 2591 00b5 09       		.uleb128 0x9
+ 2592 00b6 8A000000 		.4byte	0x8a
+ 2593 00ba 03       		.byte	0x3
+ 2594 00bb 00       		.byte	0
+ 2595 00bc 0A       		.uleb128 0xa
+ 2596 00bd 33010000 		.4byte	.LASF13
+ 2597 00c1 03       		.byte	0x3
+ 2598 00c2 5C01     		.2byte	0x15c
+ 2599 00c4 CE000000 		.4byte	0xce
+ 2600 00c8 05       		.uleb128 0x5
+ 2601 00c9 03       		.byte	0x3
+ 2602 00ca 00000000 		.4byte	cy_meta_custnvl
+ 2603 00ce 07       		.uleb128 0x7
+ 2604 00cf AC000000 		.4byte	0xac
+ 2605 00d3 0A       		.uleb128 0xa
+ 2606 00d4 96010000 		.4byte	.LASF14
+ 2607 00d8 03       		.byte	0x3
+ 2608 00d9 6A01     		.2byte	0x16a
+ 2609 00db E5000000 		.4byte	0xe5
+ 2610 00df 05       		.uleb128 0x5
+ 2611 00e0 03       		.byte	0x3
+ 2612 00e1 00000000 		.4byte	cy_meta_wonvl
+ 2613 00e5 07       		.uleb128 0x7
+ 2614 00e6 AC000000 		.4byte	0xac
+ 2615 00ea 05       		.uleb128 0x5
+ 2616 00eb 91000000 		.4byte	0x91
+ 2617 00ef FA000000 		.4byte	0xfa
+ 2618 00f3 09       		.uleb128 0x9
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 47
 
 
- 2623 0a22 E2       		.byte	-30
- 2624 0a23 20       		.byte	32
- 2625 0a24 00       		.byte	0
- 2626 0a25 08       		.byte	8
- 2627 0a26 01       		.byte	1
- 2628 0a27 80       		.byte	-128
- 2629 0a28 05       		.byte	5
- 2630 0a29 08       		.byte	8
- 2631 0a2a 07       		.byte	7
- 2632 0a2b 01       		.byte	1
- 2633 0a2c 54       		.byte	84
- 2634 0a2d 02       		.byte	2
- 2635 0a2e 57       		.byte	87
- 2636 0a2f 08       		.byte	8
- 2637 0a30 A0       		.byte	-96
- 2638 0a31 02       		.byte	2
- 2639 0a32 A4       		.byte	-92
- 2640 0a33 20       		.byte	32
- 2641 0a34 A6       		.byte	-90
- 2642 0a35 20       		.byte	32
- 2643 0a36 C0       		.byte	-64
- 2644 0a37 F0       		.byte	-16
- 2645 0a38 D4       		.byte	-44
- 2646 0a39 40       		.byte	64
- 2647 0a3a D6       		.byte	-42
- 2648 0a3b 20       		.byte	32
- 2649 0a3c A4       		.byte	-92
- 2650 0a3d 20       		.byte	32
- 2651 0a3e A6       		.byte	-90
- 2652 0a3f 20       		.byte	32
- 2653 0a40 AC       		.byte	-84
- 2654 0a41 04       		.byte	4
- 2655 0a42 AD       		.byte	-83
- 2656 0a43 88       		.byte	-120
- 2657 0a44 AF       		.byte	-81
- 2658 0a45 01       		.byte	1
- 2659 0a46 B3       		.byte	-77
- 2660 0a47 08       		.byte	8
- 2661 0a48 E8       		.byte	-24
- 2662 0a49 50       		.byte	80
- 2663 0a4a EC       		.byte	-20
- 2664 0a4b 50       		.byte	80
- 2665 0a4c 84       		.byte	-124
- 2666 0a4d 20       		.byte	32
- 2667 0a4e 86       		.byte	-122
- 2668 0a4f 20       		.byte	32
- 2669 0a50 A4       		.byte	-92
- 2670 0a51 20       		.byte	32
- 2671 0a52 A6       		.byte	-90
- 2672 0a53 20       		.byte	32
- 2673 0a54 E2       		.byte	-30
- 2674 0a55 40       		.byte	64
- 2675 0a56 E6       		.byte	-26
- 2676 0a57 40       		.byte	64
- 2677 0a58 05       		.byte	5
- 2678 0a59 02       		.byte	2
- 2679 0a5a C0       		.byte	-64
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 48
+ 2619 00f4 8A000000 		.4byte	0x8a
+ 2620 00f8 FF       		.byte	0xff
+ 2621 00f9 00       		.byte	0
+ 2622 00fa 0A       		.uleb128 0xa
+ 2623 00fb 81010000 		.4byte	.LASF15
+ 2624 00ff 03       		.byte	0x3
+ 2625 0100 7801     		.2byte	0x178
+ 2626 0102 0C010000 		.4byte	0x10c
+ 2627 0106 05       		.uleb128 0x5
+ 2628 0107 03       		.byte	0x3
+ 2629 0108 00000000 		.4byte	cy_meta_flashprotect
+ 2630 010c 07       		.uleb128 0x7
+ 2631 010d EA000000 		.4byte	0xea
+ 2632 0111 05       		.uleb128 0x5
+ 2633 0112 91000000 		.4byte	0x91
+ 2634 0116 21010000 		.4byte	0x121
+ 2635 011a 09       		.uleb128 0x9
+ 2636 011b 8A000000 		.4byte	0x8a
+ 2637 011f 0B       		.byte	0xb
+ 2638 0120 00       		.byte	0
+ 2639 0121 0A       		.uleb128 0xa
+ 2640 0122 66000000 		.4byte	.LASF16
+ 2641 0126 03       		.byte	0x3
+ 2642 0127 A501     		.2byte	0x1a5
+ 2643 0129 33010000 		.4byte	0x133
+ 2644 012d 05       		.uleb128 0x5
+ 2645 012e 03       		.byte	0x3
+ 2646 012f 00000000 		.4byte	cy_metadata
+ 2647 0133 07       		.uleb128 0x7
+ 2648 0134 11010000 		.4byte	0x111
+ 2649 0138 00       		.byte	0
+ 2650              		.section	.debug_abbrev,"",%progbits
+ 2651              	.Ldebug_abbrev0:
+ 2652 0000 01       		.uleb128 0x1
+ 2653 0001 11       		.uleb128 0x11
+ 2654 0002 01       		.byte	0x1
+ 2655 0003 25       		.uleb128 0x25
+ 2656 0004 0E       		.uleb128 0xe
+ 2657 0005 13       		.uleb128 0x13
+ 2658 0006 0B       		.uleb128 0xb
+ 2659 0007 03       		.uleb128 0x3
+ 2660 0008 0E       		.uleb128 0xe
+ 2661 0009 1B       		.uleb128 0x1b
+ 2662 000a 0E       		.uleb128 0xe
+ 2663 000b 10       		.uleb128 0x10
+ 2664 000c 17       		.uleb128 0x17
+ 2665 000d 00       		.byte	0
+ 2666 000e 00       		.byte	0
+ 2667 000f 02       		.uleb128 0x2
+ 2668 0010 24       		.uleb128 0x24
+ 2669 0011 00       		.byte	0
+ 2670 0012 0B       		.uleb128 0xb
+ 2671 0013 0B       		.uleb128 0xb
+ 2672 0014 3E       		.uleb128 0x3e
+ 2673 0015 0B       		.uleb128 0xb
+ 2674 0016 03       		.uleb128 0x3
+ 2675 0017 0E       		.uleb128 0xe
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 48
 
 
- 2680 0a5b 04       		.byte	4
- 2681 0a5c B5       		.byte	-75
- 2682 0a5d 02       		.byte	2
- 2683 0a5e EA       		.byte	-22
- 2684 0a5f 02       		.byte	2
- 2685 0a60 76       		.byte	118
- 2686 0a61 20       		.byte	32
- 2687 0a62 8A       		.byte	-118
- 2688 0a63 20       		.byte	32
- 2689 0a64 DE       		.byte	-34
- 2690 0a65 04       		.byte	4
- 2691 0a66 E4       		.byte	-28
- 2692 0a67 01       		.byte	1
- 2693 0a68 00       		.byte	0
- 2694 0a69 05       		.byte	5
- 2695 0a6a 08       		.byte	8
- 2696 0a6b 05       		.byte	5
- 2697 0a6c 0A       		.byte	10
- 2698 0a6d 01       		.byte	1
- 2699 0a6e 0C       		.byte	12
- 2700 0a6f 05       		.byte	5
- 2701 0a70 10       		.byte	16
- 2702 0a71 05       		.byte	5
- 2703 0a72 1A       		.byte	26
- 2704 0a73 05       		.byte	5
- 2705 0a74 1C       		.byte	28
- 2706 0a75 04       		.byte	4
- 2707 0a76 00       		.byte	0
- 2708 0a77 0F       		.byte	15
- 2709 0a78 03       		.byte	3
- 2710 0a79 00       		.byte	0
- 2711 0a7a 0C       		.byte	12
- 2712 0a7b 00       		.byte	0
- 2713 0a7c 03       		.byte	3
- 2714 0a7d 00       		.byte	0
- 2715 0a7e 03       		.byte	3
- 2716 0a7f 00       		.byte	0
- 2717 0a80 00       		.byte	0
- 2718 0a81 00       		.byte	0
- 2719 0a82 00       		.byte	0
- 2720 0a83 00       		.byte	0
- 2721 0a84 00       		.byte	0
- 2722 0a85 7F       		.byte	127
- 2723 0a86 7F       		.byte	127
- 2724 0a87 00       		.byte	0
- 2725 0a88 00       		.byte	0
- 2726 0a89 00       		.byte	0
- 2727 0a8a 00       		.byte	0
- 2728 0a8b 00       		.byte	0
- 2729 0a8c 10       		.byte	16
- 2730 0a8d 00       		.byte	0
- 2731 0a8e 20       		.byte	32
- 2732 0a8f 10       		.byte	16
- 2733 0a90 10       		.byte	16
- 2734 0a91 00       		.byte	0
- 2735 0a92 10       		.byte	16
- 2736 0a93 00       		.byte	0
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 49
+ 2676 0018 00       		.byte	0
+ 2677 0019 00       		.byte	0
+ 2678 001a 03       		.uleb128 0x3
+ 2679 001b 16       		.uleb128 0x16
+ 2680 001c 00       		.byte	0
+ 2681 001d 03       		.uleb128 0x3
+ 2682 001e 0E       		.uleb128 0xe
+ 2683 001f 3A       		.uleb128 0x3a
+ 2684 0020 0B       		.uleb128 0xb
+ 2685 0021 3B       		.uleb128 0x3b
+ 2686 0022 0B       		.uleb128 0xb
+ 2687 0023 49       		.uleb128 0x49
+ 2688 0024 13       		.uleb128 0x13
+ 2689 0025 00       		.byte	0
+ 2690 0026 00       		.byte	0
+ 2691 0027 04       		.uleb128 0x4
+ 2692 0028 24       		.uleb128 0x24
+ 2693 0029 00       		.byte	0
+ 2694 002a 0B       		.uleb128 0xb
+ 2695 002b 0B       		.uleb128 0xb
+ 2696 002c 3E       		.uleb128 0x3e
+ 2697 002d 0B       		.uleb128 0xb
+ 2698 002e 03       		.uleb128 0x3
+ 2699 002f 08       		.uleb128 0x8
+ 2700 0030 00       		.byte	0
+ 2701 0031 00       		.byte	0
+ 2702 0032 05       		.uleb128 0x5
+ 2703 0033 01       		.uleb128 0x1
+ 2704 0034 01       		.byte	0x1
+ 2705 0035 49       		.uleb128 0x49
+ 2706 0036 13       		.uleb128 0x13
+ 2707 0037 01       		.uleb128 0x1
+ 2708 0038 13       		.uleb128 0x13
+ 2709 0039 00       		.byte	0
+ 2710 003a 00       		.byte	0
+ 2711 003b 06       		.uleb128 0x6
+ 2712 003c 21       		.uleb128 0x21
+ 2713 003d 00       		.byte	0
+ 2714 003e 49       		.uleb128 0x49
+ 2715 003f 13       		.uleb128 0x13
+ 2716 0040 2F       		.uleb128 0x2f
+ 2717 0041 05       		.uleb128 0x5
+ 2718 0042 00       		.byte	0
+ 2719 0043 00       		.byte	0
+ 2720 0044 07       		.uleb128 0x7
+ 2721 0045 26       		.uleb128 0x26
+ 2722 0046 00       		.byte	0
+ 2723 0047 49       		.uleb128 0x49
+ 2724 0048 13       		.uleb128 0x13
+ 2725 0049 00       		.byte	0
+ 2726 004a 00       		.byte	0
+ 2727 004b 08       		.uleb128 0x8
+ 2728 004c 34       		.uleb128 0x34
+ 2729 004d 00       		.byte	0
+ 2730 004e 03       		.uleb128 0x3
+ 2731 004f 0E       		.uleb128 0xe
+ 2732 0050 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 49
 
 
- 2737 0a94 00       		.byte	0
- 2738 0a95 00       		.byte	0
- 2739 0a96 00       		.byte	0
- 2740 0a97 00       		.byte	0
- 2741 0a98 00       		.byte	0
- 2742 0a99 0B       		.byte	11
- 2743 0a9a 0B       		.byte	11
- 2744 0a9b 00       		.byte	0
- 2745 0a9c 00       		.byte	0
- 2746 0a9d 00       		.byte	0
- 2747 0a9e 00       		.byte	0
- 2748 0a9f 00       		.byte	0
- 2749              		.section	.cywolatch,"a",%progbits
- 2750              		.align	2
- 2751              		.type	cy_meta_wonvl, %object
- 2752              		.size	cy_meta_wonvl, 4
- 2753              	cy_meta_wonvl:
- 2754 0000 BC       		.byte	-68
- 2755 0001 90       		.byte	-112
- 2756 0002 AC       		.byte	-84
- 2757 0003 AF       		.byte	-81
- 2758              		.section	.cycustnvl,"a",%progbits
- 2759              		.align	2
- 2760              		.type	cy_meta_custnvl, %object
- 2761              		.size	cy_meta_custnvl, 4
- 2762              	cy_meta_custnvl:
- 2763 0000 00       		.byte	0
- 2764 0001 00       		.byte	0
- 2765 0002 40       		.byte	64
- 2766 0003 05       		.byte	5
- 2767              		.section	.cymeta,"a",%progbits
- 2768              		.align	2
- 2769              		.type	cy_metadata, %object
- 2770              		.size	cy_metadata, 12
- 2771              	cy_metadata:
- 2772 0000 00       		.byte	0
- 2773 0001 01       		.byte	1
- 2774 0002 2E       		.byte	46
- 2775 0003 16       		.byte	22
- 2776 0004 10       		.byte	16
- 2777 0005 69       		.byte	105
- 2778 0006 00       		.byte	0
- 2779 0007 01       		.byte	1
- 2780 0008 00       		.byte	0
- 2781 0009 00       		.byte	0
- 2782 000a 00       		.byte	0
- 2783 000b 00       		.byte	0
- 2784              		.section	.cyflashprotect,"a",%progbits
- 2785              		.align	2
- 2786              		.type	cy_meta_flashprotect, %object
- 2787              		.size	cy_meta_flashprotect, 256
- 2788              	cy_meta_flashprotect:
- 2789 0000 00000000 		.space	256
- 2789      00000000 
- 2789      00000000 
- 2789      00000000 
- 2789      00000000 
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 50
+ 2733 0051 0B       		.uleb128 0xb
+ 2734 0052 3B       		.uleb128 0x3b
+ 2735 0053 0B       		.uleb128 0xb
+ 2736 0054 49       		.uleb128 0x49
+ 2737 0055 13       		.uleb128 0x13
+ 2738 0056 3F       		.uleb128 0x3f
+ 2739 0057 19       		.uleb128 0x19
+ 2740 0058 02       		.uleb128 0x2
+ 2741 0059 18       		.uleb128 0x18
+ 2742 005a 00       		.byte	0
+ 2743 005b 00       		.byte	0
+ 2744 005c 09       		.uleb128 0x9
+ 2745 005d 21       		.uleb128 0x21
+ 2746 005e 00       		.byte	0
+ 2747 005f 49       		.uleb128 0x49
+ 2748 0060 13       		.uleb128 0x13
+ 2749 0061 2F       		.uleb128 0x2f
+ 2750 0062 0B       		.uleb128 0xb
+ 2751 0063 00       		.byte	0
+ 2752 0064 00       		.byte	0
+ 2753 0065 0A       		.uleb128 0xa
+ 2754 0066 34       		.uleb128 0x34
+ 2755 0067 00       		.byte	0
+ 2756 0068 03       		.uleb128 0x3
+ 2757 0069 0E       		.uleb128 0xe
+ 2758 006a 3A       		.uleb128 0x3a
+ 2759 006b 0B       		.uleb128 0xb
+ 2760 006c 3B       		.uleb128 0x3b
+ 2761 006d 05       		.uleb128 0x5
+ 2762 006e 49       		.uleb128 0x49
+ 2763 006f 13       		.uleb128 0x13
+ 2764 0070 3F       		.uleb128 0x3f
+ 2765 0071 19       		.uleb128 0x19
+ 2766 0072 02       		.uleb128 0x2
+ 2767 0073 18       		.uleb128 0x18
+ 2768 0074 00       		.byte	0
+ 2769 0075 00       		.byte	0
+ 2770 0076 00       		.byte	0
+ 2771              		.section	.debug_aranges,"",%progbits
+ 2772 0000 14000000 		.4byte	0x14
+ 2773 0004 0200     		.2byte	0x2
+ 2774 0006 00000000 		.4byte	.Ldebug_info0
+ 2775 000a 04       		.byte	0x4
+ 2776 000b 00       		.byte	0
+ 2777 000c 0000     		.2byte	0
+ 2778 000e 0000     		.2byte	0
+ 2779 0010 00000000 		.4byte	0
+ 2780 0014 00000000 		.4byte	0
+ 2781              		.section	.debug_line,"",%progbits
+ 2782              	.Ldebug_line0:
+ 2783 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ 2783      02003701 
+ 2783      00000201 
+ 2783      FB0E0D00 
+ 2783      01010101 
+ 2784              	.LASF9:
+ 2785 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 50
 
 
- 2790              		.text
- 2791              	.Letext0:
- 2792              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 2793              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 2794              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
- 2795              		.section	.debug_info,"",%progbits
- 2796              	.Ldebug_info0:
- 2797 0000 35010000 		.4byte	0x135
- 2798 0004 0400     		.2byte	0x4
- 2799 0006 00000000 		.4byte	.Ldebug_abbrev0
- 2800 000a 04       		.byte	0x4
- 2801 000b 01       		.uleb128 0x1
- 2802 000c 80000000 		.4byte	.LASF17
- 2803 0010 0C       		.byte	0xc
- 2804 0011 DA010000 		.4byte	.LASF18
- 2805 0015 0A000000 		.4byte	.LASF19
- 2806 0019 00000000 		.4byte	.Ldebug_line0
- 2807 001d 02       		.uleb128 0x2
- 2808 001e 01       		.byte	0x1
- 2809 001f 06       		.byte	0x6
- 2810 0020 CE010000 		.4byte	.LASF0
- 2811 0024 03       		.uleb128 0x3
- 2812 0025 00000000 		.4byte	.LASF9
- 2813 0029 01       		.byte	0x1
- 2814 002a 1D       		.byte	0x1d
- 2815 002b 2F000000 		.4byte	0x2f
- 2816 002f 02       		.uleb128 0x2
- 2817 0030 01       		.byte	0x1
- 2818 0031 08       		.byte	0x8
- 2819 0032 72000000 		.4byte	.LASF1
- 2820 0036 02       		.uleb128 0x2
- 2821 0037 02       		.byte	0x2
- 2822 0038 05       		.byte	0x5
- 2823 0039 BB010000 		.4byte	.LASF2
- 2824 003d 02       		.uleb128 0x2
- 2825 003e 02       		.byte	0x2
- 2826 003f 07       		.byte	0x7
- 2827 0040 20010000 		.4byte	.LASF3
- 2828 0044 02       		.uleb128 0x2
- 2829 0045 04       		.byte	0x4
- 2830 0046 05       		.byte	0x5
- 2831 0047 C5010000 		.4byte	.LASF4
- 2832 004b 02       		.uleb128 0x2
- 2833 004c 04       		.byte	0x4
- 2834 004d 07       		.byte	0x7
- 2835 004e 0E010000 		.4byte	.LASF5
- 2836 0052 02       		.uleb128 0x2
- 2837 0053 08       		.byte	0x8
- 2838 0054 05       		.byte	0x5
- 2839 0055 AD010000 		.4byte	.LASF6
- 2840 0059 02       		.uleb128 0x2
- 2841 005a 08       		.byte	0x8
- 2842 005b 07       		.byte	0x7
- 2843 005c 62010000 		.4byte	.LASF7
- 2844 0060 04       		.uleb128 0x4
- 2845 0061 04       		.byte	0x4
- 2846 0062 05       		.byte	0x5
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 51
+ 2785      6E74385F 
+ 2785      7400
+ 2786              	.LASF19:
+ 2787 000a 433A5C55 		.ascii	"C:\\Users\\santa\\Documents\\PSoC Creator\\Laborato"
+ 2787      73657273 
+ 2787      5C73616E 
+ 2787      74615C44 
+ 2787      6F63756D 
+ 2788 0038 72696F5F 		.ascii	"rio_7_Vatimetro\\Lab7_Vatimetro\\Design01.cydsn\000"
+ 2788      375F5661 
+ 2788      74696D65 
+ 2788      74726F5C 
+ 2788      4C616237 
+ 2789              	.LASF16:
+ 2790 0066 63795F6D 		.ascii	"cy_metadata\000"
+ 2790      65746164 
+ 2790      61746100 
+ 2791              	.LASF1:
+ 2792 0072 756E7369 		.ascii	"unsigned char\000"
+ 2792      676E6564 
+ 2792      20636861 
+ 2792      7200
+ 2793              	.LASF17:
+ 2794 0080 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2794      43313120 
+ 2794      352E342E 
+ 2794      31203230 
+ 2794      31363036 
+ 2795 00b3 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 2795      20726576 
+ 2795      6973696F 
+ 2795      6E203233 
+ 2795      37373135 
+ 2796 00e6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2796      66756E63 
+ 2796      74696F6E 
+ 2796      2D736563 
+ 2796      74696F6E 
+ 2797              	.LASF5:
+ 2798 010e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2798      20756E73 
+ 2798      69676E65 
+ 2798      6420696E 
+ 2798      7400
+ 2799              	.LASF3:
+ 2800 0120 73686F72 		.ascii	"short unsigned int\000"
+ 2800      7420756E 
+ 2800      7369676E 
+ 2800      65642069 
+ 2800      6E7400
+ 2801              	.LASF13:
+ 2802 0133 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 2802      6574615F 
+ 2802      63757374 
+ 2802      6E766C00 
+ 2803              	.LASF12:
+ 2804 0143 63795F6D 		.ascii	"cy_meta_configecc\000"
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 51
 
 
- 2847 0063 696E7400 		.ascii	"int\000"
- 2848 0067 02       		.uleb128 0x2
- 2849 0068 04       		.byte	0x4
- 2850 0069 07       		.byte	0x7
- 2851 006a 55010000 		.4byte	.LASF8
- 2852 006e 03       		.uleb128 0x3
- 2853 006f 79010000 		.4byte	.LASF10
- 2854 0073 02       		.byte	0x2
- 2855 0074 18       		.byte	0x18
- 2856 0075 24000000 		.4byte	0x24
- 2857 0079 05       		.uleb128 0x5
- 2858 007a 91000000 		.4byte	0x91
- 2859 007e 8A000000 		.4byte	0x8a
- 2860 0082 06       		.uleb128 0x6
- 2861 0083 8A000000 		.4byte	0x8a
- 2862 0087 9F0A     		.2byte	0xa9f
- 2863 0089 00       		.byte	0
- 2864 008a 02       		.uleb128 0x2
- 2865 008b 04       		.byte	0x4
- 2866 008c 07       		.byte	0x7
- 2867 008d A4010000 		.4byte	.LASF11
- 2868 0091 07       		.uleb128 0x7
- 2869 0092 6E000000 		.4byte	0x6e
- 2870 0096 08       		.uleb128 0x8
- 2871 0097 43010000 		.4byte	.LASF12
- 2872 009b 03       		.byte	0x3
- 2873 009c 1F       		.byte	0x1f
- 2874 009d A7000000 		.4byte	0xa7
- 2875 00a1 05       		.uleb128 0x5
- 2876 00a2 03       		.byte	0x3
- 2877 00a3 00000000 		.4byte	cy_meta_configecc
- 2878 00a7 07       		.uleb128 0x7
- 2879 00a8 79000000 		.4byte	0x79
- 2880 00ac 05       		.uleb128 0x5
- 2881 00ad 91000000 		.4byte	0x91
- 2882 00b1 BC000000 		.4byte	0xbc
- 2883 00b5 09       		.uleb128 0x9
- 2884 00b6 8A000000 		.4byte	0x8a
- 2885 00ba 03       		.byte	0x3
- 2886 00bb 00       		.byte	0
- 2887 00bc 0A       		.uleb128 0xa
- 2888 00bd 33010000 		.4byte	.LASF13
- 2889 00c1 03       		.byte	0x3
- 2890 00c2 8001     		.2byte	0x180
- 2891 00c4 CE000000 		.4byte	0xce
- 2892 00c8 05       		.uleb128 0x5
- 2893 00c9 03       		.byte	0x3
- 2894 00ca 00000000 		.4byte	cy_meta_custnvl
- 2895 00ce 07       		.uleb128 0x7
- 2896 00cf AC000000 		.4byte	0xac
- 2897 00d3 0A       		.uleb128 0xa
- 2898 00d4 96010000 		.4byte	.LASF14
- 2899 00d8 03       		.byte	0x3
- 2900 00d9 8E01     		.2byte	0x18e
- 2901 00db E5000000 		.4byte	0xe5
- 2902 00df 05       		.uleb128 0x5
- 2903 00e0 03       		.byte	0x3
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 52
+ 2804      6574615F 
+ 2804      636F6E66 
+ 2804      69676563 
+ 2804      6300
+ 2805              	.LASF8:
+ 2806 0155 756E7369 		.ascii	"unsigned int\000"
+ 2806      676E6564 
+ 2806      20696E74 
+ 2806      00
+ 2807              	.LASF7:
+ 2808 0162 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2808      206C6F6E 
+ 2808      6720756E 
+ 2808      7369676E 
+ 2808      65642069 
+ 2809              	.LASF10:
+ 2810 0179 75696E74 		.ascii	"uint8_t\000"
+ 2810      385F7400 
+ 2811              	.LASF15:
+ 2812 0181 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 2812      6574615F 
+ 2812      666C6173 
+ 2812      6870726F 
+ 2812      74656374 
+ 2813              	.LASF14:
+ 2814 0196 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 2814      6574615F 
+ 2814      776F6E76 
+ 2814      6C00
+ 2815              	.LASF11:
+ 2816 01a4 73697A65 		.ascii	"sizetype\000"
+ 2816      74797065 
+ 2816      00
+ 2817              	.LASF6:
+ 2818 01ad 6C6F6E67 		.ascii	"long long int\000"
+ 2818      206C6F6E 
+ 2818      6720696E 
+ 2818      7400
+ 2819              	.LASF2:
+ 2820 01bb 73686F72 		.ascii	"short int\000"
+ 2820      7420696E 
+ 2820      7400
+ 2821              	.LASF4:
+ 2822 01c5 6C6F6E67 		.ascii	"long int\000"
+ 2822      20696E74 
+ 2822      00
+ 2823              	.LASF0:
+ 2824 01ce 7369676E 		.ascii	"signed char\000"
+ 2824      65642063 
+ 2824      68617200 
+ 2825              	.LASF18:
+ 2826 01da 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2826      72617465 
+ 2826      645F536F 
+ 2826      75726365 
+ 2826      5C50536F 
+ 2827              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ARM GAS  C:\Users\santa\AppData\Local\Temp\ccAPHha2.s 			page 52
 
 
- 2904 00e1 00000000 		.4byte	cy_meta_wonvl
- 2905 00e5 07       		.uleb128 0x7
- 2906 00e6 AC000000 		.4byte	0xac
- 2907 00ea 05       		.uleb128 0x5
- 2908 00eb 91000000 		.4byte	0x91
- 2909 00ef FA000000 		.4byte	0xfa
- 2910 00f3 09       		.uleb128 0x9
- 2911 00f4 8A000000 		.4byte	0x8a
- 2912 00f8 FF       		.byte	0xff
- 2913 00f9 00       		.byte	0
- 2914 00fa 0A       		.uleb128 0xa
- 2915 00fb 81010000 		.4byte	.LASF15
- 2916 00ff 03       		.byte	0x3
- 2917 0100 9C01     		.2byte	0x19c
- 2918 0102 0C010000 		.4byte	0x10c
- 2919 0106 05       		.uleb128 0x5
- 2920 0107 03       		.byte	0x3
- 2921 0108 00000000 		.4byte	cy_meta_flashprotect
- 2922 010c 07       		.uleb128 0x7
- 2923 010d EA000000 		.4byte	0xea
- 2924 0111 05       		.uleb128 0x5
- 2925 0112 91000000 		.4byte	0x91
- 2926 0116 21010000 		.4byte	0x121
- 2927 011a 09       		.uleb128 0x9
- 2928 011b 8A000000 		.4byte	0x8a
- 2929 011f 0B       		.byte	0xb
- 2930 0120 00       		.byte	0
- 2931 0121 0A       		.uleb128 0xa
- 2932 0122 66000000 		.4byte	.LASF16
- 2933 0126 03       		.byte	0x3
- 2934 0127 C901     		.2byte	0x1c9
- 2935 0129 33010000 		.4byte	0x133
- 2936 012d 05       		.uleb128 0x5
- 2937 012e 03       		.byte	0x3
- 2938 012f 00000000 		.4byte	cy_metadata
- 2939 0133 07       		.uleb128 0x7
- 2940 0134 11010000 		.4byte	0x111
- 2941 0138 00       		.byte	0
- 2942              		.section	.debug_abbrev,"",%progbits
- 2943              	.Ldebug_abbrev0:
- 2944 0000 01       		.uleb128 0x1
- 2945 0001 11       		.uleb128 0x11
- 2946 0002 01       		.byte	0x1
- 2947 0003 25       		.uleb128 0x25
- 2948 0004 0E       		.uleb128 0xe
- 2949 0005 13       		.uleb128 0x13
- 2950 0006 0B       		.uleb128 0xb
- 2951 0007 03       		.uleb128 0x3
- 2952 0008 0E       		.uleb128 0xe
- 2953 0009 1B       		.uleb128 0x1b
- 2954 000a 0E       		.uleb128 0xe
- 2955 000b 10       		.uleb128 0x10
- 2956 000c 17       		.uleb128 0x17
- 2957 000d 00       		.byte	0
- 2958 000e 00       		.byte	0
- 2959 000f 02       		.uleb128 0x2
- 2960 0010 24       		.uleb128 0x24
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 53
-
-
- 2961 0011 00       		.byte	0
- 2962 0012 0B       		.uleb128 0xb
- 2963 0013 0B       		.uleb128 0xb
- 2964 0014 3E       		.uleb128 0x3e
- 2965 0015 0B       		.uleb128 0xb
- 2966 0016 03       		.uleb128 0x3
- 2967 0017 0E       		.uleb128 0xe
- 2968 0018 00       		.byte	0
- 2969 0019 00       		.byte	0
- 2970 001a 03       		.uleb128 0x3
- 2971 001b 16       		.uleb128 0x16
- 2972 001c 00       		.byte	0
- 2973 001d 03       		.uleb128 0x3
- 2974 001e 0E       		.uleb128 0xe
- 2975 001f 3A       		.uleb128 0x3a
- 2976 0020 0B       		.uleb128 0xb
- 2977 0021 3B       		.uleb128 0x3b
- 2978 0022 0B       		.uleb128 0xb
- 2979 0023 49       		.uleb128 0x49
- 2980 0024 13       		.uleb128 0x13
- 2981 0025 00       		.byte	0
- 2982 0026 00       		.byte	0
- 2983 0027 04       		.uleb128 0x4
- 2984 0028 24       		.uleb128 0x24
- 2985 0029 00       		.byte	0
- 2986 002a 0B       		.uleb128 0xb
- 2987 002b 0B       		.uleb128 0xb
- 2988 002c 3E       		.uleb128 0x3e
- 2989 002d 0B       		.uleb128 0xb
- 2990 002e 03       		.uleb128 0x3
- 2991 002f 08       		.uleb128 0x8
- 2992 0030 00       		.byte	0
- 2993 0031 00       		.byte	0
- 2994 0032 05       		.uleb128 0x5
- 2995 0033 01       		.uleb128 0x1
- 2996 0034 01       		.byte	0x1
- 2997 0035 49       		.uleb128 0x49
- 2998 0036 13       		.uleb128 0x13
- 2999 0037 01       		.uleb128 0x1
- 3000 0038 13       		.uleb128 0x13
- 3001 0039 00       		.byte	0
- 3002 003a 00       		.byte	0
- 3003 003b 06       		.uleb128 0x6
- 3004 003c 21       		.uleb128 0x21
- 3005 003d 00       		.byte	0
- 3006 003e 49       		.uleb128 0x49
- 3007 003f 13       		.uleb128 0x13
- 3008 0040 2F       		.uleb128 0x2f
- 3009 0041 05       		.uleb128 0x5
- 3010 0042 00       		.byte	0
- 3011 0043 00       		.byte	0
- 3012 0044 07       		.uleb128 0x7
- 3013 0045 26       		.uleb128 0x26
- 3014 0046 00       		.byte	0
- 3015 0047 49       		.uleb128 0x49
- 3016 0048 13       		.uleb128 0x13
- 3017 0049 00       		.byte	0
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 54
-
-
- 3018 004a 00       		.byte	0
- 3019 004b 08       		.uleb128 0x8
- 3020 004c 34       		.uleb128 0x34
- 3021 004d 00       		.byte	0
- 3022 004e 03       		.uleb128 0x3
- 3023 004f 0E       		.uleb128 0xe
- 3024 0050 3A       		.uleb128 0x3a
- 3025 0051 0B       		.uleb128 0xb
- 3026 0052 3B       		.uleb128 0x3b
- 3027 0053 0B       		.uleb128 0xb
- 3028 0054 49       		.uleb128 0x49
- 3029 0055 13       		.uleb128 0x13
- 3030 0056 3F       		.uleb128 0x3f
- 3031 0057 19       		.uleb128 0x19
- 3032 0058 02       		.uleb128 0x2
- 3033 0059 18       		.uleb128 0x18
- 3034 005a 00       		.byte	0
- 3035 005b 00       		.byte	0
- 3036 005c 09       		.uleb128 0x9
- 3037 005d 21       		.uleb128 0x21
- 3038 005e 00       		.byte	0
- 3039 005f 49       		.uleb128 0x49
- 3040 0060 13       		.uleb128 0x13
- 3041 0061 2F       		.uleb128 0x2f
- 3042 0062 0B       		.uleb128 0xb
- 3043 0063 00       		.byte	0
- 3044 0064 00       		.byte	0
- 3045 0065 0A       		.uleb128 0xa
- 3046 0066 34       		.uleb128 0x34
- 3047 0067 00       		.byte	0
- 3048 0068 03       		.uleb128 0x3
- 3049 0069 0E       		.uleb128 0xe
- 3050 006a 3A       		.uleb128 0x3a
- 3051 006b 0B       		.uleb128 0xb
- 3052 006c 3B       		.uleb128 0x3b
- 3053 006d 05       		.uleb128 0x5
- 3054 006e 49       		.uleb128 0x49
- 3055 006f 13       		.uleb128 0x13
- 3056 0070 3F       		.uleb128 0x3f
- 3057 0071 19       		.uleb128 0x19
- 3058 0072 02       		.uleb128 0x2
- 3059 0073 18       		.uleb128 0x18
- 3060 0074 00       		.byte	0
- 3061 0075 00       		.byte	0
- 3062 0076 00       		.byte	0
- 3063              		.section	.debug_aranges,"",%progbits
- 3064 0000 14000000 		.4byte	0x14
- 3065 0004 0200     		.2byte	0x2
- 3066 0006 00000000 		.4byte	.Ldebug_info0
- 3067 000a 04       		.byte	0x4
- 3068 000b 00       		.byte	0
- 3069 000c 0000     		.2byte	0
- 3070 000e 0000     		.2byte	0
- 3071 0010 00000000 		.4byte	0
- 3072 0014 00000000 		.4byte	0
- 3073              		.section	.debug_line,"",%progbits
- 3074              	.Ldebug_line0:
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 55
-
-
- 3075 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
- 3075      02003701 
- 3075      00000201 
- 3075      FB0E0D00 
- 3075      01010101 
- 3076              	.LASF9:
- 3077 0000 5F5F7569 		.ascii	"__uint8_t\000"
- 3077      6E74385F 
- 3077      7400
- 3078              	.LASF19:
- 3079 000a 433A5C55 		.ascii	"C:\\Users\\santa\\Documents\\PSoC Creator\\Laborato"
- 3079      73657273 
- 3079      5C73616E 
- 3079      74615C44 
- 3079      6F63756D 
- 3080 0038 72696F5F 		.ascii	"rio_7_Vatimetro\\Lab7_Vatimetro\\Design01.cydsn\000"
- 3080      375F5661 
- 3080      74696D65 
- 3080      74726F5C 
- 3080      4C616237 
- 3081              	.LASF16:
- 3082 0066 63795F6D 		.ascii	"cy_metadata\000"
- 3082      65746164 
- 3082      61746100 
- 3083              	.LASF1:
- 3084 0072 756E7369 		.ascii	"unsigned char\000"
- 3084      676E6564 
- 3084      20636861 
- 3084      7200
- 3085              	.LASF17:
- 3086 0080 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 3086      43313120 
- 3086      352E342E 
- 3086      31203230 
- 3086      31363036 
- 3087 00b3 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 3087      20726576 
- 3087      6973696F 
- 3087      6E203233 
- 3087      37373135 
- 3088 00e6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 3088      66756E63 
- 3088      74696F6E 
- 3088      2D736563 
- 3088      74696F6E 
- 3089              	.LASF5:
- 3090 010e 6C6F6E67 		.ascii	"long unsigned int\000"
- 3090      20756E73 
- 3090      69676E65 
- 3090      6420696E 
- 3090      7400
- 3091              	.LASF3:
- 3092 0120 73686F72 		.ascii	"short unsigned int\000"
- 3092      7420756E 
- 3092      7369676E 
- 3092      65642069 
- 3092      6E7400
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 56
-
-
- 3093              	.LASF13:
- 3094 0133 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 3094      6574615F 
- 3094      63757374 
- 3094      6E766C00 
- 3095              	.LASF12:
- 3096 0143 63795F6D 		.ascii	"cy_meta_configecc\000"
- 3096      6574615F 
- 3096      636F6E66 
- 3096      69676563 
- 3096      6300
- 3097              	.LASF8:
- 3098 0155 756E7369 		.ascii	"unsigned int\000"
- 3098      676E6564 
- 3098      20696E74 
- 3098      00
- 3099              	.LASF7:
- 3100 0162 6C6F6E67 		.ascii	"long long unsigned int\000"
- 3100      206C6F6E 
- 3100      6720756E 
- 3100      7369676E 
- 3100      65642069 
- 3101              	.LASF10:
- 3102 0179 75696E74 		.ascii	"uint8_t\000"
- 3102      385F7400 
- 3103              	.LASF15:
- 3104 0181 63795F6D 		.ascii	"cy_meta_flashprotect\000"
- 3104      6574615F 
- 3104      666C6173 
- 3104      6870726F 
- 3104      74656374 
- 3105              	.LASF14:
- 3106 0196 63795F6D 		.ascii	"cy_meta_wonvl\000"
- 3106      6574615F 
- 3106      776F6E76 
- 3106      6C00
- 3107              	.LASF11:
- 3108 01a4 73697A65 		.ascii	"sizetype\000"
- 3108      74797065 
- 3108      00
- 3109              	.LASF6:
- 3110 01ad 6C6F6E67 		.ascii	"long long int\000"
- 3110      206C6F6E 
- 3110      6720696E 
- 3110      7400
- 3111              	.LASF2:
- 3112 01bb 73686F72 		.ascii	"short int\000"
- 3112      7420696E 
- 3112      7400
- 3113              	.LASF4:
- 3114 01c5 6C6F6E67 		.ascii	"long int\000"
- 3114      20696E74 
- 3114      00
- 3115              	.LASF0:
- 3116 01ce 7369676E 		.ascii	"signed char\000"
- 3116      65642063 
- 3116      68617200 
-ARM GAS  C:\Users\santa\AppData\Local\Temp\ccOQsOtn.s 			page 57
-
-
- 3117              	.LASF18:
- 3118 01da 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
- 3118      72617465 
- 3118      645F536F 
- 3118      75726365 
- 3118      5C50536F 
- 3119              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

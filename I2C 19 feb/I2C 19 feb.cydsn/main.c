@@ -10,7 +10,21 @@
  * ========================================
 */
 #include "project.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
 #define SlaveAddress 0x40      //Dirección esclavo; esclavo=Recibe la señal de sincronismo y ejecuta órdenes del maestro 
+//asm(".global_printf_float");
+int _write(int file, char *ptr, int len){
+ file=file;
+   int i;
+   for(i=0;i<len;i++){
+     UART_PutChar(*ptr++);
+    
+   }
+   return len;
+}
+
 uint8 result,i,Tabla[4],valorpotencia;
 uint16 angulo;
 uint16 voltaje_shunt,voltaje_shunt2,vbus,vbus2,Datos2,Datos,corriente,potencia;
@@ -18,7 +32,8 @@ int flag;
 float factor_lsb_Corriente;
 uint8 h=8,g=6;
 uint8 vs1,vs2;
-
+uint32 time;
+float pot=0;
 const uint8 string2[4]="0123";
 
 //SDA= Aquí viajan los datos como tal 
@@ -27,6 +42,8 @@ const uint8 string2[4]="0123";
 //Esto significa que el maestro y el esclavo envían datos por el mismo cable, 
 //el cual es controlado por el maestro, que crea la señal de reloj.
 //I2C no utiliza selección de esclavo, sino direccionamiento.
+
+
 
 //CY_ISR(Rx){
 //
@@ -112,16 +129,23 @@ void Get_Potencia(){
      // i2c_MasterSendStop();
 
 }
+CY_ISR(timer){
+  time++;
+  isr_timer_ClearPending();
+}
 
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
     //isr_Rx_StartEx(Rx);
-
+    isr_timer_StartEx(timer);
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     LCD_Start();
     I2C_Start();
     UART_Start();
+    timer_Start();
+    LCD_Position(0,5);
+  //  LCD_PrintString("jej");
     
     for(;;)
     {
@@ -151,8 +175,8 @@ int main(void)
             factor_lsb_Corriente=(3/32768);
             float cor=(voltaje_shunt*4473)/4096;
             float factor_lsb_potencia=factor_lsb_Corriente*20;
-            float pot=(cor*vbus)/5000;
-            
+            pot=factor_lsb_potencia*(cor*vbus)/5000;
+              
         LCD_Position(0,0);
         LCD_PrintString("Vs:");
         LCD_Position(0,3);
@@ -172,10 +196,35 @@ int main(void)
         LCD_Position(1,10);
         LCD_PrintString("P:");
         LCD_Position(1,12);
-        LCD_PrintHexUint16(pot);      
+        LCD_PrintHexUint16(pot);  
+       // uint16 base=1;
+        char Value[6]="";
+        pot=74.4;
+        //aqui va el codigo
+        //miro la condicion de magnitud
+        if(pot*pot<1){
+        sprintf(Value,"%.5f",pot);
+        }else{
+        sprintf(Value,"%.2f",pot); 
+        }
+      ///defini previamente la estructura del envio 
+        LCD_Position(1,9);
+        LCD_PutChar(Value[2]);
+        char *temp="";
+        sprintf(temp, "%lu",time);
+        strcat(temp,"\t");
+        strcat(temp,Value);
+       // printf("%lu\t", time);
+        printf("%s\r\n", temp);
+       // for(int j=0;j<6;j++){
+       // UART_PutChar(Value[j]);
+       // }
+       //  UART_PutString(Value);
+   
+      ///  printf("Hola a todos");
+        //printf("%f",pot);
+       // printf("\n");
         
-        UART_PutChar(pot);
-
     }
 }
 

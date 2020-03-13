@@ -250,7 +250,7 @@ SECTIONS
 	.heap (NOLOAD) :
 	{
 	  . = _end;
-	  . += 0x200;
+	  . += 0x300;
 	  __cy_heap_limit = .;
 	} >ram
 

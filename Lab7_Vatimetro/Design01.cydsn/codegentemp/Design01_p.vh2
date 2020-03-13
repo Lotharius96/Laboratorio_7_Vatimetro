@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 03/09/2020 11:13:05
+-- Generated: 03/09/2020 14:31:14
 -- PSoC Creator  4.2
 
 ENTITY Design01 IS
@@ -170,9 +170,9 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     ATTRIBUTE lib_model OF \i2c:bI2C_UDB:m_state_4_split\ : LABEL IS "macrocell1";
     ATTRIBUTE lib_model OF Rx_1(0) : LABEL IS "iocell1";
-    ATTRIBUTE Location OF Rx_1(0) : LABEL IS "P15[5]";
+    ATTRIBUTE Location OF Rx_1(0) : LABEL IS "P2[6]";
     ATTRIBUTE lib_model OF Tx_1(0) : LABEL IS "iocell2";
-    ATTRIBUTE Location OF Tx_1(0) : LABEL IS "P15[4]";
+    ATTRIBUTE Location OF Tx_1(0) : LABEL IS "P2[7]";
     ATTRIBUTE lib_model OF SDA_1(0) : LABEL IS "iocell3";
     ATTRIBUTE Location OF SDA_1(0) : LABEL IS "P0[1]";
     ATTRIBUTE lib_model OF SCL_1(0) : LABEL IS "iocell4";

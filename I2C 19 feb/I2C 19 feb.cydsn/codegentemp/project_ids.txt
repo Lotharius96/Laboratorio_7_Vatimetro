@@ -1,6 +1,6 @@
-C:\Users\jeanpierre\Documents\PSoC Creator\I2C 19 feb\I2C 19 feb.cydsn\I2C 19 feb.cyprj|f6a6d9e2-1a76-4fee-ac06-5c78f93c1204
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e11ecff8-b703-4925-86ba-d14c91ce54f7
-C:\Users\jeanpierre\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|21fc1f24-2e37-42a4-97b4-bc332d8e9958
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|6d83ad03-66a7-4f3e-93fe-7d5f1b1f8821
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|8e1f6b15-635e-41f9-aeb0-9c40a1813529
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3558ee86-08aa-4a8b-9182-6b2d857ae56a
+C:\Users\santa\Documents\PSoC Creator\Laboratorio_7_Vatimetro\I2C 19 feb\I2C 19 feb.cydsn\I2C 19 feb.cyprj|c44c67d8-d889-4359-8dbd-4bf157357698
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|af737f11-828a-439c-86d0-6768300a1571
+C:\Users\santa\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|ef5b3fa4-29d8-4fd8-aa3f-f2cd5f7f7871
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|04b7b8ba-683d-44de-bc80-7e6be3262821
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|4219b023-e7a2-4fb7-9fe7-856318a74bf6
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|592fef76-7294-44b2-81ca-9abad783ad0b
